@@ -7,7 +7,7 @@ const pool = mysql.createPool({
     user: 'root',
 //  password: '123',
  password:'123a@8Anmanraspaa123a@*Anmanraspaa',
- database: 'delo',
+ //database: 'delo',
     database : 'compress_schema',
     port:'3306' ,
     connectionLimit:100,
