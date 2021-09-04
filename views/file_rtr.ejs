@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<script>
+				!function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
+				analytics.load("LioF9AH4FA5S2Ioit4CkQHeQgaRy6227");
+				analytics.page();
+				}}();
+			  </script>
+	<title>Delo Services - File Rtr</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="assets/img/ashish1.png"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/Login_v3/vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/Login_v3/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/Login_v3/fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/Login_v3/vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="/Login_v3/vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/Login_v3/vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/Login_v3/vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="/Login_v3/vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="/Login_v3/css/util.css">
+	<link rel="stylesheet" type="text/css" href="/Login_v3/css/main.css">
+
+	<style>
+		/* width */
+		::-webkit-scrollbar {
+		  width: 8px;
+		}
+		
+		/* Track */
+		::-webkit-scrollbar-track {
+		  box-shadow: inset 0 0 5px grey; 
+		  border-radius: 6px;
+		}
+		 
+		/* Handle */
+		::-webkit-scrollbar-thumb {
+		  background:#1F5AB0; 
+		  border-radius: 6px;
+		}
+		
+		/* Handle on hover */
+		::-webkit-scrollbar-thumb:hover {
+		  background: #1F5AB0; 
+		}
+		</style>
+	  <!--STYLE END SCROLL BAR-->
+
+	
+<!--===============================================================================================-->
+</head>
+<body>
+	
+	<div class="limiter">
+		<div class="container-login100" style="background-image: url('/Login_v3/images/bg-01.jpg');">
+			<div class="wrap-login100">
+				<form class="login100-form validate-form">
+					<span class="login100-form-logo">
+						<img src="/images/Drop.png" style="width:50px;">
+					</span>
+
+					<span class="login100-form-title p-b-34 p-t-27">
+					
+					</span>
+
+					<div class="wrap-input100 validate-input" data-validate = "Enter username">
+                    <input type="number" class="input100" id="number" placeholder="Enter Your Mobile Number">
+						<span class="focus-input100" data-placeholder="&#xf10b;"></span>
+					</div>
+
+					
+
+					
+
+					<div class="container-login100-form-btn">
+						  <button type="button"  class="login100-form-btn" id='verify'>Get OTP</button>
+					</div>
+
+					
+				</form>
+			</div>
+		</div>
+	</div>
+	
+
+	<div id="dropDownSelect1"></div>
+	
+<!--===============================================================================================-->
+	<script src="/Login_v3/vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="/Login_v3/vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="/Login_v3/vendor/bootstrap/js/popper.js"></script>
+	<script src="/Login_v3/vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="/Login_v3/vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="/Login_v3/vendor/daterangepicker/moment.min.js"></script>
+	<script src="/Login_v3/vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="/Login_v3/vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+    <script src="/Login_v3/js/main.js"></script>
+    <script src="/javascripts/jquery.js"></script>
+<script>
+$('#verify').click(function(){
+    if( $('#number').val()=="" || $('#number').val()==[] || $('#number').val().length<10 || $('#number').val().length>=11)
+{
+alert("Enter Correct Number");
+}
+else{
+    let number = $('#number').val()
+    $.post('/file_rtr/verification',{number},data=>{
+        window.location.href = "/file_rtr_verification";
+    })
+}
+})
+</script>
+<script type='text/javascript'>
+	var isCtrl = false;
+	document.onkeyup=function(e)
+	{
+	if(e.which == 17)
+	isCtrl=false;
+	}
+	document.onkeydown=function(e)
+	{
+	if(e.which == 17)
+	isCtrl=true;
+	if((e.which == 85) || (e.which == 67) || isCtrl == true)
+	{
+	// alert(&#8216;Keyboard shortcuts are cool!&#8217;);
+	return false;
+	}
+	}
+	var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+	if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+	function mischandler(){
+	return false;
+	}
+	function mousehandler(e){
+	var myevent = (isNS) ? e : event;
+	var eventbutton = (isNS) ? myevent.which : myevent.button;
+	if((eventbutton==2)||(eventbutton==3)) return false;
+	}
+	document.oncontextmenu = mischandler;
+	document.onmousedown = mousehandler;
+	document.onmouseup = mousehandler;
+	</script>
+  
+</body>
+</html>

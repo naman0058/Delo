@@ -1,0 +1,163 @@
+<% include ./team_verification_dashboard_header.ejs %>
+
+  
+        <!--**********************************
+            Content body start
+        ***********************************-->
+        <div class="content-body">
+
+            <div class="row page-titles mx-0">
+                <div class="col p-md-0">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="javascript:void(0)">Dashboard</a></li>
+                        <li class="breadcrumb-item active"><a href="javascript:void(0)">Home</a></li>
+                    </ol>
+                </div>
+            </div>
+            <!-- row -->
+            <form action="/team-verification-dashboard/update_data" method="post" enctype="multipart/form-data">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 col-xl-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="media align-items-center mb-4">
+
+
+                            
+                                 
+                                <img class="mr-3" src="https://www.deloservices.com/images/<%=result[0].image%>" style="border-radius:50%;"  width="80" height="80" alt="">
+                               
+
+                               
+                                    <div class="media-body">
+                                                <h3 class="mb-0"><%=result[0].name%></h3>
+                                           <h3 class="mb-0"><%=result[0].local_address%></h3>
+                                    
+                                       
+                                       
+                                    </div>
+                                </div>
+                                
+
+                               
+
+
+                                <div class="row mb-5">
+                                    <div class="col">
+                                        <div class="card card-profile text-center">
+                                       Aadhar Card Front Image
+                                           <input type="file" class="form-control" name="aadhar_front_number" required>
+                                        </div>
+                                    </div>
+
+                                    <div class="col">
+                                            <div class="card card-profile text-center">
+                                                    Aadhar Card Back Image
+                                                    <input type="file" class="form-control" name="aadhar_back_number" required>
+                                            </div>
+                                        </div>
+
+
+                                    <div class="col">
+                                        <div class="card card-profile text-center">
+                                                Pan Card Image
+                                                <input type="file" class="form-control" name="pan_number" required>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                            <div class="card card-profile text-center">
+                                                    Driving Licence Image
+                                                    <input type="file" class="form-control" name="licence_number" required>
+                                            </div>
+                                        </div>
+
+                                      
+
+                                        
+                                  
+                                </div>
+
+
+                                <div class="row mb-5">
+                                        <div class="col">
+                                            <div class="card card-profile text-center">
+                                             
+                                                Bank Account Number
+                                                <input type="number" class="form-control" name="account_number" placeholder="Enter Account Number..." required>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card card-profile text-center">
+                                                    Bank Name
+                                                    <input type="text" class="form-control" name="bank_name" placeholder="Enter Account Name..." required>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                                <div class="card card-profile text-center">
+                                                        IFSC Code
+                                                        <input type="text" class="form-control" name="ifsc_code" placeholder="Enter IFSC Code..." required>
+                                           
+                                                </div>
+                                            </div>
+
+                                            <div class="col">
+                                                    <div class="card card-profile text-center">
+                                                            Account Holder Name
+                                                            <input type="text" class="form-control" name="account_holder_name" placeholder="Enter Account Holder Name..." required>
+                                               
+                                                    </div>
+                                                </div>
+    
+
+                                                <input type="hidden" name="id" value="<%=result[0].id%>">
+                                            
+                                        <div class="col-12 text-center">
+                                            <button class="btn btn-danger px-5" type="submit">Update</button>
+                                        </div>
+                                    </div>
+                                                              
+                            </div>
+                        </div>  
+                    </div>
+                    
+               
+                    </div>
+                </div>
+            </div>
+        </form>
+            <!-- #/ container -->
+        </div>
+        <!--**********************************
+            Content body end
+        ***********************************-->
+        
+        
+        <!--**********************************
+            Footer start
+        ***********************************-->
+        <div class="footer">
+            <div class="copyright">
+                    <p>Copyright &copy;2019 Delo Services Pvt. Ltd</p>
+            </div>
+        </div>
+        <!--**********************************
+            Footer end
+        ***********************************-->
+    </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <script src="/booking_dashboard/plugins/common/common.min.js"></script>
+    <script src="/booking_dashboard/js/custom.min.js"></script>
+    <script src="/booking_dashboard/js/settings.js"></script>
+    <script src="/booking_dashboard/js/gleek.js"></script>
+    <script src="/booking_dashboard/js/styleSwitcher.js"></script>
+
+</body>
+
+</html>

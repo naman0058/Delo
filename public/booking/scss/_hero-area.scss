@@ -1,0 +1,183 @@
+
+// Hero Area
+#hero-area{
+	background: url(../img/bg/bg1.jpg) no-repeat;
+	background-size: cover;
+	color: #fff;
+	overflow: hidden;
+	position: relative;
+	.overlay{
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0px;			
+		left: 0px;
+	    background: rgba(0, 0, 0, 0.6);
+	}
+	.contents{
+		padding: 170px 0 180px;
+		.head-title{	
+			font-size: 50px;
+			font-weight: 300;
+			color: #fff;
+			white-space: nowrap;
+			line-height: 58px;
+		    margin-bottom: 15px;
+		}
+		p{
+			font-size: 14px;
+			color: #fff;
+			font-weight: 400;
+			line-height: 26px;
+		}
+	}
+}
+
+#search-bg-color{
+	margin-top: 40px;
+	top: 0;
+	z-index: 99;
+	.search-bar{
+		background: rgba(151, 151, 151, 0.33);
+	}
+	.search-bar .form-group{
+		margin: 0;
+	}
+}
+
+/* ==========================================================================
+3. Hero Area
+========================================================================== */
+#hero-area{
+	.contents{
+		.head-title{	
+			font-size: 50px;
+		    font-weight: 300;
+		    color: #fff;
+		    white-space: nowrap;
+		    line-height: 58px;
+		    margin-bottom: 15px;
+		}
+	}
+}
+
+.search-bar{
+	.search-form{
+		width: 100%;
+		float: left;
+	}
+	fieldset{
+		background: #fff;
+		overflow: hidden;
+		padding: 0 190px 0 0;
+		border-radius: 4px;
+	}
+	fieldset {
+	    margin: 0;
+	    border: 0;
+	    padding: 0;
+	    width: 100%;
+	    float: left;
+	    position: relative;
+	}
+	.form-group:first-child {
+	    border: 0;
+	}
+	.form-group {
+		float: left;
+		width: 25.33%;
+		padding: 0 0 0 10px;
+		background: #fff;
+		border-radius: 0px;
+		border-left: 1px solid #f1f1f1;
+	    .form-control{
+	    	position: relative;
+	    	z-index: 1;
+			border: 0;
+		    height: 60px;
+		    border-radius: 0;
+		    font-size: 16px;
+		    line-height: 30px;
+		    padding: 15px 15px 15px 0;
+		    box-shadow: none;
+		}
+		.form-control, .tg-select select {
+		    border: 0;
+		    height: 60px;
+		    border-radius: 0;
+		    font-size: 16px;
+		    line-height: 30px;
+		    padding: 15px 15px 15px 0;
+		    background: #ffffff;
+		}
+		.form-control, .tg-select select:focus{
+			outline: none;
+		}
+	}
+	.tg-select {
+		color:#666;
+		float:left;
+		width: 100%;
+		position: relative;
+		text-transform:uppercase;
+		i{
+			font-size: 15px;
+		    position: absolute;
+		    top: 22px;
+		    background-color: transparent;
+		    color: #444;
+		    right: 20px;
+		    z-index: 99;
+		}
+	}
+	.tg-select select {
+		z-index: 1;
+		width: 100%;
+		position: relative;
+		appearance: none;
+		-moz-appearance: none;
+		-webkit-appearance: none;
+	}
+	.tg-select select option { color:#666; }
+	.tg-inputwithicon {
+	    position: relative;
+	}
+	.tg-inputwithicon i {
+	    top: 0;
+	    left: 0;
+	    z-index: 2;
+	    color: #363b4d;
+	    position: absolute;
+	}
+	.tg-inputwithicon i {
+	    left: 20px;
+	    color: #666;
+	    font-size: 20px;
+	    line-height: 60px;
+	}
+	.btn-common {
+		top: 5px;
+		padding: 0;
+		z-index: 2;
+		width: 215px;
+		border-radius: 4px;
+		border: none;
+		cursor: pointer;
+		line-height: 48px;
+		text-align: center;
+		position: relative;
+		letter-spacing: 0.5px;
+		transition: all 0.4s ease-in-out;
+		-moz-transition: all 0.4s ease-in-out;
+		-webkit-transition: all 0.4s ease-in-out;
+		-o-transition: all 0.4s ease-in-out;
+	    i{
+    		font-size: 20px;
+    		vertical-align: middle;
+	    }
+	}
+}
+.search-button{
+	background: #484848;
+	padding-bottom: 40px;
+}

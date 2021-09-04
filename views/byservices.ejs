@@ -1,0 +1,1288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <script>
+          !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
+          analytics.load("LioF9AH4FA5S2Ioit4CkQHeQgaRy6227");
+          analytics.page();
+          }}();
+        </script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Ads: 741046957 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-741046957"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-741046957');
+</script>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title><%=result[0][0].subcategoryname%> - Delo Services</title>
+    <link rel="shortcut icon" type="images/x-icon" href="/images/delofabicon.png">
+    <meta name="Keywords" content="<% for(i=0;i<result[0].length;i++){ %> <%=result[0][i].name%> , <% } %>"/>
+    <meta name="description" content="<% for(i=0;i<result[0].length;i++){ %> <%=result[0][i].name%> , <% } %>"/>
+    
+    
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css">
+  
+    <link rel="stylesheet" href="/team_dashboard_style/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css">
+    <!-- Icon -->
+    <link rel="stylesheet" type="text/css" href="/assets/fonts/line-icons.css">
+    <!-- Slicknav -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/slicknav.css">
+
+    <!-- Animate -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/animate.css">
+    <!-- Owl carousel -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/owl.carousel.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+    <!-- Responsive Style -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/responsive.css">
+    <style>
+      /* width */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      
+      /* Track */
+      ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey; 
+        border-radius: 6px;
+      }
+       
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background:#1F5AB0; 
+        border-radius: 6px;
+      }
+      
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #1F5AB0; 
+      }
+      </style>
+    <!--STYLE END SCROLL BAR-->
+
+    <style>
+
+.footer-fixed {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: whitesmoke;
+   color: white;
+   text-align: center;
+}
+
+
+        .doctor-card {
+          color: black;
+            max-width: 1000px;
+            background: white;
+            border-radius: 2px;
+            margin: auto;
+            position: relative;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            position: relative;
+        }
+        .doctor-card .info {
+            padding: 15px;
+            display: grid;
+            grid-template-columns: 90px auto;
+        }
+        .doctor-card .info .avatar {
+            overflow: hidden;
+            height: 72px;
+            width: 72px;
+            border-radius: 3px;
+            margin-top: 5px;
+        }
+        .doctor-card .info .avatar img {
+            width: 100%;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+        .doctor-card .info .details {
+            align-self: center;
+            padding: 10px 0;
+        }
+        .doctor-card .info .details .name {
+            font-size: 18px;
+            line-height: 1;
+            padding: 2px 0;
+            font-weight: 400;
+        }
+        .doctor-card .info .details .meta-info {
+            padding: 2px 0;
+            color: #787878;
+            line-height: 16px;
+            font-weight: 400;
+        }
+        .doctor-card .info .details .meta-info .prac-area:not(:empty)::before, .doctor-card .info .details .meta-info .exp-yr:not(:empty)::before {
+            content: "|";
+            padding: 10px;
+        }
+        @media (max-width: 575px) {
+            .doctor-card .info {
+                grid-template-columns: 1fr;
+                justify-items: center;
+           }
+            .doctor-card .info .details {
+                text-align: center;
+           }
+            .doctor-card .info .details .meta-info {
+                padding: 5px;
+           }
+            .doctor-card .info .details .meta-info .exp-yr {
+                display: block;
+           }
+            .doctor-card .info .details .meta-info .exp-yr:not(:empty) {
+                margin-top: 5px;
+           }
+            .doctor-card .info .details .meta-info .exp-yr:not(:empty)::before {
+                content: none;
+           }
+        }
+        .doctor-card .actions {
+            margin: 0 15px 15px;
+            display: table;
+            width: calc(100% - 30px);
+            border-collapse: collapse;
+            border-radius: 3px;
+            border-style: hidden;
+            box-shadow: 0 0 0 1px #f6f7f8;
+        }
+        .doctor-card .actions > div {
+            text-align: center;
+            padding: 0;
+            display: table-cell;
+            border: 1px solid #f2f2f2;
+            vertical-align: middle;
+            height: 64px;
+        }
+        .doctor-card .actions .ratings {
+            width: 24%;
+        }
+        .doctor-card .actions .ratings .rating-control {
+            display: block;
+        }
+        .doctor-card .actions .ratings .rating-control .fa {
+            font-size: 18px;
+            color: #ffdc40;
+        }
+        .doctor-card .actions .ratings .rating-count {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #898989;
+        }
+        .doctor-card .actions .comments {
+            width: 23%;
+        }
+        .doctor-card .actions .comments .comment-count {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #898989;
+        }
+        .doctor-card .actions .comments .comment-count strong {
+            display: block;
+            color: #0081e0;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 20px;
+        }
+        .doctor-card .actions .consultation {
+            width: 23%;
+        }
+        .doctor-card .actions .consultation .fee {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #898989;
+        }
+        .doctor-card .actions .consultation .fee strong {
+            display: block;
+            color: #0081e0;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 20px;
+        }
+        .doctor-card .actions .appo {
+            width: 30%;
+        }
+        .doctor-card .actions .appo .btn {
+            background: #0081e0;
+            display: block;
+            text-decoration: none;
+            color: #fff;
+            text-transform: uppercase;
+            padding: 15px;
+            margin: 0 5px;
+        }
+        @media (max-width: 575px) {
+            .doctor-card .actions > div {
+                display: block;
+                padding: 10px;
+                height: auto;
+           }
+            .doctor-card .actions > div.comments, .doctor-card .actions > div.consultation {
+                width: 50%;
+                display: inline-block;
+           }
+            .doctor-card .actions > div.ratings, .doctor-card .actions > div.appo {
+                width: 100%;
+           }
+        }
+        .doctor-card .locations {
+            padding: 15px 15px 20px;
+            border-top: 1px solid #f6f7f8;
+            border-radius: 0 0 2px 2px;
+            line-height: 1;
+            font-size: 12px;
+            color: #898989;
+            font-weight: 400;
+            text-transform: capitalize;
+        }
+        @media (max-width: 575px) {
+            .doctor-card .locations {
+                text-align: center;
+           }
+        }
+        .doctor-card.hoverable:hover {
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+        }
+        .doctor-card.certified::after {
+            content: '';
+            background: url('//via.placeholder.com/100') no-repeat;
+            background-size: contain;
+            height: 30px;
+            width: 30px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            border-radius: 50%;
+        }
+        @media (max-width: 575px) {
+            .doctor-card {
+                padding: 10px;
+           }
+        }
+        .doctor-card + .doctor-card {
+            margin-top: 1rem;
+        }
+        
+
+
+        @media (max-width: 575px) {
+            .reviews {
+              display: none;
+           }
+        }
+        
+        </style>
+
+
+    <style>
+        .bg-light {
+           background-color: #fff;
+        }
+         .bg-dark {
+           background-color: #f1f4f5;
+        }
+         body {
+           
+           background: #fff;
+           font-family: "Effra", Helvetica, sans-serif;
+           padding: 0;
+           -webkit-font-smoothing: antialiased;
+        }
+         h1, h2, h3, h4, h5, h6 {
+           color: #3d4351;
+           margin-top: 0;
+        }
+         a {
+           color: #ff6b6b;
+        }
+         a:hover {
+           color: #ff9a9a;
+           text-decoration: none;
+        }
+         .example-header {
+           background: #3d4351;
+           color: #fff;
+           font-weight: 300;
+           padding: 3em 1em;
+           text-align: center;
+        }
+         .example-header h1 {
+           color: #fff;
+           font-weight: 300;
+           margin-bottom: 20px;
+        }
+         .example-header p {
+           font-size: 12px;
+           text-transform: uppercase;
+           letter-spacing: 3px;
+           font-weight: 700;
+        }
+         .example {
+           background: #f1f4f5;
+        }
+         .example-title {
+           text-align: center;
+           margin-bottom: 60px;
+           padding: 3em 0;
+           border-bottom: 1px solid #e4eaec;
+        }
+         .example-title p {
+           margin: 0 auto;
+           font-size: 16px;
+           max-width: 400px;
+        }
+         .img {
+           background-size: cover;
+           background-repeat: no-repeat;
+           background-position: center center;
+           overflow: hidden;
+           position: relative;
+           width: 100%;
+        }
+         .img img {
+           opacity: 0;
+        }
+         .img-circle {
+           -webkit-border-radius: 50%;
+           -moz-border-radius: 50%;
+           border-radius: 50%;
+        }
+         .img-circle:before {
+           content: "";
+           display: block;
+           padding-top: 100%;
+        }
+         .img-circle > * {
+           position: absolute !important;
+           top: 0;
+           bottom: 0;
+           left: 0;
+           right: 0;
+        }
+        /* NAME: Testimonial * * COMPONENT: 'testimonial' * * MODIFIERS: 'testimonial-reverse' * 'testimonial-top' * 'carousel' 
+        /*============================================================================= GENERAL =============================================================================*/
+         .testimonial {
+           margin-bottom: 30px;
+        }
+         .testimonial, .testimonial-item {
+           border-radius: 4px;
+        }
+         .testimonial-item .inner {
+           border-color: transparent;
+           overflow: hidden;
+        }
+        /*----- IMAGE -----*/
+         .testimonial-image {
+           display: inline-block;
+           margin-right: 15px;
+           position: relative;
+           vertical-align: middle;
+           width: 50px;
+        }
+        /*----- HEADING -----*/
+         .testimonial-titling {
+           display: inline-block;
+           vertical-align: middle;
+        }
+         .testimonial-title {
+           display: block;
+           font-size: 20px;
+           margin-bottom: 0;
+        }
+         .testimonial-subtitle {
+           display: block;
+           font-size: 13px;
+           opacity: 0.8;
+        }
+        /*----- CONTENT -----*/
+         .testimonial-content {
+           margin-bottom: 20px;
+           position: relative;
+        }
+         .testimonial-content > p:last-child {
+           margin-bottom: 0;
+        }
+        /*----- QUOTE MARK -----*/
+         .testimonial-quote-mark {
+           color: #dcdfe2;
+           float: left;
+           font-size: 30px;
+           margin: 3px 15px 0 0;
+        }
+        /*----- CONTROLS -----*/
+         .testimonial-control a {
+           color: #ccd5db;
+        }
+         .testimonial-control:hover {
+           color: #89bceb;
+           text-decoration: none;
+        }
+        /*----- COLUMNS -----*/
+         @media (min-width: 992px) {
+           .testimonial.column-2 .row > div:nth-child(odd), .testimonial.column-3 .row > div:nth-child(3n+1), .testimonial.column-4 .row > div:nth-child(4n+1) {
+             clear: both;
+          }
+        }
+         @media (max-width: 991px) {
+           .testimonial.column-2 .row > div:nth-child(odd), .testimonial.column-3 .row > div:nth-child(odd), .testimonial.column-4 .row > div:nth-child(odd) {
+             clear: both;
+          }
+        }
+        /* MODIFIER: 'testimonial-bubble' ===================================================*/
+         .testimonial-bubble .testimonial-content {
+           border: 1px solid transparent;
+           padding: 15px 20px;
+           background-color: #fff;
+           border-radius: 4px;
+        }
+         .testimonial-bubble .testimonial-content:before {
+           position: absolute;
+           border: 1px solid transparent;
+           border-width: 0 1px 1px 0;
+           bottom: -7px;
+           left: 33px;
+           display: block;
+           width: 14px;
+           height: 14px;
+           content: '';
+           background-color: #fff;
+           -webkit-transform: rotate(45deg);
+           -ms-transform: rotate(45deg);
+           -o-transform: rotate(45deg);
+           transform: rotate(45deg);
+        }
+         .testimonial-bubble.testimonial-top .testimonial-content:before {
+           border-width: 1px 0 0 1px;
+        }
+         .testimonial-bubble .testimonial-info {
+           margin-left: 20px;
+        }
+        /* MODIFIER: 'testimonial-reverse' ===================================================*/
+         .testimonial-reverse .testimonial-content:before {
+           right: 33px;
+           left: auto;
+        }
+         .testimonial-reverse .testimonial-info {
+           margin-left: 0;
+           margin-right: 20px;
+           text-align: right;
+        }
+         .testimonial-reverse .testimonial-image {
+           margin-right: 0;
+           margin-left: 20px;
+        }
+         .testimonial-reverse .testimonial-title, .testimonial-reverse .testimonial-subtitle {
+           text-align: right;
+        }
+        /* MODIFIER: 'testimonial-top' ===================================================*/
+         .testimonial-top .testimonial-content {
+           margin-top: 30px;
+           margin-bottom: 10px;
+        }
+         .testimonial-top .testimonial-content:before {
+           top: -7px;
+           bottom: auto;
+        }
+        /* MODIFIER: '.carousel' ===================================================*/
+         .testimonial.carousel {
+           position: relative;
+           width: 100%;
+           overflow: hidden;
+        }
+         .testimonial.carousel .testimonial-item {
+           position: relative;
+           display: none;
+           width: 100%;
+           transition: left 0.6s ease-in-out 0s;
+        }
+         .testimonial.carousel .testimonial-item.active, .testimonial.carousel .testimonial-item.next, .testimonial.carousel .testimonial-item.prev {
+           display: block;
+        }
+         .testimonial.carousel .testimonial-item.next, .testimonial.carousel .testimonial-item.prev {
+           position: absolute;
+           top: 0;
+           width: 100%;
+        }
+         .testimonial.carousel .testimonial-item.next {
+           left: 100%;
+        }
+         .testimonial.carousel .testimonial-item.prev {
+           left: -100%;
+        }
+         .testimonial.carousel .testimonial-item.next.left, .testimonial.carousel .testimonial-item.prev.right {
+           left: 0;
+        }
+         .testimonial.carousel .testimonial-item.active {
+           left: 0;
+        }
+         .testimonial.carousel .testimonial-item.active.left {
+           left: -100%;
+        }
+         .testimonial.carousel .testimonial-item.active.right {
+           left: 100%;
+        }
+         .testimonial-control {
+           position: absolute;
+           right: 20px;
+           bottom: 20px;
+        }
+         .testimonial-control a + a {
+           margin-left: 10px;
+        }
+         .testimonial-reverse .testimonial-control {
+           right: auto;
+           left: 20px;
+        }
+         .testimonial-top .testimonial-control {
+           top: 20px;
+           bottom: auto;
+        }
+         
+        
+        </style>
+    
+    
+    
+    
+    <style>
+    
+    a:hover {cursor: pointer;}
+
+  
+      
+   ul li {
+     list-style-type: none;
+  }
+   .slider--teams {
+     position: relative;
+     top: 50%;
+     left: 50%;
+     max-width: 800px;
+     opacity: 0;
+     transform: translate(-50%, -50%);
+  }
+   .slider--teams .slider--teams__team {
+     position: relative;
+     overflow: hidden;
+  }
+   #list {
+     position: relative;
+     backface-visibility: hidden;
+     transform: translate3d(0, 0, 0);
+  }
+   #list li {
+     position: relative;
+     display: inline-block;
+     float:left;
+     text-align: center;
+  }
+   #list li figure {
+     cursor: pointer;
+     margin: 1em;
+     opacity: 0.5;
+     backface-visibility: hidden;
+     transition: transform 450ms cubic-bezier(0.445, 0.05, 0.55, 0.95), opacity 450ms ease-in-out;
+     transform: scale(0.5) translateZ(0px);
+  }
+   #list li figure:hover {
+     opacity: 0.8;
+     transform: scale(0.6) translateZ(0px);
+  }
+   #list li figure:active {
+     opacity: 1;
+     transform: scale(0.7) translateZ(0px);
+  }
+   #list li figure > div {
+     border-radius: 5px;
+     position: relative;
+     margin: 2rem auto;
+     width: 120px;
+     height: 120px;
+     overflow: hidden;
+     transform: rotate(45deg) translateZ(0px);
+  }
+   #list li figure > div > div {
+   
+     background-size: cover;
+     background-position: 0px 0px;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     width: 170px;
+     height: 170px;
+     transform: rotate(-45deg) translate(0%, -70%);
+  }
+   #list li figure figcaption h2 {
+     color: white;
+     font-size: 1.6rem;
+     font-weight: 800;
+  }
+   #list li figure figcaption p {
+     color: #666;
+     font-size: 0.9rem;
+     font-weight: 400;
+  }
+   #list li:nth-child(1) figure > div > div {
+     background-position: 0px 0px !important;
+  }
+   #list li:nth-child(2) figure > div > div {
+     background-position: 0px 20% !important;
+  }
+   #list li:nth-child(3) figure > div > div {
+     background-position: 0px 40% !important;
+  }
+   #list li:nth-child(4) figure > div > div {
+     background-position: 0px 60% !important;
+  }
+   #list li:nth-child(5) figure > div > div {
+     background-position: 0px 80% !important;
+  }
+   #list li:nth-child(6) figure > div > div {
+     background-position: 0px 100% !important;
+  }
+   .active {
+     opacity: 1 !important;
+     transform: scale(1) translateZ(0px) !important;
+  }
+   .cf:before, .cf:after {
+     content: " ";
+     display: table;
+  }
+   .cf:after {
+     clear: both;
+  }
+   .cf {
+     *zoom: 1;
+  }
+   
+      </style>
+
+  </head>
+  <body>
+
+    <!-- Header Area wrapper Starts -->
+    <header id="header-wrap"   style="background-color: white;">
+      <!-- Navbar Start -->
+      <nav class="navbar navbar-expand-lg bg-inverse fixed-top scrolling-navbar  navbar-light" style="background-color: white;">
+          <div class="container">
+            <div class="theme-header clearfix">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-toggle="collapse" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                  <span class="lni-menu"></span>
+                  <span class="lni-menu"></span>
+                  <span class="lni-menu"></span>
+                </button>
+                <a href="/" class="navbar-brand"><img src="https://www.deloservices.com/images/delomainlogo.png" alt="delologo"   > </a>
+              </div>
+              <div class="collapse navbar-collapse" id="main-navbar">
+                <ul class="navbar-nav mr-auto w-100 justify-content-end">
+                  <li class="nav-item dropdown"  style="margin-top: 15px; " >
+                    <a class="nav-link " href="/" aria-expanded="false">
+                      Home
+                    </a>
+                   
+                  </li>
+               
+                 
+                 
+                  <% if(login == true){ %>
+                  <li class="nav-item dropdown"  style="margin-top: 15px;" >
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="lnr lnr-user"></i> My Account
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="/booking"><i class="lnr lnr-cart"></i> My Booking</a></li>
+                     
+                      <li><a class="dropdown-item" href="/login/logout"><i class="lnr lnr-file-add"></i>Logout</a></li>
+                    </ul>
+                  </li>
+                  <% } else { %>
+
+                    <li class="nav-item dropdown"  style="margin-top: 15px;">
+                      <a class="nav-link" href="/login"  aria-expanded="false">
+                       Login
+                      </a>
+                     
+                    </li>
+
+                    <% } %>    
+
+
+
+                    <li class="nav-item dropdown"  style="margin-top: 15px;">
+                      <a class="nav-link" href="/delo-work"  aria-expanded="false">
+                       For business
+                      </a>
+                     
+                    </li>
+
+                  <li class="postadd" style="margin-top: 35px;">
+                    <button type="button" class="btn btn-primary teammember">Become a Team Member</button>
+                  </li>
+                 
+                  <li class="postadd" style="margin-top: 35px;margin-left:10px ">
+                    <a  href="https://play.google.com/store/apps/details?id=com.deloservices.deloservices"  aria-expanded="false">
+                      <button type="button" class="btn btn-primary teammember">Download the app</button>
+                     </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="mobile-menu" data-logo="/assets/img/Delo Logo.png"></div>
+        </nav>
+      <!-- Navbar End -->
+      <!-- Navbar End -->
+    </header>
+    <!-- Header Area wrapper End -->
+<!--slider start-->
+
+
+
+
+
+
+    <!-- Page Header Start -->
+    <div class="page-header" style="background: url(/assets/img/banner1.jpg);">
+      <div class="container">
+        <div class="row">         
+          <div class="col-md-12">
+           
+    <div class="slider--teams">
+      <div class="slider--teams__team">
+        <ul id="list" class="cf">
+          
+         
+          
+          
+        </ul>
+      </div>
+    </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Page Header End -->  
+  
+    <!-- Start Content -->
+    <div id="content" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-sm-12 col-md-12 col-xs-12"> 
+            <!-- Start Post -->
+            <div class="blog-post">
+              <!-- Post thumb -->
+              <div class="post-thumb">
+                  <img class="img-fluid" src="/images/<%=result[0][0].subcategoryimage%>" style="width:450px;height:250px;" alt="services">
+                <div class="hover-wrap reviews">
+                    
+                  <% for(i=0;i<result[2].length;i++) { %>
+                  <div class="doctor-card">
+                        <div class="info">
+                            <div class="avatar">
+                                <img src="/images/<%=result[2][i].team_image%>" title = "<%=result[2][i].team_name%>"style="width:60px;height:60px;" alt="doc name">
+                            </div>
+                      <div class="details">
+                          <div class="name"><%=result[2][i].team_name%></div>
+                          <div class="ratings" style="float: right;">
+                              <span class="rating-control">
+                             <button type="button" class="btn btn-info information" id="<%=result[2][i].service_agent%>">View More</button>
+                                  
+                              </span>
+                            
+                          </div>
+                      </div>
+                        </div>
+                        <div class="actions">
+                            <div class="ratings">
+                                <span class="rating-control">
+                                    <b><%=result[2][i].name%></b>
+                                    <%if(result[2][i].rating=='1'){ %>
+                                     <i class="fa fa-star" style="color:red;font-size: 10px;"></i>
+                                     <% } else if(result[2][i].rating=='2'){ %>
+                                    <i class="fa fa-star" style="color:red;font-size: 10px;"></i> 
+                                    <i class="fa fa-star" style="color:red;font-size: 10px;"></i>
+                                    <% } else if(result[2][i].rating=='3'){ %> 
+                                    <i class="fa fa-star" style="color:red;font-size: 10px;"></i> 
+                                    <i class="fa fa-star" style="color:red;font-size: 10px;"></i> 
+                                    <i class="fa fa-star" style="color:red;font-size: 10px;"></i> 
+                                    <% } else if(result[2][i].rating=='4'){ %> 
+                                      <i class="fa fa-star" style="color:red;font-size: 10px;"></i> 
+                                      <i class="fa fa-star" style="color:red;font-size: 10px;"></i> 
+                                      <i class="fa fa-star" style="color:red;font-size: 10px;"></i> 
+                                      <i class="fa fa-star" style="color:red;font-size: 10px;"></i> 
+                                      <% } else { %> 
+                                        <i class="fa fa-star" style="color:red;font-size: 10px;"></i> 
+                                        <i class="fa fa-star" style="color:red;font-size: 10px;"></i> 
+                                        <i class="fa fa-star" style="color:red;font-size: 10px;"></i> 
+                                        <i class="fa fa-star" style="color:red;font-size: 10px;"></i> 
+                                        <i class="fa fa-star" style="color:red;font-size: 10px;"></i> 
+                                    <% } %>
+                                   <br> <%=result[2][i].review%>.
+                                    
+                                </span>
+                              
+                            </div>
+                         
+                         
+                        </div>
+                       
+                    </div>
+
+<% } %>
+
+
+<!--end-->
+
+                </div>
+              </div>
+               </div>
+            </div>
+
+         <!--Sidebar-->
+         <div class="col-sm-12 col-md-12 col-lg-8 col-xs-12">
+            <div class="page-content">
+             
+                <div class="dashboard-box">
+                  <h1 class="dashbord-title"><%=result[0][0].subcategoryname%></h1>
+
+
+            
+
+                </div>
+
+
+
+
+                <% for(i=0;i<result[0].length;i++){ %>
+
+                
+               
+              
+
+   
+                    <div class="product col-md-7 service-image-left">
+                    
+                    
+                            <img id="item-display" src="https://www.deloservices.com/images/<%=result[0][i].logo%>" title="<%= result[0][i].name %>" style="width:250px;height:150px;border-radius: 15px;"  alt="logo"></img>
+                        
+                    </div>
+                    
+                    
+                
+                    
+                <div class="col-md-4">
+                    <div class="product-title"><strong><h3 style="font-size: 18px;color:black"><%=result[0][i].name%></h3></strong></div>
+                   
+
+                    <% if(result[0][i].specification1 == null || result[0][i].specification1 == "" || result[0][i].specification1 == "null" || result[0][i].specification1 == [] ) { %>
+ <p></p>
+                      <% } else if(result[0][i].specification2 == null || result[0][i].specification2 == "" || result[0][i].specification2 == "null" || result[0][i].specification2 == [] ) { %>
+
+
+                    <div class="product-desc"><h2 style="font-size: 14px;color:black"><%=result[0][i].specification1%></h2></div>
+
+                    <% } else if(result[0][i].specification3 == null || result[0][i].specification3 == "" || result[0][i].specification3 == "null" || result[0][i].specification3 == [] ) { %>
+                      <div class="product-desc"><h2 style="font-size: 14px;color:black"><%=result[0][i].specification1%></h2></div>
+                     <div class="product-desc"><h2 style="font-size: 14px;color:black"><%=result[0][i].specification2%></h2></div>
+                   
+                   
+                     <% } else if(result[0][i].specification4 == null || result[0][i].specification4 == "" || result[0][i].specification4 == "null" || result[0][i].specification4 == [] ) { %>
+                      <div class="product-desc"><h2 style="font-size: 14px;color:black"><%=result[0][i].specification1%></h2></div>
+                     <div class="product-desc"><h2 style="font-size: 14px;color:black"><%=result[0][i].specification2%></h2></div>
+                     <div class="product-desc"><h2 style="font-size: 14px;color:black"><%=result[0][i].specification3%></h2></div>
+                    
+                    
+                     <% } else if(result[0][i].specification5 == null || result[0][i].specification5 == "" || result[0][i].specification5 == "null" || result[0][i].specification5 == [] ) { %>
+                      <div class="product-desc"><h2 style="font-size: 14px;color:black"><%=result[0][i].specification1%></h2></div>
+                     <div class="product-desc"><h2 style="font-size: 14px;color:black"><%=result[0][i].specification2%></h2></div>
+                     <div class="product-desc"><h2 style="font-size: 14px;color:black"><%=result[0][i].specification3%></h2></div>
+                     <div class="product-desc"><h2 style="font-size: 14px;color:black"><%=result[0][i].specification4%></h2></div>
+                    
+                    <% } else {%>
+                      <div class="product-desc"><h2 style="font-size: 14px;color:black"><%=result[0][i].specification1%></h2></div>
+                      <div class="product-desc"><h2 style="font-size: 14px;color:black"><%=result[0][i].specification2%></h2></div>
+                      <div class="product-desc"><h2 style="font-size: 14px;color:black"><%=result[0][i].specification3%></h2></div>
+                      <div class="product-desc"><h2 style="font-size: 14px;color:black"><%=result[0][i].specification4%></h2></div>
+                      <div class="product-desc"><h2 style="font-size: 14px;color:black"><%=result[0][i].specification5%></h2></div>
+
+                    <% } %>
+                    <% if(result[0][i].time == null || result[0][i].time == "" || result[0][i].time == "null" || result[0][i].time == [] ) { %>
+                    <hr>
+                    <div class="product-price"><s>Rs. <%= result[0][i].total_price %> <%=result[0][i].extra%></s> &nbsp; Rs. <%= result[0][i].price %> <%=result[0][i].extra%></div>
+                    <div class="product-stock"><%= result[0][i].discount %> %off</div>
+                 
+          <% }  else { %>
+            <hr>
+          
+            <div class="product-price">  <img src="https://img.icons8.com/office/20/000000/time.png" alt="time"></strong> <%= result[0][i].time%> </div><br>
+       
+            <div class="product-price"><s>Rs. <%= result[0][i].total_price %> <%=result[0][i].extra%></s> &nbsp; Rs. <%= result[0][i].price %> <%=result[0][i].extra%>   </div>
+            <div class="product-stock"><%= result[0][i].discount %> %off</div>
+            <% } %>
+                   
+                    <div class="btn-group cart" style="float: right">
+
+
+
+
+                      <!-- <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-link">Rate Card</button>
+                 &nbsp;&nbsp;  -->
+                      <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-success myBtn"  id="<%= result[0][i].id %>" price="<%= result[0][i].price %>" categoryid="<%=result[0][i].categoryid%>" subcategoryid = "<%=result[0][i].subcategoryid%>" >Add to Cart</button>
+                    </div>
+                    <br><br><br>
+                </div>
+         
+          
+       
+
+            <% } %>
+              
+        
+          <!--End sidebar-->
+
+      
+    <!-- End Content -->
+
+    <!-- Footer Section Start -->
+   
+
+    <div class="footer-fixed">
+        <a href="/booking/mycart"><button type="button" class="btn btn-success btn-info btn-lg checkout" style="float:right;position: relative;right:10px;">Checkout</button></a>
+
+      </div>
+      
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.1.0/velocity.min.js"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/javascripts/jquery.js"></script>
+
+<script>
+
+var sliderTeam = (function(document, $) {
+  
+  'use strict';
+  
+  var $sliderTeams = $('.slider--teams'),
+      $list = $('#list'),
+      $listItems = $('#list li'),
+      $nItems = $listItems.length,
+      $nView = 3,
+      autoSlider,
+      $current = 0,
+      $isAuto = true,
+      $acAuto = 2500,
+      
+      _init = function() {
+        _initWidth();
+        _eventInit();
+      },
+      
+      _initWidth = function() {
+        $list.css({
+          'margin-left': ~~(100 / $nView) + '%',
+          'width': ~~(100 * ($nItems / $nView)) + '%'
+        });
+        $listItems.css('width', 100 / $nItems + '%');
+        $sliderTeams.velocity({ opacity: 1 }, { display: "block" }, { delay:1000 });
+      },
+      
+      _eventInit = function() {
+        
+        window.requestAnimFrame = (function() {
+          return  window.requestAnimationFrame       || 
+              window.webkitRequestAnimationFrame || 
+              window.mozRequestAnimationFrame    || 
+              window.oRequestAnimationFrame      || 
+              window.msRequestAnimationFrame     || 
+              function(callback, element){
+                window.setTimeout(callback, 1000 / 60);
+              };
+        })();
+
+        window.requestInterval = function(fn, delay) {
+            if( !window.requestAnimationFrame       && 
+                !window.webkitRequestAnimationFrame && 
+                !window.mozRequestAnimationFrame    && 
+                !window.oRequestAnimationFrame      && 
+                !window.msRequestAnimationFrame)
+                    return window.setInterval(fn, delay);
+            var start = new Date().getTime(),
+            handle = new Object();
+
+            function loop() {
+                var current = new Date().getTime(),
+                delta = current - start;
+                if(delta >= delay) {
+                    fn.call();
+                    start = new Date().getTime();
+                }
+                handle.value = requestAnimFrame(loop);
+            };
+            handle.value = requestAnimFrame(loop);
+            return handle;
+        }
+
+        window.clearRequestInterval = function(handle) {
+            window.cancelAnimationFrame ? window.cancelAnimationFrame(handle.value) :
+            window.webkitCancelRequestAnimationFrame ? window.webkitCancelRequestAnimationFrame(handle.value)   :
+            window.mozCancelRequestAnimationFrame ? window.mozCancelRequestAnimationFrame(handle.value) :
+            window.oCancelRequestAnimationFrame ? window.oCancelRequestAnimationFrame(handle.value) :
+            window.msCancelRequestAnimationFrame ? msCancelRequestAnimationFrame(handle.value) :
+            clearInterval(handle);
+        };
+        
+        $.each($listItems, function(i) {
+          var $this = $(this);
+          $this.on('touchstart click', function(e) {
+            e.preventDefault();
+            _stopMove(i);
+            _moveIt($this, i);
+          });
+        });
+        
+        autoSlider = requestInterval(_autoMove, $acAuto);
+      },
+      
+      _moveIt = function(obj, x) {
+        
+        var n = x;
+        
+        obj.find('figure').addClass('active');        
+        $listItems.not(obj).find('figure').removeClass('active');
+        
+        $list.velocity({
+          translateX: ~~((-(100 / $nItems)) * n) + '%',
+          translateZ: 0
+        }, {
+          duration: 1000,
+          easing: [400, 26],
+          queue: false
+        });
+        
+      },
+      
+      _autoMove = function(currentSlide) {
+        if ($isAuto) { 
+          $current = ~~(($current + 1) % $nItems);
+        } else {
+          $current = currentSlide;
+        }
+        
+        _moveIt($listItems.eq($current), $current);
+      },
+      
+      _stopMove = function(x) {
+        clearRequestInterval(autoSlider);
+        $isAuto = false;
+        _autoMove(x);
+      };
+  
+  return {
+    init: _init
+  };
+
+})(document, jQuery);
+
+$(window).load(function(){
+  'use strict';
+  sliderTeam.init();
+});
+</script>
+  </body>
+
+
+  <script>
+  
+      $('.subcategory').click(function(){
+        const id = $(this).attr('id');
+        const categoryid = $(this).attr('categoryid');
+        $.post('/subcategory/getid',{id,categoryid},data=>{
+          window.location.href = '/subcategory/byservices'
+        })
+      })
+      </script>
+
+<script>
+
+    $('.checkout').hide()
+    
+    $(".myBtn").click(function(){
+           booking_id = $(this).attr('id');
+          price = $(this).attr('price');
+          subcategoryid = $(this).attr('subcategoryid')
+          const categoryid = $(this).attr('categoryid');
+
+          
+           
+           $.post('/booking/cart',{booking_id,price,subcategoryid,categoryid},data=>{
+              if(data =='Success'){
+                swal("Successfully Add to Cart", "", "success")
+      $('.checkout').show()
+            }
+            else if(data == 'Can not book two different categories services simultaneously. Replace cart ?'){
+              const a = confirm('Can not book two different categories services simultaneously. Replace cart ?');
+              if(a){
+                  $.post('/booking/cart/replace',{booking_id,price,subcategoryid,categoryid},data=>{
+                  if(data =='Success'){
+                    swal("Successfully Add to cart", "", "success")
+    $('.checkout').show()
+    }
+                })
+              }
+               
+            }
+            else if(data == 'Beacuse you are a team member of this services, you can not book this service'){
+              alert('Beacuse you are a team member of this category, you can not book this service')
+            }
+            else{
+              window.location.href = '/login'
+            }
+          })
+    
+               
+               
+    
+    
+    })
+    
+    
+    
+    $.getJSON('/booking/cart/all',data=>{
+      if(data[0]){
+       $('.checkout').show()
+      }
+      
+    })
+    
+    
+    </script>
+    
+   
+   
+    <script>
+    $('.information').click(function(){
+      const id = $(this).attr('id');
+  window.location = '/team_dashboard/details?id=' + id;
+    })
+    </script>
+
+<script type="text/javascript">
+  (function() {
+  window.__insp = window.__insp || [];
+  __insp.push(['wid', 1301399890]);
+  var ldinsp = function(){
+  if(typeof window.__inspld != "undefined") return; window.__inspld = 1; var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js?wid=1301399890&r=' + Math.floor(new Date().getTime()/3600000); var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); };
+  setTimeout(ldinsp, 0);
+  })();
+  </script>
+
+
+
+
+<script>
+$('.teammember').click(function(){
+  window.location.href = '/team_login'
+})
+</script>
+
+
+    
+<script type='application/ld+json'> 
+  {
+    "@context": "http://www.schema.org",
+    "@type": "LocalBusiness",
+    "name": "DeloServices",
+    "url": "https://www.deloservices.com/",
+    "logo": "https://www.deloservices.com/images/delofabicon.png",
+    "image": "https://www.deloservices.com/images/delofabicon.png",
+    "description": "Delo Services is your one stop destination for all your home needs from our trusted & certified professionals.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": " D-64 F/F No. 1 Abul Fazal Enclave, Part - 1 Jamia Nagar, New Delhi, South Delhi - 110025 ",
+      "addressLocality": "New Delhi",
+      "addressRegion": "New Delhi",
+      "postalCode": "110025",
+      "addressCountry": "India"
+    },
+   "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+918088879880",
+      "contactType": "Customer Support"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "28.5560405",
+      "longitude": "77.2965644"
+    },
+  "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "00:00",
+      "closes": "23:59"
+    },
+    "hasMap": "https://www.google.com/maps/dir//deloservices/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x390d1d1ad6fabda7:0x15c4f22ca3c977d?sa=X&ved=2ahUKEwjtvPb3roDnAhVA73MBHf1hBQgQ9RcwDXoECB0QDA",
+    
+   "sameAs": [
+      "https://www.facebook.com/Deloservices/",
+      "https://twitter.com/DeloPvt",
+      "https://www.instagram.com/delo_services_pvt_ltd/",
+      "https://www.youtube.com/channel/UCzrvM1_meaSOsf-6dfGHvEw",
+      "https://www.linkedin.com/company/delo-services-pvt-ltd",
+      "https://www.deloservices.com"
+    ]
+  }
+   </script>
+
+   <script src="/assets/js/jquery-min.js"></script>
+   <script src="/assets/js/popper.min.js"></script>
+   <script src="/assets/js/bootstrap.min.js"></script>
+   <script src="/assets/js/jquery.counterup.min.js"></script>
+   <script src="/assets/js/waypoints.min.js"></script>
+   <script src="/assets/js/wow.js"></script>
+   <script src="/assets/js/owl.carousel.min.js"></script>
+   <script src="/assets/js/jquery.slicknav.js"></script>
+   <script src="/assets/js/main.js"></script>
+   <script src="/assets/js/form-validator.min.js"></script>
+   <script src="/assets/js/contact-form-script.min.js"></script>
+   <script src="/assets/js/summernote.js"></script>
+</html>

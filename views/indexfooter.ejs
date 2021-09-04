@@ -1,0 +1,505 @@
+<style>
+
+  a{
+    color: white;
+  }
+  
+ 
+  
+    .fab-wrapper {
+      position: fixed;
+      bottom: 8rem;
+      right: 2rem;
+    }
+    .fab-checkbox {
+      display: none;
+    }
+    .fab {
+      position: absolute;
+      bottom: -2rem;
+      right: -0.7rem;
+      width: 3.7rem;
+      height: 3.7rem;
+      background: rgb(165, 97, 70);
+      border-radius: 50%;
+      background: #e72222;
+      /* box-shadow: 0px 5px 20px #f3481e; */
+      transition: all 0.3s ease;
+      z-index: 1;
+      border-bottom-right-radius: 50%;
+      border: 1px solid #940505;
+      cursor: pointer;
+    }
+    
+    .fab:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      border-radius: 50%;
+      background-color: rgba(111, 196, 211, 0.1);
+    }
+    .fab-checkbox:checked ~ .fab:before {
+      width: 90%;
+      height: 90%;
+      left: 5%;
+      top: 5%;
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+    .fab:hover {
+      background: #ff491c;
+      /* box-shadow: 0px 5px 10px 5px #f3d4a6; */
+    }
+    
+    .fab-dots {
+      position: absolute;
+      height: 8px;
+      width: 8px;
+      background-color: white;
+      border-radius: 50%;
+      top: 50%;
+      transform: translateX(0%) translateY(-50%) rotate(0deg);
+      opacity: 1;
+      animation: blink 3s ease infinite;
+      transition: all 0.3s ease;
+    }
+    
+    .fab-dots-1 {
+      left: 15px;
+      animation-delay: 0s;
+    }
+    .fab-dots-2 {
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      animation-delay: 0.4s;
+    }
+    .fab-dots-3 {
+      right: 15px;
+      animation-delay: 0.8s;
+    }
+    
+    .fab-checkbox:checked ~ .fab .fab-dots {
+      height: 6px;
+    }
+    
+    .fab .fab-dots-2 {
+      transform: translateX(-50%) translateY(-50%) rotate(0deg);
+    }
+    
+    .fab-checkbox:checked ~ .fab .fab-dots-1 {
+      width: 32px;
+      border-radius: 10px;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    }
+    .fab-checkbox:checked ~ .fab .fab-dots-3 {
+      width: 32px;
+      border-radius: 10px;
+      right: 50%;
+      transform: translateX(50%) translateY(-50%) rotate(-45deg);
+    }
+    
+    @keyframes blink {
+      50% {
+        opacity: 0.25;
+      }
+    }
+    
+    .fab-checkbox:checked ~ .fab .fab-dots {
+      animation: none;
+    }
+    
+    .fab-wheel {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      border: 1px solid transparent;
+      width: 11rem;
+      height: 11rem;
+      transition: all 0.3s ease;
+      transform-origin: bottom right;
+      transform: scale(0);
+    }
+    
+    .fab-checkbox:checked ~ .fab-wheel {
+      transform: scale(1);
+    }
+    .fab-action {
+      position: absolute;
+      background: #f5d98b;
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: White;
+      box-shadow: 0 0.1rem 1rem rgba(166, 190, 241, 0.82);
+      transition: all 1s ease;
+    
+      opacity: 0;
+    }
+    
+    .fab-checkbox:checked ~ .fab-wheel .fab-action {
+      opacity: 1;
+    }
+    
+    .fab-action:hover {
+      background-color: #f3c6a8;
+    }
+    
+    .fab-wheel .fab-action-1 {
+      right: -1rem;
+      top: 0;
+    }
+    
+    .fab-wheel .fab-action-2 {
+      right: 3.4rem;
+      top: 0.5rem;
+    }
+    .fab-wheel .fab-action-3 {
+      left: 0.5rem;
+      bottom: 3.4rem;
+    }
+    .fab-wheel .fab-action-4 {
+      left: 0;
+      bottom: -1rem;
+    }
+       
+    }
+    
+      @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700"); */
+      body {
+        
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+       
+      }
+      
+     
+      .scroll p {
+        color: #fff;
+        font-size: 1.5rem;
+      }
+      
+      .btn.book-now {
+        /* margin-top:100px; */
+        z-index: 500;
+        background: #ff9e1f;
+        border-radius: 4px;
+        color: #141313;
+        display: inline-block;
+        font-size: 1rem;
+        height: 30px;
+        line-height: 20px;
+        position: fixed;
+        right: 0;
+    
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+    
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
+        transform-origin: bottom right;
+      }
+      </style>
+  
+  
+  <section class="counter-section section-padding">
+    <div class="container">
+      <div class="row">
+        <!-- Counter Item -->
+        <div class="col-md-3 col-lg-2 col-sm-12 work-counter-widget">
+            <h3  style = "color : white;font-size:16px;"><a href="https://deloservices.com/delhi-ncr-salon-at-home" >Saloon at home</a></h3>
+         <br>
+         <h3  style = "color : white;font-size:16px;"><a href="https://deloservices.com/delhi-ncr-beauty-at-home" >Beauty at home </a></h3>
+         <br>
+         <h3  style = "color : white;font-size:16px;"><a href="https://deloservices.com/delhi-ncr-makeup-and-hairstyle" >Makeup & hairstyle</a></h3>
+         <br>
+         <h3  style = "color : white;font-size:16px;"><a href="https://deloservices.com/delhi-ncr-massage-for-women" >Massage for women</a></h3>
+         <br>
+         <h3  style = "color : white;font-size:16px;"><a href="https://deloservices.com/delhi-ncr-massage-for-men" >Massage for men</a></h3>
+         <br>
+        
+        </div>
+        <!-- Counter Item -->
+      
+        <!-- Counter Item -->
+        <div class="col-md-3 col-lg-2 col-sm-12 work-counter-widget">
+            <h3  style = "color : white;font-size:16px;"><a href="https://deloservices.com/delhi-ncr-home-cleaning" >Home cleaning</a></h3>
+          <br>
+          <h3  style = "color : white;font-size:16px;"><a href="https://deloservices.com/delhi-ncr-fabric-cleaning" >Fabric Cleaning</a></h3>
+          <br>
+          <h3  style = "color : white;font-size:16px;"><a href="https://deloservices.com/delhi-ncr-pest-control-services" >Pest Control </a></h3>
+          <br>
+          <h3  style = "color : white;font-size:16px;"><a href="https://deloservices.com/delhi-ncr-packers-and-movers" >Packers and Movers</a></h3>
+          <br>
+          <h3  style = "color : white;font-size:16px;"><a href="https://deloservices.com/delhi-ncr-laundry-services" >Laundry
+          </a></h3>
+          <br>
+          
+        </div>
+        <div class="col-md-3 col-lg-2 col-sm-12 work-counter-widget">
+            <h3 style="color: white;font-size:16px;"><a href="https://deloservices.com/delhi-ncr-carpentry" >Carpenter</a></h3>
+           <br>
+           <h3  style = "color : white;font-size:16px;"><a href="https://deloservices.com/delhi-ncr-electrician" >Electrician</a></h3>
+           <br>
+           <h3  style = "color : white;font-size:16px;"><a href="https://deloservices.com/delhi-ncr-plumber" >Plumber</a></h3>
+           <br>
+           <h3  style = "color : white;font-size:16px;"><a href="https://deloservices.com/delhi-ncr-painting" >Painter</a></h3>
+           <br>
+           
+          </div>
+        <div class="col-md-3 col-lg-2 col-sm-12 work-counter-widget">
+            <h3  style = "color : white;font-size:16px;"><a href="https://deloservices.com/delhi-ncr-home-appliances" >Home Appliances</a></h3>
+          <br>
+          <h3  style = "color : white;font-size:16px;"><a href="https://deloservices.com/delhi-ncr-ac-services" >A C Services</a></h3>
+          <br>
+          <h3  style = "color : white;font-size:16px;"><a href="https://deloservices.com/delhi-ncr-television" >Television</a></h3>
+          <br>
+          <h3  style = "color : white;font-size:16px;"><a href="https://deloservices.com/delhi-ncr-water-purifier" >Water Purifier</a></h3>
+          <br>
+         
+        </div>
+        <div class="col-md-3 col-lg-2 col-sm-12 work-counter-widget">
+            <h3  style = "color : white;font-size:16px;"><a href="https://deloservices.com/delhi-ncr-yoga" >Yoga </a></h3>
+         <br>
+         <h3  style = "color : white;font-size:16px;"><a href="https://deloservices.com/delhi-ncr-fitness" >Fitness</a></h3>
+         <br>
+         <h3  style = "color : white;font-size:16px;"><a href="https://deloservices.com/delhi-ncr-dietician" >Dietician</a></h3>
+         <br>
+         <h3  style = "color : white;font-size:16px;"><a href="https://deloservices.com/delhi-ncr-physiotherapist" >Physiotherapist</a></h3>
+         <br>
+  
+      
+       
+        </div>
+  
+        <!-- Counter Item -->
+        <div class="col-md-3 col-lg-2 col-sm-12 work-counter-widget">
+            <h3  style = "color : white;font-size:16px;"><a href="https://deloservices.com/delhi-ncr-gst-registration" >GST Registration</a></h3>
+         <br>
+         <h3  style = "color : white;font-size:16px;"><a href="https://deloservices.com/delhi-ncr-company-closure-and-dissolution" >Company Closure and Dissolution </a></h3>
+         <br>
+         <h3  style = "color : white;font-size:16px;"><a href="https://deloservices.com/delhi-ncr-ca-cs" >CA CS</a></h3>
+         <br>
+  
+        
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+  
+  <footer>
+    <div>
+      <a class="btn book-now desktop open-datepicker-popup" href="/team_login" title="Book Now">Join Free</a>
+      <div class="scroll"></div>
+     </div>
+      <!-- Footer Area Start -->
+      <section class="footer-Content">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-4 col-xs-6 col-mb-12">
+              <div class="widget ">
+                <div class="footer-logo"><img src="/images/delofooterlogo.png"  alt="delo_logo" style="position:relative;bottom:20px;width:80px;"></div>
+                <div class="textwidget">
+                  <!-- <h1 style="position:relative;bottom:10px;font-size:15px;color:white">CIN:U74999DL2019PTC351555.</h1> -->
+                  <p>Delo Service Pvt Ltd is your one Stop Destination for all B2B & B2C Search Engine and Market Place.</p>
+                           
+                </div>
+                <ul class="mt-3 footer-social">
+                  <li><a class="facebook" rel="nofollow" target="blank" href="https://www.facebook.com/Delo-Services-Pvt-Ltd-357112871580780/"><i class="lni-facebook-filled"></i></a></li>
+                  <li><a class="twitter" rel="nofollow" target="blank"  href="https://twitter.com/DeloPvt"><i class="lni-twitter-filled"></i></a></li>
+                  <li><a class="linkedin" rel="nofollow" target="blank"  href="https://www.linkedin.com/company/delo-services-pvt-ltd"><i class="lni-linkedin-fill"></i></a></li>
+                   <li><a class="linkedin" rel="nofollow" target="blank"  href="https://www.instagram.com/delo_services_pvt_ltd/"><i class="lni-instagram"></i></a></li>
+                   <li><a class="linkedin" rel="nofollow" target="blank"  href="https://www.youtube.com/channel/UCzrvM1_meaSOsf-6dfGHvEw"><i class="fa fa-youtube-play"></i></a></li>
+                 
+                   <li style="margin-top: 10px;"><a class="linkedin" rel="nofollow" target="blank"  href="https://in.pinterest.com/deloservices/"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+                </ul> 
+              </div>
+            </div>
+          
+           
+            <div class="col-lg-3 col-md-4 col-xs-6 col-mb-12">
+              <div class="widget">
+                <h3 class="block-title">Contact Info</h3>
+                <ul class="contact-footer">
+                  <li><a href ="tel:8448448638" style="color: white">
+                    <strong><i class="lni-phone"></i></strong><span>+91 8448448638</span>
+                  </li></a>
+                 
+                  <li>
+                    <strong><i class="lni-envelope"></i></strong><span><a href="mailto:cs@deloservices.com">cs@deloservices.com </a> </span>
+                  </li>
+                 
+                </ul>         
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+              <div class="single-footer-widget mb-80">
+                  <!-- Widget Title -->
+                  <h3 class="block-title">Delo APP Avaliable on</h3>
+  
+                  <!-- Single Blog Area -->
+                  <div class="latest-blog-area">
+               <a href="https://app.appsflyer.com/com.deloservices.deloservices?pid=MobileWeb&c=home_app_buttons"> <img src="/images/android1.png" style="width:110px; height:44px" alt="google play store"></a>
+                <a href="https://app.appsflyer.com/id1497496631?pid=MobileWeb&c=home_app_buttons"><img src="/images/apple1.png" style="width:110px; height:44px" alt="apple store"> </a>
+                    
+                  </div>
+  
+                  <!-- Single Blog Area -->
+                  <div class="latest-blog-area">
+                    
+                    
+                  </div>
+              </div>
+          </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 col-mb-12">
+              <div class="widget">
+                <h3 class="block-title">Quick Link</h3>
+                <ul class="menu">
+               
+                  <li><a href="/about-us" rel="nofollow">About us</a></li>
+                 
+                  <li><a href="/faq" rel="nofollow"> FAQ's</a></li>
+                
+                  <li><a href="/termsconditions" rel="nofollow"> Term & Condition</a></li>
+                  
+                  <li><a href="/privacypolicy" rel="nofollow">Privacy Policy</a></li>
+                  
+                  <li><a href="/refundpolicy" rel="nofollow"> Refund Policy</a></li>
+  
+                  <li><a href="/site-map" rel="nofollow"> Sitemap</a></li>
+                 
+                </ul>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </section>
+      <!-- Footer area End -->
+   <!-- Copyright Start  -->
+   <div id="copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="site-info text-center">
+            <p style="font-size: 24px;">Currently Avaliable In</p>
+            <p style="font-size: 20px;">Noida | Greater Noida | Delhi | Gurugram | Ghaziabad | Faridabad </p>
+            <p>© 2019-20 <a href="https://deloservices.com">Delo Services Pvt. Ltd</a></p>  
+          </div>     
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Copyright End -->
+  
+  
+   
+    </footer>
+  
+  
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="/assets/js/jquery-min.js"></script>
+    <script src="/assets/js/popper.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/jquery.counterup.min.js"></script>
+    <script src="/assets/js/waypoints.min.js"></script>
+    <script src="/assets/js/wow.js"></script>
+    <script src="/assets/js/owl.carousel.min.js"></script>
+    <script src="/assets/js/jquery.slicknav.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/form-validator.min.js"></script>
+    <script src="/assets/js/contact-form-script.min.js"></script>
+    <script src="/assets/js/summernote.js"></script>
+    <script src="/javascripts/dial_basic_code.js"></script>
+   
+  
+       <!--Start of Tawk.to Script-->
+    <script>
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/5d4280cfe5ae967ef80dd61e/default';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+      })();
+      </script>
+  
+ 
+  
+  
+  
+  
+      
+  <script type='application/ld+json'> 
+    {
+      "@context": "http://www.schema.org",
+      "@type": "LocalBusiness",
+      "name": "DeloServices",
+      "url": "https://www.deloservices.com/",
+      "logo": "https://www.deloservices.com/images/delofabicon.png",
+      "image": "https://www.deloservices.com/images/delofabicon.png",
+      "description": "Delo Services is your one stop destination for all your home needs from our trusted & certified professionals.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": " D-64 F/F No. 1 Abul Fazal Enclave, Part - 1 Jamia Nagar, New Delhi, South Delhi - 110025 ",
+        "addressLocality": "New Delhi",
+        "addressRegion": "New Delhi",
+        "postalCode": "110025",
+        "addressCountry": "India"
+      },
+     "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+918448448638",
+        "contactType": "Customer Support"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "28.5560405",
+        "longitude": "77.2965644"
+      },
+    "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "hasMap": "https://www.google.com/maps/dir//deloservices/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x390d1d1ad6fabda7:0x15c4f22ca3c977d?sa=X&ved=2ahUKEwjtvPb3roDnAhVA73MBHf1hBQgQ9RcwDXoECB0QDA",
+      
+     "sameAs": [
+        "https://www.facebook.com/Deloservices/",
+        "https://twitter.com/DeloPvt",
+        "https://www.instagram.com/delo_services_pvt_ltd/",
+        "https://www.youtube.com/channel/UCzrvM1_meaSOsf-6dfGHvEw",
+        "https://www.linkedin.com/company/delo-services-pvt-ltd",
+        "https://www.deloservices.com"
+      ]
+    }
+     </script>
+    
+    
+    
+  
+  </body>
+  </html>
+  

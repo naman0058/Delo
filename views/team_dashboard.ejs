@@ -1,0 +1,312 @@
+
+
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Delo Team - Team Dashboard</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon
+		============================================ -->
+        <link rel="shortcut icon" type="images/x-icon" href="/images/delofabicon.png">
+    <!-- Google Fonts
+		============================================ -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet">
+    <!-- Bootstrap CSS
+		============================================ -->
+    <link rel="stylesheet" href="/team_dashboard_style/css/bootstrap.min.css">
+    <!-- font awesome CSS
+		============================================ -->
+    <link rel="stylesheet" href="/team_dashboard_style/css/font-awesome.min.css">
+    <!-- owl.carousel CSS
+		============================================ -->
+    <link rel="stylesheet" href="/team_dashboard_style/css/owl.carousel.css">
+    <link rel="stylesheet" href="/team_dashboard_style/css/owl.theme.css">
+    <link rel="stylesheet" href="/team_dashboard_style/css/owl.transitions.css">
+    <!-- meanmenu CSS
+		============================================ -->
+    <link rel="stylesheet" href="/team_dashboard_style/css/meanmenu/meanmenu.min.css">
+    <!-- animate CSS
+		============================================ -->
+    <link rel="stylesheet" href="/team_dashboard_style/css/animate.css">
+    <!-- normalize CSS
+		============================================ -->
+    <link rel="stylesheet" href="/team_dashboard_style/css/normalize.css">
+    <!-- mCustomScrollbar CSS
+		============================================ -->
+    <link rel="stylesheet" href="/team_dashboard_style/css/scrollbar/jquery.mCustomScrollbar.min.css">
+    <!-- jvectormap CSS
+		============================================ -->
+    <link rel="stylesheet" href="/team_dashboard_style/css/jvectormap/jquery-jvectormap-2.0.3.css">
+    <!-- Notika icon CSS
+		============================================ -->
+    <link rel="stylesheet" href="/team_dashboard_style/css/notika-custom-icon.css">
+    <!-- wave CSS
+		============================================ -->
+    <link rel="stylesheet" href="/team_dashboard_style/css/wave/waves.min.css">
+    <!-- main CSS
+		============================================ -->
+    <link rel="stylesheet" href="/team_dashboard_style/css/main.css">
+    <!-- style CSS
+		============================================ -->
+    <link rel="stylesheet" href="/team_dashboard_style/style.css">
+    <!-- responsive CSS
+		============================================ -->
+    <link rel="stylesheet" href="/team_dashboard_style/css/responsive.css">
+    <!-- modernizr JS
+		============================================ -->
+    <script src="/team_dashboard_style/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+   <!-- Start Header Top Area -->
+   <div class="header-top-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="logo-area">
+                        <a href="#"><img src="/images/logo3.png" alt="" style="width:30px" /></a>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <div class="header-top-menu">
+                        <ul class="nav navbar-nav notika-top-nav">
+                            
+                                <li class="nav-item nc-al"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false"
+                                        class="nav-link dropdown-toggle"><span><img src="https://img.icons8.com/ultraviolet/30/000000/user.png"></span></a>       <div role="menu" class="dropdown-menu message-dd animated zoomIn">
+                                   
+                                    <div class="hd-message-info">
+                                        <a href="#">
+                                            <div class="hd-message-sn">
+                                              
+                                                <div class="hd-mg-ctn">
+                                                    <a href="/team_dashboard/logout"><button type="button" class="btn btn-danger btn-block">Logout</button></a>
+                                                    
+                                                </div>
+                                            </div>
+                                        </a>
+                                      
+                                      
+                                       
+                                       
+                                    </div>
+                                   
+                                </div>
+                            </li>
+                           
+                          
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Mobile Menu start -->
+    <div class="mobile-menu-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="mobile-menu">
+                        <nav id="dropdown">
+                            <ul class="mobile-menu-nav">
+                                <li><a data-toggle="collapse" data-target="#Charts" href="team_dashboard">Home</a>    <ul class="collapse dropdown-header-top">
+                                        <li><a href="/team_dashboard">Ongoing</a></li>
+                                        <li id="upcoming_div"><a>Upcoming</a></li>
+                                    </ul>
+                                </li>
+                                <li><a  href="/team_dashboard/leads">New Leads</a>
+                                   
+                                </li>
+                                <li><a href="/team_dashboard/wallets">Wallets</a>
+                                   
+                                </li>
+                                <li><a href="/team_dashboard/history">History</a>
+                                   
+                                    <ul class="collapse dropdown-header-top">
+                                            <li><a href="/team_dashboard/history">Leads</a></li>
+                                                <li id="mobile_wallet_div"><a>Wallet</a></li>
+                                                </li>
+                                    </ul>
+                                    
+                                </li>
+                                <li><a href="/team_dashboard/rating">Rating & Reviews</a>
+                                       
+                                </li>
+                             
+                              
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Mobile Menu end -->
+    <!-- Main Menu area start-->
+    <div class="main-menu-area mg-tb-40">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <ul class="nav nav-tabs notika-menu-wrap menu-it-icon-pro">
+                        <li class="active"><a data-toggle="tab" href="#Home"><img src="https://img.icons8.com/cute-clipart/20/000000/home-page.png"> Home</a>
+                        </li>
+                        <li><a href="/team_dashboard/leads"><img src="https://img.icons8.com/dusk/20/000000/omnichannel.png"> New Leads</a>
+                        </li>
+                        <li><a  href="/team_dashboard/wallets"><img src="https://img.icons8.com/cotton/20/000000/wallet--v1.png"> Wallets</a>
+                        </li>
+                        <li><a  href="/team_dashboard/history"><img src="https://img.icons8.com/ultraviolet/20/000000/payment-history.png"> History</a>
+                        </li>
+                        <li><a  href="/team_dashboard/rating"><img src="https://img.icons8.com/offices/20/000000/rating.png"> Rating & Reviews</a>
+                        </li>
+                       
+                    </ul>
+                    <div class="tab-content custom-menu-content">
+                        <div id="Home" class="tab-pane active in notika-tab-menu-bg animated flipInX">
+                            <ul class="notika-main-menu-dropdown">
+                               <li><a href="/team_dashboard">Ongoing</a>
+                                </li>
+                                <li id="upcoming_div_mobile"><a>Upcoming</a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                       
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main Menu area End-->
+    <!-- Start Status area -->
+<div id="wallet_history_show"></div> 
+  <div id="ongoing"></div>
+  <div id="upcoming"></div>
+
+    <!-- End Status area-->
+    <!-- Start Sale Statistic area-->
+    <div class="sale-statistic-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="sale-statistic-inne notika-shadow mg-tb-30">
+                        
+                      
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- End Sale Statistic area-->
+    <!-- Start Email Statistic area-->
+    <div class="notika-email-post-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="email-statis-inner notika-shadow">
+                        <div class="email-ctn-round">
+                            <div class="email-rdn-hd">
+								<h2>Leads Statistics</h2>
+							</div>
+                            <div class="email-statis-wrap">
+                                <div class="email-round-nock">
+                                    <input type="text" class="knob" value="0" data-rel="<%= result[0][0].ongoing_leads%>" data-linecap="round" data-width="130" data-bgcolor="#E4E4E4" data-fgcolor="#00c292" data-thickness=".10" data-readonly="true">
+                                </div>
+                                <div class="email-ctn-nock">
+                                    <p>Ongoing Leads</p>
+                                </div>
+                            </div>
+                            <div class="email-statis-wrap">
+                                <div class="email-round-nock">
+                                    <input type="text" class="knob" value="0" data-rel="<%= result[1][0].upcoming_leads%>" data-linecap="round" data-width="130" data-bgcolor="#E4E4E4" data-fgcolor="#00c292" data-thickness=".10" data-readonly="true">
+                                </div>
+                                <div class="email-ctn-nock">
+                                    <p>Upcoming Leads</p>
+                                </div>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <div class="recent-items-wp notika-shadow sm-res-mg-t-30">
+                        <div class="rc-it-ltd">
+                            <div class="recent-items-ctn">
+                                <div class="recent-items-title">
+                                    <h2>Recent Leads</h2>
+                                </div>
+                            </div>
+                            <div class="recent-items-inn">
+                                <table class="table table-inner table-vmiddle">
+                                    <thead>
+                                        <tr>
+                                            <th>Service</th>
+                                            <th>Name</th>
+                                    <th style="width: 60px">Price</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                      <% for(i=0;i<result[3].length;i++){ %>
+                                        <tr>
+                                            <td class="f-500 c-cyan"><%=result[3][0].booking_id%></td>
+                                            <td><%=result[3][0].name%></td>
+                                            <td class="f-500 c-cyan">Rs.<%=result[3][0].price%></td>
+                                        </tr>
+                                     <% } %>
+                                    </tbody>
+                                </table>
+                            </div>
+							<div id="recent-items-chart" class="flot-chart-items flot-chart vt-ct-it tb-rc-it-res"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Email Statistic area-->
+
+    <% include ./partner_footer.ejs %>
+    <script type='text/javascript'>
+        var isCtrl = false;
+        document.onkeyup=function(e)
+        {
+        if(e.which == 17)
+        isCtrl=false;
+        }
+        document.onkeydown=function(e)
+        {
+        if(e.which == 17)
+        isCtrl=true;
+        if((e.which == 85) || (e.which == 67) || isCtrl == true)
+        {
+        // alert(&#8216;Keyboard shortcuts are cool!&#8217;);
+        return false;
+        }
+        }
+        var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+        if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+        function mischandler(){
+        return false;
+        }
+        function mousehandler(e){
+        var myevent = (isNS) ? e : event;
+        var eventbutton = (isNS) ? myevent.which : myevent.button;
+        if((eventbutton==2)||(eventbutton==3)) return false;
+        }
+        document.oncontextmenu = mischandler;
+        document.onmousedown = mousehandler;
+        document.onmouseup = mousehandler;
+        </script>
+      
+</body>
+
+</html>

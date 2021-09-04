@@ -1,0 +1,122 @@
+<% include ./team_verification_dashboard_header.ejs %>
+
+***********************************-->
+<div class="content-body">
+
+    <div class="container-fluid mt-3">
+
+
+<div class="row">
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="active-member">
+                        <div class="table-responsive">
+                            <table class="table table-xs mb-0" id="myTable">
+                                <h3>Recharge Details</h3>
+                                <input type="text"  class="form-control" id="myInput" onkeyup="myFunction()" placeholder="Search By Mobile Number.." title="Type in a name">
+                                <thead>
+                                    <tr>
+                                        
+                                            <th>Number</th>
+                                        <th>Name</th>
+                                        <th>Recieved Credits</th>
+                                        <th>Order ID</th>
+                                     <th>Created Date</th>
+                                        <th>Amount</th>
+                                        <th>S.No.</th>
+                                     
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <% for(i=0;i<result.length;i++) { %>
+                                    <tr>
+                                            
+                                            <td><%=result[i].phone%></td>
+                                        <td><%=result[i].firstname%></td>
+                                        <td><%=result[i].productinfo%></td>
+                                        <td>
+                                            <span><%=result[i].txnid%></span>
+                                        </td>
+                                      
+                                      
+                                      
+                                        <td><%=result[i].date%> at <%=result[i].recharge_time%> </td>
+                                      
+                                        <td><%=result[i].amount%></td>
+                                        <td><%= i %></td>
+                                        
+                                    </tr>
+
+                                    <% } %>
+
+                                  
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>                        
+        </div>
+    </div>
+    </div>
+    </div>
+
+      <!--**********************************
+            Footer start
+        ***********************************-->
+        <div class="footer">
+                <div class="copyright">
+                    <p>Copyright &copy;2019 Delo Services Pvt. Ltd</p>
+                </div>
+            </div>
+            <!--**********************************
+                Footer end
+            ***********************************-->
+        </div>
+        <!--**********************************
+            Main wrapper end
+        ***********************************-->
+    
+        <!--**********************************
+            Scripts
+        ***********************************-->
+        <script src="/booking_dashboard/plugins/common/common.min.js"></script>
+        <script src="/booking_dashboard/js/custom.min.js"></script>
+        <script src="/booking_dashboard/js/settings.js"></script>
+        <script src="/booking_dashboard/js/gleek.js"></script>
+        <script src="/booking_dashboard/js/styleSwitcher.js"></script>
+    
+    
+      
+
+    
+
+        <script>
+
+
+
+                function myFunction() {
+                    var input, filter, table, tr, td, i, txtValue;
+                    input = document.getElementById("myInput");
+                    filter = input.value.toUpperCase();
+                    table = document.getElementById("myTable");
+                    tr = table.getElementsByTagName("tr");
+                    for (i = 0; i < tr.length; i++) {
+                      td = tr[i].getElementsByTagName("td")[0];
+                      if (td) {
+                        txtValue = td.textContent || td.innerText;
+                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                          tr[i].style.display = "";
+                        } else {
+                          tr[i].style.display = "none";
+                        }
+                      }
+                    }
+                  }
+                </script>
+
+
+    </body>
+    
+    </html>

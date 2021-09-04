@@ -1,0 +1,439 @@
+
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+        <script>
+                !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
+                analytics.load("LioF9AH4FA5S2Ioit4CkQHeQgaRy6227");
+                analytics.page();
+                }}();
+              </script>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Delo Team - Team Dashboard</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- favicon
+		============================================ -->
+        <link rel="shortcut icon" type="images/x-icon" href="/images/delofabicon.png">
+    <!-- Google Fonts
+		============================================ -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet">
+    <!-- Bootstrap CSS
+		============================================ -->
+    <link rel="stylesheet" href="/team_dashboard_style/css/bootstrap.min.css">
+    <!-- font awesome CSS
+		============================================ -->
+    <link rel="stylesheet" href="/team_dashboard_style/css/font-awesome.min.css">
+    <!-- owl.carousel CSS
+		============================================ -->
+    <link rel="stylesheet" href="/team_dashboard_style/css/owl.carousel.css">
+    <link rel="stylesheet" href="/team_dashboard_style/css/owl.theme.css">
+    <link rel="stylesheet" href="/team_dashboard_style/css/owl.transitions.css">
+    <!-- meanmenu CSS
+		============================================ -->
+    <link rel="stylesheet" href="/team_dashboard_style/css/meanmenu/meanmenu.min.css">
+    <!-- animate CSS
+		============================================ -->
+    <link rel="stylesheet" href="/team_dashboard_style/css/animate.css">
+    <!-- normalize CSS
+		============================================ -->
+    <link rel="stylesheet" href="/team_dashboard_style/css/normalize.css">
+    <!-- mCustomScrollbar CSS
+		============================================ -->
+    <link rel="stylesheet" href="/team_dashboard_style/css/scrollbar/jquery.mCustomScrollbar.min.css">
+    <!-- jvectormap CSS
+		============================================ -->
+    <link rel="stylesheet" href="/team_dashboard_style/css/jvectormap/jquery-jvectormap-2.0.3.css">
+    <!-- Notika icon CSS
+		============================================ -->
+    <link rel="stylesheet" href="/team_dashboard_style/css/notika-custom-icon.css">
+    <!-- wave CSS
+		============================================ -->
+    <link rel="stylesheet" href="/team_dashboard_style/css/wave/waves.min.css">
+    <!-- main CSS
+		============================================ -->
+    <link rel="stylesheet" href="/team_dashboard_style/css/main.css">
+    <!-- style CSS
+		============================================ -->
+    <link rel="stylesheet" href="/team_dashboard_style/style.css">
+    <!-- responsive CSS
+		============================================ -->
+    <link rel="stylesheet" href="/team_dashboard_style/css/responsive.css">
+    <!-- modernizr JS
+        ============================================ -->
+        
+        
+    <script src="/team_dashboard_style/js/vendor/modernizr-2.8.3.min.js"></script>
+</head>
+
+<body>
+  
+   <div class="header-top-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div class="logo-area">
+                        <a href="#"><img src="/images/logo3.png" alt="" style="width:30px" /></a>
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                    <div class="header-top-menu">
+                        <ul class="nav navbar-nav notika-top-nav">
+                            
+                                <li class="nav-item nc-al"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false"
+                                        class="nav-link dropdown-toggle"><span><img src="https://img.icons8.com/ultraviolet/30/000000/user.png"></span></a>       <div role="menu" class="dropdown-menu message-dd animated zoomIn">
+                                   
+                                    <div class="hd-message-info">
+                                        <a href="#">
+                                            <div class="hd-message-sn">
+                                              
+                                                <div class="hd-mg-ctn">
+                                                    <a href="/team_dashboard/logout"><button type="button" class="btn btn-danger btn-block">Logout</button></a>
+                                                    
+                                                </div>
+                                            </div>
+                                        </a>
+                                      
+                                      
+                                       
+                                       
+                                    </div>
+                                   
+                                </div>
+                            </li>
+                           
+                          
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- Mobile Menu start -->
+     <div class="mobile-menu-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="mobile-menu">
+                            <nav id="dropdown">
+                                <ul class="mobile-menu-nav">
+                                    <li><a data-toggle="collapse" data-target="#Charts" href="team_dashboard">Home</a>
+                                        <ul class="collapse dropdown-header-top">
+                                            <li><a href="/team_dashboard">Ongoing</a></li>
+                                            <li id="upcoming_div"><a>Upcoming</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a  href="/team_dashboard/leads">New Leads</a>
+                                       
+                                    </li>
+                                    <li><a href="/team_dashboard/wallets">Wallets</a>
+                                       
+                                    </li>
+                                    <li><a href="/team_dashboard/history">History</a>
+                                       
+                                        <ul class="collapse dropdown-header-top">
+                                                <li><a href="/team_dashboard/history">Leads</a></li>
+                                                    <li id="mobile_wallet_div"><a>Wallet</a></li>
+                                                    </li>
+                                        </ul>
+                                        
+                                    </li>
+
+                                    <li><a href="/team_dashboard/rating">Rating & Reviews</a>
+                                       
+                                    </li>
+                                 
+                                  
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu end -->
+        <!-- Main Menu area start-->
+        <div class="main-menu-area mg-tb-40">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <ul class="nav nav-tabs notika-menu-wrap menu-it-icon-pro">
+                            <li><a href="/team_dashboard"><img src="https://img.icons8.com/cute-clipart/20/000000/home-page.png"> Home</a>
+                            </li>
+                            <li><a href="/team_dashboard/leads"><img src="https://img.icons8.com/dusk/20/000000/omnichannel.png"> New Leads</a>
+                            </li>
+                            <li class="active"><a  href="/team_dashboard/wallets"><img src="https://img.icons8.com/cotton/20/000000/wallet--v1.png"> Wallets</a>
+                            </li>
+                            <li><a  href="/team_dashboard/history"><img src="https://img.icons8.com/ultraviolet/20/000000/payment-history.png"> History</a>
+                            </li>
+                            <li><a  href="/team_dashboard/rating"><img src="https://img.icons8.com/offices/20/000000/rating.png"> Rating & Reviews</a>
+                            </li>
+                           
+                        </ul>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main Menu area End-->
+   
+    <br>
+   
+	<!-- Breadcomb area Start-->
+	
+	<!-- Breadcomb area End-->
+    <!-- Invoice area Start-->
+    <div id="wallet_history_show"></div> 
+    <div id="upcoming"></div>
+    <div class="invoice-area" id="walletdivhere">
+            <div class="container">
+                    <div class="row">
+            <div class="col-lg-9 col-md-9 col-sm-9 col-xs-12">
+            </div>
+
+      <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+            <div class="invoice-hs">
+                    <div class="contact-win">
+                         
+                    <div class="conct-sc-ic">
+                            <button class="btn btn-warning btn-sm"><%= result[0].recharge_value%></button>
+                            
+                        </div>
+                        </div>
+              
+                <h2>Credit Left</h2>
+            </div>
+        </div>
+        </div>
+            </div>
+            <br>
+            <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="invoice-wrap">
+                       
+
+                        
+                      
+                            <div class="row">
+
+
+
+
+                                
+                                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                        <div class="invoice-hs">
+                                                <div class="contact-win">
+                                                        <div class="contact-img">
+                                                                <button class="btn btn-success btn-sm">Pay 100</button>
+                                                            </div>
+                                                <div class="conct-sc-ic">
+                                                        <a class="btn fixedprice" ammount='100' name="<%=result[0].name%>" number="<%=result[0].number%>" email="<%=result[0].email%>" href="#"><img src="https://img.icons8.com/ultraviolet/16/000000/right.png"></a>
+                                                        
+                                                    </div>
+                                                    </div>
+                                          
+                                            <h2>Credit 10</h2>
+                                        </div>
+                                    </div>
+                            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                    <div class="invoice-hs date-inv sm-res-mg-t-30 tb-res-mg-t-30 tb-res-mg-t-0">
+                                            <div class="contact-win">
+                                                    <div class="contact-img">
+                                                            <button class="btn btn-warning btn-sm">Pay 200</button>
+                                                        </div>
+                                            <div class="conct-sc-second">
+                                                    <a class="btn fixedprice" ammount='200' name="<%=result[0].name%>" number="<%=result[0].number%>" email="<%=result[0].email%>"  href="#"><img src="https://img.icons8.com/ultraviolet/16/000000/right.png"></a>
+                                                    
+                                                </div>
+                                                </div>
+                                      
+                                        <h2>Credit 20</h2>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                    <div class="invoice-hs wt-inv sm-res-mg-t-30 tb-res-mg-t-30 tb-res-mg-t-0">
+                                            <div class="contact-win">
+                                                    <div class="contact-img">
+                                                            <button class="btn btn-danger btn-sm">Pay 500</button>
+                                                        </div>
+                                            <div class="conct-sc-third">
+                                                    <a class="btn fixedprice" ammount='500' name="<%=result[0].name%>" number="<%=result[0].number%>" email="<%=result[0].email%>"  href="#"><img src="https://img.icons8.com/office/16/000000/right.png"></a>
+                                                    
+                                                </div>
+                                                </div>
+                                      
+                                        <h2>Credit 50</h2>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                                    <div class="invoice-hs gdt-inv sm-res-mg-t-30 tb-res-mg-t-30 tb-res-mg-t-0">
+                                            <div class="contact-win">
+                                                    <div class="contact-img">
+                                                            <button class="btn btn-primary btn-sm">Pay 1000</button>
+                                                        </div>
+                                            <div class="conct-sc-fourth">
+                                                    <a class="btn fixedprice" ammount='1000' name="<%=result[0].name%>" number="<%=result[0].number%>" email="<%=result[0].email%>" href="#"><img src="https://img.icons8.com/ultraviolet/16/000000/right.png"></a>
+                                                    
+                                                </div>
+                                                </div>
+                                      
+                                        <h2>Credit 100</h2>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                <div class="invoice-sp">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th>Enter Manually</th>
+                                               
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><input type="number" id="ammount" class="form-control" placeholder="Enter Price" required></td>
+                                               
+                                            </tr>
+                                            <tr>
+                                                <td><input type="text" id="credit" value="Your Credit is 10 half of your recharge value" readonly class="form-control"></td>
+                                                
+                                            </tr>
+                                            <tr>
+                                                <td><button type="button" id="pay" name="<%=result[0].name%>" number="<%=result[0].number%>" email="<%=result[0].email%>" class="btn btn-success">Get Credit</button></td>
+                                               
+                                            </tr>
+                                          
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Invoice area End-->
+                
+              
+    <!-- Contact area End-->
+
+    <% include ./partner_footer.ejs %>
+
+</body>
+
+<script>
+$('#pay').click(function(){
+    if($('#ammount').val()==[] || $('#ammount').val()=="" || $('#ammount').val()==null || $('#ammount').val()=="null"  ){
+        alert('Enter Amount')
+    }
+    else{
+        const name = $(this).attr('name')
+        const number = $(this).attr('number')
+        const email = $(this).attr('email')
+        let a = +($('#ammount').val()) / (+ 10);
+       let credit = a;
+         var random =   Math.floor(1000 + Math.random() * 9000);
+         let paymentData = {
+            productinfo : credit,
+            txnid : random,
+            amount : $('#ammount').val(),
+            email : email,
+            phone : number,
+            lastname : 'Delo Services',
+            firstname : name,
+            surl: "http://deloservices.com/team_dashboard/success_payment", 
+            furl: "http://deloservices.com/team_dashboard/fail",
+
+
+        }
+     
+    $.post('/team_dashboard/recharge',paymentData,data=>{
+        window.location.href  = data
+    })
+        
+
+    }
+})
+
+
+
+$('.fixedprice').click(function(){
+    const ammount = $(this).attr('ammount')
+    const name = $(this).attr('name')
+        const number = $(this).attr('number')
+        const email = $(this).attr('email')
+        let a = +(ammount) / (+ 10);
+       let credit = a;
+        var random =   Math.floor(1000 + Math.random() * 9000);
+           let paymentData = {
+            productinfo : credit,
+            txnid : random,
+            amount : ammount,
+            email : email,
+            phone : number,
+            lastname : 'Delo Services',
+            firstname : name,
+            surl: "http://deloservices.com/team_dashboard/success_payment", 
+            furl: "http://deloservices.com/team_dashboard/fail_payment",
+
+
+        }
+     
+    $.post('/team_dashboard/recharge',paymentData,data=>{
+        window.location.href  = data
+    })
+        
+
+})
+
+</script>
+
+
+<script type='text/javascript'>
+    var isCtrl = false;
+    document.onkeyup=function(e)
+    {
+    if(e.which == 17)
+    isCtrl=false;
+    }
+    document.onkeydown=function(e)
+    {
+    if(e.which == 17)
+    isCtrl=true;
+    if((e.which == 85) || (e.which == 67) || isCtrl == true)
+    {
+    // alert(&#8216;Keyboard shortcuts are cool!&#8217;);
+    return false;
+    }
+    }
+    var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+    if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+    function mischandler(){
+    return false;
+    }
+    function mousehandler(e){
+    var myevent = (isNS) ? e : event;
+    var eventbutton = (isNS) ? myevent.which : myevent.button;
+    if((eventbutton==2)||(eventbutton==3)) return false;
+    }
+    document.oncontextmenu = mischandler;
+    document.onmousedown = mousehandler;
+    document.onmouseup = mousehandler;
+    </script>
+  
+
+</html>

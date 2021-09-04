@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<!--
+Item Name: Elisyam - Web App & Admin Dashboard Template
+Version: 1.5
+Author: SAEROX
+
+** A license must be purchased in order to legally use this template for your project **
+-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Delo - Dashboard </title>
+        <meta name="description" content="Delo Services-One Destination For All Home & Beauty Services in Delhi.">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Google Fonts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+        <script>
+          WebFont.load({
+            google: {"families":["Montserrat:400,500,600,700","Noto+Sans:400,700"]},
+            active: function() {
+                sessionStorage.fonts = true;
+            }
+          });
+        </script>
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" sizes="180x180" href="/admin/assets/img/apple-touch-icon.png">
+        <link rel="shortcut icon" type="images/x-icon" href="/images/delofabicon.png">
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="/admin/assets/vendors/css/base/bootstrap.min.css">
+        <link rel="stylesheet" href="/admin/assets/vendors/css/base/elisyam-1.5-dark.min.css">
+        <link rel="stylesheet" href="/admin/assets/css/owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="/admin/assets/css/owl-carousel/owl.theme.min.css">
+
+
+<link rel="stylesheet" href="/dentist/octopus/assets/vendor/fullcalendar/fullcalendar.css" />
+	<link rel="stylesheet" href="/dentist/octopus/assets/vendor/fullcalendar/fullcalendar.print.css" media="print" />
+
+        <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+    </head>
+    <body id="page-top">
+     
+        <div class="page">
+            <!-- Begin Header -->
+            <header class="header">
+                <nav class="navbar fixed-top">         
+                    <!-- Begin Search Box-->
+                    <div class="search-box">
+                        <button class="dismiss"><i class="ion-close-round"></i></button>
+                        <form id="searchForm" action="#" role="search">
+                            <input type="search" placeholder="Search something ..." class="form-control">
+                        </form>
+                    </div>
+                    <!-- End Search Box-->
+                    <!-- Begin Topbar -->
+                    <div class="navbar-holder d-flex align-items-center align-middle justify-content-between">
+                        <!-- Begin Logo -->
+                        <div class="navbar-header">
+                            <a href="db-default.html" class="navbar-brand">
+                                <div class="brand-image brand-big">
+                            Delo Services Pvt. Ltd.
+                                </div>
+                               
+                            </a>
+                            <!-- Toggle Button -->
+                            <a id="toggle-btn" href="#" class="menu-btn active">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </a>
+                            <!-- End Toggle -->
+                        </div>
+                        <!-- End Logo -->
+                        <!-- Begin Navbar Menu -->
+                        <ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center pull-right">
+                            <!-- Search -->
+                          
+                            <!-- End Notifications -->
+                            <!-- User -->
+                            <li><a id="user" rel="nofollow" href="/deloservices-login/logout"  aria-haspopup="true" aria-expanded="false" class="nav-link"> <button class="btn btn-gradient-01" href="" style="height: 55px;">Log Out</a>
+                               
+                            </li>
+                            <!-- End User -->
+                            <!-- Begin Quick Actions -->
+                         
+                            <!-- End Quick Actions -->
+                        </ul>
+                        <!-- End Navbar Menu -->
+                    </div>
+                    <!-- End Topbar -->
+                </nav>
+            </header>
+            <!-- End Header -->
+            <!-- Begin Page Content -->
+            <div class="page-content d-flex align-items-stretch">
+                <div class="default-sidebar">
+                    <!-- Begin Side Navbar -->
+                    <nav class="side-navbar box-scroll sidebar-scroll">
+                        <!-- Begin Main Navigation -->
+                        <ul class="list-unstyled">
+                            <li class="active"><a href="/adminhome"><img src="https://img.icons8.com/ultraviolet/28/000000/details-popup.png" ><span style="margin-left: 18px;">Dashboard</span></a>
+                               
+                            </li>
+
+                            <li><a href="/adminhome/teamverification"><img src="https://img.icons8.com/ultraviolet/28/000000/approval.png"><span style="margin-left: 20px;"> Team Approval</span></a></li>
+                            <li><a href="#dropdown-app" aria-expanded="false" data-toggle="collapse"><img src="https://img.icons8.com/color/28/000000/sensor.png"><span style="margin-left: 20px;">Component</span></a>
+                                <ul id="dropdown-app" class="collapse list-unstyled pt-0">
+                                    <li><a href="/category">Categories</a></li>
+                                    <li><a href="/subcategory">Subcategories</a></li>
+                                    <li><a href="/services">Services</a></li>
+                               
+                                </ul>
+                            </li>
+                            <li><a href="/newblog"><img src="https://img.icons8.com/windows/28/000000/bebo.png">      <span style="margin-left: 20px;"> Blogs</span></a></li>
+                            <li><a href="/adminhome/inhouse"><img src="https://img.icons8.com/cotton/28/000000/home--v2.png">    <span style="margin-left: 20px;">Inhouse Service</span></a></li>
+                        </ul>
+                      
+                    </nav>
+                    <!-- End Side Navbar -->
+                </div>
+                <!-- End Left Sidebar -->
+                <div class="content-inner">
+                    <div class="container-fluid">
+                        <!-- Begin Page Header-->
+                        <div class="row">
+                            <div class="page-header">
+	                            <div class="d-flex align-items-center">
+	                                <h2 class="page-header-title">Dashboard</h2>
+	                                <div>
+	                               
+	                                </div>
+	                            </div>
+                            </div>
+                        </div>
+                      
+              <div id="teamverification"></div>
+      <div id="details"></div>
+      
+              <!-- Begin Vendor Js -->
+        <script src="/admin/assets/vendors/js/base/jquery.min.js"></script>
+        <script src="/admin/assets/vendors/js/base/core.min.js"></script>
+        <!-- End Vendor Js -->
+        <!-- Begin Page Vendor Js -->
+        <script src="/admin/assets/vendors/js/nicescroll/nicescroll.min.js"></script>
+        <script src="/admin/assets/vendors/js/chart/chart.min.js"></script>
+        <script src="/admin/assets/vendors/js/progress/circle-progress.min.js"></script>
+        <script src="/admin/assets/vendors/js/calendar/moment.min.js"></script>
+        <script src="/admin/assets/vendors/js/calendar/fullcalendar.min.js"></script>
+        <script src="/admin/assets/vendors/js/owl-carousel/owl.carousel.min.js"></script>
+        <script src="/admin/assets/vendors/js/app/app.js"></script>
+        <!-- End Page Vendor Js -->
+        <!-- Begin Page Snippets -->
+        <script src="/admin/assets/js/dashboard/db-default-dark.js"></script>
+        <!-- End Page Snippets -->              
+
+                    </body>
+
+
+<script>
+$.getJSON('/adminhome/recharge_dashboard_details',data=>{
+    maketable(data)
+})
+
+function maketable(data){
+    let table = ` <div class="row flex-row">
+                            <div class="col-xl-12">
+                                <!-- Begin Widget 07 -->
+                                <div class="widget widget-07 has-shadow">
+                                    <!-- Begin Widget Header -->
+                                    <div class="widget-header bordered d-flex align-items-center">
+                                        <h2>Recharge Details</h2>
+                                        
+                                    </div>
+                                    <!-- End Widget Header -->
+                                    <!-- Begin Widget Body -->
+                                    <div class="widget-body">
+                                        <div class="table-responsive table-scroll padding-right-10" style="max-height:520px;">
+                                            <table class="table table-hover mb-0">
+                                                <thead>
+                                                    <tr>
+                                                       <th>S.No. </th>
+                                                       <th>Name</th>
+                                                        <th>Number</th>
+                                                        <th>Amount</th>
+                                                        <th>Credit Recieved</th>
+                                                        
+                                                      
+                                                       
+                                                      
+                                                        
+                                                        
+                                                    </tr>
+                                                </thead>
+
+<tbody>`
+
+  $.each(data,(i,item)=>{
+
+  
+        table+=` <tr>
+                <th>${item.id}</th>
+                <th>${item.firstname}</th>
+                <th>${item.phone}</th>
+                <th>${item.amount}</th>
+                <th>${item.productinfo}</th>
+            
+              
+            </tr>`
+
+        })
+table+=`</tbody>
+
+                                               
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <!-- End Widget Body -->
+                                    <!-- Begin Widget Footer -->
+                                
+                                </div>
+                                <!-- End Widget 07 -->
+                            </div>
+                        </div>`
+                        $('#teamverification').html(table)
+                      
+}
+
+</script>
+
+
+
+<script>
+
+$("#teamverification").on("click", ".details", function() {
+    const id = $(this).attr('id');
+    $.get('/adminhome/singleteamdeatils',{id},data=>{
+        console.log(data)
+        makedetails(data)
+    })
+})
+
+
+
+
+function makedetails(data){
+    let table=`<div class="row flex-row">
+                            <div class="col-xl-12">
+                                <!-- Begin Widget 07 -->
+                                <div class="widget widget-07 has-shadow">
+                                    <!-- Begin Widget Header -->
+                                    <div class="widget-header bordered d-flex align-items-center">
+                                
+                                        <div class="widget-options">
+                                            <div class="btn-group" role="group">
+                                                <button type="button" class="btn btn-light  back">Back</button>
+                                        
+                                            </div>
+                                        </div>
+
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <div class="widget-options">
+                                            <div class="btn-group" role="group">
+                                              
+                                            <input type="text" id="response" class="form-control float-right" placeholder="Response..."> &nbsp;&nbsp;&nbsp;&nbsp;
+                                 
+                <button type="button" class="btn btn-success response" id="${data[0].id}">Save </button>
+
+                                            </div>
+                                        </div>
+
+
+                                        <div class="widget-options float-right">
+                                            <div class="btn-group float-right" role="group">
+                                            
+                                           
+                                  
+                                       <select class="form-control  selectmessage" style="float:right;position:relative;left:250px" id="${data[0].id}" number = "${data[0].number}" name="${data[0].name}">
+                <option value="a">Choose Message</option>
+                <option value="Your verification is in under process">Your verification is in under process</option>
+                <option value="Your verification is successfully completed">Your verification is successfully completed</option>
+                </select>
+             
+
+             
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <!-- End Widget Header -->
+                                    <!-- Begin Widget Body -->
+                                    <div class="widget-body">
+                                        <div class="table-responsive table-scroll padding-right-10" style="max-height:520px;">
+                                            <table class="table table-hover mb-0">
+                                                <thead>
+                                                    <tr>
+                                                       <th>ID</th>
+                                                       <th>${data[0].id}</th>
+                                                    </tr>
+                                                    <tr>
+                                                       <th>Image</th>
+                                                       <th><img src="https://www.deloservices.com/images/${data[0].image}" style="width:100px;height:100px"></th>
+                                                    </tr>
+                                                    <tr>
+                                                       <th>Name</th>
+                                                       <th>${data[0].name}</th>
+                                                    </tr>
+                                                    <tr>
+                                                            <th>Category Name</th>
+                                                            <th>${data[0].categoryname}</th>
+                                                    </tr>
+                                                  
+                                                    <tr>
+                                                            <th> Address</th>
+                                                            <th>${data[0].address}</th>
+                                                    </tr>
+                                                    <tr>
+                                                            <th><span> Pincode</span></th>
+                                                            <th><span>${data[0].pincode}</span></th>
+                                                    </tr>
+                                                  
+                                                   
+                                                    <tr>
+                                                            <th>Mobile Number</th>
+                                                            <th>${data[0].number}</th>
+                                                    </tr>
+                                                    <tr>
+                                                            <th>Email</th>
+                                                            <th>${data[0].emailid}</th>
+                                                    </tr>
+
+                                                 
+                                                    
+
+                                                </thead>
+
+
+
+                                               
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <!-- End Widget Body -->
+                                    <!-- Begin Widget Footer -->
+                                
+                                </div>
+                                <!-- End Widget 07 -->
+                            </div>
+                        </div>`
+                        $('#details').html(table)
+                        $('#teamverification').hide()
+                        $('#details').show()
+}
+
+
+</script>
+
+
+
+<script>
+
+    $('#details').on('click', '.back', function() {
+        $('#details').hide()
+        $('#teamverification').show()
+    })
+
+
+
+
+
+
+
+    $('#details').on('click', '.decline', function () {
+    const id = $(this).attr('id')
+      $.get(`team/delete`, { id }, data => {
+        refresh()
+    })
+})
+
+$('#details').on('click', '.approve', function () {
+    const id = $(this).attr('id')
+    var a = prompt("Enter Recharge",'Recharge Here...')
+ if(a){
+var recharge_value = a;
+var approval = 'approve'
+
+$.post('/team/update',{id,recharge_value,approval},data=>{
+
+ refresh()
+})
+ }
+    
+})
+
+function refresh(){
+$.getJSON('/adminhome/recharge_dashboard_details',data=>{
+
+    maketable(data)
+})
+}
+
+
+
+
+$("#details").on("click", ".response", function() {
+    const id = $(this).attr('id')
+   if( $('#response').val()==[] || $('#response').val()==null || $('#response').val()=="" || $('#response').val()=="null" ){
+       alert("Enter Response...")
+   }
+   else{
+   const response = $('#response').val()
+    $.post('/team/response',{id,response},data=>{
+
+        $('#details').hide()
+        $('#teamverification').show()
+})
+
+   }
+
+})
+
+    </script>
+    
+<script>
+
+$('.send-message').click(function(){
+    if($('.message').val()==null || $('.message').val()=="null" || $('.message').val()=="" || $('.message').val()==[]  ){
+        alert("Enter Message...")
+    }
+    else{
+        const message = $('.message').val()
+        var a = confirm("Are you sure to send this message...")
+        if(a){
+            $.post('/team_dashboard/send_message',{message},data=>{
+                alert("Send Successfully...")
+            })
+           
+        }
+        else{
+            alert("Sending Failed...")
+        }
+    }
+})
+
+
+$("#details").on("change", ".selectmessage", function() {
+    if($('.selectmessage').val()==[] || $('.selectmessage').val()=='' || $('.selectmessage').val()=="null" || $('.selectmessage').val()==null){
+
+    }
+    else{
+
+    const id = $(this).attr('id')
+    const number = $(this).attr('number')
+    const name = $(this).attr('name')
+    const singlemessage = $('.selectmessage').val()
+ 
+   
+$.post('/team_dashboard/single_message',{id,number,singlemessage,name},data=>{
+    alert('Successfully Send...')
+}) 
+}
+})
+</script>
+<!--
+
+       <button type="button" class="btn btn-success approve" id="${data[0].id}">Approve</button>&nbsp;&nbsp;
+                                   <button type="button" class="btn btn-danger decline" id="${data[0].id}">Decline</button>&nbsp;&nbsp;
+-->
+                    </html>

@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <script>
+        !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
+        analytics.load("LioF9AH4FA5S2Ioit4CkQHeQgaRy6227");
+        analytics.page();
+        }}();
+      </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+
+
+    <title>Checkout</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css">
+    <!-- Icon -->
+    <link rel="stylesheet" type="text/css" href="/assets/fonts/line-icons.css">
+    <!-- Slicknav -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/slicknav.css">
+
+    <!-- Nivo Lightbox -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/nivo-lightbox.css" >
+    <!-- Animate -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/animate.css">
+    <!-- Owl carousel -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/owl.carousel.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+    <!-- Responsive Style -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/responsive.css">
+
+    <link rel="shortcut icon" type="images/x-icon" href="/images/delofabicon.png">
+    <link src="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.3/jquery.timepicker.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css" integrity="sha256-DVV5cU9pxHH2Rofop3XD3b3rbfrOSIy2nU61DEbYy1Q=" crossorigin="anonymous" />
+
+
+   
+
+  </head>
+  <body>
+<%if(msg){%>
+    <div class="alert alert-warning">
+        <strong><%=msg%></strong> .
+      </div> 
+      <% } %>
+    <!-- Header Area wrapper End -->
+
+    <!-- Page Header Start -->
+   
+    <!-- Page Header End -->  
+
+    <!-- Start Content -->
+    <div id="content" class="section-padding">
+      <div class="container">
+       
+
+     
+
+                          <div class="container">
+                            
+
+                             
+                    <div class="col-md-6 col-sm-6 col-sx-12 col-lg-12">
+                       <div class="dashboardboxtitle">
+                        <h1>Book Appointment</h1>
+                      </div>
+                      <!-- /Payment Method -->
+                      <form action="/laundry/booking" method="post">
+                      <div class="form-group mb-3">
+                        <label>Name <sup>*</sup></label>
+                        <input class="form-control" type="text" name="name" required>
+                      </div>
+                      <div class="form-group mb-3">
+                          <label>Email  <sup>*</sup></label>
+                          <input class="form-control" name="email" type="email" required>
+                        </div>    
+                      <div class="form-group mb-3">
+                        <label>Address  <sup>*</sup></label>
+                        <!--<center><button type="button" class="btn btn-outline-dark btn-block" id = "find-me">AT Current Location</button></center>
+                      <p id = "status" name="status"></p>
+                        <a id = "map-link" target="_blank"></a> 
+                        <p class="text-center">OR</p>-->
+                        <input class="form-control" type="text" name="address" required>
+                       
+                      
+                      </div>     
+                      <div class="form-group">
+                        <label>Pincode<sup>*</sup></label>
+                        <select name="pincode" class="form-control">
+
+                            <option value="Ajmeri Gate Extension - 110002">Ajmeri Gate Extension - 110002</option>
+                            <option value="A G C R - 110002">A G C R - 110002</option>
+                            <option value="Ansari Road - 110002">Ansari Road - 110002</option>
+                            <option value="Aliganj - 110003">Aliganj - 110003</option>
+                            <option value="Anand Parbat - 110005">Anand Parbat - 110005</option>
+                            <option value="Anand Nagar - 110005">Anand Nagar - 110005</option>
+                            <option value="Army Base - 110010">Army Base - 110010</option>
+                            <option value="A P S Colony - 110010">A P S Colony - 110010</option>
+                            <option value="A F Palam - 110010">A F Palam - 110010</option>
+                            <option value="Ashram - 110016">Ashram - 110016</option>
+                            <option value="Ashok Nagar - 110018">Ashok Nagar - 110018</option>
+                            <option value="Ashoka Hotel - 110021">Ashoka Hotel - 110021</option>
+                            <option value="Anand Niketan - 110021">Anand Niketan - 110021</option>
+                            <option value="Amar Colony - 110024">Amar Colony - 110024</option>
+                            <option value="Adarsh Nagar - 110033">Adarsh Nagar - 110033</option>
+                            <option value="A T Mills - 110033">A T Mills - 110033</option>
+                            <option value="Anandvas Shakurpur - 110034">Anandvas Shakurpur - 110034</option>
+                            <option value="Alipur - 110036">Alipur - 110036</option>
+                            <option value="A F Rajokari  - 110038">A F Rajokari  - 110038</option>
+                            <option value="Ambrohi - 110045">Ambrohi - 110045</option>
+                            <option value="Arjan Garh  - 110047">Arjan Garh  - 110047</option>
+                            <option value="Asian Games Village - 110049">Asian Games Village - 110049</option>
+                            <option value="Andrews Ganj - 110049">Andrews Ganj - 110049</option>
+                            <option value="Azad Nagar - 110051">Azad Nagar - 110051</option>
+                            <option value="Anarkali  - 110051">Anarkali  - 110051</option>
+                            <option value="Ashok Vihar H O - 110052">Ashok Vihar H O - 110052</option>
+                            <option value="Amrit Kaur Market - 110055">Amrit Kaur Market - 110055</option>
+                            <option value="Ambedkar Nagar - 110062">Ambedkar Nagar - 110062</option>
+                            <option value="Bank Street  - 110005">Bank Street  - 110005</option>
+                            <option value="Bara Tooti  - 110006">Bara Tooti   - 110006</option>
+                            <option value="Birla Lines  - 110007">Birla Lines  - 110007</option>
+                            <option value="Bazar Road  - 110010">Bazar Road  - 110010</option>
+                            <option value="Bhola Nath Nagar  - 110032">Bhola Nath Nagar  - 110032</option>
+                            <option value="Balbir Nagar  - 110032">Balbir Nagar  - 110032</option>
+                            <option value="Bhaiparma Nand Nagar  - 110033">Bhaiparma Nand Nagar  - 110033</option>
+                            <option value="Bawana  - 110039">Bawana  - 110039</option>
+                            <option value="Budh Nagar  - 110041">Budh Nagar  - 110041</option>
+                            <option value="Badli  - 110042">Badli  - 110042</option>
+                            <option value="Badarpur T P Station  - 110044">Badarpur T P Station  - 110044</option>
+                            <option value="Badarpur  - 110044">Badarpur  - 110044</option>
+                            <option value="Bakrola  - 110045">Bakrola  - 110045</option>
+                            <option value="Bharat Nagar  - 110052">Bharat Nagar  - 110052</option>
+                            <option value="Bhajanpuri  - 110053">Bhajanpuri  - 110053</option>
+                            <option value="Brahampuri   - 110053">Brahampuri   - 110053</option>
+                            <option value="Bijwasan  - 110061">Bijwasan  - 110061</option>
+                            <option value="B S F Camp Tigri  - 110062">B S F Camp Tigri  - 110062</option>
+                            <option value="Bhajan Pura  - 110096">Bhajan Pura  - 110096</option>
+                            <option value="Connaught Place  - 110001">Connaught Place  - 110001</option>
+                            <option value="Constitution House  - 110001">Constitution House  - 110001</option>
+                            <option value="Chawri Bazar  - 110006">Chawri Bazar  - 110006</option>
+                            <option value="Chandni Chowk  - 110006">Chandni Chowk  - 110006</option>
+                            <option value="C C Institute  - 110007">C C Institute  - 110007</option>
+                            <option value="Central Ordinance  - 110010">Central Ordinance  - 110010</option>
+                            <option value="Central Vehicle  - 110010">Central Vehicle  - 110010</option>
+                            <option value="Central Tractor  - 110012">Central Tractor  - 110012</option>
+                            <option value="Central Kirti Nagar  - 110015">Central Kirti Nagar  - 110015</option>
+                            <option value="Chand Nagar  - 110018">Chand Nagar  - 110018</option>
+                            <option value="C R R I   - 110020">C R R I   - 110020</option>
+                            <option value="Chankyapuri   - 110021">Chankyapuri   - 110021</option>
+                            <option value="Civil Lines  - 110054">Civil Lines  - 110054</option>
+                            <option value="C R P F Camp  - 110054">C R P F Camp  - 110054</option>
+                            <option value="Chhawla  - 110071">Chhawla  - 110071</option>
+                            <option value="Chilla Villege  - 110094">Chilla Villege  - 110094</option>
+                            <option value="Darya Ganj  - 110002">Darya Ganj  - 110002</option>
+                            <option value="Delhi High Court  - 110003">Delhi High Court  - 110003</option>
+                            <option value="Desh Bandhu Gupta Road  - 110005">Desh Bandhu Gupta Road  - 110005</option>
+                            <option value="Delhi Sadar Bazar  - 110006">Delhi Sadar Bazar  - 110006</option>
+                            <option value="Delhi G P O  - 110006">Delhi G P O  - 110006</option>
+                            <option value="Delhi Cloth Mills  - 110006">Delhi Cloth Mills  - 110006</option>
+                            <option value="Dareeba  - 110006">Dareeba  - 110006</option>
+                            <option value="Delhi University  - 110007">Delhi University  - 110007</option>
+                            <option value="Dada Ghosh Bhawan  - 110008">Dada Ghosh Bhawan  - 110008</option>
+                            <option value="Depot  - 110010">Depot  - 110010</option>
+                            <option value="Dhaula Khuan  - 110010">Dhaula Khuan  - 110010</option>
+                            <option value="Delhi Cantt  - 110010">Delhi Cantt  - 110010</option>
+                            <option value="Defence Head Qrs  - 110011">Defence Head Qrs  - 110011</option>
+                            <option value="Dargah Shareef  - 110013">Dargah Shareef  - 110013</option>
+                            <option value="D I Area  - 110015">D I Area  - 110015</option>
+                            <option value="Defence Colony  - 110024">Defence Colony  - 110024</option>
+                            <option value="Dilshad Garden  - 110032">Dilshad Garden  - 110032</option>
+                            <option value="Distt Courts  - 110054">Distt Courts  - 110054</option>
+                            <option value="Dakshinpuri Phase Iii  - 110062">Dakshinpuri Phase Iii  - 110062</option>
+                            <option value="Dakshimpuri Phase I  - 110062">Dakshimpuri Phase I  - 110062</option>
+                            <option value="D D A Munirka  - 110067">D D A Munirka  - 110067</option>
+                            <option value="Eastern Court  - 110001">Eastern Court  - 110001</option>
+                            <option value="Election Commission  - 110001">Election Commission  - 110001</option>
+                            <option value="E S I Hospital  - 110015">E S I Hospital  - 110015</option>
+                            <option value="East Of Kailash  - 110065">East Of Kailash  - 110065</option>
+                            <option value="Farashkhana  - 110006">Farashkhana  - 110006</option>
+                            <option value="Fatehpuri   - 110018">Fatehpuri   - 110018</option>
+                            <option value="Fateh Nagar  - 110018">Fateh Nagar  - 110018</option>
+                            <option value="Flatted Factories Complex  - 110020">Flatted Factories Complex  - 110020</option>
+                            <option value="Gandhi Samarak  - 110002">Gandhi Samarak  - 110002</option>
+                            <option value="Golf Links  - 110003">Golf Links  - 110003</option>
+                            <option value="Guru Gobind Singh Marg  - 110005">Guru Gobind Singh Marg  - 110005</option>
+                            <option value="Gymkhana Club  - 110011">Gymkhana Club  - 110011</option>
+                            <option value="Green Park Market  - 110016">Green Park Market  - 110016</option>
+                            <option value="Green Park  - 110016">Green Park  - 110016</option>
+                            <option value="Govindpuri  - 110019">Govindpuri  - 110019</option>
+                            <option value="Gandhi Nagar Bazar  - 110031">Gandhi Nagar Bazar  - 110031</option>
+                            <option value="Gandhi Nagar  - 110031">Gandhi Nagar  - 110031</option>
+                            <option value="Geeta Colony  - 110031">Geeta Colony  - 110031</option>
+                            <option value="Gujranwala Nagar Part Ii   - 110033">Gujranwala Nagar Part Ii   - 110033</option>
+                            <option value="G T S Nagar  - 110033">G T S Nagar  - 110033</option>
+                            <option value="Ganeshpuri   - 110035">Ganeshpuri   - 110035</option>
+                            <option value="Gurgaon Road  - 110037">Gurgaon Road  - 110037</option>
+                            <option value="Greater Kailash Ii  - 110048">Greater Kailash Ii  - 110048</option>
+                            <option value="Greater Kailash  - 110048">Greater Kailash  - 110048</option>
+                            <option value="Guatam Nagar  - 110049">Guatam Nagar - 110049</option>
+                            <option value="Gulmohar Park  - 110049">Gulmohar Park  - 110049</option>
+                            <option value="Gobindpura  - 110051">Gobindpura  - 110051</option>
+                            <option value="Gokulpuri  - 110094">Gokulpuri  - 110094</option>
+                            <option value="Hamdard Dawakhana   - 110006">Hamdard Dawakhana   - 110006</option>
+                            <option value="Hauz Qazi  - 110006">Hauz Qazi  - 110006</option>
+                            <option value="Hazrat Nizamuddin  - 110013">Hazrat Nizamuddin  - 110013</option>
+                            <option value="Hari Nagar Ashram  - 110014">Hari Nagar Ashram</option>
+                            <option value="Hauz Khas Market  - 110016">Hauz Khas Market  - 110016</option>
+                            <option value="Hauz Khas  - 110016">Hauz Khas  - 110016</option>
+                            <option value="Himayunpur Extn  - 110029">Himayunpur Extn  - 110029</option>
+                            <option value="Harijan Sewak Sangh  - 110033">Harijan Sewak Sangh  - 110033</option>
+                            <option value="Haiderpur  - 110042">Haiderpur  - 110042</option>
+                            <option value="Hamdard Nagar  - 110062">Hamdard Nagar  - 110062</option>
+                            <option value="Hari Nagar Da & Db Block  - 110064">Hari Nagar Da & Db Block  - 110064</option>
+                            <option value="Hari Nagar Be Block  - 110064">Hari Nagar Be Block  - 110064</option>
+                            <option value="Himmatpur  - 110091">Himmatpur  - 110091</option>
+                            <option value="Indian Agriculture  - 110002">Indian Agriculture  - 110002</option>
+                            <option value="Indraprastha Estate  - 110002">Indraprastha Estate  - 110002</option>
+                            <option value="Indraprastha H O  - 110002">Indraprastha H O  - 110002</option>
+                            <option value="Industrial Area  - 110005">Industrial Area  - 110005</option>
+                            <option value="Idgah Road I S B T  - 110006">Idgah Road I S B T  - 110006</option>
+                            <option value="Inderpuri  - 110012">Inderpuri  - 110012</option>
+                            <option value="Industrial Area - 110015">Industrial Area - 110015</option>
+                            <option value="I I T Hauz Khas  - 110016">I I T Hauz Khas  - 110016</option>
+                            <option value="Inderlok   - 110035">Inderlok   - 110035</option>
+                            <option value="Janpath - 110001">Janpath - 110001</option>
+                            <option value="Jawahar Lal Nehru Stadium  - 110003">Jawahar Lal Nehru Stadium  - 110003</option>
+                            <option value="Joshi Nagar  - 110005">Joshi Nagar  - 110005</option>
+                            <option value="Jama Masjid  - 110006">Jama Masjid  - 110006</option>
+                            <option value="Jawahar Nagar - 110007">Jawahar Nagar - 110007</option>
+                            <option value="Jangpura  - 110014">Jangpura  - 110014</option>
+                            <option value="Jamia Nagar  - 110025">Jangpura  - 110025</option>
+                            <option value="J 6Block Rajouri Garden  - 110027">J 6Block Rajouri Garden  - 110027</option>
+                            <option value="Janta Market - 110027">Janta Market - 110027</option>
+                            <option value="J J Colony  - 110027">J J Colony  - 110027</option>
+                            <option value="Jahangirpuri Block H - 110033">Jahangirpuri Block H - 110033</option>
+                            <option value="Jahangirpuri Block D  - 110033">JJahangirpuri Block D  - 110033</option>
+                            <option value="Jahangirpuri Block A   - 110033">Jahangirpuri Block A   - 110033</option>
+                            <option value="Jaroda Majra  - 110033">Jaroda Majra  - 110033</option>
+                            <option value="Jawalpuri   - 110041">Jawalpuri   - 110041</option>
+                            <option value="Jagjit Nagar  - 110053">Jagjit Nagar  - 110053</option>
+                            <option value="Janakpuri Block C 4  - 110058">Janakpuri Block C 4  - 110058</option>
+                            <option value="Janakpuri   - 110058">Janakpuri   - 110058</option>
+                            <option value="Janakpuri Block D 1  - 110058">Janakpuri Block D 1  - 110058</option>
+                            <option value="Janakpuri Blockc 2  - 110058">Janakpuri Blockc 2  - 110058</option>
+                            <option value="Jeewan Park  - 110059">Jeewan Park  - 110059</option>
+                            <option value="Jawahar Lal Nehru Univers  - 110067">Jawahar Lal Nehru Univers - 110067</option>
+                            <option value="Jharoda Kalan  - 110072">Jharoda Kalan - 110072</option>
+                            <option value="Krishi Bhawan   - 110001">Krishi Bhawan   - 110001</option>
+                            <option value="Karol Bagh  - 110005">Karol Bagh  - 110005</option>
+                            <option value="Kamla Nagar  - 110007">Kamla Nagar  - 110007</option>
+                            <option value="Kirby Place  - 110010">Kirby Place  - 110010</option>
+                            <option value="Karampura - 110015">Karampura - 110015</option>
+                            <option value="Kirti Nagar- 110015">Kirti Nagar- 110015</option>
+                            <option value="Khyalla Phase Ii- 110018">Khyalla Phase Ii- 110018</option>
+                            <option value="Khyalla Phase I- 110018">Khyalla Phase I- 110018</option>
+                            <option value="Kalkaji  - 110019">Kalkaji  - 110019</option>
+                            <option value="Kidwai Nagar - 110023">Kidwai Nagar - 110023</option>
+                            <option value="Kidwai Nagar West - 110023">Kidwai Nagar West - 110023</option>
+                            <option value="Krishna Market - 110024">Krishna Market - 110024</option>
+                            <option value="Kailash Nagar - 110031">Kailash Nagar - 110031</option>
+                            <option value="Kabool Nagar - 110032">Kabool Nagar - 110032</option>
+                            <option value="Kailash Colony - 110048">Kailash Colony - 110048</option>
+                            <option value="Kailash - 110048">Kailash - 110048</option>
+                            <option value=Krishan Nagar Bazar - 110051">Krishan Nagar Bazar - 110051</option>
+                            <option value="Krishan Nagar H O - 110051">Krishan Nagar H O - 110051</option>
+                            <option value="Khanpur - 110062">Khanpur - 110062</option>
+                            <option value="Kanjhawala - 110081">Kanjhawala - 110081</option>
+                            <option value="Khera Kalan - 110082">Khera Kalan - 110082</option>
+                            <option value="Kutubgarh  - 110084">Kutubgarh  - 110084</option>
+                            <option value="Khichripur - 110091">Khichripur - 110091</option>
+                            <option value="Kalyanpuri - 110091">Kalyanpuri - 110091</option>
+                            <option value="Kalyan Vas  - 110092">Kalyan Vas  - 110092</option>
+                            <option value="Karawal Nagar - 110094">Karawal Nagar - 110094</option>
+                            <option value="Lady Harding Medical College 110001">Lady Harding Medical College 110001 </option> 
+                            <option value=" Laxminarain Mandir 110001"> Laxminarain Mandir 110001 </option> 
+                            <option value="Lok Nagar Bhawan 110003">Lok Nagar Bhawan 110003 </option> 
+                            <option value="Lodi Road H O 110003"> Lodi Road H O 110003</option> 
+                            <option value="Lodi House Hostel 110003"> Lodi House Hostel 110003 </option> 
+                            <option value="Lodi Colony Market 110003">Lodi Colony Market 110003 </option> 
+                            <option value="Lower Camp Anand Parbat 110005">Lower Camp Anand Parbat 110005 </option> 
+                            <option value="Lancer Road Market 110007">Lancer Road Market 110007 </option> 
+                            <option value="Lok Nayak Bhawan 110007">Lok Nayak Bhawan 110007 </option> 
+                            <option value="Laxmi Bai Nagar 110023">Laxmi Bai Nagar 110023 </option> 
+                            <option value="Lajpat Nagar 110024">Lajpat Nagar 110024 </option> 
+                            <option value="Loni Road 110032">Loni Road 110032 </option> 
+                            <option value="Lawrence Road 110035">Lawrence Road 110035  </option> 
+                            <option value="Lekhu Nagar 110035">Lekhu Nagar 110035 </option> 
+                            <option value="Lajpat Rai Chowk 110051">Lajpat Rai Chowk 110051 </option> 
+                            <option value="Laxmi Nagar Market 110092"> Laxmi Nagar Market 110092</option> 
+                            <option value="Minto Road 110002">Minto Road 110002 </option> 
+                            <option value="Model Basti 110005">Model Basti 110005 </option> 
+                            <option value="Mori Gate 110006">Mori Gate 110006 </option> 
+                            <option value="Malka Ganj Market 110007">Malka Ganj Market 110007 </option> 
+                            <option value="Malka Ganj 110007">Malka Ganj 110007 </option> 
+                            <option value="Mansarover Garden 110015">Mansarover Garden 110015 </option> 
+                            <option value="Moti Nagar 110015">Moti Nagar 110015 </option> 
+                            <option value="Malviya Nagar 110017">Malviya Nagar 110017 </option> 
+                            <option value="Mahabir Nagar 110018">Mahabir Nagar 110018 </option> 
+                            <option value="Major Bhupinder Singh Nag 110018"> Major Bhupinder Singh Nag 110018</option> 
+                            <option value="Malcha Marg 110021">Malcha Marg 110021 </option> 
+                            <option value="Moti Bagh 110021">Moti Bagh 110021 </option> 
+                            <option value="Mehrau;I 110030"> Mehrau;I 110030</option> 
+                            <option value="Mansarover Park 110032">Mansarover Park 110032 </option> 
+                            <option value="Mukerjee Nagar 110033">Mukerjee Nagar 110033 </option> 
+                            <option value="Model Town A Block 110033">Model Town A Block 110033 </option> 
+                            <option value="Model Town Ii 110033">Model Town Ii 110033 </option> 
+                            <option value="Multani Mohalla 110034">Multani Mohalla 110034 </option> 
+                            <option value="Masjidmoth Phase Ii 110048"> Masjidmoth Phase Ii 110048</option> 
+                            <option value="Masjid Moth Extn 110049">Masjid Moth Extn 110049 </option> 
+                            <option value=" Maujpur 110053"> Maujpur 110053 </option> 
+                            <option value="Maidens Hotel 110054">Maidens Hotel 110054 </option> 
+                            <option value="Multani Dhanda 110055">Multani Dhanda 110055 </option> 
+                            <option value="Munirka 110067">Munirka 110067 </option> 
+                            <option value="Madangir 110062">Madangir 110062 </option> 
+                            <option value="Madipur 110063">Madipur 110063 </option> 
+                            <option value="Mayapuri Shopping Centre 110064">Mayapuri Shopping Centre 110064 </option> 
+                            <option value=" Mayapuri 110064"> Mayapuri 110064</option> 
+                            <option value="9 Mangolpuri Block S 110083">9 Mangolpuri Block S 110083 </option> 
+                            <option value="Mangolpuri Block A 110083"> Mangolpuri Block A 110083</option> 
+                            <option value="Mangolpuri Block 1 110083">Mangolpuri Block 1 110083 </option> 
+                            <option value="Mangolpuri 110083">Mangolpuri 110083 </option> 
+                            <option value="Nathu Colony-110093">Nathu Colony-110093 </option> 
+                            <option value="New Delhi G P O-110001">New Delhi G P O-110001 </option> 
+                            <option value="Nidhi-110002">Nidhi-110002 </option> 
+                            <option value=" Nirman Bhawan-110011"> Nirman Bhawan-110011 </option> 
+                            <option value="N P Laboratories-110012">N P Laboratories-110012 </option> 
+                            <option value="North Industrial Area-110015"> North Industrial Area-110015</option> 
+                            <option value="N I E Compus-110016">N I E Compus-110016 </option> 
+                            <option value="Nehru Place-110019"> Nehru Place-110019</option> 
+                            <option value="Nanakpura-110021">Nanakpura-110021 </option> 
+                            <option value="Netaji Nagar-110023">Netaji Nagar-110023 </option> 
+                            <option value="Najafgarh Road-110027">Najafgarh Road-110027 </option> 
+                            <option value="Naraina Vihar-110028"> Naraina Vihar-110028</option> 
+                            <option value=" Naraina-110028">  Naraina-110028</option> 
+                            <option value="Naraina Industrial Estate-110028">Naraina Industrial Estate-110028 </option> 
+                            <option value="Nauroji Nagar-110029"> Nauroji Nagar-110029</option> 
+                            <option value="New Seemapuri-110032">New Seemapuri-110032 </option> 
+                        
+                            <option value="New Sabzi Mandi-110033">New Sabzi Mandi-110033 </option> 
+                            <option value="Nirankari Colony-110033">Nirankari Colony-110033 </option> 
+                            <option value="Nangli Poona-110036"> Nangli Poona-110036</option> 
+                            <option value=" Narela Town-110040">  Narela Town-110040</option> 
+                            <option value="Narela-110040">Narela-110040</option> 
+                            <option value="Nagloi-110041">Nagloi-110041 </option> 
+                            <option value=" Nangloi Phase Iii-110041"> Nangloi Phase Iii-110041 </option> 
+                            <option value="Najafgarh-110043">Najafgarh-110043 </option> 
+                            <option value="Nangal Rava-110046">Nangal Rava-110046 </option> 
+                            <option value="N Block Greater-110048">N Block Greater-110048 </option> 
+                            <option value="Nimri-110052">Nimri-110052 </option> 
+                            <option value="New Rajinder Nagar-110060">New Rajinder Nagar-110060 </option> 
+                            <option value="Nehru Nagar-110065"> Nehru Nagar-110065</option> 
+                            <option value="Nand Nagri A Block-110093">Nand Nagri A Block-110093 </option> 
+                            <option value="Nand Nagri-110093">Nand Nagri-110093 </option> 
+                            <option value=" Nathu Colony-110093"> Nathu Colony-110093 </option> 
+                            <option value="Oberei Intercontinental-110003">Oberei Intercontinental-110003 </option> 
+                            <option value="Organisation-110012">Organisation-110012 </option> 
+                            <option value="Okhla Industrial Estate-110020">Okhla Industrial Estate-110020 </option> 
+                            <option value="Onkar Nagar-110035">Onkar Nagar-110035 </option> 
+                            <option value="Patper Ganj-110092">Patper Ganj-110092 </option> 
+                            <option value="P T S Jharoda Kalan-110072">P T S Jharoda Kalan-110072 </option> 
+                            <option value="Paschim Vihar Block B-110063">Paschim Vihar Block B-110063 </option> 
+                            <option value="Paschim Vihar-110063">Paschim Vihar-110063 </option> 
+                            <option value="Pushpa Bhawan-110062">Pushpa Bhawan-110062 </option> 
+                            <option value="Possangipur-110058">Possangipur-110058 </option> 
+                            <option value="P S B Paharganj-110055">P S B Paharganj-110055 </option> 
+                            <option value=" Paharganj-110055"> Paharganj-110055 </option> 
+                            <option value="Palam-110045">Palam-110045 </option> 
+                            <option value="Palam Enclave-110045">Palam Enclave-110045 </option> 
+                            <option value="Power House-110035">Power House-110035 </option> 
+                            <option value="Pitampura-110034">Pitampura-110034 </option> 
+                            <option value=" Punjabi Bagh-110026"> Punjabi Bagh-110026 </option> 
+                            <option value="Punjabi Bagh Sector Iii-110026">Punjabi Bagh Sector Iii-110026 </option> 
+                            <option value="Postal Saving Bureau-110022"> Postal Saving Bureau-110022</option> 
+                            <option value="Panchseel Enclave-110017">Panchseel Enclave-110017 </option> 
+                            <option value="Pushpa Vihar Sector I-110017"> Pushpa Vihar Sector I-110017</option> 
+                            <option value="Patel Nagar South-110008"> Patel Nagar South-110008</option> 
+                            <option value="Patel Nagar West-110008">Patel Nagar West-110008 </option> 
+                            <option value="Patel Nagar-110008">Patel Nagar-110008 </option> 
+                            <option value="Patel Nagar East-110008"> Patel Nagar East-110008</option> 
+                            <option value="Pragati Vihar-110007">Pragati Vihar-110007 </option> 
+                            <option value="Partap Nagar-110007 ">Partap Nagar-110007</option> 
+                            <option value="Patrachar Vidyala-110007"> Patrachar Vidyala-110007</option> 
+                            <option value="Patrachar Road-110007">Patrachar Road-110007 </option> 
+                            <option value="Pragati Vihar-110003">Pragati Vihar-110003 </option> 
+                            <option value="Pandara Road-110003">Pandara Road-110003 </option> 
+                            <option value="Pragati Maidan-110001">Pragati Maidan-110001 </option> 
+                            <option value="Parliament Street H O-110001">Parliament Street H O-110001 </option> 
+                            <option value="Patiala House-110001">Patiala House-110001 </option> 
+                            <option value="Parliament House-110001 "> Parliament House-110001</option> 
+                            <option value="Qr Madipur-110063">Qr Madipur-110063 </option> 
+                            <option value=" R K Puram-110066"> R K Puram-110066 </option>  
+                            <option value=" R K Puram West-110066"> R K Puram West-110066 </option>  
+                            <option value=" Rajinder Nagar-110060"> Rajinder Nagar-110060</option>  
+                            <option value="Ram Nagar-110051">Ram Nagar-110051 </option>  
+                            <option value="Radheypuri-110051">Radheypuri-110051</option>  
+                            <option value="Rani Bagh-110034"> Rani Bagh-110034</option>  
+                            <option value="Rohtash Nagar-110032"> Rohtash Nagar-110032</option>  
+                            <option value="Raghubarpura-110031"> Raghubarpura-110031</option>  
+                            <option value="Rajouri Garden-110027">Rajouri Garden-110027</option>  
+                            <option value="Rajouri Market-110027">Rajouri Market-110027 </option>  
+                            <option value="R K Puram Sector Viii-110022">R K Puram Sector Viii-110022</option>  
+                            <option value="R K Puram Sector Vii-110022">R K Puram Sector Vii-110022 </option>  
+                            <option value="R K Puram V-110022">R K Puram V-110022 </option>  
+                            <option value="R K Puram Sector Ix-110022">R K Puram Sector Ix-110022 </option>  
+                            <option value="R K Puram Sector Xii-110022">R K Puram Sector Xii-110022</option>  
+                            <option value="R K Puram Sector Iv-110022">R K Puram Sector Iv-110022 </option>  
+                            <option value="R K Puram Sector Iii-110022">R K Puram Sector Iii-110022</option>  
+                            <option value="R K Puram Sector Ii-110022"> R K Puram Sector Ii-110022</option>  
+                            <option value="R K Puram Sector I-110022">R K Puram Sector I-110022 </option>  
+                            <option value="Ramesh Nagar H O-110015">Ramesh Nagar H O-110015 </option>  
+                            <option value="Research Institute-110012">Research Institute-110012</option>  
+                            <option value="Roop Nagar-110007">Roop Nagar-110007 </option>  
+                            <option value="Roshan Area Road-110007">Roshan Area Road-110007</option>  
+                            <option value="Rana Pratap Bagh-110007">Rana Pratap Bagh-110007 </option>  
+                            <option value="Rly C A O-110007"> Rly C A O-110007</option> 
+                            <option value="Red Fort-110006"> Red Fort-110006</option> 
+                            <option value="Rashtrapati Bhawan-110004">Rashtrapati Bhawan-110004 </option> 
+                            <option value="Rajghat Power House-110002">Rajghat Power House-110002 </option> 
+                            <option value="Rail Bhawan-110001"> Rail Bhawan-110001</option> 
+                            <option value="Shakarpur-110092">Shakarpur-110092 </option>
+                            <option value="Sriniwaspuri-110065"> Sriniwaspuri-110065</option> 
+                            <option value=" Shakurbasti-110056"> Shakurbasti-110056</option>
+                            <option value="Swami Ram Tirath Nagar-110055">Swami Ram Tirath Nagar-110055 </option>
+                            <option value="Seelampur-110053">Seelampur-110053 </option>
+                            <option value="Satyawati Nagar-110052">Satyawati Nagar-110052 </option>
+                            <option value=" Shastri Nagar-110052"> Shastri Nagar-110052</option>
+                            <option value="South Extn Part I-110049">South Extn Part I-110049 </option>
+                            <option value="South Extn Part Ii-110049">South Extn Part Ii-110049</option>
+                            <option value="Sadiq Nagar-110049">Sadiq Nagar-110049 </option>
+                            <option value="Sameypur Badli-110042">Sameypur Badli-110042 </option>
+                            <option value="Sultanpuri Block C-110041">Sultanpuri Block C-110041 </option>
+                            <option value="Suttanpuri Block B-110041">Suttanpuri Block B-110041 </option>
+                            <option value="Sultanpuri Block F-110041 ">Sultanpuri Block F-110041 </option>
+                            <option value="3 Sanoth-110040">3 Sanoth-110040 </option>
+                            <option value="Sarai Rohila-110035">Sarai Rohila-110035 </option>
+                            <option value="1 Shakurbasti R S-110034">1 Shakurbasti R S-110034 </option>
+                            <option value="Saraswati Vihar-110034"> Saraswati Vihar-110034</option>
+                            <option value="Srinagar Colony-110034">Srinagar Colony-110034 </option>
+                            <option value="Shakurpur Block I-110034">Shakurpur Block I-110034 </option>
+                            <option value="Shalimar Bagh-110033">Shalimar Bagh-110033 </option>
+                            <option value="Suraj Nagar-110033">Suraj Nagar-110033 </option>
+                            <option value="5 Shahdara-110032"> 5 Shahdara-110032</option>
+                            <option value="Shahdara Mandi-110032">Shahdara Mandi-110032 </option>
+                            <option value="Seemapuri Old-110032">Seemapuri Old-110032 </option>
+                            <option value="Sahstri Nagar-110031">Sahstri Nagar-110031 </option>
+                            <option value="Safdarjang Enclave-110029">Safdarjang Enclave-110029 </option>
+                            <option value="Subhash Nagar West-110027">Subhash Nagar West-110027 </option>
+                            <option value="Subhash Nagar-110027">Subhash Nagar-110027 </option>
+                            <option value="Sarojini Nagar H O-110023">Sarojini Nagar H O-110023 </option>
+                            <option value="South Malviya Nagar-110017">South Malviya Nagar-110017</option>
+                            <option value="Shri Aurobindo-110016">Shri Aurobindo-110016 </option>
+                            <option value="Sudershan Park-110015">Sudershan Park-110015 </option>
+                            <option value="Shahjahan Road-110011">Shahjahan Road-110011 </option>
+                            <option value="Sectt South-110011">Sectt South-110011 </option>
+                            <option value="South Avenue-110011"> South Avenue-110011</option>
+                            <option value="Safdarjang Air Port-110007">Safdarjang Air Port-110007 </option>
+                            <option value="Sewa Sangh-110007">Sewa Sangh-110007 </option>
+                            <option value="Subzi Mandi-110007">Subzi Mandi-110007 </option>
+                            <option value="Shakti Nagar-110007"> Shakti Nagar-110007   </option>
+                            <option value="Sadar Thana Road-110006">Sadar Thana Road-110006 </option>     
+                            <option value="Sat Nahar-110005">Sat Nahar-110005 </option>  
+                            <option value="Safdarjang Air Port-110003">Safdarjang Air Port-110003</option>  
+                            <option value=" Sansadiya Soudha-110001">Sansadiya Soudha-110001</option>  
+                            <option value="Sectt North-110001">Sectt North-110001 </option>  
+                            <option value="Supreme Court-110001">Supreme Court-110001</option>  
+                            <option value="Shastri Bhawan-110001">Shastri Bhawan-110001 </option>  
+                            <option value="Trilokpuri-110091 ">Trilokpuri-110091 </option>
+                            <option value="Tughlakabad A F Station-110044">Tughlakabad A F Station-110044</option>
+                            <option value="Tughlakabad-110044">Tughlakabad-110044</option>
+                            <option value="Teliwara-110032">Teliwara-110032 </option>
+                            <option value="T B Hospital-110030">T B Hospital-110030 </option>
+                            <option value="Tatarpur-110027">Tatarpur-110027 </option>
+                            <option value="Tihar-10018">Tihar-10018</option>
+                            <option value="Tilak Nagar-110018">Tilak Nagar-110018</option>
+                            <option value="Than Singh Nagar-110005">Than Singh Nagar-110005</option>
+                            <option value="Ujwa-110073 ">Ujwa-110073 </option>
+                            <option value="Uttam Nagar-110059"> Uttam Nagar-110059</option>
+                            <option value="Udyog Bhawan-110011">Udyog Bhawan-110011 </option>
+                            <option value="U P S C-110011">U P S C-110011 </option>
+                            <option value="Vasant Vihar I-110057">Vasant Vihar I-110057 </option>
+                            <option value="Vasant Vihar Ii-110057">Vasant Vihar Ii-110057 </option>
+                            <option value="Vijay Nagar-110033">Vijay Nagar-110033</option>
+                            <option value="Vivek Vihar-110032">Vivek Vihar-110032</option>
+                            <option value="Vishwan Nagar-110032">Vishwan Nagar-110032 </option>
+                            <option value="Vishwa Karma Nagar-110032">Vishwa Karma Nagar-110032</option>
+                            <option value="Vishnu Garden-110018">Vishnu Garden-110018</option>
+                            <option value="Vikaspuri-110018">Vikaspuri-110018</option>
+                            <option value="Vishnu Garden-110015">Vishnu Garden-110015 </option>
+                            <option value="Wazirpur Phase Iii-1100523">Wazirpur Phase Iii-1100523</option>
+                            <option value="Work Shop-110010">Work Shop-110010</option>
+                            <option value="Wazir Nagar-110007">Wazir Nagar-110007 </option>
+                            <option value="Wazir Nagar-110003"> Wazir Nagar-110003</option>
+                            <option value="Yamuna Vihar-110053">Yamuna Vihar-110053</option>
+                            <option value="Yusaf Sarai -110016">Yusaf Sarai -110016 </option>
+                            <option value="Zafrabad-110053">Zafrabad-110053</option>
+                            <option value="Zakhir Nagar-110025">Zakhir Nagar-110025</option>
+                            <option value="Zakhira-110015">Zakhira-110015 </option>
+                        
+                        </select>
+                      </div>
+                      <div class="form-group">
+                          <label>Date<sup>*</sup></label>
+                         
+                          <input type="text" name="date" id="date" class="form-control" readonly required>
+                        </div>
+                        <div class="form-group">
+                            <label>Time<sup>*</sup></label>
+                            <input class="form-control timepicker" name="time" placeholder="time"  readonly/>
+                            <input class="form-control second_timepicker" name="time" placeholder="time"  readonly/>  
+                          </div>
+                        
+                              <div class="form-group mb-3">
+                                  <label>Mention all the items </label>
+                                  <input class="form-control" type="textarea" name="items" type="text" placeholder="Include all the major and minor items.">
+                                </div>   
+
+<br>
+                   
+
+
+
+</div> 
+                      <!-- GRAND TOTAL -->
+                      <div class="card ">
+                        <table class="table-total-checkout">                
+                          <tbody>
+                            <tr>
+                              <th></th>
+                              <td></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                       <button type="submit" class="btn btn-success">Book Appointment</button>              
+                      </div>
+                    </form>
+                      <!-- /GRAND TOTAL -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+      </div>      
+    </div>
+    <!-- End Content -->
+
+    <!-- Footer Section Start -->
+    <footer>
+   
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="/assets/js/jquery-min.js"></script>
+    <script src="/assets/js/popper.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/jquery.counterup.min.js"></script>
+    <script src="/assets/js/waypoints.min.js"></script>
+    <script src="/assets/js/wow.js"></script>
+    <script src="/assets/js/owl.carousel.min.js"></script>
+    <script src="/assets/js/nivo-lightbox.js"></script>
+    <script src="/assets/js/jquery.slicknav.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/form-validator.min.js"></script>
+    <script src="/assets/js/contact-form-script.min.js"></script>
+    <script src="/assets/js/summernote.js"></script>
+      
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.3/jquery.timepicker.min.js"></script>
+
+
+
+
+
+<script>
+  $( function() {
+  $( "#date" ).datepicker({ minDate: -0, maxDate: "+5D",dateFormat: 'yy-mm-dd' });
+  } );
+  </script>
+
+<script>
+$(document).ready(function(){
+
+    var dt = new Date();
+var time = dt.getHours()+2 + ":" + dt.getMinutes();
+var today = new Date();
+var dd = today.getDate();
+
+var mm = today.getMonth()+1; 
+var yyyy = today.getFullYear();
+if(dd<10) 
+{
+    dd='0'+dd;
+} 
+
+if(mm<10) 
+{
+    mm='0'+mm;
+} 
+today = yyyy+'-'+mm+'-'+dd;
+$('.second_timepicker').hide()
+$('#date').change(function(){
+
+var choose_date = $('#date').val()
+
+  if(choose_date == today){
+    
+            $('.second_timepicker').hide()
+    $('.timepicker').show()
+         $('input.timepicker').timepicker({
+        timeFormat: 'hh:mm:p',
+        // year, month, day and seconds are not important
+        minTime: time,
+        maxTime: new Date(0, 0, 0, 19, 0, 0),
+        // time entries start being generated at 6AM but the plugin 
+        // shows only those within the [minTime, maxTime] interval
+        startHour: 2,
+        // the value of the first item in the dropdown, when the input
+        // field is empty. This overrides the startHour and startMinute 
+        // options
+        startTime:time,
+        // items in the dropdown are separated by at interval minutes
+        interval: 30,
+        dynamic:true
+    });
+}
+else{
+    $('.second_timepicker').show()
+    $('.timepicker').hide()
+    $('.second_timepicker').timepicker({
+        timeFormat: 'hh:mm:p',
+        // year, month, day and seconds are not important
+        minTime:new Date(0, 0, 0, 8, 0, 0),
+        maxTime: new Date(0, 0, 0, 19, 0, 0),
+        // time entries start being generated at 6AM but the plugin 
+        // shows only those within the [minTime, maxTime] interval
+        startHour: 6,
+        // the value of the first item in the dropdown, when the input
+        // field is empty. This overrides the startHour and startMinute 
+        // options
+        startTime:new Date(0, 0, 0, 8, 00, 0),
+        // items in the dropdown are separated by at interval minutes
+        interval: 30,
+        dynamic:true
+    });
+}
+});
+
+})
+
+
+$('#successfully').hide()
+$('#failed').hide()
+
+$('.apply').click(function(){
+    var promocode = $('#promocode').val()
+    if(promocode==[] || promocode=='' || promocode==null || promocode=='null') alert('Enter Promocode...')
+    else{
+        if(promocode == '123') {
+            
+            $('#successfully').show()
+            $('#failed').hide()
+    }
+        else{
+            
+$('#successfully').hide()
+$('#failed').show()
+        } 
+    }
+
+})
+
+
+
+</script>
+
+  </body>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+  (function() {
+  window.__insp = window.__insp || [];
+  __insp.push(['wid', 1301399890]);
+  var ldinsp = function(){
+  if(typeof window.__inspld != "undefined") return; window.__inspld = 1; var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js?wid=1301399890&r=' + Math.floor(new Date().getTime()/3600000); var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); };
+  setTimeout(ldinsp, 0);
+  })();
+  </script>
+
+
+
+<!-- <script>
+$('send').click(function(){
+  alert('hii...')
+})
+</script> -->
+
+</html>

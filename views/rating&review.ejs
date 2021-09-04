@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Team Dashboard - Rating</title>
+<link rel="stylesheet" href="http://demo.phasethree.com/wp-content/mu-plugins/levels-global/modules/p3-testimonial/css/frontend.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="shortcut icon" type="image/x-icon" href="/images/logo2.png">
+<!-- Google Fonts
+    ============================================ -->
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet">
+<!-- Bootstrap CSS
+    ============================================ -->
+<link rel="stylesheet" href="/team_dashboard_style/css/bootstrap.min.css">
+<!-- font awesome CSS
+    ============================================ -->
+<link rel="stylesheet" href="/team_dashboard_style/css/font-awesome.min.css">
+<!-- owl.carousel CSS
+    ============================================ -->
+<link rel="stylesheet" href="/team_dashboard_style/css/owl.carousel.css">
+<link rel="stylesheet" href="/team_dashboard_style/css/owl.theme.css">
+<link rel="stylesheet" href="/team_dashboard_style/css/owl.transitions.css">
+<!-- meanmenu CSS
+    ============================================ -->
+<link rel="stylesheet" href="/team_dashboard_style/css/meanmenu/meanmenu.min.css">
+<!-- animate CSS
+    ============================================ -->
+<link rel="stylesheet" href="/team_dashboard_style/css/animate.css">
+<!-- normalize CSS
+    ============================================ -->
+<link rel="stylesheet" href="/team_dashboard_style/css/normalize.css">
+<!-- mCustomScrollbar CSS
+    ============================================ -->
+<link rel="stylesheet" href="/team_dashboard_style/css/scrollbar/jquery.mCustomScrollbar.min.css">
+<!-- jvectormap CSS
+    ============================================ -->
+<link rel="stylesheet" href="/team_dashboard_style/css/jvectormap/jquery-jvectormap-2.0.3.css">
+<!-- Notika icon CSS
+    ============================================ -->
+<link rel="stylesheet" href="/team_dashboard_style/css/notika-custom-icon.css">
+<!-- wave CSS
+    ============================================ -->
+<link rel="stylesheet" href="/team_dashboard_style/css/wave/waves.min.css">
+<!-- main CSS
+    ============================================ -->
+<link rel="stylesheet" href="/team_dashboard_style/css/main.css">
+<!-- style CSS
+    ============================================ -->
+<link rel="stylesheet" href="/team_dashboard_style/style.css">
+<!-- responsive CSS
+    ============================================ -->
+<link rel="stylesheet" href="/team_dashboard_style/css/responsive.css">
+<!-- modernizr JS
+    ============================================ -->
+<script src="/team_dashboard_style/js/vendor/modernizr-2.8.3.min.js"></script>
+<style>
+    /* width */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px grey; 
+      border-radius: 6px;
+    }
+     
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background:#1F5AB0; 
+      border-radius: 6px;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #1F5AB0; 
+    }
+    </style>
+  <!--STYLE END SCROLL BAR-->
+<style>
+.bg-light {
+	 background-color: #fff;
+}
+ .bg-dark {
+	 background-color: #f1f4f5;
+}
+ body {
+	 color: #768390;
+	
+	 font-family: "Effra", Helvetica, sans-serif;
+	 padding: 0;
+	 -webkit-font-smoothing: antialiased;
+}
+ h1, h2, h3, h4, h5, h6 {
+	 color: #3d4351;
+	 margin-top: 0;
+}
+ a {
+	 color: #ff6b6b;
+}
+ a:hover {
+	 color: #ff9a9a;
+	 text-decoration: none;
+}
+ .example-header {
+	 background: #3d4351;
+	 color: #fff;
+	 font-weight: 300;
+	 padding: 3em 1em;
+	 text-align: center;
+}
+ .example-header h1 {
+	 color: #fff;
+	 font-weight: 300;
+	 margin-bottom: 20px;
+}
+ .example-header p {
+	 font-size: 12px;
+	 text-transform: uppercase;
+	 letter-spacing: 3px;
+	 font-weight: 700;
+}
+ .example {
+	 background: #f1f4f5;
+}
+ .example-title {
+	 text-align: center;
+	 margin-bottom: 60px;
+	 padding: 3em 0;
+	 border-bottom: 1px solid #e4eaec;
+}
+ .example-title p {
+	 margin: 0 auto;
+	 font-size: 16px;
+	 max-width: 400px;
+}
+ .img {
+	 background-size: cover;
+	 background-repeat: no-repeat;
+	 background-position: center center;
+	 overflow: hidden;
+	 position: relative;
+	 width: 100%;
+}
+ .img img {
+	 opacity: 0;
+}
+ .img-circle {
+	 -webkit-border-radius: 50%;
+	 -moz-border-radius: 50%;
+	 border-radius: 50%;
+}
+ .img-circle:before {
+	 content: "";
+	 display: block;
+	 padding-top: 100%;
+}
+ .img-circle > * {
+	 position: absolute !important;
+	 top: 0;
+	 bottom: 0;
+	 left: 0;
+	 right: 0;
+}
+/* NAME: Testimonial * * COMPONENT: 'testimonial' * * MODIFIERS: 'testimonial-reverse' * 'testimonial-top' * 'carousel' 
+/*============================================================================= GENERAL =============================================================================*/
+ .testimonial {
+	 margin-bottom: 30px;
+}
+ .testimonial, .testimonial-item {
+	 border-radius: 4px;
+}
+ .testimonial-item .inner {
+	 border-color: transparent;
+	 overflow: hidden;
+}
+/*----- IMAGE -----*/
+ .testimonial-image {
+	 display: inline-block;
+	 margin-right: 15px;
+	 position: relative;
+	 vertical-align: middle;
+	 width: 50px;
+}
+/*----- HEADING -----*/
+ .testimonial-titling {
+	 display: inline-block;
+	 vertical-align: middle;
+}
+ .testimonial-title {
+	 display: block;
+	 font-size: 20px;
+	 margin-bottom: 0;
+}
+ .testimonial-subtitle {
+	 display: block;
+	 font-size: 13px;
+	 opacity: 0.8;
+}
+/*----- CONTENT -----*/
+ .testimonial-content {
+	 margin-bottom: 20px;
+	 position: relative;
+}
+ .testimonial-content > p:last-child {
+	 margin-bottom: 0;
+}
+/*----- QUOTE MARK -----*/
+ .testimonial-quote-mark {
+	 color: #dcdfe2;
+	 float: left;
+	 font-size: 30px;
+	 margin: 3px 15px 0 0;
+}
+/*----- CONTROLS -----*/
+ .testimonial-control a {
+	 color: #ccd5db;
+}
+ .testimonial-control:hover {
+	 color: #89bceb;
+	 text-decoration: none;
+}
+/*----- COLUMNS -----*/
+ @media (min-width: 992px) {
+	 .testimonial.column-2 .row > div:nth-child(odd), .testimonial.column-3 .row > div:nth-child(3n+1), .testimonial.column-4 .row > div:nth-child(4n+1) {
+		 clear: both;
+	}
+}
+ @media (max-width: 991px) {
+	 .testimonial.column-2 .row > div:nth-child(odd), .testimonial.column-3 .row > div:nth-child(odd), .testimonial.column-4 .row > div:nth-child(odd) {
+		 clear: both;
+	}
+}
+/* MODIFIER: 'testimonial-bubble' ===================================================*/
+ .testimonial-bubble .testimonial-content {
+	 border: 1px solid transparent;
+	 padding: 15px 20px;
+	 background-color: #fff;
+	 border-radius: 4px;
+}
+ .testimonial-bubble .testimonial-content:before {
+	 position: absolute;
+	 border: 1px solid transparent;
+	 border-width: 0 1px 1px 0;
+	 bottom: -7px;
+	 left: 33px;
+	 display: block;
+	 width: 14px;
+	 height: 14px;
+	 content: '';
+	 background-color: #fff;
+	 -webkit-transform: rotate(45deg);
+	 -ms-transform: rotate(45deg);
+	 -o-transform: rotate(45deg);
+	 transform: rotate(45deg);
+}
+ .testimonial-bubble.testimonial-top .testimonial-content:before {
+	 border-width: 1px 0 0 1px;
+}
+ .testimonial-bubble .testimonial-info {
+	 margin-left: 20px;
+}
+/* MODIFIER: 'testimonial-reverse' ===================================================*/
+ .testimonial-reverse .testimonial-content:before {
+	 right: 33px;
+	 left: auto;
+}
+ .testimonial-reverse .testimonial-info {
+	 margin-left: 0;
+	 margin-right: 20px;
+	 text-align: right;
+}
+ .testimonial-reverse .testimonial-image {
+	 margin-right: 0;
+	 margin-left: 20px;
+}
+ .testimonial-reverse .testimonial-title, .testimonial-reverse .testimonial-subtitle {
+	 text-align: right;
+}
+/* MODIFIER: 'testimonial-top' ===================================================*/
+ .testimonial-top .testimonial-content {
+	 margin-top: 30px;
+	 margin-bottom: 10px;
+}
+ .testimonial-top .testimonial-content:before {
+	 top: -7px;
+	 bottom: auto;
+}
+/* MODIFIER: '.carousel' ===================================================*/
+ .testimonial.carousel {
+	 position: relative;
+	 width: 100%;
+	 overflow: hidden;
+}
+ .testimonial.carousel .testimonial-item {
+	 position: relative;
+	 display: none;
+	 width: 100%;
+	 transition: left 0.6s ease-in-out 0s;
+}
+ .testimonial.carousel .testimonial-item.active, .testimonial.carousel .testimonial-item.next, .testimonial.carousel .testimonial-item.prev {
+	 display: block;
+}
+ .testimonial.carousel .testimonial-item.next, .testimonial.carousel .testimonial-item.prev {
+	 position: absolute;
+	 top: 0;
+	 width: 100%;
+}
+ .testimonial.carousel .testimonial-item.next {
+	 left: 100%;
+}
+ .testimonial.carousel .testimonial-item.prev {
+	 left: -100%;
+}
+ .testimonial.carousel .testimonial-item.next.left, .testimonial.carousel .testimonial-item.prev.right {
+	 left: 0;
+}
+ .testimonial.carousel .testimonial-item.active {
+	 left: 0;
+}
+ .testimonial.carousel .testimonial-item.active.left {
+	 left: -100%;
+}
+ .testimonial.carousel .testimonial-item.active.right {
+	 left: 100%;
+}
+ .testimonial-control {
+	 position: absolute;
+	 right: 20px;
+	 bottom: 20px;
+}
+ .testimonial-control a + a {
+	 margin-left: 10px;
+}
+ .testimonial-reverse .testimonial-control {
+	 right: auto;
+	 left: 20px;
+}
+ .testimonial-top .testimonial-control {
+	 top: 20px;
+	 bottom: auto;
+}
+ 
+
+</style>
+</head>
+<body>
+
+
+
+
+        <div class="header-top-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                            <div class="logo-area">
+                                <a href="#"><img src="/images/logo3.png" alt="" style="width:30px" /></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                            <div class="header-top-menu">
+                                <ul class="nav navbar-nav notika-top-nav">
+                                    
+                                        <li class="nav-item nc-al"><a href="#" data-toggle="dropdown" role="button" aria-expanded="false"
+                                                class="nav-link dropdown-toggle"><span><img src="https://img.icons8.com/ultraviolet/30/000000/user.png"></span></a>       <div role="menu" class="dropdown-menu message-dd animated zoomIn">
+                                           
+                                            <div class="hd-message-info">
+                                                <a href="#">
+                                                    <div class="hd-message-sn">
+                                                      
+                                                        <div class="hd-mg-ctn">
+                                                            <a href="/team_dashboard/logout"><button type="button" class="btn btn-danger btn-block">Logout</button></a>
+                                                            
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                              
+                                              
+                                               
+                                               
+                                            </div>
+                                           
+                                        </div>
+                                    </li>
+                                   
+                                  
+        
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           <!-- Mobile Menu start -->
+     <div class="mobile-menu-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="mobile-menu">
+                            <nav id="dropdown">
+                                <ul class="mobile-menu-nav">
+                                    <li><a data-toggle="collapse" data-target="#Charts" href="team_dashboard">Home</a>
+                                        <ul class="collapse dropdown-header-top">
+                                            <li><a href="/team_dashboard">Ongoing</a></li>
+                                            <li id="upcoming_div"><a>Upcoming</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a  href="/team_dashboard/leads">New Leads</a>
+                                       
+                                    </li>
+                                    <li><a href="/team_dashboard/wallets">Wallets</a>
+                                       
+                                    </li>
+                                    <li><a href="/team_dashboard/history">History</a>
+                                       
+                                        <ul class="collapse dropdown-header-top">
+                                                <li><a href="/team_dashboard/history">Leads</a></li>
+                                                    <li id="mobile_wallet_div"><a>Wallet</a></li>
+                                                    </li>
+                                        </ul>
+                                        
+                                    </li>
+
+                                    <li><a href="/team_dashboard/rating">Rating & Reviews</a>
+                                       
+                                    </li>
+                                 
+                                  
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu end -->
+        <!-- Main Menu area start-->
+        <div class="main-menu-area mg-tb-40">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <ul class="nav nav-tabs notika-menu-wrap menu-it-icon-pro">
+                            <li><a href="/team_dashboard"><img src="https://img.icons8.com/cute-clipart/20/000000/home-page.png"> Home</a>
+                            </li>
+                            <li><a href="/team_dashboard/leads"><img src="https://img.icons8.com/dusk/20/000000/omnichannel.png"> New Leads</a>
+                            </li>
+                            <li><a  href="/team_dashboard/wallets"><img src="https://img.icons8.com/cotton/20/000000/wallet--v1.png"> Wallets</a>
+                            </li>
+                            <li><a  href="/team_dashboard/history"><img src="https://img.icons8.com/ultraviolet/20/000000/payment-history.png"> History</a>
+                            </li>
+                            <li class="active"><a  href="/team_dashboard/rating"><img src="https://img.icons8.com/offices/20/000000/rating.png"> Rating & Reviews</a>
+                            </li>
+                         
+                        </ul>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Main Menu area End-->
+
+
+        <script src="https://use.typekit.net/bkt6ydm.js"></script>
+        <script>try{Typekit.load({ async: true });}catch(e){}</script>
+       
+        <div class="container-fluid">
+            <div class="row example">
+                <div class="col-md-12 example-title">
+                    <h2>Rating & Review</h2>
+    </div>
+
+
+
+<% for(i=0;i<result.length;i++){ %>
+    <% if(i%2==0) { %>
+                <div class="col-sm-6 col-xs-12">
+                    <div class="testimonial testimonial-bubble">
+                        <article class="testimonial-item">
+                            <div class="inner">
+                                <div class="testimonial-content">
+                                    <p><%=result[i].review%></p>
+                                </div>
+                                <!-- .testimonial-content -->
+                                <div class="testimonial-info">
+                                   
+                                    <div class="testimonial-titling">
+                                        <h3 class="testimonial-title"><%= result[i].name%></h3>
+ <span class="testimonial-subtitle"><%= result[i].rating%><img src="https://img.icons8.com/cotton/20/000000/filled-star.png"></span>
+                                
+                                    </div>
+                                    <!-- .testimonial-titling -->
+                                </div>
+                                <!-- .testimonial-info -->
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            <% } else { %>
+                <div class="col-sm-6 col-xs-12">
+                    <div class="testimonial testimonial-bubble testimonial-reverse">
+                        <article class="testimonial-item">
+                            <div class="inner">
+                                <div class="testimonial-content">
+                                        <p><%=result[i].review%></p>
+                                </div>
+                                <!-- .testimonial-content -->
+                                <div class="testimonial-info">
+                                    <div class="testimonial-titling">
+                                        <h3 class="testimonial-title"><%= result[i].name%></h3>
+
+
+                                        
+                                        <span class="testimonial-subtitle"><%= result[i].rating%><img src="https://img.icons8.com/cotton/20/000000/filled-star.png"></span>
+                                    </div>
+                                    <!-- .testimonial-titling -->
+                                   
+                                </div>
+                                <!-- .testimonial-info -->
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+
+              <% } } %>
+                
+                 
+               
+             <!--end-->
+            </div>
+        </div>
+</body>
+
+<% include ./partner_footer.ejs %>
+<script type='text/javascript'>
+    var isCtrl = false;
+    document.onkeyup=function(e)
+    {
+    if(e.which == 17)
+    isCtrl=false;
+    }
+    document.onkeydown=function(e)
+    {
+    if(e.which == 17)
+    isCtrl=true;
+    if((e.which == 85) || (e.which == 67) || isCtrl == true)
+    {
+    // alert(&#8216;Keyboard shortcuts are cool!&#8217;);
+    return false;
+    }
+    }
+    var isNS = (navigator.appName == "Netscape") ? 1 : 0;
+    if(navigator.appName == "Netscape") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+    function mischandler(){
+    return false;
+    }
+    function mousehandler(e){
+    var myevent = (isNS) ? e : event;
+    var eventbutton = (isNS) ? myevent.which : myevent.button;
+    if((eventbutton==2)||(eventbutton==3)) return false;
+    }
+    document.oncontextmenu = mischandler;
+    document.onmousedown = mousehandler;
+    document.onmouseup = mousehandler;
+    </script>
+  
+</html>

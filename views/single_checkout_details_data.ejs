@@ -1,0 +1,141 @@
+<% include ./booking_dashboard_header.ejs %>
+
+  
+        <!--**********************************
+            Content body start
+        ***********************************-->
+        <div class="content-body">
+
+            <div class="row page-titles mx-0">
+                <div class="col p-md-0">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="javascript:void(0)">Dashboard</a></li>
+                        <li class="breadcrumb-item active"><a href="javascript:void(0)">Home</a></li>
+                    </ol>
+                </div>
+            </div>
+            <!-- row -->
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 col-xl-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="media align-items-center mb-4">
+
+
+                                      
+                               
+                                    <div class="media-body">
+                                  
+                                        <h3 class="mb-0"><%=result[0].name%></h3>
+                                         
+                                      
+                                        <h5 class="mb-0 float-center"><%=result[0].booking_id%></h5>
+
+                                        <h5 class="mb-0 float-right"><%=result[0].email%></h5>
+                                      
+                                        <p class="text-muted mb-0"><%=result[0].usernumber%></p>    
+                                     
+                                 
+                                       
+                                       
+                                    </div>
+                                </div>
+                                
+                                <div class="row mb-5">
+                                   
+                                           <div class="col">
+                                            <div class="card card-profile text-center">
+                                                <span class="mb-1 text-primary"><i class="icon-people"></i></span>
+                                                <h3 class="mb-0">Category & Subcategory</h3>
+                                                <p class="text-muted px-4"><%=result[0].categoryname%>,<%=result[0].subcategoryname%></p>
+                                           
+                                            </div>
+                                        </div>
+
+                                        <div class="col">
+                                            <div class="card card-profile text-center">
+                                                <span class="mb-1 text-primary"><i class="icon-people"></i></span>
+                                                <h3 class="mb-0">Address & Pincode  </h3>
+                                                <p class="text-muted px-4"><%=result[0].address%>,<%=result[0].pincode%></p>
+                                           
+                                            </div>
+                                        </div>
+                                  
+                                </div>
+
+
+                                <div class="row mb-5">
+                                       
+                                        <div class="col">
+                                            <div class="card card-profile text-center">
+                                                <span class="mb-1 text-warning"><i class="icon-user-follow"></i></span>
+                                                <h3 class="mb-0">Service Date & Service Time</h3>
+                                                <p class="text-muted px-4"><%=result[0].date%> at <%=result[0].time%></p>
+                                              
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                                <div class="card card-profile text-center">
+                                                    <span class="mb-1 text-primary"><i class="icon-people"></i></span>
+                                                    <h3 class="mb-0">Booking Date & Booking Time</h3>
+                                                    <p class="text-muted px-4"><%=result[0].booking_date%> at <%=result[0].booking_time%></p>
+
+                                                </div>
+                                            </div>
+    
+                                            
+                                        <div class="col-12 text-center">
+                                            <button class="btn btn-danger px-5">Rs <%=result[0].price%></button>
+                                        </div>
+
+
+
+                                   
+
+                                    </div>
+                                    <button class="btn btn-warning px-9"> Quantity :  <%=result[0].quantity%></button>                          
+                            </div>
+                        </div>  
+                    </div>
+                    
+
+                    </div>
+                </div>
+            </div>
+            <!-- #/ container -->
+        </div>
+        <!--**********************************
+            Content body end
+        ***********************************-->
+        
+        
+        <!--**********************************
+            Footer start
+        ***********************************-->
+        <div class="footer">
+            <div class="copyright">
+                    <p>Copyright &copy;2019 Delo Services Pvt. Ltd</p>
+            </div>
+        </div>
+        <!--**********************************
+            Footer end
+        ***********************************-->
+    </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <script src="plugins/common/common.min.js"></script>
+    <script src="js/custom.min.js"></script>
+    <script src="js/settings.js"></script>
+    <script src="js/gleek.js"></script>
+    <script src="js/styleSwitcher.js"></script>
+
+</body>
+
+</html>

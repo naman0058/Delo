@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- <script> window._peq = window._peq || []; window._peq.push(["init"]); </script>
+      <script src="https://clientcdn.pushengage.com/core/60add4df169e0e2f6d851c190f7844b3.js" async></script>
+
+    <script>
+      !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
+      analytics.load("LioF9AH4FA5S2Ioit4CkQHeQgaRy6227");
+      analytics.page();
+      }}();
+    </script> -->
+
+
+<meta name="p:domain_verify" content="facc8b8cd20898e52a2b8e767111d661"/>
+
+<!-- Global site tag (gtag.js) - Google Ads: 741046957 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-741046957"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-741046957');
+</script>
+
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KHL4WHL');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140402344-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-140402344-1');
+    </script>
+    <!--End -->
+
+    <meta property="fb:pages" content="357112871580780" />
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Delo Services - One Destination For All Home,Beauty & spa Services</title>
+
+ <!--META SEO START-->
+ <meta charset="UTF-8">
+ <meta name="description" content="Delo Services is your one stop destination for all your home needs - Wedding Services, Home Services, Appliance & Electronic Repairs, Beauticians, and much more from our trusted & certified professionals."/>
+ <meta name="keywords" content="ac repair services , ac service near me , ac mechanic, air conditioner , ac price , 	ac repair , ac service , best air conditioner , ac , accompany , ac repair near me "/>
+ <meta name="google-site-verification" content="5TB0irTJKkDjgSE2r-gp9HOL-pksD8SF7rvpPlgn-_c" />  
+ <meta name="google-site-verification" content="KUK42ZousazAe0Ye4J3GmWELjP9NL8ePB8fOSiUAjqE">
+ <meta name="msvalidate.01" content="C80D427BDFDF46CFEB5C748950D62040" />
+ <meta name="robots" content="all,follow" />
+ <meta name="googlebot" content="index, follow" />
+
+ <meta name="classification" content="Delo Services-One Destination For All Home,Beauty,Wellness & spa Services Delhi and NCR India" />
+
+ <link rel="shortcut icon" type="images/x-icon" href="https://www.deloservices.com/images/delofabicon.png">
+ <meta name="distribution" content="Global" />
+ <meta name="author" content="http://www.deloservices.com" />
+ <meta name="Language" content="English" />
+ <meta name="rating" content="general" />
+ <meta name="owner" content="DELO SERVICES PRIVATE LIMITED." />
+ <meta http-equiv="refresh" content="300">
+ <meta name="document-type" content="public" />
+ <meta name="revisit-after" content="daily" />
+ <meta name="country" content="India" />
+
+ <meta name="DC.title" content="Delo Services-One Destination For All Home,Beauty,Wellness & spa Services Delhi and NCR India" />
+
+ <meta property="fb:admins" content="357112871580780" />
+ <meta property="og:title" content="Delo Services-One Destination For All Home,Beauty,Wellness & spa Services Delhi and NCR India" />
+ <meta property="og:type" content="Delo Services-One Destination For All Home,Beauty,Wellness & spa Services Delhi and NCR India" />
+ <meta property="og:url" content="https://www.deloservices.com" />
+ <meta property="og:image" content="http://www.deloservices.comhttps://www.deloservices.com/images/logo.jpg" />
+ <meta property="og:site_name" content="https://www.deloservices.com" />
+ <meta property="og:description" content="Delo Services-One Destination For All Home,Beauty,Wellness & spa Services Delhi and NCR India." />
+ <meta property="og:locale" content="en IN" />
+<link rel="canonical" href="https://www.deloservices.com">
+ <meta name="geo.region" content="IN-DL" />
+ <meta name="geo.placename" content="New Delhi" />
+ <meta name="geo.position" content="28.55629, 77.1732011" />
+ <meta name="ICBM" content="28.55629, 77.1732011" />
+<!-- Required meta tags -->
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+   
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.5/slick.min.css">
+<link rel="shortcut icon" type="images/x-icon" href="https://www.deloservices.com/images/delofabicon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css">
+    <!-- Icon -->
+    <link rel="stylesheet" type="text/css" href="/assets/fonts/line-icons.css">
+    <!-- Slicknav -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/slicknav.css">
+
+    <!-- Animate -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/animate.css">
+    <!-- Owl carousel -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/owl.carousel.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+    <!-- Responsive Style -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/responsive.css">
+
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+
+    <style>
+ 
+        img {
+          width: 100%;
+          height: auto;
+          padding: 5px;
+       }
+        
+        .slick-dots {
+          text-align: center;
+          margin: 0 0 10px 0;
+          padding: 0;
+       }
+        .slick-dots li {
+          display: inline-block;
+          margin-left: 4px;
+          margin-right: 4px;
+       }
+        .slick-dots li.slick-active button {
+          background-color: #999;
+       }
+        .slick-dots li button {
+          font: 0/0 a;
+          text-shadow: none;
+          color: transparent;
+          background-color: #999;
+          border: none;
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+       }
+        .slick-dots li :hover {
+          background-color: #999;
+       }
+       /* Custom Arrow */
+        .prev {
+          color: #999;
+          position: absolute;
+          top: 38%;
+          left: -2em;
+          font-size: 1.5em;
+       }
+        .prev :hover {
+          cursor: pointer;
+          color: #999;
+       }
+        .next {
+          color: #999;
+          position: absolute;
+          top: 38%;
+          right: -2em;
+          font-size: 1.5em;
+       }
+        .next :hover {
+          cursor: pointer;
+          color: black;
+       }
+        @media screen and (max-width: 800px) {
+          .next {
+            display: none !important;
+         }
+       }
+        
+       
+           </style>
+
+
+
+
+
+
+
+    <style>
+        /* Icon set - http://ionicons.com/ */
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
+figure.snip1139 {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+ 
+  width: 100%;
+  height:170px;
+  color: #333;
+  text-align: left;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+}
+figure.snip1139 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+  transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+}
+figure.snip1139 img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+figure.snip1139 blockquote {
+  position: relative;
+  background-color: #ffffff;
+  padding: 25px 50px 25px 50px;
+  font-size: 0.8em;
+  font-weight: 500;
+  text-align: left;
+  margin: 0;
+  line-height: 1.6em;
+  font-style: italic;
+}
+figure.snip1139 blockquote:before,
+figure.snip1139 blockquote:after {
+  font-family: 'FontAwesome';
+  content: "\201C";
+  position: absolute;
+  font-size: 50px;
+  opacity: 0.3;
+  font-style: normal;
+}
+figure.snip1139 blockquote:before {
+  top: 25px;
+  left: 20px;
+}
+figure.snip1139 blockquote:after {
+  content: "\201D";
+  right: 20px;
+  bottom: 0;
+}
+figure.snip1139 .arrow {
+  top: 100%;
+  width: 0;
+  height: 0;
+  border-left: 0 solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 25px solid #ffffff;
+  margin: 0;
+  position: absolute;
+}
+figure.snip1139 .author {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 5px 25px;
+  color: #000000;
+  background-color: #ffffff;
+  margin: 0;
+  text-transform: uppercase;
+}
+figure.snip1139 .author h5 {
+  opacity: 0.8;
+  margin: 0;
+  font-weight: 800;
+}
+figure.snip1139 .author h5 span {
+  font-weight: 400;
+  text-transform: none;
+  padding-left: 5px;
+}
+
+
+
+/* Demo purposes only */
+html {
+  height: 80%;
+}
+
+
+body {
+  
+
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+ 
+}
+
+    </style>
+
+
+
+<!---scroll bar style-->
+
+
+<style>
+  
+
+  input::-webkit-input-placeholder {
+    color:black !important;
+    }
+     
+    input:-moz-input-placeholder { /* Firefox 18- */
+    color: black !important;  
+    }
+     
+    input::-moz-input-placeholder {  /* Firefox 19+ */
+    color: black !important;  
+    }
+     
+    input:-ms-input-placeholder {  
+    color: black !important;  
+    }
+  </style>
+
+
+<style>
+  /* width */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 6px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:#1F5AB0; 
+    border-radius: 6px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #1F5AB0; 
+  }
+  </style>
+<!--STYLE END SCROLL BAR-->
+
+
+
+<style>
+::placeholder {
+  color: red;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: red;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: red;
+}
+
+.form-control{
+  border-radius: 5px;
+  height:35px;
+  width:250px;
+}
+
+
+
+</style>
+    
+  </head>
+  <body style="color: black">
+     
+
+   <!-- Google Tag Manager (noscript) -->
+   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHL4WHL"
+   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+   <!-- End Google Tag Manager (noscript) -->
+
+   <!-- <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="#">About</a>		
+    <a href="#">Services</a>		
+    <a href="#">Clients</a>		
+    <a href="#">Contact</a>			
+  </div>
+  
+  <div id="main">
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">☰ </span>
+  </div> -->
+
+
+    <!-- Header Area wrapper Starts -->
+    <header id="header-wrap"   style="background-color: white;">
+          
+
+      <!-- Navbar Start -->
+      <nav class="navbar navbar-expand-lg bg-inverse   navbar-light nav1" style="background-color: white;">
+        <div class="container">
+          <div class="theme-header clearfix">
+           <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+               
+                <a href="/" class="navbar-brand"><img src="https://www.deloservices.com/images/delomainlogo.png" alt="deloservices" > </a>
+              
+              </div>
+              <div class=" navbar-collapse">
+                <ul class="navbar-nav mr-auto w-100 justify-content-end">
+                  <li class="nav-item dropdown"  style="margin-top: 15px;color:black" >
+                    <a class="nav-link " href="/" aria-expanded="false">
+                      Home
+                    </a>
+                   
+              
+
+
+               <li class="nav-item dropdown"  style="margin-top: 15px;color:black" >
+                      <a class="nav-link " data-toggle="modal" data-target="#myModal" style="cursor: pointer;"  aria-expanded="false">
+                       Login
+                      </a>
+                     
+                    </li>
+
+
+
+                  <li class="postadd" style="margin-top: 35px;">
+                    <a class="btn btn-primary btn-post" href="/">Advertise</a>
+                  </li>
+
+
+
+
+
+                </ul>
+                
+              </div>
+            </div>
+          </div>
+  <div class="mobile-menu" data-logo="https://www.deloservices.com/images/delomainlogo.png"></div>
+       
+</nav>
+
+
+
+    </header>
+
+
+
+
+
+
+<div class="modal fade bd-example-modal-sm" id="myModal" role="dialog">
+  <div class="modal-dialog modal-md">
+  
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header" style="background-color: black;">
+         <!--  <button type="button" class="btn btn-default float-right" style="float:right;" data-dismiss="modal">&times;</button> -->
+<h4 style="color: white;font-size:14px;">Enter your number to claim now</h4>
+      </div>
+      <div class="modal-body">
+     
+       <br><br>
+        <form action="/free-listing/claim_now" method="post" >
+         
+         
+          <div class="form-group row">
+         <div class="col-sm-12 col-md-12 col-lg-12">
+              <input type="number" name="number" required class="form-control number" id="inputPassword3" placeholder="Enter Mobile Number">
+            </div>
+          </div>
+         
+          
+          <div class="form-group row">
+            <div class="col-sm-12">
+              <button type="submit" class="btn btn-primary claim btn-block float-right">Claim Now</button>
+            </div>
+          </div>
+        </form>
+      
+
+
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div> -->
+    
+  </div>
+</div>
+</div>
+
+
+    <!-- Header Area wrapper End -->
+
+    <!-- Page Header Start -->
+    <div class="page-header" style="background: url(/images/2.jpg);">
+      <div class="container">
+        <div class="row">         
+          <div class="col-md-12">
+            <div class="breadcrumb-wrapper">
+             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <br><br>
+    <!-- Page Header End -->  
+
+    <!-- Start Content -->
+       <!-- Ads Details Start -->
+       <div class="section-padding">
+        <div class="container">
+          <!-- Product Info Start -->
+          <div>
+              <h2>Search Not Found-  Keyword Value</h2>
+            </div>
+          <div class="product-info row">
+            <div class="col-lg-10 col-md-6 col-xs-12">
+              <aside class="details-sidebar">
+                <div class="widget"> 
+                  <h4 class="widget-title text-center" style="font-size:18px; font-family: 'Lato',  sans-serif;margin-top: 20px;color:#1f5ab0">Tell us what are you looking for?</h4>
+    
+                           <!--Sidebar-->
+<div class="row">
+  
+  <div class="col-lg-6">
+    <div class="agent-inner">
+      <form action="/free-listing/insert" method="POST" enctype="multipart/form-data">
+      <input type="text" class="form-control" name="state" placeholder="State*"  style="font-size:12px">
+      <input type="text" class="form-control" name="looking" placeholder="I am Looking For*" style="font-size:12px">
+      <input type="text" class="form-control" name="area" placeholder="In Area*" style="font-size:12px">
+      <input type="text" class="form-control" name="name" placeholder="Name*" style="font-size:12px">
+      <input type="email" class="form-control" name="email" placeholder="Email*" style="font-size:12px">
+      <input type="tel" class="form-control" name="number" placeholder="Mobile No.*" style="font-size:12px">
+      <p class="text-muted" style="margin-top: -15px;">* marked fields mandatory</p>
+
+      <button class="btn btn-common fullwidth mt-4" style="border-radius: 0px;">Submit </button>
+      </form>
+    </div>
+
+  </div>
+<div class="col-lg-6">
+
+            
+  <ul style="margin-top: 20px; list-style-type: square;  ">
+    <h5>Search Tips:</h5>
+    <li class="text-muted" style="border-bottom: 1px solid rgb(238, 234, 234); list-style-type: square;">  For better search type correct spelling or keywords.</li>
+    <li class="text-muted" style="border-bottom: 1px solid rgb(238, 234, 234); list-style-type: square;">   Do not use same keywords, use diffrent keywords.</li>
+    <li class="text-muted" style="border-bottom: 1px solid rgb(238, 234, 234); list-style-type: square;"> Do not use Special characters eg.( %_$+/).</li>
+    <li class="text-muted" style="border-bottom: 1px solid rgb(238, 234, 234); list-style-type: square;">    Use one service or product for better search.</li>
+    <li class="text-muted" style="border-bottom: 1px solid rgb(238, 234, 234); list-style-type: square;"> It is advisable do not use very specific keywords.(eg: 20 sq. meter Rubber Matte).</li>
+    <li class="text-muted" style="border-bottom: 1px solid rgb(238, 234, 234); "> </li>
+  </ul><br><br>
+
+  <div class="details-box" style="margin-right:20px;">
+    
+<h6 style="color:#1f5ab0">List your business directly</h6>
+<p style="color:#666666">Give us a missed call on </p>
+<p style="color:#1f5ab0;font-weight: bold">844-844-8638 <span style="color: #666666;font-weight: bold;">to  list your business direclty</span></p>
+   
+  </div>
+
+
+</div>
+   
+
+</div>
+</aside>
+</div>
+
+
+            
+              <!--End sidebar-->
+            
+            <!-- <div class="col-lg-4 col-md-12 col-xs-12" style="margin:0px;padding:0px">
+             <div class="details-box">
+                <div class="tag-bottom">
+                  <div class="float-left">
+                    <div class="product-img">
+                      <img class="img-fluid" src="assets/img/productinfo/img1.jpg" alt="">
+                    </div>
+                       <div class="product-img">
+                      <img class="img-fluid" src="assets/img/productinfo/img1.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+             
+            </div>
+           -->
+            
+
+
+
+
+
+
+          </div>
+          <!-- Product Info End -->
+  
+        </div>    
+      </div>
+      <!-- Ads Details End -->
+  
+      <!-- Subscribe Section Start -->
+      <!-- <section class="subscribes section-padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <div class="subscribes-inner">
+                <div class="icon">
+                  <i class="lni-pointer"></i>
+                </div>
+                <div class="sub-text">
+                  <h3>Subscribe to Newsletter</h3>
+                  <p>and receive new ads in inbox</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <form>
+                <div class="subscribe">
+                  <input class="form-control" name="EMAIL" placeholder="Enter your Email" required="" type="email">
+                  <button class="btn btn-common" type="submit">Subscribe</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section> -->
+    <!-- End Content -->
+<br><br>
+
+    <!-- Subscribe Section End -->
+    <% include ./indexfooter.ejs %>
+
+
+
+      
+  </body>
+
+
+
+<script>
+    $.getJSON(`/category/all-lisiting`, data => {
+    categories = data
+    fillDropDown('categoryid', data, 'Choose Category', 0)
+  
+})
+
+
+  $.getJSON(`/category/dial_subcategory`, data => {
+      subcategories = data
+    fillDropDown('subcategoryid', [], 'Choose Subcategoy', 0)
+})
+
+
+    $.getJSON(`/category/dial_subservices`, data => {
+      subservices = data
+    fillDropDown('subservicesid', [], 'Choose Sub Services', 0)
+})
+
+
+
+
+
+$('#categoryid').change(() => {
+    const filteredData = subcategories.filter(item => item.categoryid == $('#categoryid').val())
+    fillDropDown('subcategoryid', filteredData, 'Choose Sub Category', 0)
+})
+
+
+$('#subcategoryid').change(() => {
+    const filteredData = subservices.filter(item => item.subcategoryid == $('#subcategoryid').val())
+    fillDropDown('subservicesid', filteredData, 'Choose Sub Services', 0)
+})
+
+
+
+$.getJSON(`/category/city`, data => {
+    cities = data
+    fillDropDown('getcityid', data, 'Choose City of Services', 0)
+  
+})
+
+
+    $.getJSON(`/category/locality`, data => {
+      localities = data
+    fillDropDown('localityid', [], 'Choose Locality of Services', 0)
+  
+})
+
+$('#getcityid').change(() => {
+    const filteredData = localities.filter(item => item.cityid == $('#getcityid').val())
+    fillDropDown('localityid', filteredData, 'Choose Locality of Services', 0)
+})
+
+
+
+function fillDropDown(id, data, label, selectedid = 0) {
+    $(`#${id}`).empty()
+    $(`#${id}`).append($('<option>').val("null").text(label))
+
+    $.each(data, (i, item) => {
+        if (item.id == selectedid) {
+            $(`#${id}`).append($('<option selected>').val(item.id).text(item.name))
+        } else {
+            $(`#${id}`).append($('<option>').val(item.id).text(item.name))
+        }
+    })
+}
+
+
+
+
+
+
+
+
+
+</script>
+
+
+</html>

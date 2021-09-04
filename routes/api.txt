@@ -1,0 +1,41 @@
+var today = new Date();
+var newdate = new Date();
+newdate.setDate(today.getDate() + 5);
+
+
+
+
+var dd = today.getDate();
+
+var futuretime = today.getHours() + 2 + ":" + today.getMinutes();
+
+
+var mm = today.getMonth() + 1;
+var yyyy = today.getFullYear();
+var a = newdate.getDate()
+var b = newdate.getMonth() + 1;
+if (dd < 10) {
+  dd = '0' + dd;
+
+}
+
+if (a < 10) {
+  a = '0' + a;
+}
+
+
+if (mm < 10) {
+  mm = '0' + mm;
+}
+
+
+if (b < 10) {
+  b = '0' + b;
+}
+today = yyyy + '-' + mm + '-' + dd;
+
+var my = newdate.toLocaleDateString()
+var my1 = newdate.getFullYear() + '-' + b + '-' + a
+/*onsole.log(today)
+//console.log(newdate)
+console.log(my1)*/

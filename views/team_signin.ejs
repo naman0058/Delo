@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" type="images/x-icon" href="/images/delofabicon.png">
+    <title>Delo Services-Partner</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css">
+    <!-- Icon -->
+    <link rel="stylesheet" type="text/css" href="/assets/fonts/line-icons.css">
+    <!-- Slicknav -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/slicknav.css">
+
+    <!-- Animate -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/animate.css">
+    <!-- Owl carousel -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/owl.carousel.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+    <!-- Responsive Style -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/responsive.css">
+
+<!-- Global site tag (gtag.js) - Google Ads: 741046957 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-741046957"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-741046957');
+</script>
+  </head>
+  <body>
+
+    <!-- Header Area wrapper Starts -->
+   
+    <!-- Page Header Start -->
+  
+
+    <!-- Content section Start --> 
+    <section class="login section-padding">
+      <div class="container" style="margin-top: 200px;" >
+        <div class="row justify-content-center">
+          <div class="col-lg-5 col-md-12 col-xs-12">
+            <div class="login-form login-area">
+              <h3>
+                Login Now
+              </h3>
+              <form class="login-form">
+                <div class="form-group">
+                  <div class="input-icon">
+                    <i class="lni-user"></i>
+                   
+                    <input type="number" id="loginnumber" class="form-control" name="loginnumber" placeholder="Mobile Number">
+                  </div>
+                </div> 
+                
+                <div class="text-center">
+                  <button type="button" class="btn btn-common log-btn go">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Content section End --> 
+ 
+      
+     
+    <!-- Footer Section End -->  
+
+    <!-- Go to Top Link -->
+    <a href="#" class="back-to-top">
+      <i class="lni-chevron-up"></i>
+    </a>
+
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="loader" id="loader-1"></div>
+    </div>
+    <!-- End Preloader -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="/assets/js/jquery-min.js"></script>
+    <script src="/assets/js/popper.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+
+    <script src="/assets/js/jquery.counterup.min.js"></script>
+    <script src="/assets/js/waypoints.min.js"></script>
+    <script src="/assets/js/wow.js"></script>
+    <script src="/assets/js/owl.carousel.min.js"></script>
+    <script src="/assets/js/jquery.slicknav.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/form-validator.min.js"></script>
+    <script src="/assets/js/contact-form-script.min.js"></script>
+    <script src="/assets/js/summernote.js"></script>
+    <script src="/javascripts/jquery.js"></script>
+    <script>
+    $('#verify').click(function(){
+        if( $('#number').val()=="" || $('#number').val()==[] || $('#number').val().length<10 || $('#number').val().length>=11)
+    {
+    alert("Enter Correct Number");
+    }
+    else{
+        let number = $('#number').val()
+        $.post('/team_login/verification',{number},data=>{
+            window.location.href = "/teamverify";
+        })
+    }
+    })
+    
+    
+    $('.go').click(function(){
+        if($('#loginnumber').val()=="" || $('#loginnumber').val()=="null" || $('#loginnumber').val()==[] || $('#loginnumber').val()==null) alert("Enter Valid Mobile Number")
+        else{
+            const loginnumber = $('#loginnumber').val()
+            $.post('/team_login/verifylogin',{loginnumber},data=>{
+                window.location.href = '/loginverify'
+            })
+        }
+    })
+    
+    </script>
+  </body>
+</html>

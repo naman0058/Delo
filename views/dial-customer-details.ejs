@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<!--
+Item Name: Elisyam - Web App & Admin Dashboard Template
+Version: 1.5
+Author: SAEROX
+
+** A license must be purchased in order to legally use this template for your project **
+-->
+<html lang="en">
+
+<head>
+    <script>
+        !function () {
+            var analytics = window.analytics = window.analytics || []; if (!analytics.initialize) if (analytics.invoked) window.console && console.error && console.error("Segment snippet included twice."); else {
+                analytics.invoked = !0; analytics.methods = ["trackSubmit", "trackClick", "trackLink", "trackForm", "pageview", "identify", "reset", "group", "track", "ready", "alias", "debug", "page", "once", "off", "on"]; analytics.factory = function (t) { return function () { var e = Array.prototype.slice.call(arguments); e.unshift(t); analytics.push(e); return analytics } }; for (var t = 0; t < analytics.methods.length; t++) { var e = analytics.methods[t]; analytics[e] = analytics.factory(e) } analytics.load = function (t, e) { var n = document.createElement("script"); n.type = "text/javascript"; n.async = !0; n.src = "https://cdn.segment.com/analytics.js/v1/" + t + "/analytics.min.js"; var a = document.getElementsByTagName("script")[0]; a.parentNode.insertBefore(n, a); analytics._loadOptions = e }; analytics.SNIPPET_VERSION = "4.1.0";
+                analytics.load("LioF9AH4FA5S2Ioit4CkQHeQgaRy6227");
+                analytics.page();
+            }
+        }();
+    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dial Delo - User Dashboard </title>
+    <meta name="description" content="Elisyam is a Web App and Admin Dashboard Template built with Bootstrap 4">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Google Fonts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: { "families": ["Montserrat:400,500,600,700", "Noto+Sans:400,700"] },
+            active: function () {
+                sessionStorage.fonts = true;
+            }
+        });
+    </script>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/admin/assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/admin/assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/admin/assets/img/favicon-16x16.png">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/admin/assets/vendors/css/base/bootstrap.min.css">
+    <link rel="stylesheet" href="/admin/assets/vendors/css/base/elisyam-1.5.min.css">
+    <!-- Tweaks for older IEs-->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+
+<body id="page-top">
+
+    <div class="page">
+        <!-- Begin Header -->
+        <header class="header">
+            <nav class="navbar fixed-top">
+                <!-- Begin Search Box-->
+                <div class="search-box">
+                    <button class="dismiss"><i class="ion-close-round"></i></button>
+                    <form id="searchForm" action="#" role="search">
+                        <input type="search" placeholder="Search something ..." class="form-control">
+                    </form>
+                </div>
+                <!-- End Search Box-->
+                <!-- Begin Topbar -->
+                <div class="navbar-holder d-flex align-items-center align-middle justify-content-between">
+                    <!-- Begin Logo -->
+                    <div class="navbar-header">
+                        <a href="db-default.html" class="navbar-brand">
+                            <div class="brand-image brand-big">
+                                Delo Services Pvt. Ltd.
+                            </div>
+
+                        </a>
+                        <!-- Toggle Button -->
+                        <a id="toggle-btn" href="#" class="menu-btn active">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                        <!-- End Toggle -->
+                    </div>
+                    <!-- End Logo -->
+                    <!-- Begin Navbar Menu -->
+                    <ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center pull-right">
+                        <!-- Search -->
+
+                        <!-- End Notifications -->
+                        <!-- User -->
+                        <li><a id="user" rel="nofollow" href="/deloservices-login/logout" aria-haspopup="true"
+                                aria-expanded="false" class="nav-link"> <button class="btn btn-gradient-01" href=""
+                                    style="height: 55px;">Log Out</a>
+
+                        </li>
+                        <!-- End User -->
+                        <!-- Begin Quick Actions -->
+
+                        <!-- End Quick Actions -->
+                    </ul>
+                    <!-- End Navbar Menu -->
+                </div>
+                <!-- End Topbar -->
+            </nav>
+        </header>
+        <!-- End Header -->
+        <!-- Begin Page Content -->
+        <div class="page-content d-flex align-items-stretch">
+            <div class="default-sidebar">
+                <!-- Begin Side Navbar -->
+                <nav class="side-navbar box-scroll sidebar-scroll">
+                    <!-- Begin Main Navigation -->
+                    <ul class="list-unstyled">
+                        <li class="active"><a href="/delo_dial/call-center-dashboard"><img
+                                    src="https://img.icons8.com/ultraviolet/24/000000/details-popup.png"><span
+                                    style="margin-left: 18px;">Dashboard</span></a>
+
+                        </li>
+
+                        <li><a href="/delo_dial/call-center-dashboard/customer-details"><img
+                                    src="https://img.icons8.com/windows/24/000000/bebo.png"> <span
+                                    style="margin-left: 20px;"> Customer Details</span></a></li>
+
+
+  <li><a href="/delo_dial/call-center-dashboard/request"><img
+                                    src="https://img.icons8.com/windows/24/000000/bebo.png"> <span
+                                    style="margin-left: 20px;"> Customer Request</span></a></li>
+
+                    </ul>
+
+                </nav>
+                <!-- End Side Navbar -->
+            </div>
+            <!-- End Left Sidebar -->
+            <div class="content-inner">
+                <div class="container-fluid">
+                    <!-- Begin Page Header-->
+                    <div class="row">
+                        <div class="page-header">
+                            <div class="d-flex align-items-center">
+                                <div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Page Header -->
+
+
+
+
+
+
+                    <div id="insertdiv">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="active-member">
+                                            <div class="table-responsive">
+                                                <table class="table table-xs mb-0">
+                                                    <h3>Latest Running Booking</h3>
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Customer Name</th>
+                                                            <th>Customer Number</th>
+                                                            <th>Category</th>
+                                                            <th>Subcategory</th>
+                                                            <th>City</th>
+                                                            <th>Locality</th>
+                                                            <th>Requirement Date</th>
+                                                           
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <% for(i=0;i<result.length;i++) { %>
+                                                        <tr>
+                                                            <td><%=result[i].customername%></td>
+                                                            <td><%=result[i].customernumber%></td>
+                                                            <td>
+                                                                <span><%=result[i].categoryname%></span>
+                                                            </td>
+                                                            <td><%=result[i].subcateoryname%></td>
+                                                            <td><%=result[i].cityname%></td>
+                                                            <td><%=result[i].localityname%></td>
+                                                            <td><%=result[i].created_date%></td>
+
+
+
+
+                                                        </tr>
+
+
+                                                        <% } %>
+
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+        </div>
+        <!-- End Container -->
+        <!-- Begin Page Footer-->
+
+        <!-- End Page Footer -->
+        <a href="#" class="go-top"><i class="la la-arrow-up"></i></a>
+
+    </div>
+    <!-- End Offsidebar Container -->
+    </div>
+    <!-- End Offcanvas Sidebar -->
+    </div>
+    </div>
+    <!-- End Page Content -->
+
+    </div>
+
+
+
+
+
+
+    <!--Ends EditDiv-->
+
+    <!--UpdateImageDiv Start-->
+
+
+
+
+
+    <!-- Begin Vendor Js -->
+    <script src="/admin/assets/vendors/js/base/jquery.min.js"></script>
+    <script src="/admin/assets/vendors/js/base/core.min.js"></script>
+    <!-- End Vendor Js -->
+    <!-- Begin Page Vendor Js -->
+    <script src="/admin/assets/vendors/js/nicescroll/nicescroll.min.js"></script>
+    <script src="/admin/assets/vendors/js/datepicker/moment.min.js"></script>
+    <script src="/admin/assets/vendors/js/datepicker/daterangepicker.js"></script>
+    <script src="/admin/assets/vendors/js/app/app.min.js"></script>
+    <!-- End Page Vendor Js -->
+    <!-- Begin Page Snippets -->
+    <script src="/admin/assets/js/components/datepicker/datepicker.js"></script>
+
+
+    <!-- End Page Snippets -->
+</body>
+<script src="/javascripts/jquery.js"></script>
+<script src="/javascripts/listing_dashboard.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/3.51/jquery.form.min.js"></script>
+<script>
+
+    $('.uploadImage').submit(function (e) {
+        e.preventDefault();
+
+        // var title = $('#title').val(); 
+
+        $(this).ajaxSubmit({
+            // data: {title: title},
+            contentType: 'application/json',
+            success: function (response) {
+                alert('successfully')
+            }
+        });
+        return false;
+    });
+
+
+
+</script>
+
+
+
+
+</html>

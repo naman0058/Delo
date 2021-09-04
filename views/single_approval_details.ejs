@@ -1,0 +1,197 @@
+<% include ./team_verification_dashboard_header.ejs %>
+
+  
+        <!--**********************************
+            Content body start
+        ***********************************-->
+        <div class="content-body">
+
+            <div class="row page-titles mx-0">
+                <div class="col p-md-0">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="javascript:void(0)">Dashboard</a></li>
+                        <li class="breadcrumb-item active"><a href="javascript:void(0)">Home</a></li>
+                    </ol>
+                </div>
+            </div>
+            <!-- row -->
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 col-xl-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="media align-items-center mb-4">
+
+
+                                    
+                                <img class="mr-3" src="https://www.deloservices.com/images/<%=result[0].image%>" style="border-radius:50%;"  width="80" height="80" alt="">
+                                      
+
+                               
+                                    <div class="media-body">
+                                       
+                                        <h3 class="mb-0"><%=result[0].name%></h3>
+                                         
+                              
+                                        <h5 class="mb-0 float-right"><%=result[0].number%></h5>
+                                       
+                                        <p class="text-muted mb-0"><%=result[0].local_address%></p>
+                                     
+
+                                       
+                                    </div>
+                                </div>
+
+                                <div class="row mb-5">
+                                    <div class="col">
+                                       <a href="/team-verification-dashboard/work_history?number=<%=result[0].number%>"><button class="btn btn-primary px-5">Credit History</button></a><br>
+                                       <a href="/team-verification-dashboard/cancel_history?number=<%=result[0].number%>"><button class="btn btn-info px-5" style="margin-top:5%">Cancel History</button></a>
+                                    </div>
+                                    <div class="col">
+                                        
+                                    </div>
+                                    <div class="col">
+                                           
+                                        </div>
+
+                                        
+                                  
+                                </div>
+                                
+                                <div class="row mb-5">
+                                    <div class="col">
+                                        <div class="card card-profile text-center">
+                                            <span class="mb-1 text-primary"><i class="icon-people"></i></span>
+                                            <h3 class="mb-0">Bank Name & IFSC Code</h3>
+                                            <p class="text-muted px-4"><%=result[0].bank_name%> , <%=result[0].ifsc_code%></p>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card card-profile text-center">
+                                            <span class="mb-1 text-warning"><i class="icon-user-follow"></i></span>
+                                            <h3 class="mb-0">Account Number</h3>
+                                            <p class="text-muted"><%=result[0].account_number%></p>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                            <div class="card card-profile text-center">
+                                                <span class="mb-1 text-primary"><i class="icon-people"></i></span>
+                                                <h3 class="mb-0">Account Holder Name</h3>
+                                                <p class="text-muted px-4"><%=result[0].account_holder_name%></p>
+                                              
+                                            </div>
+                                        </div>
+
+                                        
+                                  
+                                </div>
+
+
+                                <div class="row mb-5">
+                                        <div class="col">
+                                            <div class="card card-profile text-center">
+                                                <span class="mb-1 text-primary"><i class="icon-people"></i></span>
+                                                <h3 class="mb-0">Aadhar Card </h3>
+                                                <p class="text-muted px-4"><img src="https://www.deloservices.com/images/<%=result[0].aadhar_front_number%>" style="width:100px">  <img src="https://www.deloservices.com/images/<%=result[0].aadhar_back_number%>" style="width:100px"> </p>
+                                         
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card card-profile text-center">
+                                                <span class="mb-1 text-warning"><i class="icon-user-follow"></i></span>
+                                                <h3 class="mb-0">Pan Card</h3>
+                                                <p class="text-muted px-4"><img src="https://www.deloservices.com/images/<%=result[0].pan_number%>" style="width:100px"></p>
+                                         
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                                <div class="card card-profile text-center">
+                                                    <span class="mb-1 text-primary"><i class="icon-people"></i></span>
+                                                    <h3 class="mb-0">Driving Licence</h3>
+                                                    <p class="text-muted px-4"><img src="https://www.deloservices.com/images/<%=result[0].licence_number%>" style="width:100px"></p>
+                                           
+                                                </div>
+                                            </div>
+    
+                                            
+                                        <div class="col-12 text-center">
+                                            <button class="btn btn-danger px-5">Pincode List</button>
+                                        </div>
+                                    </div>
+                                             
+                                    
+                                    <table class="table table-bordered">
+                                        <thead>
+                                          <tr>
+                                            <th>Pincode</th>
+                                           
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td><%=result[0].pincode%></td>
+                                            <td><%=result[0].pincode1%></td>
+                                            <td><%=result[0].pincode2%></td>
+                                          </tr>
+                                          <tr>
+                                            <td><%=result[0].pincode3%></td>
+                                            <td><%=result[0].pincode4%></td>
+                                            <td><%=result[0].pincode5%></td>
+                                          </tr>
+                                          <tr>
+                                            <td><%=result[0].pincode6%></td>
+                                            <td><%=result[0].pincode7%></td>
+                                            <td><%=result[0].pincode8%></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+
+
+
+<h4>Update Details</h4>
+
+
+                            </div>
+                        </div>  
+                    </div>
+                    
+
+                    </div>
+                </div>
+            </div>
+            <!-- #/ container -->
+        </div>
+        <!--**********************************
+            Content body end
+        ***********************************-->
+        
+        
+        <!--**********************************
+            Footer start
+        ***********************************-->
+        <div class="footer">
+            <div class="copyright">
+                    <p>Copyright &copy;2019 Delo Services Pvt. Ltd</p>
+            </div>
+        </div>
+        <!--**********************************
+            Footer end
+        ***********************************-->
+    </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <script src="/booking_dashboard/plugins/common/common.min.js"></script>
+    <script src="/booking_dashboard/js/custom.min.js"></script>
+    <script src="/booking_dashboard/js/settings.js"></script>
+    <script src="/booking_dashboard/js/gleek.js"></script>
+    <script src="/booking_dashboard/js/styleSwitcher.js"></script>
+
+</body>
+
+</html>

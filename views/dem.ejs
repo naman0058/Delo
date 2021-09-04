@@ -1,0 +1,41 @@
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script>
+        $( document ).ready(function(e) {
+            let searchParams = new URLSearchParams(window.location.search)
+    let param = searchParams.get('a')
+    $.get('/services/demo1',{param},data=>{
+        console.log("datahai",data.param)
+        var options1 = {
+    "key": "rzp_live_2KlcXieUGyQ8k6", // Enter the Key ID generated from the Dashboard
+    "amount": "100", // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise or INR 500.
+    "currency": "INR",
+    "name": "Delo Services Pvt. Ltd.",
+    "description": '',
+    "image": "https://www.deloservices.com/images/delofabicon.png",
+    "order_id": data.param,//This is a sample Order ID. Create an Order using Orders API. (https://razorpay.com/docs/payment-gateway/orders/integration/#step-1-create-an-order). Refer the Checkout form table given below
+    "callback_url" : "https://www.deloservices.com/api/success_razorpay",
+     "redirect": true,
+     "modal": {
+        "ondismiss": function(){
+            window.location.href = 'https://www.deloservices.com/failed_payment'
+        }
+    },
+    "theme": {
+        "color": "#507ec0"
+    }
+};
+
+
+var rzp1 = new Razorpay(options1);
+    rzp1.open();
+    e.preventDefault();
+
+    })
+});
+   
+  
+    </script>

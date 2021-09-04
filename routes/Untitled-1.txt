@@ -1,0 +1,42 @@
+
+import React from 'react';
+import LoginScreen from "react-native-login-screen";
+import { StyleSheet, View  ,  Image , AsyncStorage,ImageBackground, Text, NetInfo, Dimensions    } from 'react-native';
+
+
+class Index extends React.Component{
+render(){
+  return(
+
+<LoginScreen
+  spinnerEnable
+  spinnerVisibility
+  source={source}
+  switchValue={switchValue}
+  onPressLogin={() => alert("Login Button is pressed")}
+  onPressSettings={() => alert("Settings Button is pressed")}
+  onSwitchValueChange={switchValue => setSwitchValue(switchValue)}
+  usernameOnChangeText={username => setUsername(username)}
+  passwordOnChangeText={password => alert("Password: ", password)}
+  loginButtonBackgroundColor="#a2a5a9"  // Optional
+  
+>
+  <View
+    style={{
+      position: "relative",
+      alignSelf: "center",
+      marginTop: 64
+    }}
+  >
+    <Text style={{ color: "white", fontSize: 30 }}>{switchValue}</Text>
+  </View>
+</LoginScreen>
+
+  )
+}
+
+}
+
+
+export default Index;
+

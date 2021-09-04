@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<style>
+
+
+
+body {
+  padding:10px;
+  margin:0;
+  font-family:"Quicksand",sans-serif;
+  background:#f8f8f8;
+  outline:none;box-sizing:border-box;
+}
+
+div.notiflix {
+ float:left;
+  width:100%;
+  margin:0 0 20px;
+  padding: 0 0 20px;
+  border-bottom:1px solid #cecece;
+  outline:none;box-sizing:border-box;
+}
+
+div.notiflix h1 {
+  font-weight:500;
+  float:left;
+  width:100%;
+  font-size:24px;
+  line-hegiht:26px;
+  text-align:center;
+  margin: 5px 0 10px;
+  outline:none;box-sizing:border-box;
+}
+
+div.notiflix p {
+  float:left;
+  width:100%;
+  font-size:14px;
+  line-hegiht:16px;
+  text-align:center;
+  margin: 5px 0 10px;
+  outline:none;box-sizing:border-box;
+}
+
+div.notiflix p a {
+  transition: all .2s ease-in-out;
+  font-weight:500;
+  color:#00b462;
+  outline:none;box-sizing:border-box;
+}
+div.notiflix p a:hover {
+  color:#1e1e1e;
+  outline:none;box-sizing:border-box;
+}
+
+h2.demo-title {
+  font-weight:500;
+  float:left;
+  width:100%;
+  font-size:20px;
+  line-hegiht:20px;
+  text-align:center;
+  margin: 0 0 10px;
+  padding:0;
+  outline:none;box-sizing:border-box;
+}
+p.demo-desc {
+  font-weight:400;
+  float:left;
+  width:100%;
+  font-size:14px;
+  line-hegiht:16px;
+  text-align:center;
+  margin: 0;
+  padding:0;
+  outline:none;box-sizing:border-box;
+}
+
+div.demo-area {
+  float:left;
+  width:100%;
+  outline:none;box-sizing:border-box;
+}
+
+div.loading {
+  background:#fff;
+  box-shadow:0 0 20px -10px #000;
+  padding:25px 20px;
+  border-radius:20px;
+  display:block;
+  width:98%;
+  max-width:360px;
+  margin:20px auto 40px;
+  outline:none;box-sizing:border-box;
+}
+
+label {
+  font-weight:500;
+  color:#999;
+  float:left;
+  font-size:12px;
+  line-height:12px;
+  margin: 0 0 6px 6px;
+  outline:none;box-sizing:border-box;
+}
+
+input {
+  transition:all .15s ease-in-out;
+  float:left;
+  width:100%;
+  font-size:15px;
+  line-height:40px;
+  padding:0 14px;
+  margin: 0 0 10px;
+  border-radius:20px;
+  border:1px solid #ccc;
+  outline:none;box-sizing:border-box;
+}
+input:nth-last-of-type(1) {
+  margin: 0 0 20px;
+}
+input:hover {
+  border-color:#00b462;
+}
+
+.divider {
+ float:left;
+  width:100%;
+  padding: 0 0 25px;
+  margin: 0 0 20px;
+  border-bottom:1px solid #00b462;
+}
+
+button {
+  display:block;
+  margin:0 auto 0;
+  transition:all .15s ease-in-out;
+  cursor:pointer;
+  color:#fff;
+  background: #00b462;
+  border:none;
+  font-size:15px;
+  padding:8px 20px;
+  border-radius:20px;
+  box-shadow: 0 6px 20px -8px #000;
+}
+button:hover {  
+  box-shadow: 0 3px 10px -5px #000;
+}
+
+.close {
+  font-family:"Quicksand",sans-serif;
+  font-weight:900;
+  font-size:30px;
+  line-height:30px;
+  pointer-events: none;
+  position:fixed;
+  z-index:99999999;
+  color:#f8f8f8;
+  right:20px;
+  top:20px;
+}
+
+</style>
+
+
+
+<style>
+    
+
+
+    
+        html, body {
+         height: 100%;
+         padding: 0;
+         margin: 0;
+    }
+     body {
+         overflow: hidden;
+    }
+     #form {
+         display: flex;
+         flex-direction: column-reverse;
+         justify-content: center;
+         align-items: center;
+         max-width: 800px;
+         height: 100%;
+         margin: auto;
+    }
+     [class*="fontawesome-"]:before {
+         font-family: 'FontAwesome', sans-serif;
+         position: absolute;
+         top: 0;
+         right: 0;
+         bottom: 0;
+         left: 0;
+         margin: auto;
+         width: 100%;
+         height: 100%;
+    }
+    
+     input, label {
+         -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+     .stars {
+         position: relative;
+    }
+     .stars input {
+         display: none;
+    }
+     .stars input:checked ~ label:not(.reset) {
+         animation: wobble 0.8s ease-out;
+         color: #ffdb19;
+    }
+     .stars input:checked:not(#star-reset) ~ label.reset {
+         display: block;
+    }
+     .stars label:not(.reset) {
+         display: inline-block;
+         float: right;
+         position: relative;
+         width: 40px;
+         height: 40px;
+         font-size: 40px;
+         padding: 2px;
+         cursor: pointer;
+         color: #3d3d3d;
+         transition: color 0.1s ease-out;
+         z-index: 10;
+    }
+     .face {
+         position: relative;
+         width: 200px;
+         background: white;
+         border: 6px solid #f0f0f0;
+         border-radius: 100%;
+         margin: 80px 0 50px;
+         transition: box-shadow 0.4s ease-out;
+    }
+     .face:after {
+         content: "";
+         display: block;
+         padding-bottom: 100%;
+    }
+     i {
+         position: absolute;
+         top: 50%;
+         display: block;
+         width: 14px;
+         height: 14px;
+         border-radius: 100%;
+         background: #f0f0f0;
+    }
+     i:nth-child(1) {
+         left: 30%;
+    }
+     i:nth-child(2) {
+         right: 30%;
+    }
+     u {
+         position: absolute;
+         right: 0;
+         bottom: 25%;
+         left: 0;
+         margin: auto;
+         width: 24px;
+         height: 24px;
+         text-decoration: none;
+         border: 6px solid #f0f0f0;
+         border-radius: 100%;
+    }
+     u:before, u:after {
+         content: "";
+         position: absolute;
+         top: 15px;
+         width: 6px;
+         height: 6px;
+         background: #f0f0f0;
+         border-radius: 60px 60px 0 0;
+         z-index: 2;
+    }
+     u:before {
+         left: -5px;
+         transform: rotate(-32deg);
+    }
+     u:after {
+         right: -5px;
+         transform: rotate(32deg);
+    }
+     u .cover {
+         position: absolute;
+         top: -6px;
+         left: -6px;
+         width: 100%;
+         height: 100%;
+         border: 6px solid white;
+         background: white;
+         transform: translate(0, -12px);
+    }
+     input#star4:checked ~ .face u, input#star2:checked ~ .face u {
+         width: 36px;
+    }
+     input#star4:checked ~ .face u:before, input#star2:checked ~ .face u:before, input#star4:checked ~ .face u:after, input#star2:checked ~ .face u:after {
+         top: 18px;
+         height: 10px;
+    }
+     input#star4:checked ~ .face u:before, input#star2:checked ~ .face u:before {
+         left: 0px;
+         transform: rotate(-66deg);
+    }
+     input#star4:checked ~ .face u:after, input#star2:checked ~ .face u:after {
+         right: 0px;
+         transform: rotate(66deg);
+    }
+     input#star4:checked ~ .face u .cover, input#star2:checked ~ .face u .cover {
+         transform: translate(0, -8px);
+    }
+     input#star5:checked ~ .face u, input#star4:checked ~ .face u {
+         transform: rotate(180deg) translateY(-20px);
+    }
+     input#star3:checked ~ .face u {
+         width: 42px;
+         height: 6px;
+         background: #3d3d3d;
+         border: none;
+         border-radius: 60px;
+         transform: translateY(-4px);
+    }
+     input#star3:checked ~ .face u:before, input#star3:checked ~ .face u:after, input#star3:checked ~ .face u .cover {
+         display: none;
+    }
+     input:not(#star-reset):checked ~ .face {
+         animation: wobble 0.8s ease-out;
+    }
+     input:not(#star-reset):checked ~ .face, input:not(#star-reset):checked ~ .face u {
+         border-color: #3d3d3d;
+    }
+     input:not(#star-reset):checked ~ .face i, input:not(#star-reset):checked ~ .face u:before, input:not(#star-reset):checked ~ .face u:after {
+         background: #3d3d3d;
+    }
+     input#star5:checked ~ .face {
+         background-color: #fff;
+         box-shadow: inset rgba(255, 255, 255, 0.5) 2px 2px 0 4px, inset rgba(0, 0, 0, 0.06) -6px -4px 0 4px;
+    }
+     input#star5:checked ~ .face u .cover {
+         background: #fff;
+         border-color: #fff;
+    }
+     input#star4:checked ~ .face {
+         background-color: #ffffe5;
+         box-shadow: inset rgba(255, 255, 255, 0.5) 2px 2px 0 4px, inset rgba(0, 0, 0, 0.06) -6px -4px 0 4px, rgba(255, 255, 76, 0.05) 0 0 0 20px;
+    }
+     input#star4:checked ~ .face u .cover {
+         background: #ffffe5;
+         border-color: #ffffe5;
+    }
+     input#star3:checked ~ .face {
+         background-color: #ffffb2;
+         box-shadow: inset rgba(255, 255, 255, 0.5) 2px 2px 0 4px, inset rgba(0, 0, 0, 0.06) -6px -4px 0 4px, rgba(255, 255, 76, 0.3) 0 0 0 15px, rgba(255, 255, 76, 0.1) 0 0 0 30px;
+    }
+     input#star2:checked ~ .face {
+         background-color: #ffff7f;
+         box-shadow: inset rgba(255, 255, 255, 0.5) 2px 2px 0 4px, inset rgba(0, 0, 0, 0.06) -6px -4px 0 4px, rgba(255, 255, 76, 0.4) 0 0 0 20px, rgba(255, 255, 76, 0.2) 0 0 0 40px;
+    }
+     input#star2:checked ~ .face u .cover {
+         background: #ffff7f;
+         border-color: #ffff7f;
+    }
+     input#star1:checked ~ .face {
+         background-color: #ffff4c;
+         box-shadow: inset rgba(255, 255, 255, 0.5) 2px 2px 0 4px, inset rgba(0, 0, 0, 0.06) -6px -4px 0 4px, rgba(255, 255, 76, 0.4) 0 0 0 25px, rgba(255, 255, 76, 0.2) 0 0 0 50px;
+    }
+     input#star1:checked ~ .face u .cover {
+         background: #ffff4c;
+         border-color: #ffff4c;
+    }
+     @keyframes wobble {
+         0% {
+             transform: scale(0.8);
+        }
+         20% {
+             transform: scale(1.1);
+        }
+         40% {
+             transform: scale(0.9);
+        }
+         60% {
+             transform: scale(1.05);
+        }
+         80% {
+             transform: scale(0.96);
+        }
+         100% {
+             transform: scale(1);
+        }
+    }
+     
+        
+        </style>
+
+
+</head>
+<body>
+        <div class="notiflix">
+ 
+            </div>
+            
+            
+            
+            <div class="demo-area">
+            
+              <div class="loading">
+                    <form id="form">
+                            <fieldset class="stars" style="border:none">
+                                  <input type="radio" name="stars" id="star1" ontouchstart="ontouchstart" />
+                                  <label class="fa fa-star" for="star1"></label>
+                                  <input type="radio" name="stars" id="star2" ontouchstart="ontouchstart" />
+                                  <label class="fa fa-star" for="star2"></label>
+                                  <input type="radio" name="stars" id="star3" ontouchstart="ontouchstart" />
+                                  <label class="fa fa-star" for="star3"></label>
+                                  <input type="radio" name="stars" id="star4" ontouchstart="ontouchstart" />
+                                  <label class="fa fa-star" for="star4"></label>
+                                  <input type="radio" name="stars" id="star5" ontouchstart="ontouchstart" />
+                                  <label class="fa fa-star" for="star5"></label>
+                                  <input type="radio" name="stars" id="star-reset" />
+                                
+                                  <figure class="face"><i></i><i></i>
+                                        <u>
+                                              <div class="cover"></div>
+                                        </u>
+                                  </figure>
+                           
+                      </form>
+                    </fieldset>
+                
+           
+                <label>Review Here...</label>
+                <input id="StandardInput" type="text" placeholder="Review..." />
+                <button>Submit</button>
+              
+              
+                
+              </div>
+               
+             
+            
+              
+              
+             
+            
+              
+              
+            </div>
+            
+            <div class="close">X</div>
+           
+</body>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://use.fontawesome.com/a99e0df3d3.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/notiflix/dist/notiflix-aio-1.5.0.min.js"></script>
+
+<script>
+// Init the Loading Module
+Notiflix.Loading.Init({});
+
+// Merge the init only for CodePen Demo
+Notiflix.Loading.Merge({
+  clickToClose:true, // close the Loading's when they were clicked
+});
+
+// Demos
+var Standard = document.getElementById('StandardSend');
+Standard.addEventListener('click', function () {
+  var StandardInput = document.getElementById('StandardInput').value;
+  Notiflix.Loading.Standard(StandardInput);
+}, false);
+
+var Hourglass = document.getElementById('HourglassSend');
+Hourglass.addEventListener('click', function () {  
+  var HourglassInput = document.getElementById('HourglassInput').value;
+  Notiflix.Loading.Hourglass(HourglassInput);
+}, false);
+
+var Circle = document.getElementById('CircleSend');
+Circle.addEventListener('click', function () {  
+  var CircleInput = document.getElementById('CircleInput').value;
+  Notiflix.Loading.Circle(CircleInput);
+}, false);
+
+var Arrows = document.getElementById('ArrowsSend');
+Arrows.addEventListener('click', function () {  
+  var ArrowsInput = document.getElementById('ArrowsInput').value;
+  Notiflix.Loading.Arrows(ArrowsInput);
+}, false);
+
+var Dots = document.getElementById('DotsSend');
+Dots.addEventListener('click', function () {  
+  var DotsInput = document.getElementById('DotsInput').value;
+  Notiflix.Loading.Dots(DotsInput);
+}, false);
+
+var Pulse = document.getElementById('PulseSend');
+Pulse.addEventListener('click', function () {  
+  var PulseInput = document.getElementById('PulseInput').value;
+  Notiflix.Loading.Pulse(PulseInput);
+}, false);
+
+</script>
+
+
+
+</html>

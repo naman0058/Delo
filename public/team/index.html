@@ -1,0 +1,1334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title -->
+    <title>DeloService-Partner</title>
+  
+
+    <!-- Favicon -->
+    <link rel="icon" href="/team/./img/ashish/logo.png" >
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">yle>
+
+    <style>
+     
+
+
+
+         #mainButton {
+             color: white;
+             border: none;
+             outline: none;
+             font-size: 18px;
+             font-weight: 200;
+             overflow: hidden;
+             position: relative;
+             border-radius: 25px;
+             letter-spacing: 2px;
+             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+             text-transform: uppercase;
+             background-color: #1cc3b2;
+             -webkit-transition: all 0.2s ease-in;
+             -moz-transition: all 0.2s ease-in;
+             -ms-transition: all 0.2s ease-in;
+             -o-transition: all 0.2s ease-in;
+             transition: all 0.2s ease-in;
+        }
+         #mainButton .btn-text {
+             z-index: 2;
+             display: block;
+             padding: 10px 20px;
+             position: relative;
+        }
+         #mainButton .btn-text:hover {
+             cursor: pointer;
+        }
+         #mainButton:after {
+             top: -50%;
+             z-index: 1;
+             content: '';
+             width: 100%;
+             height: 200%;
+             position: absolute;
+             left: calc(-150% - 40px);
+             background-color: rgba(255, 255, 255, 0.2);
+             -webkit-transform: skewX(-40deg);
+             -moz-transform: skewX(-40deg);
+             -ms-transform: skewX(-40deg);
+             -o-transform: skewX(-40deg);
+             transform: skewX(-40deg);
+             -webkit-transition: all 0.2s ease-out;
+             -moz-transition: all 0.2s ease-out;
+             -ms-transition: all 0.2s ease-out;
+             -o-transition: all 0.2s ease-out;
+             transition: all 0.2s ease-out;
+        }
+         #mainButton:hover {
+             cursor: default;
+             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+        }
+         #mainButton:hover:after {
+             -webkit-transform: translateX(100%) skewX(-30deg);
+             -moz-transform: translateX(100%) skewX(-30deg);
+             -ms-transform: translateX(100%) skewX(-30deg);
+             -o-transform: translateX(100%) skewX(-30deg);
+             transform: translateX(100%) skewX(-30deg);
+        }
+         #mainButton.active {
+             box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+        }
+         #mainButton.active .modal {
+             -webkit-transform: scale(1, 1);
+             -moz-transform: scale(1, 1);
+             -ms-transform: scale(1, 1);
+             -o-transform: scale(1, 1);
+             transform: scale(1, 1);
+        }
+         #mainButton .modal {
+             top: 0;
+             left: 0;
+             z-index: 3;
+             width: 100%;
+             height: 100%;
+             padding: 20px;
+             display: flex;
+             position: fixed;
+             align-items: center;
+             justify-content: center;
+             flex-direction: column;
+             background-color: inherit;
+             transform-origin: center center;
+             background-image: linear-gradient(to top left, #00a7ee 10%, #5cf 65%, white 200%);
+             -webkit-transform: scale(0.000001, 0.00001);
+             -moz-transform: scale(0.000001, 0.00001);
+             -ms-transform: scale(0.000001, 0.00001);
+             -o-transform: scale(0.000001, 0.00001);
+             transform: scale(0.000001, 0.00001);
+             -webkit-transition: all 0.2s ease-in;
+             -moz-transition: all 0.2s ease-in;
+             -ms-transition: all 0.2s ease-in;
+             -o-transition: all 0.2s ease-in;
+             transition: all 0.2s ease-in;
+        }
+         .close-button {
+             top: 20px;
+             right: 20px;
+             position: absolute;
+             -webkit-transition: opacity 0.2s ease-in;
+             -moz-transition: opacity 0.2s ease-in;
+             -ms-transition: opacity 0.2s ease-in;
+             -o-transition: opacity 0.2s ease-in;
+             transition: opacity 0.2s ease-in;
+        }
+         .close-button:hover {
+             opacity: 0.5;
+             cursor: pointer;
+        }
+         .form-title {
+             margin-bottom: 15px;
+        }
+         .form-button {
+             width: 100%;
+             padding: 10px;
+             color: #00a7ee;
+             margin-top: 10px;
+             max-width: 400px;
+             text-align: center;
+             border: solid 1px white;
+             border-radius: 25px;
+             background-color: white;
+             -webkit-transition: color 0.2s ease-in, background-color 0.2s ease-in;
+             -moz-transition: color 0.2s ease-in, background-color 0.2s ease-in;
+             -ms-transition: color 0.2s ease-in, background-color 0.2s ease-in;
+             -o-transition: color 0.2s ease-in, background-color 0.2s ease-in;
+             transition: color 0.2s ease-in, background-color 0.2s ease-in;
+        }
+         .form-button:hover {
+             color: white;
+             cursor: pointer;
+             background-color: transparent;
+        }
+         .input-group {
+             width: 100%;
+             font-size: 16px;
+             max-width: 400px;
+             padding-top: 20px;
+             position: relative;
+             margin-bottom: 15px;
+        }
+         .input-group input {
+             width: 100%;
+             color: white;
+             border: none;
+             outline: none;
+             padding: 5px 0;
+             line-height: 1;
+             font-size: 16px;
+             font-family: 'Raleway';
+             border-bottom: solid 1px white;
+             background-color: transparent;
+             -webkit-transition: box-shadow 0.2s ease-in;
+             -moz-transition: box-shadow 0.2s ease-in;
+             -ms-transition: box-shadow 0.2s ease-in;
+             -o-transition: box-shadow 0.2s ease-in;
+             transition: box-shadow 0.2s ease-in;
+        }
+         .input-group input + label {
+             left: 0;
+             top: 20px;
+             position: absolute;
+             pointer-events: none;
+             -webkit-transition: all 0.2s ease-in;
+             -moz-transition: all 0.2s ease-in;
+             -ms-transition: all 0.2s ease-in;
+             -o-transition: all 0.2s ease-in;
+             transition: all 0.2s ease-in;
+        }
+         .input-group input:focus {
+             box-shadow: 0 1px 0 0 white;
+        }
+         .input-group input:focus + label, .input-group input.active + label {
+             font-size: 12px;
+             -webkit-transform: translateY(-20px);
+             -moz-transform: translateY(-20px);
+             -ms-transform: translateY(-20px);
+             -o-transform: translateY(-20px);
+             transform: translateY(-20px);
+        }
+         .codepen-by {
+             left: 0;
+             bottom: 0;
+             width: 100%;
+             padding: 10px;
+             font-size: 16px;
+             position: absolute;
+             text-align: center;
+             text-transform: none;
+             letter-spacing: initial;
+        }
+         
+            </style>
+
+
+<!--card style-->
+<style>
+
+span{
+    font-size:15px;
+    border-radius:40;
+}
+
+.box{
+    padding:60px 0px;
+    border-radius:40;
+}
+
+.box-part{
+    background:baby blue;
+    border-radius:40;
+    padding:60px 10px;
+    margin:30px 0px;
+}
+.text{
+    margin:20px 0px;
+    color: black
+}
+
+
+
+</style>
+
+ <!--mobile css-->  
+   <style>
+    .dm-width {
+   width: 360px;
+   margin: 0 auto;
+}
+
+.iphone-mockup {
+   position: relative;
+   z-index: 5;
+}
+
+.dm-device {
+    position: relative;
+    width: 100%;
+    padding-bottom:203.477897%;
+    margin-bottom: 20px;
+}
+
+.device {
+  position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: 100% 100%;
+    
+    background-repeat: no-repeat;
+          background-image: url(https://res.cloudinary.com/di5yipnns/image/upload/v1482236588/apple-iphone_aivldo.png);
+  background-size: cover;
+    background-position: center center;
+}
+
+.screen {
+   overflow: hidden;
+    position: absolute;
+    top: 18.1%;
+    bottom: 20.6%;
+    left: 12.49%;
+    right: 17.4%;
+    background-color: #E91E63;
+}
+
+.slider {
+  height: 100%;
+}
+.slider div {
+  height: 100%;
+}
+
+.slider__item {
+    font-size: 100px;
+    color: rgba(255,255,255,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider__item--1 {
+   background-color: white;
+}
+.slider__item--2 {
+   background-color: white;
+}
+.slider__item--3 {
+   background-color: white;
+}
+
+.slider__item--4 {
+  background-color: white;
+}
+</style>
+<!--mobile css end-->
+
+<!--timeline css-->
+<style>
+
+
+
+/* Base styles */
+
+:root {
+  --neutral-color: white;
+  --primary-color:skyblue;
+  --secondary-color:rgb(250,240,230);
+  --max-width: 1200px;
+}
+
+html {
+  font-family: 'Lato', sans-serif;
+  font-size: 25px;
+  line-height: 0.5;
+  color: white;
+  font-weight: bold;
+}
+
+body {
+  margin-top:0px;
+  
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ffffff;
+  overflow-x: hidden;/*hides scrollbars for horizontal content*/
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+
+}
+
+
+
+h1 {
+  padding: 0 1rem;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 1.3;
+  
+}
+
+h3 {
+  line-height: 1.2;
+}
+
+p {
+  margin: 0;
+  padding: 0.5rem 0;
+}
+
+/* Initial structure */
+
+.page-wrapper {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  
+}
+
+
+/* Header section */
+
+
+
+/* Main section */
+
+#chronology {
+  background: var(--neutral-color);
+  width: 180%;
+  padding: 2rem 0 3rem 0;
+}
+
+/* .timeline is the li/article and is displayed as a thin line*/
+.timeline {
+  width: 0.150rem;
+  margin: 0 auto 0 1rem;
+  padding-top: 3rem;
+  background:#1cc3b2;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* .timeline:last-child {
+  padding-bottom: 3rem;
+} */
+
+#chronology ul li {
+  list-style: none;
+}
+
+/* Add dots along the center line / timeline corresponding with the time blocks */
+.timeline::after {
+  content: '';
+  align-self: center;
+  width: 1.25rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: none;
+  background: var(--secondary-color);   /*dot color change*/
+
+  /* transition: background 0.5s ease-in-out; */
+}
+
+/* .time-block is the div wrapping the li/article content */
+.time-block {
+  position: relative;
+  width: 60vw;
+  padding: 0.5rem;
+  margin-left: 2.25rem;
+  background: var(--secondary-color);
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+
+/* Alternate color for every other timeline's div */
+#chronology .timeline:nth-child(even) .time-block {
+  background: var(--primary-color);
+}
+
+/* arrow pointing from time-block to .timeline */
+.time-block::before {
+  content: '';
+  position: absolute;
+  left: -1rem;
+  bottom: -0.5rem;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  /* make it point left & down */
+  border-width: 0.5rem 1.75rem 0.5rem 0;
+  border-color: transparent var(--secondary-color) transparent transparent;
+  transform: rotate(330deg)
+}
+
+#chronology .timeline:nth-child(even) .time-block::before {
+  border-color: transparent var(--primary-color) transparent transparent;
+}
+
+
+#chronology .timeline h3::before {
+  content: "\F053";
+  font-family: 'Font Awesome 5 Free';
+  padding: 0.5rem;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+/* Thank you Stack Overflow for the font-family info! https://stackoverflow.com/questions/14736496/use-font-awesome-icons-in-css */
+
+
+/* Footer */
+
+
+footer>p {
+  padding: 1rem;
+}
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+  .timeline {
+    margin: 0 auto;
+  }
+  .time-block {
+    width: 37vw;
+    margin-left: 2rem;
+  }
+  /* reorient odd timeline divs to the left */
+  #chronology .timeline:nth-child(odd) .time-block {
+    align-self: flex-end;
+    margin-right: 2rem;
+  }
+  #chronology .timeline:nth-child(odd) .time-block::before {
+    left: 97.5%;
+    /* make it point right & down */
+    border-width: 0.5rem 0 0.5rem 1.75rem;
+    border-color: transparent transparent transparent var(--secondary-color);
+    transform: rotate(30deg)
+
+  }
+
+  #chronology .timeline:nth-child(odd) h3::before {
+    content: "";
+    padding: none;
+    border: none;
+    border-radius: none;
+    margin-right: 0;
+  }
+  #chronology .timeline:nth-child(odd) h3::after {
+    content: "\F054";
+    font-family: 'Font Awesome 5 Free';
+    padding: 0.5rem;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    margin-left: 1rem;  
+
+
+
+  }
+  
+}
+
+@media screen and (min-width: 1200px) {
+  html { 
+      
+    font-size: 18px;
+  }
+  .page-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .time-block {
+    width: 25rem;
+  }
+
+}
+
+
+
+
+
+
+
+</style>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+    <!-- /Preloader -->
+
+    <!-- Header Area Start -->
+    <header class="header-area" >
+   
+        
+
+        <!-- Top Header Area Start -->
+        <div class="top-header-area">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-6">
+                        <div class="top-header-content">
+                            <a href="#"><i class="icon_phone"></i> <span>011-42078036</span></a>
+                            <a href="#"><i class="icon_mail"></i> <span>cs@deloservices.com</span></a>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="top-header-content">
+                            <!-- Top Social Area -->
+                            <div class="top-social-area ml-auto">
+                                <a href="https://www.facebook.com/Delo-Services-Pvt-Ltd-357112871580780/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="https://twitter.com/DeloPvt"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                              
+                                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Top Header Area End -->
+
+        <!-- Main Header Start -->
+        <div class="main-header-area">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Classy Menu -->
+                    <nav class="classy-navbar justify-content-between" id="robertoNav">
+
+                        <!-- Logo -->
+                        <a class="nav-brand" href="index.html"><img src="./img/ashish/logo.png" style="width: 70px" height="30px" alt=""></a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+                            <!-- Menu Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul id="nav">
+                                 <!--   <li class="active"><a href="./index.html">Home</a></li>
+                                    <li><a href="./room.html">Rooms</a></li>
+                                    <li><a href="./about.html">About Us</a></li>
+                                    <li><a href="#">Pages</a>
+                                        <ul class="dropdown">
+                                            <li><a href="./index.html">- Home</a></li>
+                                            <li><a href="./room.html">- Rooms</a></li>
+                                            <li><a href="./single-room.html">- Single Rooms</a></li>
+                                            <li><a href="./about.html">- About Us</a></li>
+                                            <li><a href="./blog.html">- Blog</a></li>
+                                            <li><a href="./single-blog.html">- Single Blog</a></li>
+                                            <li><a href="./contact.html">- Contact</a></li>
+                                            <li><a href="#">- Dropdown</a>
+                                                <ul class="dropdown">
+                                                    <li><a href="#">- Dropdown Item</a></li>
+                                                    <li><a href="#">- Dropdown Item</a></li>
+                                                    <li><a href="#">- Dropdown Item</a></li>
+                                                    <li><a href="#">- Dropdown Item</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li> -->
+                                    <li><a href="#">Recharge</a></li>
+                                    <li><a href="helpcenter.html">Help Center</a></li>
+                                    
+                                </ul>  
+
+                                <!-- Search -->
+                           
+
+                                <!-- Book Now -->
+                               
+                                <div class="book-now-btn ml-3 ml-lg-5">
+                                        <link href='https://fonts.googleapis.com/css?family=Raleway:400,500,300' rel='stylesheet' type='text/css'>
+                                        <div id="mainButton">
+                                            <div class="btn-text" onclick="openForm()">Sign In</div>
+                                            <div class="modal">
+                                                <div class="close-button" onclick="closeForm()">x</div>
+                                                <div class="form-title">Sign In</div>
+                                                <div class="input-group">
+                                                    <input type="text" id="name" onblur="checkInput(this)" />
+                                                    <label for="name">Mobile Number</label>
+                                                </div>
+                                         <!--     <div class="input-group">
+                                                    <input type="password" id="password" onblur="checkInput(this)" />
+                                                    <label for="password">Password</label>
+                                                </div>  --> 
+                                                <div class="form-button" onclick="closeForm()">Go</div>
+                                               
+                                            </div>
+                                        </div>
+                                       
+                                </div>
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Area End -->
+
+    <!-- Welcome Area Start -->
+    <section class="welcome-area">
+        <div class="welcome-slides owl-carousel"style="height:400px;">   <!--400 px set-->
+            <!-- Single Welcome Slide -->
+            <div class="single-welcome-slide bg-img bg-overlay" style="background-image: url(img/ashish/123.jpg);" data-img-url="img/ashish/123.jpg">
+                <!-- Welcome Content -->
+                <div class="welcome-content h-100">
+                    <div class="container h-50">
+                        <div class="row h-100 align-items-center">
+                            <!-- Welcome Text -->
+                            <div class="col-12">
+                                <div class="welcome-text text-center">
+                                    <h6 data-animation="fadeInLeft" data-delay="200ms">Service Expert</h6>
+                                    <h2 data-animation="fadeInLeft" data-delay="300ms">Welcome To Delo Team</h2>
+                                 <!--   <a href="#" class="btn roberto-btn btn-2" data-animation="fadeInLeft" data-delay="800ms">Discover Now</a>   -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Welcome Slide -->
+            <div class="single-welcome-slide bg-img bg-overlay" style="background-image: url(img/ashish/mm.jpg);" data-img-url="img/ashish/mm.jpg">
+                <!-- Welcome Content -->
+                <div class="welcome-content h-100">
+                    <div class="container h-50">
+                        <div class="row h-100 align-items-center">
+                            <!-- Welcome Text -->
+                            <div class="col-12">
+                                <div class="welcome-text text-center">
+                                    <h6 data-animation="fadeInUp" data-delay="200ms">Service Expert</h6>
+                                    <h2 data-animation="fadeInUp" data-delay="300ms">Welcome To Delo Team</h2>
+                         <!--           <a href="#" class="btn roberto-btn btn-2" data-animation="fadeInUp" data-delay="800ms">Discover Now</a>  -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Welcome Slide -->
+            <div class="single-welcome-slide bg-img bg-overlay" style="background-image: url(img/ashish/ashish.jpg);" data-img-url="img/ashish/ashish.jpg">
+                <!-- Welcome Content -->
+                <div class="welcome-content h-100">
+                    <div class="container h-50">
+                        <div class="row h-100 align-items-center">
+                            <!-- Welcome Text -->
+                            <div class="col-12">
+                                <div class="welcome-text text-center">
+                                    <h6 data-animation="fadeInDown" data-delay="200ms">Service Expert</h6>
+                                    <h2 data-animation="fadeInDown" data-delay="300ms">Welcome To Delo Team</h2>
+                            <!--<a href="#" class="btn roberto-btn btn-2" data-animation="fadeInDown" data-delay="800ms">Discover Now</a> --> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Welcome Area End -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- About Us Area Start -->
+    <section class="roberto-about-area section-padding-100-0">
+        <!-- Hotel Search Form Area -->
+        <div class="hotel-search-form-area">
+            <div class="container-fluid">
+                <div class="hotel-search-form">
+                    <form action="#" method="post">
+                        <div class="row justify-content-between align-items-end">
+                          
+                            <div class="col-12 col-md-9 col-lg-9">
+                                <label for="checkOut">Mobile no</label>
+                                <input type="Text"   placeholder="Enter Mobile No" class="form-control" id="checkOut" name="checkout-date">
+                            </div>
+                           
+                          
+                           
+                            <div class="col-12 col-md-3">
+                                <button type="submit" class="form-control btn roberto-btn w-100">signup</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+<br>
+<!--mobile screen -->
+<center><h1 style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif"   >Follow These Steps</h1></center>
+<div class="container-fluid mt-100">
+        <div class="row">
+<div class="col-12 col-lg-6">
+
+        <div class="dm-width">
+                <div class="dm-device">
+                  <div class="device">
+                    <div class="screen">
+                      <div class="slider">
+                        <div class="slider__item slider__item--1">
+                          <img src="img/ashish/delo services img1.png" style="width: 300px" height="300px">
+                        </div>
+                        <div class="slider__item slider__item--2">
+                          <img src="img/ashish/delo services img2.png" style="width: 300px" height="300px">
+                        </div>
+                        <div class="slider__item slider__item--3">
+                                <img src="img/ashish/delo services img3.png" style="width: 210px" height="300px">
+                        </div>
+                        <div class="slider__item slider__item--4">
+                                <img src="img/ashish/delo services img4.png" style="width: 210px;" height="300px">
+                        </div>
+                        <div class="slider__item slider__item--4">
+                            <img src="img/ashish/delo services img5.png" style="width: 220px;" height="300px">
+                    </div>
+                    <div class="slider__item slider__item--4">
+                        <img src="img/ashish/delo services img6.png" style="width: 220px;" height="300px">
+                </div>
+                <div class="slider__item slider__item--4">
+                    <img src="img/ashish/delo services img7.png" style="width: 220px;" height="300px">
+            </div>
+          
+        <div class="slider__item slider__item--4">
+            <img src="img/ashish/delo services img8.png" style="width: 220px;" height="300px">
+    </div>
+    <div class="slider__item slider__item--4">
+        <img src="img/ashish/delo services img9.png" style="width: 220px;" height="300px">
+</div>
+<div class="slider__item slider__item--4">
+    <img src="img/ashish/delo services img10.png" style="width: 220px;" height="300px">
+</div>
+<div class="slider__item slider__item--4">
+    <img src="img/ashish/delo services img11.png" style="width: 220px;" height="300px">
+</div>
+<div class="slider__item slider__item--4">
+    <img src="img/ashish/delo services img12.png" style="width: 220px;" height="300px">
+</div>
+
+<div class="slider__item slider__item--4">
+    <img src="img/ashish/delo services img13.png" style="width: 220px;" height="300px">
+</div>
+     
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-1 col-lg-3">
+
+              <div class="page-wrapper">
+                   
+                
+                    <main id="chronology">
+                
+                      <article class="timeline">
+                        <div class="time-block">
+                        
+                          <p style="color: black">1.To become a Delo Team Member Sign up on Delo Team Website / App fill the form and upload the documents for verification to create an account. </p>
+                        </div>
+                      </article>
+                
+                      <article class="timeline">
+                        <div class="time-block">
+                         
+                          <p style="color: black">2.Complete your profile and become an Delo team member.</p>
+                        </div>  
+                      </article>
+                
+                      <article class="timeline">
+                        <div class="time-block">
+                        
+                            <p style="color: black">3. Buy credits for recharge your wallet .</p>
+                        </div>
+                      </article>
+                
+                     
+                
+                      <article class="timeline">
+                        <div class="time-block">
+                        
+                          <p style="color: black">4.Accept lead and start your journey to complete your job.</p>
+                        </div>
+                      </article>
+                
+                     
+                    
+                
+                    </main><!-- End of chronology/main section -->
+                
+                   
+                    
+                  </div><!-- End of Page Wrapper div -->
+                </div>
+
+                <div class="container-fluid">
+                        <div class="">
+                          <h1 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text background-color:skyblue" >Boost Your Business With Delo</h1>      
+                          
+                        </div>
+                        </div>
+                
+        <div class="container mt-100">
+                
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-6">
+
+
+                        <hr style="color: #1cc3b2">
+                    <!-- Section Heading -->
+                   
+                    <div class="section-heading wow fadeInUp" data-wow-delay="100ms">
+                        <h6>About Us</h6>
+                       </div>
+                    <div class="about-us-content mb-100">
+                        <h5 class="wow fadeInUp" data-wow-delay="300ms">Join a community of Service professionals who have successfully grown their business with DeloService.
+
+                            </h5>
+                <!--        <p class="wow fadeInUp" data-wow-delay="300ms">Manager: <span>Michen Taylor</span></p>
+                        <img src="img/core-img/signature.png" alt="" class="wow fadeInUp" data-wow-delay="300ms"> -->
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div class="about-us-thumbnail mb-100 wow fadeInUp" data-wow-delay="700ms">
+                        <div class="row no-gutters">
+                            <div class="col-6">
+                                <div class="single-thumb">
+                                    <img src="img/ashish/c.jpg" alt="">
+                                </div>
+                                <div class="single-thumb">
+                                    <img src="img/ashish/e.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="single-thumb">
+                                    <img src="img/ashish/c.jpg" alt="">
+                                </div>
+                                <div class="single-thumb">
+                                    <img src="img/ashish/e.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+           
+        </div>
+        
+    </section>
+    <!-- About Us Area End -->
+
+    <!-- Service Area Start -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <div class="box" id="body">
+        <div class="container">
+             <div class="row">
+                 
+                    <div class="col-lg-6 col-md-4 col-sm-4 col-xs-12">
+                   
+                        <div class="box-part text-center">
+                            
+                            <img src="https://img.icons8.com/ultraviolet/40/000000/bullish.png"> 
+                            <br>
+                            <br>
+                            <div class="title">
+                                <h6>Grow Your Business</h6>
+                            </div>
+                            
+                            <div class="text">
+                                <span>Delo team website / app  helps on-demand professionals with new clients in their area, including people who want services done in their home.</span>
+                            </div>
+                            
+                          
+                            
+                         </div>
+                    </div>	 
+                    
+                 <!--    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                   
+                        <div class="box-part text-center">
+                            
+                            <img src="https://img.icons8.com/color/40/000000/id-verified.png">
+                        <br>
+                        <br>
+                            <div class="title">
+                                <h6>Work On Your Own Term</h6>
+                            </div>
+                            
+                            <div class="text">
+                                <span>You choose when you want to work. Quote your own price of your customers on your own terms that interest you.</span>
+                            </div>
+                            
+                          
+                            
+                         </div>
+                    </div>	 -->
+                    
+                     <div class="col-lg-6 col-md-4 col-sm-4 col-xs-12">
+                   
+                        <div class="box-part text-center">
+                            
+                            <img src="https://img.icons8.com/ios/40/000000/last-24-hours-filled.png">
+                            <br>
+                            <br>
+                            
+                            <div class="title">
+                                <h6>24/7 Support</h6>
+                            </div>
+                            
+                            <div class="text">
+                                <span>Delo team services will  offer  technical assistance for customer support round the clock to quickly resolve any problem the customer might experiences with services</span>
+                            </div>
+                            
+                         
+                            
+                         </div>
+                    </div>	 
+                    
+                  
+                    
+                   
+                    
+            
+            </div>		
+        </div>
+    </div>
+    <!-- Service Area End -->
+
+    <!-- Our Room Area Start -->
+    <!-- Our Room Area End -->
+
+    <!-- Testimonials Area Start -->
+    <section class="roberto-testimonials-area section-padding-100-0">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6">
+                    <div class="testimonial-thumbnail owl-carousel mb-100">
+                        <img src="img/bg-img/10.jpg" alt="">
+                        <img src="img/bg-img/11.jpg" alt="">
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <!-- Section Heading -->
+                    <div class="section-heading">
+                        <h6>Testimonials</h6>
+                        <h2>Our Guests Love Us</h2>
+                    </div>
+                    <!-- Testimonial Slide -->
+                    <div class="testimonial-slides owl-carousel mb-100">
+
+                        <!-- Single Testimonial Slide -->
+                        <div class="single-testimonial-slide">
+                            <h5>“This can be achieved by applying search engine optimization or popularly known as SEO. This is a marketing strategy which increases the quality and quantity of traffic flow to a particular website via search engines.”</h5>
+                            <div class="rating-title">
+                                <div class="rating">
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                </div>
+                                <h6>Robert Downey <span>- CEO Deercreative</span></h6>
+                            </div>
+                        </div>
+
+                        <!-- Single Testimonial Slide -->
+                        <div class="single-testimonial-slide">
+                            <h5>“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus delectus facilis molestias, error vitae praesentium quos eaque qui ea, tempore blanditiis sint reprehenderit, quaerat. Commodi ab architecto sit suscipit exercitationem!”</h5>
+                            <div class="rating-title">
+                                <div class="rating">
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                </div>
+                                <h6>Akash Downey <span>- CEO Deercreative</span></h6>
+                            </div>
+                        </div>
+
+                        <!-- Single Testimonial Slide -->
+                        <div class="single-testimonial-slide">
+                            <h5>“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor, ex quos. Alias a rem maiores, possimus dicta sit distinctio quis iusto!”</h5>
+                            <div class="rating-title">
+                                <div class="rating">
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                </div>
+                                <h6>Downey Sarah <span>- CEO Deercreative</span></h6>
+                            </div>
+                        </div>
+
+                        <!-- Single Testimonial Slide -->
+                        <div class="single-testimonial-slide">
+                            <h5>“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore sequi laboriosam fugit suscipit aspernatur, minima minus voluptatum, id ab atque similique ex earum. Magni.”</h5>
+                            <div class="rating-title">
+                                <div class="rating">
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                    <i class="icon_star"></i>
+                                </div>
+                                <h6>Robert Brown <span>- CEO Deercreative</span></h6>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials Area End -->
+
+    <!-- Projects Area Start -->
+    <!-- Projects Area End -->
+
+    <!-- Blog Area Start -->
+   
+    <!-- Blog Area End -->
+
+    <!-- Call To Action Area Start -->
+   <section class="roberto-cta-area">
+        <div class="container">
+            <div class="cta-content bg-img bg-overlay jarallax" style="background-image: url(img/bg-img/1.jpg);">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-7">
+                        <div class="cta-text mb-50">
+                            <h2>Contact us now!</h2>
+                            <h6 class="text-center">Contact 011-42078036 for any Query</h6>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5 text-right">
+                        <a href="#" class="btn roberto-btn mb-50">Contact Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>  
+    <!-- Call To Action Area End -->
+
+    <!-- Partner Area Start -->
+  <div class="partner-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="partner-logo-content d-flex align-items-center justify-content-between wow fadeInUp" data-wow-delay="300ms">
+                        <!-- Single Partner Logo -->
+                        <a href="#" class="partner-logo"><img src="https://img.icons8.com/dusk/64/000000/person-at-home.png"  ></a>
+                        <!-- Single Partner Logo -->
+                        <a href="#" class="partner-logo"><img src="https://img.icons8.com/color/48/000000/request-service.png"    ></a>
+                        <!-- Single Partner Logo -->
+                        <a href="#" class="partner-logo"><img src="https://img.icons8.com/color/48/000000/massage.png" ></a>
+                        <!-- Single Partner Logo -->
+                        <a href="#" class="partner-logo"><img src="https://img.icons8.com/bubbles/50/000000/broom.png"  ></a>
+                        <!-- Single Partner Logo -->
+                        <a href="#" class="partner-logo"><img src="https://img.icons8.com/ios/50/000000/plumber-filled.png" ></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <!-- Partner Area End -->
+
+    <!-- Footer Area Start -->
+    <footer class="footer-area section-padding-80-0">
+        <!-- Main Footer Area -->
+        <div class="main-footer-area">
+            <div class="container">
+                <div class="row align-items-baseline justify-content-between">
+                    <!-- Single Footer Widget Area -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget mb-80">
+                            <!-- Footer Logo -->
+                            <a href="#" class="footer-logo"><img src="img/ashish/ashish.png" style="height: 70px" width="100px"   alt=""></a>
+
+                            <p style="color: white"> CIN:U74999DL2019PTC351555.</p>
+                            <h4 >011-42078036</h4>
+                            <span style="color: white">cs@deloservices.com</span>
+                           <!-- <span>856 Cordia Extension Apt. 356, Lake Deangeloburgh, South Africa</span>  -->
+                        </div>
+                    </div>
+
+                    <!-- Single Footer Widget Area -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget mb-80">
+                            <!-- Widget Title -->
+                            <h5 class="widget-title">Delo Guide Avaliable on</h5>
+
+                            <!-- Single Blog Area -->
+                            <div class="latest-blog-area">
+                         <a href="#">      <img src="img/ashish/gp.png" style="width:90px" height="95px"></a> <a href=""><img src="img/ashish/as.png" style="width: 110px" height="125px"> </a>
+                              
+                            </div>
+
+                            <!-- Single Blog Area -->
+                            <div class="latest-blog-area">
+                              
+                              
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Footer Widget Area -->
+                    <div class="col-12 col-sm-4 col-lg-2">
+                        <div class="single-footer-widget mb-80">
+                            <!-- Widget Title -->
+                            <h5 class="widget-title" >Links</h5>
+
+                            <!-- Footer Nav -->
+                            <ul class="footer-nav" >
+                                <li ><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i> About Us</a></li>
+                                <li><a href="Terms and condition.html"><i class="fa fa-caret-right" aria-hidden="true"></i> Term & Conditions</a></li>
+                                <li><a href="privacy.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Privacy Policy</a></li>
+                                <li><a href="refund policy.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Refund Policy</a></li>
+                                
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Single Footer Widget Area -->
+                    <div class="col-12 col-sm-8 col-lg-4">
+                        <div class="single-footer-widget mb-80">
+                            <!-- Widget Title -->
+                            <h5 class="widget-title">Subscribe Us</h5>
+                            <span style="color: white">Subscribe us for our new updates.</span>
+
+                            <!-- Newsletter Form -->
+                            <form action="index.html" class="nl-form">
+                                <input type="email" class="form-control" placeholder="Enter your email...">
+                                <button type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copywrite Area -->
+        <div class="container">
+            <div class="copywrite-content">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-8">
+                        <!-- Copywrite Text -->
+                        <div class="copywrite-text">
+                            <p style="color: white;"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved |  made by   <a href="https://DeloServices.com" target="_blank">DeloServices Technology Pvt.Ltd</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <!-- Social Info -->
+                        <div class="social-info">
+                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Area End -->
+
+    <!-- **** All JS Files ***** -->
+    <!-- jQuery 2.2.4 -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Popper -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- All Plugins -->
+    <script src="js/roberto.bundle.js"></script>
+    <!-- Active -->
+    <script src="js/default-assets/active.js"></script>
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+
+<script>
+$('.slider').owlCarousel({
+            items: 1,
+            singleItem:true,
+            nav: true,
+            dots: false,
+            loop: true,
+            autoPlay: 3000
+        });
+</script>
+
+
+<script>
+        var button = document.getElementById('mainButton');
+        
+        var openForm = function() {
+            button.className = 'active';
+        };
+        
+        var checkInput = function(input) {
+            if (input.value.length > 0) {
+                input.className = 'active';
+            } else {
+                input.className = '';
+            }
+        };
+        
+        var closeForm = function() {
+            button.className = '';
+        };
+        
+        document.addEventListener("keyup", function(e) {
+            if (e.keyCode == 27 || e.keyCode == 13) {
+                closeForm();
+            }
+        });
+        </script>
+
+</html>

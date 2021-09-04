@@ -1,0 +1,74 @@
+/* ==========================================================================
+   Pricing Table Style
+   ========================================================================== */
+   .mainHeading{
+    text-align: center;
+    margin-bottom: 20px;
+    .section-title{
+      padding: 20px 0px;
+    }
+   }
+   #pricing-table{
+    text-align: center;
+    .title{
+        padding-top: 10px;
+        padding-bottom: 15px;
+        h3{
+          color: #333333;
+          font-weight: 400;
+          font-size: 18px;
+          margin-bottom: 0px;
+        }
+    }
+    .table{
+        padding-bottom: 30px;
+        border-radius: 0px;
+        background: #ffffff;
+        border: 1px solid #E6E6E6;
+        -webkit-transition: all .3s linear;
+        -moz-transition: all .3s linear;
+        -ms-transition: all .3s linear;
+        -o-transition: all .3s linear;
+        transition: all .3s linear;
+        .icon{
+          padding: 30px;
+           i{
+              color: $preset;
+              font-size: 42px;
+           }
+        }
+        .pricing-header{
+            position: relative;
+            text-align: center;
+            .price-value{
+                font-size: 30px;
+                color: $preset;
+                position: relative;
+                text-align: center;
+                font-weight: 500;
+                line-height: 35px;
+            }
+        }
+        .description{
+            text-align: center;
+            padding: 0px 50px;
+            margin-bottom: 20px;
+            li{
+              font-size: 14px;
+              font-weight: 400;
+              color: #999999;
+              padding-bottom: 12px;            
+            }
+        }
+    } 
+    .table:hover{
+      border-color: transparent;
+      box-shadow: 0px 0px 15px rgba(143, 143, 143, 0.15);
+    }
+    #active-tb{
+      margin-top: -20px;
+      border-color: transparent;
+      box-shadow: 0px 0px 15px rgba(143, 143, 143, 0.15);
+    }
+  }
+

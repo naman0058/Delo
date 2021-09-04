@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <script>
+        !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
+        analytics.load("LioF9AH4FA5S2Ioit4CkQHeQgaRy6227");
+        analytics.page();
+        }}();
+      </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+
+
+    <title>Checkout</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css">
+    <!-- Icon -->
+    <link rel="stylesheet" type="text/css" href="/assets/fonts/line-icons.css">
+    <!-- Slicknav -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/slicknav.css">
+
+    <!-- Nivo Lightbox -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/nivo-lightbox.css" >
+    <!-- Animate -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/animate.css">
+    <!-- Owl carousel -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/owl.carousel.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+    <!-- Responsive Style -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/responsive.css">
+
+    <link rel="shortcut icon" type="images/x-icon" href="/images/delofabicon.png">
+    <link src="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.3/jquery.timepicker.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css" integrity="sha256-DVV5cU9pxHH2Rofop3XD3b3rbfrOSIy2nU61DEbYy1Q=" crossorigin="anonymous" />
+
+
+   
+
+  </head>
+  <body>
+    <%if(msg){%>
+      <div class="alert alert-warning">
+          <strong><%=msg%></strong> .
+        </div> 
+        <% } %>
+    <!-- Header Area wrapper End -->
+
+    <!-- Page Header Start -->
+   
+    <!-- Page Header End -->  
+
+    <!-- Start Content -->
+    <div id="content" class="section-padding">
+      <div class="container">
+        <div class="row">
+         
+         
+          </div>
+
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <div class="page-content">
+              <div class="inner-box">
+               
+                <div class="dashboard-wrapper">
+                  <div class="row">
+                    <div class="col-md-6 col-sm-6 col-sx-12 col-lg-7">
+                      <div class="order-details">
+                        <div class="dashboardboxtitle">
+                          <h2>Your Services</h2>
+
+                       
+
+                              <% if(result[2][0].total_ammount <500 ) { %>
+                                  <div class="alert alert-info">
+                                      <strong>Convenience charge will be appiled on your Total Amount</strong> 
+                                    </div>
+
+                                  
+                                 <% }  %>
+                                
+                       
+                        </div>
+                        <div class="order_review mb-3">
+                          <table class="table table-responsive dashboardtable table-review-order">
+                            <thead>
+                              <tr>
+                                <th class="service-name">Service</th>
+                                <th class="product-total">Total</th>
+                                <th class="product-total">Add On</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                            
+
+
+                                      
+<% for(i=0;i<result[0].length;i++){ %>
+    <tr>
+        <th class="service-name"><%=result[0][i].servicename%></th>
+        <th class="price">Rs .<%=result[0][i].price%></th>
+        <th class="add-on"><%=result[0][i].quantity%></th>
+        <th class="delete-function"><button class="btn btn-success btn-sm add" id="<%=result[0][i].id%>">+</button>
+   <button class="btn btn-danger btn-sm delete" id="<%=result[0][i].id%>">-</button></th>
+        <% } %>
+    </tr>
+                             
+                            </tbody>
+                            <tfoot>
+                             
+                             
+                              <tr>
+                                <th>Total</th>
+                                <td><p class="price">Rs. <%=result[2][0].total_ammount%></p></td>
+                                </tr>
+                               
+                            </tfoot>               
+                          </table>
+
+                          <div class="card col-lg-9 col-md-9 col-sm-12 col-xs-12" style="margin-top: 50px;">
+                         <div class="card-header" style="background-color: white">
+                          COVID-19 SELF DECLARATION
+                         </div>
+                         <div class="card-body">
+                           <ul>
+                            <li style="margin-top: 2px;font-size:14px; font-family: 'Lato', sans-serif;color:#888888">&#10003;  I  don't have any symptoms of fever , Mild fever, Flu Cough Sore throat etc.
+ 
+</li>
+<li style="margin-top: 3px;font-size:14px; font-family: 'Lato', sans-serif;color:#888888">&#10003;  Since last 14 day not traveled anywhere inside or outside of india.</li>
+<li style="margin-top: 3px;font-size:14px; font-family: 'Lato', sans-serif;color:#888888">&#10003;  Science 14 days i don't have contacts with any covid -19 patient.</li>
+<li style="margin-top: 5px;font-size:14px; font-family: 'Lato', sans-serif;color:#888888;text-align: justify-all;">&#10003;  Delo Services Pvt. Ltd.  is not liable any unfortunate incident that cover to customer or any team member is diagnosed with covid-19 or other incident. </li>
+                           </ul>
+                         </div>
+                        
+                          </div>
+
+
+
+
+
+
+
+
+
+
+
+                          <div class="container">
+                            
+
+<% if(result[6][0]){ %>
+  <div class="alert alert-success">
+      <strong>Congratulations!</strong> You are now a member for  <%=result[3][0].name%> 
+    </div>
+<% } %>
+
+
+                              <div class="alert alert-success membershippopup">
+                                  <strong>Congratulations!</strong> You are now a member for  <%=result[3][0].name%> 
+                                </div>
+
+                              
+                              <!-- Trigger the modal with a button -->
+                              
+                            
+                              <!-- Modal -->
+                              <div class="modal fade" id="myModal" role="dialog">
+                                <div class="modal-dialog">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 style="font-family: cambria;color: #1f5ab0">Delo Services         <span style="color:black;font-family: cambria;"><%=result[3][0].name%> Membership </span></h5>
+                                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                     
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="alert alert-success">
+                                            <strong>YAY!</strong> Save Extra Rs. 100 off on all <%=result[3][0].name%>.
+                                          </div>
+                                        
+                                          <img src="/images/<%=result[3][0].image%>" style="width:100%;height: 150%; ">
+                                          <br/>
+      
+                                          <br>
+                                          <br>
+                                          <h4 class="text-center" style="color: #1f5ab0;font-family:cambria;font-size: 20px;font-weight: bold;">Choose Your Plan  </h4>
+                                         <br>
+                                         <br>
+                                         <div class="container">
+                                            <div class="row">
+                                                <div class="col-lg-6 col-md-12">
+                                         
+                                                    <div class="card">
+                                                        <div class="card-header text-center bold" style="background-color: white"><b>12 Months</b></div>
+                                                        <div class="card-body text-center">₹<%=result[5][0].plan12price%>  <s>₹<%=result[5][0].plan12%></s></div> 
+                                                        <div class="card-footer" style="background-color: white">
+                                                          <button type="button" class="btn btn-dark btn-block membership12" membershipprice="<%=result[5][0].plan12price%>" id="<%=result[5][0].categoryid%>"  data-dismiss="modal" >Add to cart</button>
+                                                        </div>
+                                                      </div>
+
+                                                  
+                                                </div>
+                                      
+                                       <div class="col-lg-6 col-md-12">
+                                          <div class="card">
+                                              <div class="card-header text-center bold" style="background-color: white"><b>6 Months</b></div>
+                                                        <div class="card-body text-center">₹<%=result[5][0].plan6price%>   <s>₹<%=result[5][0].plan6price%> </s></div> 
+                                                        <div class="card-footer" style="background-color: white">
+                                                          <button type="button" class="btn btn-dark btn-block membership6" membershipprice="<%=result[5][0].plan6price%>" id="<%=result[5][0].categoryid%>"data-dismiss="modal" >Add to cart</button>
+                                                        </div>
+                                            </div>
+
+                                        </div>
+
+                                        </div>
+                                          </div>
+                                          <br>
+
+                                          <h4 class="text-center" style="color: #1f5ab0;font-family:cambria;font-size: 20px;font-weight: bold;">Our members save atleast ₹1800/year  </h4>
+<hr>
+                                          
+
+<div class="container">
+  <div class="row">
+    <% for(i=0;i<result[4].length;i++){ %>
+       <div class="col-lg-3">
+         <img src="/images/<%=result[4][i].logo%>" style="width:50px;">
+         <p><%=result[4][i].name%></p>
+       </div>
+       <% } %>
+  </div>
+</div>
+
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            
+
+
+                        </div>               
+                      </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 col-sx-12 col-lg-5">
+                      
+                      <div class="dashboardboxtitle">
+                        <h2>Fill information</h2>
+                      </div>
+                      <!-- /Payment Method -->
+                      <form action="/services/booking" method="get">
+                      <div class="form-group mb-3">
+                        <label>Name <sup>*</sup></label>
+                        <input class="form-control" type="text" name="name" required>
+                      </div>
+                      <div class="form-group mb-3">
+                          <label>Email  <sup>*</sup></label>
+                          <input class="form-control" name="email" type="email" required>
+                        </div>    
+                      <div class="form-group mb-3">
+                        <label>Address  <sup>*</sup></label>
+                        <!--<center><button type="button" class="btn btn-outline-dark btn-block" id = "find-me">AT Current Location</button></center>
+                      <p id = "status" name="status"></p>
+                        <a id = "map-link" target="_blank"></a> 
+                        <p class="text-center">OR</p>-->
+                        <input class="form-control" type="text" name="address" required>
+                       
+                      
+                      </div>     
+                      <div class="form-group">
+                        <label>Pincode<sup>*</sup></label>
+                        <select name="pincode" class="form-control">
+
+                            <option value="110002">Ajmeri Gate Extension - 110002</option>
+                            <option value="10002">A G C R - 110002</option>
+                            <option value="110002">Ansari Road - 110002</option>
+                            <option value="110003">Aliganj - 110003</option>
+                            <option value="110005">Anand Parbat - 110005</option>
+                            <option value="110005">Anand Nagar - 110005</option>
+                            <option value="110010">Army Base - 110010</option>
+                            <option value="110010">A P S Colony - 110010</option>
+                            <option value="110010">A F Palam - 110010</option>
+                            <option value="110016">Ashram - 110016</option>
+                            <option value="110018">Ashok Nagar - 110018</option>
+                            <option value="110021">Ashoka Hotel - 110021</option>
+                            <option value="110021">Anand Niketan - 110021</option>
+                            <option value="110024">Amar Colony - 110024</option>
+                            <option value="110033">Adarsh Nagar - 110033</option>
+                            <option value="110033">A T Mills - 110033</option>
+                            <option value="110034">Anandvas Shakurpur - 110034</option>
+                            <option value="110036">Alipur - 110036</option>
+                            <option value="110038">A F Rajokari  - 110038</option>
+                            <option value="110045">Ambrohi - 110045</option>
+                            <option value="110047">Arjan Garh  - 110047</option>
+                            <option value="110049">Asian Games Village - 110049</option>
+                            <option value="110049">Andrews Ganj - 110049</option>
+                            <option value="110051">Azad Nagar - 110051</option>
+                            <option value="110051">Anarkali  - 110051</option>
+                            <option value="110052">Ashok Vihar H O - 110052</option>
+                            <option value="110055">Amrit Kaur Market - 110055</option>
+                            <option value="110062">Ambedkar Nagar - 110062</option>
+                            <option value="110005">Bank Street  - 110005</option>
+                            <option value="110006">Bara Tooti   - 110006</option>
+                            <option value="110007">Birla Lines  - 110007</option>
+                            <option value="110010">Bazar Road  - 110010</option>
+                            <option value="110032">Bhola Nath Nagar  - 110032</option>
+                            <option value="110032">Balbir Nagar  - 110032</option>
+                            <option value="110033">Bhaiparma Nand Nagar  - 110033</option>
+                            <option value="110039">Bawana  - 110039</option>
+                            <option value="110041">Budh Nagar  - 110041</option>
+                            <option value="110042">Badli  - 110042</option>
+                            <option value="110044">Badarpur T P Station  - 110044</option>
+                            <option value="110044">Badarpur  - 110044</option>
+                            <option value="110045">Bakrola  - 110045</option>
+                            <option value="110052">Bharat Nagar  - 110052</option>
+                            <option value="110053">Bhajanpuri  - 110053</option>
+                            <option value="110053">Brahampuri   - 110053</option>
+                            <option value="110061">Bijwasan  - 110061</option>
+                            <option value="110062">B S F Camp Tigri  - 110062</option>
+                            <option value="110096">Bhajan Pura  - 110096</option>
+                            <option value="110001">Connaught Place  - 110001</option>
+                            <option value="110001">Constitution House  - 110001</option>
+                            <option value="110006">Chawri Bazar  - 110006</option>
+                            <option value="110006">Chandni Chowk  - 110006</option>
+                            <option value="110007">C C Institute  - 110007</option>
+                            <option value="110010">Central Ordinance  - 110010</option>
+                            <option value="110010">Central Vehicle  - 110010</option>
+                            <option value="110012">Central Tractor  - 110012</option>
+                            <option value="110015">Central Kirti Nagar  - 110015</option>
+                            <option value="110018">Chand Nagar  - 110018</option>
+                            <option value="110020">C R R I   - 110020</option>
+                            <option value="110021">Chankyapuri   - 110021</option>
+                            <option value="110054">Civil Lines  - 110054</option>
+                            <option value="110054">C R P F Camp  - 110054</option>
+                            <option value="110071">Chhawla  - 110071</option>
+                            <option value="110074">Chhatarpur  - 110074</option>
+                            <option value="471001">Chhatarpur  - 471001</option>
+                            <option value="110094">Chilla Villege  - 110094</option>
+                            <option value="110002">Darya Ganj  - 110002</option>
+                            <option value="110003">Delhi High Court  - 110003</option>
+                            <option value="110005">Desh Bandhu Gupta Road  - 110005</option>
+                            <option value="110006">Delhi Sadar Bazar  - 110006</option>
+                            <option value="110006">Delhi G P O  - 110006</option>
+                            <option value="110006">Delhi Cloth Mills  - 110006</option>
+                            <option value="110006">Dareeba  - 110006</option>
+                            <option value="110007">Delhi University  - 110007</option>
+                            <option value="110008">Dada Ghosh Bhawan  - 110008</option>
+                            <option value="110010">Depot  - 110010</option>
+                            <option value="110010">Dhaula Khuan  - 110010</option>
+                            <option value="110010">Delhi Cantt  - 110010</option>
+                            <option value="110011">Defence Head Qrs  - 110011</option>
+                            <option value="110013">Dargah Shareef  - 110013</option>
+                            <option value="110015">D I Area  - 110015</option>
+                            <option value="110024">Defence Colony  - 110024</option>
+                            <option value="110032">Dilshad Garden  - 110032</option>
+                            <option value="110054">Distt Courts  - 110054</option>
+                            <option value="110062">Dakshinpuri Phase Iii  - 110062</option>
+                            <option value="110062">Dakshimpuri Phase I  - 110062</option>
+                            <option value="110067">D D A Munirka  - 110067</option>
+                            <option value="110001">Eastern Court  - 110001</option>
+                            <option value="110001">Election Commission  - 110001</option>
+                            <option value="110015">E S I Hospital  - 110015</option>
+                            <option value="110065">East Of Kailash  - 110065</option>
+                            <option value="110006">Farashkhana  - 110006</option>
+                            <option value="110018">Fatehpuri   - 110018</option>
+                            <option value="110018">Fateh Nagar  - 110018</option>
+                            <option value="110020">Flatted Factories Complex  - 110020</option>
+                            <option value="110002">Gandhi Samarak  - 110002</option>
+                            <option value="110003">Golf Links  - 110003</option>
+                            <option value="110005">Guru Gobind Singh Marg  - 110005</option>
+                            <option value="110011">Gymkhana Club  - 110011</option>
+                            <option value="110016">Green Park Market  - 110016</option>
+                            <option value="110016">Green Park  - 110016</option>
+                            <option value="110019">Govindpuri  - 110019</option>
+                            <option value="110031">Gandhi Nagar Bazar  - 110031</option>
+                            <option value="110031">Gandhi Nagar  - 110031</option>
+                            <option value="110031">Geeta Colony  - 110031</option>
+                            <option value="110033">Gujranwala Nagar Part Ii   - 110033</option>
+                            <option value="110033">G T S Nagar  - 110033</option>
+                            <option value="110035">Ganeshpuri   - 110035</option>
+                            <option value="110037">Gurgaon Road  - 110037</option>
+                            <option value="110048">Greater Kailash Ii  - 110048</option>
+                            <option value="110048">Greater Kailash  - 110048</option>
+                            <option value="110049">Guatam Nagar - 110049</option>
+                            <option value="110049">Gulmohar Park  - 110049</option>
+                            <option value="110051">Gobindpura  - 110051</option>
+                            <option value="110094">Gokulpuri  - 110094</option>
+                            <option value="110006">Hamdard Dawakhana   - 110006</option>
+                            <option value="110006">Hauz Qazi  - 110006</option>
+                            <option value="110013">Hazrat Nizamuddin  - 110013</option>
+                            <option value="110014">Hari Nagar Ashram</option>
+                            <option value="110016">Hauz Khas Market  - 110016</option>
+                            <option value="110016">Hauz Khas  - 110016</option>
+                            <option value="110029">Himayunpur Extn  - 110029</option>
+                            <option value="110033">Harijan Sewak Sangh  - 110033</option>
+                            <option value="110042">Haiderpur  - 110042</option>
+                            <option value="110062">Hamdard Nagar  - 110062</option>
+                            <option value="110064">Hari Nagar Da & Db Block  - 110064</option>
+                            <option value="110064">Hari Nagar Be Block  - 110064</option>
+                            <option value="110091">Himmatpur  - 110091</option>
+                            <option value="110002">Indian Agriculture  - 110002</option>
+                            <option value="110002">Indraprastha Estate  - 110002</option>
+                            <option value="110002">Indraprastha H O  - 110002</option>
+                            <option value="110005">Industrial Area  - 110005</option>
+                            <option value="110006">Idgah Road I S B T  - 110006</option>
+                            <option value="110012">Inderpuri  - 110012</option>
+                            <option value="110015">Industrial Area - 110015</option>
+                            <option value="110016">I I T Hauz Khas  - 110016</option>
+                            <option value="110035">Inderlok   - 110035</option>
+                            <option value="110001">Janpath - 110001</option>
+                            <option value="110003">Jawahar Lal Nehru Stadium  - 110003</option>
+                            <option value="110005">Joshi Nagar  - 110005</option>
+                            <option value="110006">Jama Masjid  - 110006</option>
+                            <option value="110007">Jawahar Nagar - 110007</option>
+                            <option value="110014">Jangpura  - 110014</option>
+                            <option value="110025">Jangpura  - 110025</option>
+                            <option value="110027">J 6Block Rajouri Garden  - 110027</option>
+                            <option value="110027">Janta Market - 110027</option>
+                            <option value="110027">J J Colony  - 110027</option>
+                            <option value="110033">Jahangirpuri Block H - 110033</option>
+                            <option value="110033">JJahangirpuri Block D  - 110033</option>
+                            <option value="110033">Jahangirpuri Block A   - 110033</option>
+                            <option value="110033">Jaroda Majra  - 110033</option>
+                            <option value="110041">Jawalpuri   - 110041</option>
+                            <option value="110053">Jagjit Nagar  - 110053</option>
+                            <option value="110058">Janakpuri Block C 4  - 110058</option>
+                            <option value="110058">Janakpuri   - 110058</option>
+                            <option value="110058">Janakpuri Block D 1  - 110058</option>
+                            <option value="110058">Janakpuri Blockc 2  - 110058</option>
+                            <option value="110059">Jeewan Park  - 110059</option>
+                            <option value="110067">Jawahar Lal Nehru Univers - 110067</option>
+                            <option value="110072">Jharoda Kalan - 110072</option>
+                            <option value="110001">Krishi Bhawan   - 110001</option>
+                            <option value="110005">Karol Bagh  - 110005</option>
+                            <option value="110007">Kamla Nagar  - 110007</option>
+                            <option value="110010">Kirby Place  - 110010</option>
+                            <option value="110015">Karampura - 110015</option>
+                            <option value="110015">Kirti Nagar- 110015</option>
+                            <option value="110018">Khyalla Phase Ii- 110018</option>
+                            <option value="110018">Khyalla Phase I- 110018</option>
+                            <option value="110019">Kalkaji  - 110019</option>
+                            <option value="110023">Kidwai Nagar - 110023</option>
+                            <option value="110023">Kidwai Nagar West - 110023</option>
+                            <option value="110024">Krishna Market - 110024</option>
+                            <option value="110031">Kailash Nagar - 110031</option>
+                            <option value="110032">Kabool Nagar - 110032</option>
+                            <option value="110048">Kailash Colony - 110048</option>
+                            <option value="110048">Kailash - 110048</option>
+                            <option value="110051">Krishan Nagar Bazar - 110051</option>
+                            <option value="110051">Krishan Nagar H O - 110051</option>
+                            <option value="110062">Khanpur - 110062</option>
+                            <option value="110081">Kanjhawala - 110081</option>
+                            <option value="110082">Khera Kalan - 110082</option>
+                            <option value="110084">Kutubgarh  - 110084</option>
+                            <option value="110091">Khichripur - 110091</option>
+                            <option value="110091">Kalyanpuri - 110091</option>
+                            <option value="110092">Kalyan Vas  - 110092</option>
+                            <option value="110094">Karawal Nagar - 110094</option>
+                            <option value="110001">Lady Harding Medical College 110001 </option> 
+                            <option value="110001"> Laxminarain Mandir 110001 </option> 
+                            <option value="110003">Lok Nagar Bhawan 110003 </option> 
+                            <option value="110003"> Lodi Road H O 110003</option> 
+                            <option value="110003"> Lodi House Hostel 110003 </option> 
+                            <option value="110003">Lodi Colony Market 110003 </option> 
+                            <option value="110005">Lower Camp Anand Parbat 110005 </option> 
+                            <option value="110007">Lancer Road Market 110007 </option> 
+                            <option value="110007">Lok Nayak Bhawan 110007 </option> 
+                            <option value="110023">Laxmi Bai Nagar 110023 </option> 
+                            <option value="110024">Lajpat Nagar 110024 </option> 
+                            <option value="110032">Loni Road 110032 </option> 
+                            <option value="110035">Lawrence Road 110035  </option> 
+                            <option value="110035">Lekhu Nagar 110035 </option> 
+                            <option value="110051">Lajpat Rai Chowk 110051 </option> 
+                            <option value="110092"> Laxmi Nagar Market 110092</option> 
+                            <option value="110002">Minto Road 110002 </option> 
+                            <option value="110005">Model Basti 110005 </option> 
+                            <option value="110006">Mori Gate 110006 </option> 
+                            <option value="110007">Malka Ganj Market 110007 </option> 
+                            <option value="110007">Malka Ganj 110007 </option> 
+                            <option value="110015">Mansarover Garden 110015 </option> 
+                            <option value="110015">Moti Nagar 110015 </option> 
+                            <option value="110017">Malviya Nagar 110017 </option> 
+                            <option value="110018">Mahabir Nagar 110018 </option> 
+                            <option value="110018"> Major Bhupinder Singh Nag 110018</option> 
+                            <option value="110021">Malcha Marg 110021 </option> 
+                            <option value="110021">Moti Bagh 110021 </option> 
+                            <option value="110030"> Mehrauli 110030</option> 
+                            <option value="110032">Mansarover Park 110032 </option> 
+                            <option value="110033">Mukerjee Nagar 110033 </option> 
+                            <option value="110033">Model Town A Block 110033 </option> 
+                            <option value="110033">Model Town Ii 110033 </option> 
+                            <option value="110034">Multani Mohalla 110034 </option> 
+                            <option value="110048"> Masjidmoth Phase II 110048</option> 
+                            <option value="110049">Masjid Moth Extn 110049 </option> 
+                            <option value="110053"> Maujpur 110053 </option> 
+                            <option value="110054">Maidens Hotel 110054 </option> 
+                            <option value="110055">Multani Dhanda 110055 </option> 
+                            <option value="110067">Munirka 110067 </option> 
+                            <option value="110062">Madangir 110062 </option> 
+                            <option value="110063">Madipur 110063 </option> 
+                            <option value="110064">Mayapuri Shopping Centre 110064 </option> 
+                            <option value="110064"> Mayapuri 110064</option> 
+                            <option value="110083">9 Mangolpuri Block S 110083 </option> 
+                            <option value="110083"> Mangolpuri Block A 110083</option> 
+                            <option value="110083">Mangolpuri Block 1 110083 </option> 
+                            <option value="110083">Mangolpuri 110083 </option> 
+                            <option value="110093">Nathu Colony-110093 </option> 
+                            <option value="110001">New Delhi G P O-110001 </option> 
+                            <option value="110002">Nidhi-110002 </option> 
+                            <option value="110011"> Nirman Bhawan-110011 </option> 
+                            <option value="110012">N P Laboratories-110012 </option> 
+                            <option value="110015"> North Industrial Area-110015</option> 
+                            <option value="110016">N I E Compus-110016 </option> 
+                            <option value="110019"> Nehru Place-110019</option> 
+                            <option value="110021">Nanakpura-110021 </option> 
+                            <option value="110023">Netaji Nagar-110023 </option> 
+                            <option value="110027">Najafgarh Road-110027 </option> 
+                            <option value="110028"> Naraina Vihar-110028</option> 
+                            <option value="110028">  Naraina-110028</option> 
+                            <option value="110028">Naraina Industrial Estate-110028 </option> 
+                            <option value="110029"> Nauroji Nagar-110029</option> 
+                            <option value="110032">New Seemapuri-110032 </option> 
+                        
+                            <option value="110033">New Sabzi Mandi-110033 </option> 
+                            <option value="110033">Nirankari Colony-110033 </option> 
+                            <option value="110036"> Nangli Poona-110036</option> 
+                            <option value="110040">  Narela Town-110040</option> 
+                            <option value="110040">Narela-110040</option> 
+                            <option value="110041">Nagloi-110041 </option> 
+                            <option value="110041"> Nangloi Phase Iii-110041 </option> 
+                            <option value="110043">Najafgarh-110043 </option> 
+                            <option value="110046">Nangal Rava-110046 </option> 
+                            <option value="110048">N Block Greater-110048 </option> 
+                            <option value="110052">Nimri-110052 </option> 
+                            <option value="110060">New Rajinder Nagar-110060 </option> 
+                            <option value="110065"> Nehru Nagar-110065</option> 
+                            <option value="110093">Nand Nagri A Block-110093 </option> 
+                            <option value="110093">Nand Nagri-110093 </option> 
+                            <option value="110093"> Nathu Colony-110093 </option> 
+                            <option value="110003">Oberei Intercontinental-110003 </option> 
+                            <option value="110012">Organisation-110012 </option> 
+                            <option value="110020">Okhla Industrial Estate-110020 </option> 
+                            <option value="110035">Onkar Nagar-110035 </option> 
+                            <option value="110092">Patper Ganj-110092 </option> 
+                            <option value="110072">P T S Jharoda Kalan-110072 </option> 
+                            <option value="110063">Paschim Vihar Block B-110063 </option> 
+                            <option value="110063">Paschim Vihar-110063 </option> 
+                            <option value="110062">Pushpa Bhawan-110062 </option> 
+                            <option value="110058">Possangipur-110058 </option> 
+                            <option value="110055">P S B Paharganj-110055 </option> 
+                            <option value="110055"> Paharganj-110055 </option> 
+                            <option value="110045">Palam-110045 </option> 
+                            <option value="110045">Palam Enclave-110045 </option> 
+                            <option value="110035">Power House-110035 </option> 
+                            <option value="110034">Pitampura-110034 </option> 
+                            <option value="110026"> Punjabi Bagh-110026 </option> 
+                            <option value="110026">Punjabi Bagh Sector III-110026 </option> 
+                            <option value="110022"> Postal Saving Bureau-110022</option> 
+                            <option value="110017">Panchseel Enclave-110017 </option> 
+                            <option value="110017"> Pushpa Vihar Sector I-110017</option> 
+                            <option value="110008"> Patel Nagar South-110008</option> 
+                            <option value="110008">Patel Nagar West-110008 </option> 
+                            <option value="110008">Patel Nagar-110008 </option> 
+                            <option value="110008"> Patel Nagar East-110008</option> 
+                            <option value="110007">Pragati Vihar-110007 </option> 
+                            <option value="110007 ">Partap Nagar-110007</option> 
+                            <option value="110007"> Patrachar Vidyala-110007</option> 
+                            <option value="110007">Patrachar Road-110007 </option> 
+                            <option value="110003">Pragati Vihar-110003 </option> 
+                            <option value="110003">Pandara Road-110003 </option> 
+                            <option value="110001">Pragati Maidan-110001 </option> 
+                            <option value="110001">Parliament Street H O-110001 </option> 
+                            <option value="110001">Patiala House-110001 </option> 
+                            <option value="110001 "> Parliament House-110001</option> 
+                            <option value="110063">Qr Madipur-110063 </option> 
+                            <option value="110066"> R K Puram-110066 </option>  
+                            <option value="110066"> R K Puram West-110066 </option>  
+                            <option value="110060"> Rajinder Nagar-110060</option>  
+                            <option value="110051">Ram Nagar-110051 </option>  
+                            <option value="110051">Radheypuri-110051</option>  
+                            <option value="110034"> Rani Bagh-110034</option>  
+                            <option value="110032"> Rohtash Nagar-110032</option>  
+                            <option value="110031"> Raghubarpura-110031</option>  
+                            <option value="110027">Rajouri Garden-110027</option>  
+                            <option value="110027">Rajouri Market-110027 </option>  
+                            <option value="110022">R K Puram Sector Viii-110022</option>  
+                            <option value="110022">R K Puram Sector Vii-110022 </option>  
+                            <option value="110022">R K Puram V-110022 </option>  
+                            <option value="110022">R K Puram Sector Ix-110022 </option>  
+                            <option value="110022">R K Puram Sector Xii-110022</option>  
+                            <option value="110022">R K Puram Sector Iv-110022 </option>  
+                            <option value="110022">R K Puram Sector Iii-110022</option>  
+                            <option value="110022"> R K Puram Sector Ii-110022</option>  
+                            <option value="110022">R K Puram Sector I-110022 </option>  
+                            <option value="10015">Ramesh Nagar H O-110015 </option>  
+                            <option value="110012">Research Institute-110012</option>  
+                            <option value="110007">Roop Nagar-110007 </option>  
+                            <option value="110007">Roshan Area Road-110007</option>  
+                            <option value="110007">Rana Pratap Bagh-110007 </option>  
+                            <option value="110007"> Rly C A O-110007</option> 
+                            <option value="110006"> Red Fort-110006</option> 
+                            <option value="110004">Rashtrapati Bhawan-110004 </option> 
+                            <option value="110002">Rajghat Power House-110002 </option> 
+                            <option value="110001"> Rail Bhawan-110001</option> 
+                            <option value="110092">Shakarpur-110092 </option>
+                            <option value="110065"> Sriniwaspuri-110065</option> 
+                            <option value="110056"> Shakurbasti-110056</option>
+                            <option value="110055">Swami Ram Tirath Nagar-110055 </option>
+                            <option value="110053">Seelampur-110053 </option>
+                            <option value="110052">Satyawati Nagar-110052 </option>
+                            <option value="110052"> Shastri Nagar-110052</option>
+                            <option value="110049">South Extn Part I-110049 </option>
+                            <option value="110049">South Extn Part II-110049</option>
+                            <option value="110049">Sadiq Nagar-110049 </option>
+                            <option value="110042">Sameypur Badli-110042 </option>
+                            <option value="110041">Sultanpuri Block C-110041 </option>
+                            <option value="110041">Suttanpuri Block B-110041 </option>
+                            <option value="110041 ">Sultanpuri Block F-110041 </option>
+                            <option value="110040">3 Sanoth-110040 </option>
+                            <option value="110035">Sarai Rohila-110035 </option>
+                            <option value="110034">1 Shakurbasti R S-110034 </option>
+                            <option value="110034"> Saraswati Vihar-110034</option>
+                            <option value="110034">Srinagar Colony-110034 </option>
+                            <option value="110034">Shakurpur Block I-110034 </option>
+                            <option value="110033">Shalimar Bagh-110033 </option>
+                            <option value="110033">Suraj Nagar-110033 </option>
+                            <option value="110032"> 5 Shahdara-110032</option>
+                            <option value="110032">Shahdara Mandi-110032 </option>
+                            <option value="110032">Seemapuri Old-110032 </option>
+                            <option value="110031">Sahstri Nagar-110031 </option>
+                            <option value="110029">Safdarjang Enclave-110029 </option>
+                            <option value="110027">Subhash Nagar West-110027 </option>
+                            <option value="110027">Subhash Nagar-110027 </option>
+                            <option value="110023">Sarojini Nagar H O-110023 </option>
+                            <option value="110017">South Malviya Nagar-110017</option>
+                            <option value="110016">Shri Aurobindo-110016 </option>
+                            <option value="110015">Sudershan Park-110015 </option>
+                            <option value="110011">Shahjahan Road-110011 </option>
+                            <option value="110011">Sectt South-110011 </option>
+                            <option value="110011"> South Avenue-110011</option>
+                            <option value="110007">Safdarjang Air Port-110007 </option>
+                            <option value="110007">Sewa Sangh-110007 </option>
+                            <option value="110007">Subzi Mandi-110007 </option>
+                            <option value="110007"> Shakti Nagar-110007   </option>
+                            <option value="110006">Sadar Thana Road-110006 </option>     
+                            <option value="110005">Sat Nahar-110005 </option>  
+                            <option value="110003">Safdarjang Air Port-110003</option>  
+                            <option value="110001">Sansadiya Soudha-110001</option>  
+                            <option value="110001">Sectt North-110001 </option>  
+                            <option value="110001">Supreme Court-110001</option>  
+                            <option value="110001">Shastri Bhawan-110001 </option>  
+                            <option value="110091 ">Trilokpuri-110091 </option>
+                            <option value="110044">Tughlakabad A F Station-110044</option>
+                            <option value="110044">Tughlakabad-110044</option>
+                            <option value="110032">Teliwara-110032 </option>
+                            <option value="110030">T B Hospital-110030 </option>
+                            <option value="110027">Tatarpur-110027 </option>
+                            <option value="10018">Tihar-10018</option>
+                            <option value="110018">Tilak Nagar-110018</option>
+                            <option value="110005">Than Singh Nagar-110005</option>
+                            <option value="110073">Ujwa-110073 </option>
+                            <option value="110059"> Uttam Nagar-110059</option>
+                            <option value="110011">Udyog Bhawan-110011 </option>
+                            <option value="110011">U P S C-110011 </option>
+                            <option value="110057">Vasant Vihar I-110057 </option>
+                            <option value="110057">Vasant Vihar Ii-110057 </option>
+                            <option value="110033">Vijay Nagar-110033</option>
+                            <option value="110032">Vivek Vihar-110032</option>
+                            <option value="110032">Vishwan Nagar-110032 </option>
+                            <option value="110032">Vishwa Karma Nagar-110032</option>
+                            <option value="110018">Vishnu Garden-110018</option>
+                            <option value="110018">Vikaspuri-110018</option>
+                            <option value="110015">Vishnu Garden-110015 </option>
+                            <option value="1100523">Wazirpur Phase III-1100523</option>
+                            <option value="110010">Work Shop-110010</option>
+                            <option value="110007">Wazir Nagar-110007 </option>
+                            <option value="110003"> Wazir Nagar-110003</option>
+                            <option value="110053">Yamuna Vihar-110053</option>
+                            <option value="110016">Yusaf Sarai -110016 </option>
+                            <option value="110053">Zafrabad-110053</option>
+                            <option value="110025">Zakhir Nagar-110025</option>
+                            <option value="110015">Zakhira-110015 </option>
+                        
+                        </select>
+                      </div>
+                      <div class="form-group">
+                          <label>Date<sup>*</sup></label>
+                         
+                          <input type="text" name="date" id="date" class="form-control" readonly required>
+                        </div>
+                        <div class="form-group">
+                            <label>Time<sup>*</sup></label>
+                            <input class="form-control timepicker" name="time" placeholder="time" required readonly/>
+                            <input class="form-control second_timepicker" name="time" placeholder="time" required readonly/>  
+                          </div>
+                          <div class="container">
+<div class="row">
+  <div class="col-lg-12 col-xl-12">
+      <div class="form-group">
+          <label>Promocode</label>
+          <input class="form-control" id="promocode" name="promocode" type="text" placeholder="Do You Have Any Promocode ?">
+        </div>
+        <div class="col-lg-12 col-xl-12">
+            <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#myModal">View Membership</button>
+          <button type="button" class="btn btn-default float-right apply">Apply</button>
+            <br><br>  
+            <h5 id="successfully">Applied Sucessfully</h5>
+            <h5 id="failed">Promocode are not applied</h5>
+        </div>
+        
+        
+           
+  </div>
+  
+</div>
+
+<br>
+                   
+<% for(i=0;i<result[0].length;i++){ %>
+    <input type="hidden" name="booking_id[]" value="<%=result[0][i].servicename%>">
+    <input type="hidden" name="price[]" value="<%=result[0][i].price%>">
+    <input type="hidden" name="quantity[]" value="<%=result[0][i].quantity%>">
+    <input type="hidden" name="categoryid[]" value="<%=result[0][i].categoryid%>">
+    <input type="hidden" name="subcategoryid[]" value="<%=result[0][i].subcategoryid%>">
+<% } %>
+
+
+
+</div> 
+
+ <input type="checkbox" name="check" value="check">
+                           <label style="font-size:13px; font-family: 'Lato', sans-serif;color:#888888;text-align: xjustify-all;">I Accept COVID-19 Self Declaration Terms & Conditions.</label>
+                      <!-- GRAND TOTAL -->
+                      <div class="card ">
+                        <table class="table-total-checkout">                
+                          <tbody>
+                            <tr>
+                              <th></th>
+                              <td></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                       <button type="submit" class="btn btn-success">Proceed to checkout</button>              
+                      </div>
+                    </form>
+                      <!-- /GRAND TOTAL -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>  
+      </div>      
+    </div>
+    <!-- End Content -->
+
+    <!-- Footer Section Start -->
+    <footer>
+   
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="/assets/js/jquery-min.js"></script>
+    <script src="/assets/js/popper.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/jquery.counterup.min.js"></script>
+    <script src="/assets/js/waypoints.min.js"></script>
+    <script src="/assets/js/wow.js"></script>
+    <script src="/assets/js/owl.carousel.min.js"></script>
+    <script src="/assets/js/nivo-lightbox.js"></script>
+    <script src="/assets/js/jquery.slicknav.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/form-validator.min.js"></script>
+    <script src="/assets/js/contact-form-script.min.js"></script>
+    <script src="/assets/js/summernote.js"></script>
+      
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    
+
+
+
+
+<script>
+  $( function() {
+  $( "#date" ).datepicker({ minDate: -0, maxDate: "+5D",dateFormat: 'yy-mm-dd' });
+  } );
+  </script>
+
+<script>
+$(document).ready(function(){
+
+    var dt = new Date();
+var time = dt.getHours()+2 + ":" + dt.getMinutes();
+var today = new Date();
+var dd = today.getDate();
+
+var mm = today.getMonth()+1; 
+var yyyy = today.getFullYear();
+if(dd<10) 
+{
+    dd='0'+dd;
+} 
+
+if(mm<10) 
+{
+    mm='0'+mm;
+} 
+today = yyyy+'-'+mm+'-'+dd;
+$('.second_timepicker').hide()
+$('#date').change(function(){
+
+var choose_date = $('#date').val()
+
+  if(choose_date == today){
+    
+            $('.second_timepicker').hide()
+    $('.timepicker').show()
+         $('input.timepicker').timepicker({
+        timeFormat: 'hh:mm:p',
+        // year, month, day and seconds are not important
+        minTime: time,
+        maxTime: new Date(0, 0, 0, 19, 0, 0),
+        // time entries start being generated at 6AM but the plugin 
+        // shows only those within the [minTime, maxTime] interval
+        startHour: 2,
+        // the value of the first item in the dropdown, when the input
+        // field is empty. This overrides the startHour and startMinute 
+        // options
+        startTime:time,
+        // items in the dropdown are separated by at interval minutes
+        interval: 30,
+        dynamic:true
+    });
+}
+else{
+    $('.second_timepicker').show()
+    $('.timepicker').hide()
+    $('.second_timepicker').timepicker({
+        timeFormat: 'hh:mm:p',
+        // year, month, day and seconds are not important
+        minTime:new Date(0, 0, 0, 8, 0, 0),
+        maxTime: new Date(0, 0, 0, 19, 0, 0),
+        // time entries start being generated at 6AM but the plugin 
+        // shows only those within the [minTime, maxTime] interval
+        startHour: 6,
+        // the value of the first item in the dropdown, when the input
+        // field is empty. This overrides the startHour and startMinute 
+        // options
+        startTime:new Date(0, 0, 0, 8, 00, 0),
+        // items in the dropdown are separated by at interval minutes
+        interval: 30,
+        dynamic:true
+    });
+}
+});
+
+})
+
+
+$('#successfully').hide()
+$('#failed').hide()
+
+$('.apply').click(function(){
+    var promocode = $('#promocode').val()
+    if(promocode==[] || promocode=='' || promocode==null || promocode=='null') alert('Enter Promocode...')
+    else{
+        if(promocode == '123') {
+            
+            $('#successfully').show()
+            $('#failed').hide()
+    }
+        else{
+            
+$('#successfully').hide()
+$('#failed').show()
+        } 
+    }
+
+})
+
+
+
+</script>
+
+  </body>
+
+
+ <script>
+ $('.delete').click(function(){
+   const id = $(this).attr('id');
+  $.get('/booking/cartdelete',{id},data=>{
+    window.location.href = '/booking/mycart'
+  })
+ })
+
+
+ $('.add').click(function(){
+   const id = $(this).attr('id');
+  $.get('/booking/cartupdate',{id},data=>{
+    window.location.href = '/booking/mycart'
+  })
+ })
+ </script>
+
+
+
+<script>
+  /*
+  function geoFindMe() {
+  
+  const status = document.querySelector('#status');
+  const mapLink = document.querySelector('#map-link');
+  
+  mapLink.href = '';
+  mapLink.textContent = '';
+  
+  function success(position) {
+    const latitude  = position.coords.latitude;
+    const longitude = position.coords.longitude;
+  
+    status.textContent = '';
+    mapLink.href = `https://www.openstreetmap.org/#map=18/${latitude}/${longitude}`;
+    mapLink.textContent = `Latitude: ${latitude} °, Longitude: ${longitude} °`;
+    $.get('/services/booking',{latitude,longitude},data=>{
+      alert('a')
+    })
+
+  }
+  
+  function error() {
+    status.textContent = 'Unable to retrieve your location';
+  }
+  
+  if (!navigator.geolocation) {
+    status.textContent = 'Geolocation is not supported by your browser';
+  } else {
+    status.textContent = 'Locating…';
+    navigator.geolocation.getCurrentPosition(success, error);
+  }
+  
+  }
+  
+  document.querySelector('#find-me').addEventListener('click', geoFindMe);
+  */
+  </script>
+
+
+
+<script type="text/javascript">
+  (function() {
+  window.__insp = window.__insp || [];
+  __insp.push(['wid', 1301399890]);
+  var ldinsp = function(){
+  if(typeof window.__inspld != "undefined") return; window.__inspld = 1; var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js?wid=1301399890&r=' + Math.floor(new Date().getTime()/3600000); var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); };
+  setTimeout(ldinsp, 0);
+  })();
+  </script>
+
+
+<script>
+
+$('.membershippopup').hide()
+
+$('.membership6').click(function(){
+  const membershipprice = $(this).attr('membershipprice')
+  const membershipid = $(this).attr('id');
+  const validity = '6'
+  $.post('/membership/cart',{membershipid,membershipprice,validity},data=>{
+    $('.membershippopup').show()
+  })
+})
+
+$('.membership12').click(function(){
+  const membershipprice = $(this).attr('membershipprice')
+  const membershipid = $(this).attr('id');
+  const validity = '12'
+  $.post('/membership/cart',{membershipid,membershipprice,validity},data=>{
+    $('.membershippopup').show()
+  })
+})
+</script>
+
+
+</html>
+
+
+
+

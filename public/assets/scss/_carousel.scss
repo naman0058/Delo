@@ -1,0 +1,149 @@
+
+/* Hero Slider Area */
+#main-slide {
+	.carousel-control {
+		display: none;
+		transition: $transition;
+	}
+	.carousel-indicators{
+		cursor: pointer;
+	}
+	&:hover {
+		.carousel-control {
+			display: block;
+			transition: $transition;
+			-webkit-animation-duration: 1s;
+			animation-duration: 1s;
+			-webkit-animation-fill-mode: both;
+			animation-fill-mode: both;
+			-webkit-animation-name: fadeIn;
+			animation-name: fadeIn;
+		}
+	}
+	.carousel-item img {
+	    position: relative;
+	    width: 100%;
+	    max-height: 670px;
+	}
+	.carousel-inner .carousel-item::after {
+	    bottom: 0;
+	    content: "";
+	    left: 0;
+	    position: absolute;
+	    right: 0;
+	    top: 0;
+	}
+	.carousel-item .carousel-caption {
+	    opacity: 0;
+	    transition: opacity 100ms ease 0s;
+	    z-index: 0;
+	}
+	.carousel-item .carousel-caption {
+		.heading-title{
+			font-size: 40px;
+			line-height: 48px;
+			margin-bottom: 20px;
+			text-transform: uppercase;
+			color: #fff;
+		}
+		.sub-heading{
+			font-size: 14px;
+			color: #fff;
+		}
+	}
+	.carousel-item.active .carousel-caption {
+	    opacity: 1;
+	    transition: opacity 100ms ease 0s;
+	    z-index: 1;
+	}
+	.carousel-caption{
+	    color: #fff;
+	    position: absolute;
+	    top: 40%;
+	}
+
+}
+#main-slide .carousel-control-next,
+#main-slide .carousel-control-prev{
+	opacity: 1;
+	box-shadow: none;
+}
+#main-slide .carousel-indicators li{
+	width: 30px;
+	height: 5px;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+#main-slide .carousel-control i{
+    line-height: 40px;
+    font-size: 18px;
+    width: 40px;
+    border: 1px solid #fff;
+    height: 40px;
+    display: block;
+    color: #fff;
+    border-radius: 30px;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+#main-slide .carousel-control i:hover{
+    color: #fff;
+    background: $preset;
+    border-color: $preset;
+}
+.carousel .carousel-item.active {
+		.animated2 {
+		    animation: 1s ease-in 200ms normal both 1 running lightSpeedIn;
+		}
+		.animated3 {
+		    animation: 1s ease-in-out 500ms normal both 1 running bounceInLeft;
+		}
+		.animated4 {
+		    animation: 1s ease-in 500ms normal both 1 running flipInX;
+		}
+		.animated5 {
+		    animation: 1s ease-in-out 100ms normal both 1 running bounceInLeft;
+		}
+		.animated6 {
+		    animation: 1s ease-in 500ms normal both 1 running bounceIn;
+		}
+		.animated7 {
+		    animation: 1s ease-in 500ms normal both 1 running bounceIn;
+		}
+		.animated8 {
+		    animation: 1s ease-in 800ms normal both 1 running bounceInDown;
+		}
+	}
+	.carousel-fade .carousel-inner .carousel-item {
+	    max-height: 700px;
+	    opacity: 0.8;
+	    transition-property: opacity;
+	}
+	.carousel-fade .carousel-inner .active {
+	    opacity: 1;
+	}
+	.carousel-fade .carousel-inner .active.left, .carousel-fade .carousel-inner .active.right {
+	    left: 0;
+	    opacity: 0;
+	    z-index: 1;
+	}
+	.carousel-fade .carousel-inner .next.left, .carousel-fade .carousel-inner .prev.right {
+	    opacity: 1;
+	}
+	.carousel-fade .carousel-inner .carousel-item::after {
+	    background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+	    bottom: 0;
+	    content: "";
+	    left: 0;
+	    position: absolute;
+	    right: 0;
+	    top: 0;
+	}
+	.carousel-fade .carousel-control {
+	    z-index: 20;
+	}
+	.slider-title{
+		font-size: 70px;
+		font-weight: 900;
+	}

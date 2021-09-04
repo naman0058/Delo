@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<link rel="shortcut icon" type="images/x-icon" href="/images/delofabicon.png">
+
+	<title>Delo Team - Membership</title>
+
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+	<meta name="viewport" content="width=device-width" />
+
+	<link rel="apple-touch-icon" sizes="76x76" href="/team_style/assets/img/apple-icon.png" />
+	<link rel="icon" type="image/png" href="/images/logo2.png" />
+
+	<!--     Fonts and icons     -->
+	<link rel="stylesheet" type="text/css"
+		href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+
+	<!-- CSS Files -->
+	<link href="/team_style/assets/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="/team_style/assets/css/material-bootstrap-wizard.css" rel="stylesheet" />
+
+	<!-- CSS Just for demo purpose, don't include it in your project -->
+
+	<link href="/team_style/assets/css/demo.css" rel="stylesheet" />
+
+
+	<!--Our code-->
+
+	<script src="/javascripts/jquery.js"></script>
+
+	<!--Our Code ends-->
+
+
+	<style>
+		#radio-3 {
+			position: relative;
+			bottom: 400px;
+		}
+
+		.selectBox input {
+			display: none;
+		}
+
+		.selectBox input:checked+label {
+			border-color: #23AAF2;
+			z-index: 1;
+			box-shadow: 0 0 0 3px rgba(0, 200, 83, .1);
+		}
+
+		.selectBox input:checked+label:before {
+			background: #23AAF2;
+			box-shadow: #23AAF2;
+		}
+
+		.selectBox label {
+			border: 1px solid #eee;
+			position: relative;
+			padding: 15px 15px 15px 40px;
+			cursor: pointer;
+			font-weight: bold;
+		}
+
+		.selectBox label:before {
+			content: '';
+			width: 15px;
+			height: 15px;
+			box-shadow: 0 0 0 1px #ccc;
+			border: 3px solid #fff;
+			position: absolute;
+			left: 15px;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+
+		.selectBox label:hover {
+			border-color: #999;
+			z-index: 1;
+		}
+
+		.selectBox.radio label:before {
+			border-radius: 100%;
+		}
+
+		.selectBoxGroup {
+			display: flex;
+			flex-wrap: wrap;
+		}
+
+		.selectBoxGroup .selectBox {
+			margin-left: -1px;
+		}
+
+		.selectBoxGroup .selectBox:first-child {
+			margin-left: 0;
+		}
+
+		@media screen and (max-width: 568px) {
+			.selectBoxGroup {
+				flex-direction: column;
+			}
+
+			.selectBoxGroup .selectBox {
+				margin-left: 0;
+			}
+
+			.selectBoxGroup .selectBox label {
+				width: 100%;
+			}
+		}
+
+		.selectBoxGroup.underneath {
+			flex-direction: column;
+		}
+
+		.selectBoxGroup.underneath .selectBox {
+			margin-left: 0;
+		}
+
+		.selectBoxGroup.underneath .selectBox label {
+			width: 100%;
+		}
+
+		.selectBoxGroup.rtl {
+			direction: rtl;
+		}
+
+		.selectBoxGroup.rtl label {
+			width: 100%;
+			padding: 15px 40px 15px 15px;
+			text-align: right;
+		}
+
+		.selectBoxGroup.rtl label:before {
+			right: 15px;
+		}
+	</style>
+
+
+	</style>
+
+</head>
+
+<body>
+	<div class="image-container set-full-height" style="background-color:skyblue">
+		<!--   Creative Tim Branding   -->
+		<a href="#">
+			<div class="logo-container">
+				<div class="logo">
+					<img src="/images/logo3.png">
+				</div>
+				<div class="brand">
+
+				</div>
+			</div>
+		</a>
+
+		<!--  Made With Material Kit  -->
+
+
+		<!--   Big container   -->
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-8 col-sm-offset-2">
+					<!--      Wizard container        -->
+					<div class="wizard-container">
+						<div class="card wizard-card" data-color="blue" id="wizardProfile">
+							<form action="/team/insert1" enctype="multipart/form-data" method="post">
+								<!--        You can switch " data-color="purple" "  with one of the next bright colors: "#23AAF2", "orange", "red", "blue"       -->
+
+								<div class="wizard-header">
+									<h3 class="wizard-title">
+										Build Your Profile
+									</h3>
+									<h4><%= msg %></h4>
+								</div>
+								<div class="wizard-navigation">
+									<ul>
+										<li><a href="#about" data-toggle="tab">About</a></li>
+										
+									</ul>
+								</div>
+
+								<div class="tab-content">
+									<div class="tab-pane" id="about">
+										<div class="row">
+											<h4 class="info-text"> </h4>
+											<div class="col-sm-4 col-sm-offset-1">
+												<div class="picture-container">
+													<div class="picture">
+														<img src="/team_style/assets/img/default-avatar.png"
+															class="picture-src" id="wizardPicturePreview" title="" />
+														<input type="file" name="image" id="wizard-picture" accept="image/*" required>
+													</div>
+													<h6>Choose Picture</h6>
+												</div>
+											</div>
+											<div class="col-sm-6">
+												<div class="input-group">
+													<span class="input-group-addon">
+														<i class="material-icons"><img
+																src="https://img.icons8.com/color/30/000000/name.png"></i>
+													</span>
+													<div class="form-group label-floating">
+														<label class="control-label">Full Name
+															<small>(required)</small></label>
+														<input name="name" type="text" class="form-control" required>
+													</div>
+												</div>
+
+												<div class="input-group">
+													<span class="input-group-addon">
+														<i class="material-icons"><img
+																src="https://img.icons8.com/cute-clipart/30/000000/age.png"></i>
+													</span>
+													<div class="form-group label-floating">
+														<label class="control-label">Age
+															<small>(required)</small></label>
+														<input name="age" type="number" class="form-control" required>
+													</div>
+												</div>
+
+												<div class="input-group">
+													<span class="input-group-addon">
+														<i class="material-icons"><img
+																src="https://img.icons8.com/office/30/000000/place-marker.png"></i>
+													</span>
+													<div class="form-group label-floating">
+														<label class="control-label">Birth Place
+															<small>(required)</small></label>
+														<input name="birth_place" type="text" class="form-control"
+															required>
+													</div>
+												</div>
+
+
+
+												<div class="input-group">
+													<span class="input-group-addon">
+														<i class="material-icons"><img
+																src="https://img.icons8.com/color/30/000000/gender.png"></i>
+													</span>
+													<div class="selectBoxGroup">
+
+														<div class="selectBox radio">
+															<input type="radio" name="gender" id="radio-1"
+																value="Male" checked>
+															<label for="radio-1">
+																Male
+															</label>
+														</div>
+														<br>
+														<div class="selectBox radio">
+															<input type="radio" name="gender" value="Female"
+																id="radio-3">
+															<label for="radio-3">
+																Female
+															</label>
+														</div>
+
+
+													</div>
+
+												</div>
+
+											</div>
+
+
+
+
+											<div class="col-sm-5 col-sm-offset-1">
+												<div class="input-group">
+													<span class="input-group-addon">
+														<i class="material-icons"><img
+																src="https://img.icons8.com/dotty/30/000000/filled-flag.png"></i>
+													</span>
+
+													<div class="form-group label-floating">
+														<label class="control-label">Nationality
+															<small>(required)</small></label>
+														<input name="nationality" type="text" class="form-control"
+															required>
+													</div>
+
+												</div>
+											</div>
+
+											<div class="col-sm-5 ">
+												<div class="input-group">
+													<span class="input-group-addon">
+														<i class="material-icons"><img src="https://img.icons8.com/officel/30/000000/categorize.png"></i>
+													</span>
+
+													<div class="form-group label-floating">
+													
+														<select id="categoryid" name="categoryid" class="form-control"
+														required></select>
+													</div>
+
+												</div>
+											</div>
+
+
+											<div class="col-sm-5 col-sm-offset-1">
+												<div class="input-group">
+													<span class="input-group-addon">
+													<i class="material-icons"><img src="https://img.icons8.com/nolan/30/000000/email.png"></i>
+													</span>
+
+													<div class="form-group label-floating">
+														<label class="control-label">Email
+														</label>
+															<input name="emailid" type="email" class="form-control">
+													</div>
+
+												</div>
+											</div>
+
+											<div class="col-sm-5 ">
+												<div class="input-group">
+													<span class="input-group-addon">
+														<i class="material-icons"><img
+																src="https://img.icons8.com/color/30/000000/india.png"></i>
+													</span>
+
+													<div class="form-group label-floating">
+														<label class="control-label">Address
+															<small>(required)</small></label>
+															<input name="address" type="text" class="form-control"
+															required>
+													</div>
+
+												</div>
+											</div>
+
+
+
+											<div class="col-sm-10 col-sm-offset-1 ">
+													<div class="input-group">
+														<span class="input-group-addon">
+															<i class="material-icons"><img
+																	src="https://img.icons8.com/color/30/000000/india.png"></i>
+														</span>
+	
+														<div class="form-group label-floating">
+															<label class="control-label">Pincode
+																<small>(required)</small></label>
+																<input name="pincode" type="number" class="form-control"
+																required>
+														</div>
+	
+													</div>
+												</div>
+	
+
+
+
+										</div>
+									</div>
+
+
+
+
+
+
+								
+								</div>
+								<div class="wizard-footer">
+									<div class="pull-right">
+										<input type='button' class='btn btn-next btn-fill btn-info btn-wd' name='next'
+											value='Next' />
+										<input type='submit' class='btn btn-finish btn-fill btn-info btn-wd'
+											id="finish" />
+										</a></div>
+
+									<div class="pull-left">
+										<input type='button' class='btn btn-previous btn-fill btn-default btn-wd'
+											name='previous' value='Previous' />
+									</div>
+									<div class="clearfix"></div>
+								</div>
+
+						</div>
+					</div> <!-- wizard container -->
+				</div>
+			</div><!-- end row -->
+		</div> <!--  big container -->
+		</form>
+		<div class="footer">
+			<div class="container text-center">
+				<a href="/">DeloServices</a>, &copy; 2019 All rights reserved. </a>
+			</div>
+		</div>
+	</div>
+
+</body>
+<!--   Core JS Files   -->
+
+<script src="/team_style/assets/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="/team_style/assets/js/jquery.bootstrap.js" type="text/javascript"></script>
+
+
+<!--  Plugin for the Wizard -->
+<script src="/team_style/assets/js/material-bootstrap-wizard.js"></script>
+
+<!--  More information about jquery.validate here: http://jqueryvalidation.org/	 -->
+<script src="/team_style/assets/js/jquery.validate.min.js"></script>
+
+<script src="/javascripts/team.js"></script>
+
+
+
+
+</html>

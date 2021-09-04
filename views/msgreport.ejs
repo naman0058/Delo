@@ -1,0 +1,201 @@
+<% include ./msg91_dashboard_header.ejs %>
+        <!--**********************************
+            Content body start
+        ***********************************-->
+        <div class="content-body">
+
+            <div class="container-fluid mt-3">
+                    <h4>Overall Report</h4> <br>
+                <div class="row">
+                    
+                    <div class="col-lg-3 col-sm-6">
+                        From Date
+                            <input type="date"  class="form-control" id="from">
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        To Date
+                            <input type="date" class="form-control" id="to">
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        Message Type
+                    <select class="form-control" id="type">
+                        <option value="otp">OTP</option>
+                        <option value="normal"> Normal</option>
+                        <option value="promotional">Promotional</option>
+                    </select>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6">
+                            <br>
+                        <button type="button" class="btn btn-primary search">Search Now</button>
+                        </div>
+                  
+                </div>
+
+
+                <br>
+                <br>
+
+
+<div id="result"></div>
+
+
+
+
+
+
+              
+                   
+                
+
+
+
+
+
+
+                
+
+              
+                    
+            </div>
+            <!-- #/ container -->
+        </div>
+        <!--**********************************
+            Content body end
+        ***********************************-->
+        
+        
+        <!--**********************************
+            Footer start
+        ***********************************-->
+        <div class="footer">
+            <div class="copyright">
+                <p>Copyright &copy;2019 Delo Services Pvt. Ltd</p>
+            </div>
+        </div>
+        <!--**********************************
+            Footer end
+        ***********************************-->
+    </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <script src="/booking_dashboard/plugins/common/common.min.js"></script>
+    <script src="/booking_dashboard/js/custom.min.js"></script>
+    <script src="/booking_dashboard/js/settings.js"></script>
+    <script src="/booking_dashboard/js/gleek.js"></script>
+    <script src="/booking_dashboard/js/styleSwitcher.js"></script>
+
+    <!-- Chartjs -->
+    <script src="/booking_dashboard/plugins/chart.js/Chart.bundle.min.js"></script>
+    <!-- Circle progress -->
+    <script src="/booking_dashboard/plugins/circle-progress/circle-progress.min.js"></script>
+    <!-- Datamap -->
+
+   
+    <!-- Pignose Calender -->
+    <script src="/booking_dashboard/plugins/moment/moment.min.js"></script>
+    <script src="/booking_dashboard/plugins/pg-calendar/js/pignose.calendar.min.js"></script>
+    <!-- ChartistJS -->
+    <script src="/booking_dashboard/plugins/chartist/js/chartist.min.js"></script>
+    <script src="/booking_dashboard/plugins/chartist-plugin-tooltips/js/chartist-plugin-tooltip.min.js"></script>
+
+
+
+    <script src="/booking_dashboard/js/dashboard/dashboard-1.js"></script>
+
+
+
+
+
+<script>
+
+$('.search').click(function(){
+    if( $('#from').val() == null || $('#from').val() == "null" || $('#from').val() == "" || $('#from').val() == []  ) alert("Select From Date")
+    else  if( $('#to').val() == null || $('#to').val() == "null" || $('#to').val() == "" || $('#to').val() == []  ) alert("Select To Date")
+    else{
+    
+const from = $('#from').val()
+const to = $('#to').val()
+const type=$('#type').val()
+
+$.getJSON(`/msg91/search`,{from,to,type},data=>{
+   maketable(data)
+ 
+})
+
+    }
+})
+
+
+
+function maketable(data){
+    let table = `
+   
+            <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="active-member">
+                                    <div class="table-responsive">
+                                        <table class="table table-xs mb-0">
+                                         
+                                            <thead>
+                                                <tr>
+                                                    <th>Number</th>
+                                                    <th>Date</th>
+                                                    <th>Time</th>
+                                                    <th>Message</th>
+                                                  
+                                                </tr>
+                                            </thead>
+                                            <tbody>`
+                                             $.each(data,(i,item)=>{
+
+                                            
+                                               
+                                           table+=`     <tr>
+                                                    <td>${item.number}</td>
+                                                    <td>${item.date}</td>
+                                                    <td>
+                                                        <span>${item.time}</span>
+                                                    </td>
+                                                    <td>
+                                                        <span>${item.message}</span>
+                                                    </td>
+                                                   
+                                                     
+                                                   
+                                                    
+                                                   
+                                                </tr>`
+
+
+                                            })
+
+                                              
+                                         table+=`   </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+
+    `
+
+    $('#result').html(table)
+}
+
+
+</script>
+
+
+</body>
+
+</html>

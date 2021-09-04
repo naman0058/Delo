@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>hello </title>
+</head>
+<body>
+<script type="text/javascript">
+var userName = "rzp_live_2KlcXieUGyQ8k6";
+var passWord = "9CukFlVqEBgQ1l7LB03DXBPk";
+
+function authenticateUser(user, password)
+{
+var token = user + ":" + password;
+
+// Should i be encoding this value????? does it matter???
+// Base64 Encoding -> btoa
+var hash = btoa(token);
+return "Basic " + hash;
+}
+
+function CallWebAPI() {
+
+// New XMLHTTPRequest
+var options = {
+amount: 50000, // amount in the smallest currency unit
+currency: "INR",
+receipt: "order_rcptid_11",
+payment_capture: '1'
+};
+var request = new XMLHttpRequest();
+request.open("POST", "https://api.razorpay.com/v1/orders", false);
+request.setRequestHeader("Authorization", authenticateUser(userName, passWord));
+request.send(options);
+// view request status
+alert(request.status);
+response.innerHTML = request.responseText;
+}
+
+CallWebAPI();
+</script>
+</body>
+</html>

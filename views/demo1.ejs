@@ -1,0 +1,42 @@
+
+  <script src="/javascripts/jquery.js"></script>
+<script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
+
+
+
+<script>
+jQuery(document).ready(function($) {
+	alert("Your location is: " + geoplugin_countryName() + ", " + geoplugin_region() + ", " + geoplugin_city());
+
+	var country = geoplugin_countryName();
+	$("#country").append("<option value='1' selected>"+country+"");
+
+	var zone = geoplugin_region();
+	$("#zone").append("<option value='1' selected>"+zone+"");
+
+	var district = geoplugin_city();
+	$("#district").append("<option value='1' selected>"+district+"");
+});
+
+
+//window.location.href="http://www.geoplugin.net/extras/nearby.gp?lat="+geoplugin_latitude()+"&lon="+geoplugin_longitude()+"&limit=10"
+function a(){
+$.get(`http://www.geoplugin.net/extras/nearby.gp?lat=${geoplugin_latitude()}&lon=${geoplugin_longitude()}&limit=10`,data=>{
+	console.log(data)
+})
+}
+
+
+
+function b(){
+	$.get(`http://www.geoplugin.net/extras/postalcode.gp?lat=${geoplugin_latitude()}&lon=${geoplugin_longitude()}&format=json`,data=>{
+		console.log(data)
+        console.log("postcode",data[83]+data[84]+data[85]+data[86]+data[87]+data[88])
+        alert(data[83]+data[84]+data[85]+data[86]+data[87]+data[88] )
+	})
+}
+
+b()
+console.log(geoplugin_areaCode)
+
+</script>

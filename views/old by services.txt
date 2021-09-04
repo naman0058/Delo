@@ -1,0 +1,67 @@
+    <table class="table table-responsive dashboardtable tablemyads">
+                    <thead>
+                      <tr>
+                        <th >Services</th>
+                        <th>Price</th>
+                       
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <% for(i=0;i<result[0].length;i++){ %>
+                      <tr data-category="deleted">
+                          <% if(result[0][i].time == null || result[0][i].time == "" || result[0][i].time == "null" || result[0][i].time == [] ) { %>
+                        <td data-title="Title">
+                          <h3><%=result[0][i].name%></h3>
+                          <br>
+                         <ol>
+                           <li style="color: text;font-weight:bold">Specifications :</li><br>
+                           <li><%=result[0][i].specification1%></li><br>
+                           <li><%=result[0][i].specification2%></li><br>
+                           <li><%=result[0][i].specification3%></li><br>
+                           <li><%=result[0][i].specification4%></li><br>
+                           <li><%=result[0][i].specification5%></li><br>
+                         </ol>
+                           </td>
+                           <% } else { %>
+                            <td data-title="Title">
+                                <h3><%=result[0][i].name%></h3>
+                               
+                                <br>
+                               <ol>
+                                  <li style="color: text;font-weight:bold">Specifications :</li><br>
+                                  <li><%=result[0][i].specification1%></li><br>
+                                  <li><%=result[0][i].specification2%></li><br>
+                                  <li><%=result[0][i].specification3%></li><br>
+                                  <li><%=result[0][i].specification4%></li><br>
+                                  <li><%=result[0][i].specification5%></li><br>
+                               </ol>
+                               <br><br>
+                               <img src="https://img.icons8.com/office/20/000000/time.png" alt="time"></strong><%= result[0][i].time%>
+                                 </td>
+                                 <% } %>
+                        
+                        
+                                 <% if(result[0][i].discount == null || result[0][i].discount == "" || result[0][i].discount == "null" || result[0][i].discount == [] ) { %>
+                                
+                                  <td data-title="Title">
+                           <h3> Rs. <%= result[0][i].price %> <%=result[0][i].extra%></h3>
+                           </td>
+                         <% } else { %>
+                          <td data-title="Title">
+                              <h3><s>Rs. <%= result[0][i].total_price %> <%=result[0][i].extra%></s> <br> Rs. <%= result[0][i].price %> <%=result[0][i].extra%></h3>
+                              <br>
+                              <span class="badge badge-pill badge-light"><h6 style="color:black"><%= result[0][i].discount %> %off</h6></span>
+                            </td>
+
+                            <% } %>
+                       
+                         
+                          
+                        <td data-title="Ad Status"> 
+                           <button type="button" data-toggle="modal" data-target="#myModal" class="btn btn-success myBtn"  id="<%= result[0][i].id %>" price="<%= result[0][i].price %>" categoryid="<%=result[0][i].categoryid%>" subcategoryid = "<%=result[0][i].subcategoryid%>" >Add to Cart</button>
+                        </td>
+                      
+                      </tr>
+                      <% } %>
+                    </tbody>
+                  </table>

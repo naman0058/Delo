@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+        <button class='pay-btn3' id="razorpay">Pay with razorpay</button>
+
+</body>
+</script>
+
+<script src="/javascripts/jquery.js"></script>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script>
+
+$('#razorpay').click(function(e){
+
+  const servicename = $(this).attr('service')
+  const username = $(this).attr('username')
+  const email = $(this).attr('email')
+  const number = $(this).attr('number')
+  const address = $(this).attr('address')
+
+  const amount = $(this).attr('amount')*100
+  $.post('razorpay/order',{amount},data=>{
+
+   console.log(data)
+
+    var options1 = {
+    "key": "rzp_live_2KlcXieUGyQ8k6", // Enter the Key ID generated from the Dashboard
+    "amount": 50000, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise or INR 500.
+    "currency": "INR",
+    "name": "Delo Services Pvt. Ltd.",
+    "description": servicename,
+    "image": "https://www.deloservices.com/images/delofabicon.png",
+    "order_id": data.id,//This is a sample Order ID. Create an Order using Orders API. (https://razorpay.com/docs/payment-gateway/orders/integration/#step-1-create-an-order). Refer the Checkout form table given below
+    "handler": function (response){
+
+      console.log('response aaya hai',response)
+
+      $.post('/services/booking_successfull_razorpay',response,data=>{
+if(data == 'success'){
+   window.location.href = '/booking'
+}
+else{
+  window.location.href = '/login' 
+}
+      })
+    
+      
+    },
+    "prefill": {
+        "name": username,
+        "email": email,
+        "contact": number
+    },
+    "notes": {
+        "address": address
+    },
+    "theme": {
+        "color": "#507ec0"
+    }
+};
+
+
+var rzp1 = new Razorpay(options1  );
+
+    rzp1.open();
+ 
+    e.preventDefault();
+
+
+
+
+
+  })
+})
+
+
+     
+
+      
+
+</script>
+
+
+</html>

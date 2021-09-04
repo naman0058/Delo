@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Delo Services - Booking Dashboard</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.deloservices.com/images/delofabicon.png">
+    <!-- Pignose Calender -->
+    <link href="/booking_dashboard/plugins/pg-calendar/css/pignose.calendar.min.css" rel="stylesheet">
+    <!-- Chartist -->
+    <link rel="stylesheet" href="/booking_dashboard/plugins/chartist/css/chartist.min.css">
+    <link rel="stylesheet" href="/booking_dashboard/plugins/chartist-plugin-tooltips/css/chartist-plugin-tooltip.css">
+    <!-- Custom Stylesheet -->
+    <link href="/booking_dashboard/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader">
+        <div class="loader">
+            <svg class="circular" viewBox="25 25 50 50">
+                <circle class="path" cx="50" cy="50" r="20" fill="none" stroke-width="3" stroke-miterlimit="10" />
+            </svg>
+        </div>
+    </div>
+    <!--*******************
+        Preloader end
+    ********************-->
+
+    
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="main-wrapper">
+
+      
+
+        <!--**********************************
+            Header start
+        ***********************************-->
+    
+        <!--**********************************
+            Header end ti-comment-alt
+        ***********************************-->
+
+     
+
+
+    <div class="container-fluid mt-3">
+
+
+<div class="row">
+        <div class="col-l2">
+            <div class="card">
+                <div class="card-body">
+                    <div class="active-member">
+                        <div class="table-responsive">
+                            <table class="table table-xs mb-0" id="myTable">
+                                <h3>Approved Professionals</h3>
+                                <input type="text"  class="form-control" id="myInput" onkeyup="myFunction()" placeholder="Search By Mobile Number.." title="Type in a name">
+                                          
+                                <thead>
+                                    <tr>
+                                         <th>Service Details</th>
+                                        <th>Number</th>
+                                        <th>Name</th>
+                                         <th>Address</th>
+                                        <th>Service Name</th>
+                                        <th>Quantity</th>
+                                        <th>Booking Details</th>
+                                        <th>Cancel Details</th>
+                                        <th>Price</th>
+                                        <th>Payment Mode</th>
+                                        <th>Reason</th>
+                                       <th>Credit Recieved</th>
+                                     
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <% for(i=0;i<result.length;i++) { %>
+                                    <tr>
+                                       <td><%=result[i].date%> at <%=result[i].time%></td>
+                                            <td><%=result[i].usernumber%></td>
+                                        <td><%=result[i].name%></td>
+                                       
+                                        <td>
+                                            <span><%=result[i].address%>,<%=result[i].pincode%></span>
+                                        </td>
+                                       
+                                        <td><%=result[i].booking_id%></td>
+                                        <td><%=result[i].quantity%></td>
+                                        <td><%=result[i].booking_date%> at <%=result[i].booking_time%> </td>
+                                        <td><%=result[i].cancel_date%> at <%=result[i].cancel_time%> </td>
+                                        <td><%=result[i].price%></td>
+                                        <td><%=result[i].payment_mode%></td>
+                                        <td><%=result[i].reason%></td>
+                                        <td><%=result[i].credit_recieved%></td>
+                                        
+                                        
+                                    </tr>
+
+                                    <% } %>
+
+                                  
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>                        
+        </div>
+    </div>
+    </div>
+    </div>
+
+     
+        </div>
+        <!--**********************************
+            Main wrapper end
+        ***********************************-->
+    
+        <!--**********************************
+            Scripts
+        ***********************************-->
+        <script src="/booking_dashboard/plugins/common/common.min.js"></script>
+        <script src="/booking_dashboard/js/custom.min.js"></script>
+        <script src="/booking_dashboard/js/settings.js"></script>
+        <script src="/booking_dashboard/js/gleek.js"></script>
+        <script src="/booking_dashboard/js/styleSwitcher.js"></script>
+    
+        <!-- Chartjs -->
+        <script src="/booking_dashboard/plugins/chart.js/Chart.bundle.min.js"></script>
+        <!-- Circle progress -->
+        <script src="/booking_dashboard/plugins/circle-progress/circle-progress.min.js"></script>
+        <!-- Datamap -->
+    
+       
+        <!-- Pignose Calender -->
+        <script src="/booking_dashboard/plugins/moment/moment.min.js"></script>
+        <script src="/booking_dashboard/plugins/pg-calendar/js/pignose.calendar.min.js"></script>
+        <!-- ChartistJS -->
+        <script src="/booking_dashboard/plugins/chartist/js/chartist.min.js"></script>
+        <script src="/booking_dashboard/plugins/chartist-plugin-tooltips/js/chartist-plugin-tooltip.min.js"></script>
+    
+    
+    
+        <script src="/booking_dashboard/js/dashboard/dashboard-1.js"></script>
+    
+
+    
+
+        <script>
+
+
+
+                function myFunction() {
+                    var input, filter, table, tr, td, i, txtValue;
+                    input = document.getElementById("myInput");
+                    filter = input.value.toUpperCase();
+                    table = document.getElementById("myTable");
+                    tr = table.getElementsByTagName("tr");
+                    for (i = 0; i < tr.length; i++) {
+                      td = tr[i].getElementsByTagName("td")[0];
+                      if (td) {
+                        txtValue = td.textContent || td.innerText;
+                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                          tr[i].style.display = "";
+                        } else {
+                          tr[i].style.display = "none";
+                        }
+                      }
+                    }
+                  }
+                </script>
+
+
+    </body>
+    
+    </html>

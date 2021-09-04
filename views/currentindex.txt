@@ -1,0 +1,2141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<!-- <script> window._peq = window._peq || []; window._peq.push(["init"]); </script>
+      <script src="https://clientcdn.pushengage.com/core/60add4df169e0e2f6d851c190f7844b3.js" async></script>
+
+    <script>
+      !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
+      analytics.load("LioF9AH4FA5S2Ioit4CkQHeQgaRy6227");
+      analytics.page();
+      }}();
+    </script> -->
+
+
+<meta name="p:domain_verify" content="facc8b8cd20898e52a2b8e767111d661"/>
+
+<!-- Global site tag (gtag.js) - Google Ads: 741046957 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-741046957"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-741046957');
+</script>
+
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KHL4WHL');</script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140402344-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-140402344-1');
+    </script>
+    <!--End -->
+
+    <meta property="fb:pages" content="357112871580780" />
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Delo Services - One Destination For All Home,Beauty & spa Services</title>
+
+ <!--META SEO START-->
+ <meta charset="UTF-8">
+ <meta name="description" content="Delo Services is your one stop destination for all your home needs - Wedding Services, Home Services, Appliance & Electronic Repairs, Beauticians, and much more from our trusted & certified professionals."/>
+ <meta name="keywords" content="ac repair services , ac service near me , ac mechanic, air conditioner , ac price , 	ac repair , ac service , best air conditioner , ac , accompany , ac repair near me "/>
+ <meta name="google-site-verification" content="5TB0irTJKkDjgSE2r-gp9HOL-pksD8SF7rvpPlgn-_c" />  
+ <meta name="google-site-verification" content="KUK42ZousazAe0Ye4J3GmWELjP9NL8ePB8fOSiUAjqE">
+ <meta name="msvalidate.01" content="C80D427BDFDF46CFEB5C748950D62040" />
+ <meta name="robots" content="all,follow" />
+ <meta name="googlebot" content="index, follow" />
+
+ <meta name="classification" content="Delo Services-One Destination For All Home,Beauty,Wellness & spa Services Delhi and NCR India" />
+
+ <link rel="shortcut icon" type="images/x-icon" href="https://www.deloservices.com/images/delofabicon.png">
+ <meta name="distribution" content="Global" />
+ <meta name="author" content="http://www.deloservices.com" />
+ <meta name="Language" content="English" />
+ <meta name="rating" content="general" />
+ <meta name="owner" content="DELO SERVICES PRIVATE LIMITED." />
+ <meta http-equiv="refresh" content="300">
+ <meta name="document-type" content="public" />
+ <meta name="revisit-after" content="daily" />
+ <meta name="country" content="India" />
+
+ <meta name="DC.title" content="Delo Services-One Destination For All Home,Beauty,Wellness & spa Services Delhi and NCR India" />
+
+ <meta property="fb:admins" content="357112871580780" />
+ <meta property="og:title" content="Delo Services-One Destination For All Home,Beauty,Wellness & spa Services Delhi and NCR India" />
+ <meta property="og:type" content="Delo Services-One Destination For All Home,Beauty,Wellness & spa Services Delhi and NCR India" />
+ <meta property="og:url" content="https://www.deloservices.com" />
+ <meta property="og:image" content="http://www.deloservices.comhttps://www.deloservices.com/images/logo.jpg" />
+ <meta property="og:site_name" content="https://www.deloservices.com" />
+ <meta property="og:description" content="Delo Services-One Destination For All Home,Beauty,Wellness & spa Services Delhi and NCR India." />
+ <meta property="og:locale" content="en IN" />
+<link rel="canonical" href="https://www.deloservices.com">
+ <meta name="geo.region" content="IN-DL" />
+ <meta name="geo.placename" content="New Delhi" />
+ <meta name="geo.position" content="28.55629, 77.1732011" />
+ <meta name="ICBM" content="28.55629, 77.1732011" />
+<!-- Required meta tags -->
+
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+   
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.5/slick.min.css">
+<link rel="shortcut icon" type="images/x-icon" href="https://www.deloservices.com/images/delofabicon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/bootstrap.min.css">
+    <!-- Icon -->
+    <link rel="stylesheet" type="text/css" href="/assets/fonts/line-icons.css">
+    <!-- Slicknav -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/slicknav.css">
+
+    <!-- Animate -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/animate.css">
+    <!-- Owl carousel -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/owl.carousel.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+    <!-- Responsive Style -->
+    <link rel="stylesheet" type="text/css" href="/assets/css/responsive.css">
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+      <script src="/full/fullclip.js"></script>
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+    <style>
+
+      body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.fullBackground {
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.caption {
+  font-size: 30pt;
+  text-transform: uppercase;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.caption:after {
+  content:"\A";
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  background: #00bbeb;
+  display: inline-block;
+  margin: 0 0 -2px;
+}
+
+ 
+        img {
+          width: 100%;
+          height: auto;
+          padding: 5px;
+       }
+        
+        .slick-dots {
+          text-align: center;
+          margin: 0 0 10px 0;
+          padding: 0;
+       }
+        .slick-dots li {
+          display: inline-block;
+          margin-left: 4px;
+          margin-right: 4px;
+       }
+        .slick-dots li.slick-active button {
+          background-color: #999;
+       }
+        .slick-dots li button {
+          font: 0/0 a;
+          text-shadow: none;
+          color: transparent;
+          background-color: #999;
+          border: none;
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+       }
+        .slick-dots li :hover {
+          background-color: #999;
+       }
+       /* Custom Arrow */
+        .prev {
+          color: #999;
+          position: absolute;
+          top: 38%;
+          left: -2em;
+          font-size: 1.5em;
+       }
+        .prev :hover {
+          cursor: pointer;
+          color: #999;
+       }
+        .next {
+          color: #999;
+          position: absolute;
+          top: 38%;
+          right: -2em;
+          font-size: 1.5em;
+       }
+        .next :hover {
+          cursor: pointer;
+          color: black;
+       }
+        @media screen and (max-width: 800px) {
+          .next {
+            display: none !important;
+         }
+       }
+        
+       
+           </style>
+
+
+
+
+
+
+
+    <style>
+        /* Icon set - http://ionicons.com/ */
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
+figure.snip1139 {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+ 
+  width: 100%;
+  height:170px;
+  color: #333;
+  text-align: left;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+}
+figure.snip1139 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+  transition: all 0.35s cubic-bezier(0.25, 0.5, 0.5, 0.9);
+}
+figure.snip1139 img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+figure.snip1139 blockquote {
+  position: relative;
+  background-color: #ffffff;
+  padding: 25px 50px 25px 50px;
+  font-size: 0.8em;
+  font-weight: 500;
+  text-align: left;
+  margin: 0;
+  line-height: 1.6em;
+  font-style: italic;
+}
+figure.snip1139 blockquote:before,
+figure.snip1139 blockquote:after {
+  font-family: 'FontAwesome';
+  content: "\201C";
+  position: absolute;
+  font-size: 50px;
+  opacity: 0.3;
+  font-style: normal;
+}
+figure.snip1139 blockquote:before {
+  top: 25px;
+  left: 20px;
+}
+figure.snip1139 blockquote:after {
+  content: "\201D";
+  right: 20px;
+  bottom: 0;
+}
+figure.snip1139 .arrow {
+  top: 100%;
+  width: 0;
+  height: 0;
+  border-left: 0 solid transparent;
+  border-right: 25px solid transparent;
+  border-top: 25px solid #ffffff;
+  margin: 0;
+  position: absolute;
+}
+figure.snip1139 .author {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 5px 25px;
+  color: #000000;
+  background-color: #ffffff;
+  margin: 0;
+  text-transform: uppercase;
+}
+figure.snip1139 .author h5 {
+  opacity: 0.8;
+  margin: 0;
+  font-weight: 800;
+}
+figure.snip1139 .author h5 span {
+  font-weight: 400;
+  text-transform: none;
+  padding-left: 5px;
+}
+
+
+
+/* Demo purposes only */
+html {
+  height: 80%;
+}
+
+
+body {
+  
+
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+ 
+}
+
+    </style>
+
+
+
+<!---scroll bar style-->
+
+
+<style>
+  
+
+  input::-webkit-input-placeholder {
+    color:black !important;
+    }
+     
+    input:-moz-input-placeholder { /* Firefox 18- */
+    color: black !important;  
+    }
+     
+    input::-moz-input-placeholder {  /* Firefox 19+ */
+    color: black !important;  
+    }
+     
+    input:-ms-input-placeholder {  
+    color: black !important;  
+    }
+  </style>
+
+
+<style>
+  /* width */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 6px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:#1F5AB0; 
+    border-radius: 6px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #1F5AB0; 
+  }
+  </style>
+<!--STYLE END SCROLL BAR-->
+
+
+
+<style>
+::placeholder {
+  color: red;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: red;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: red;
+}
+
+body,
+input,
+button {
+  font-family: 'Times New Roman';
+  font-size: 12pt;
+}
+
+a:hover {cursor: pointer;}
+
+input {
+  width: 250px;
+  height: 30px;
+  padding: 3px;
+  border: 1px solid #DDE1E4;
+}
+
+select {
+  width: 258px;
+  position: relative;
+  left: -17px;
+  margin: 0;
+  border: 1px solid #DDE1E4;
+  border-top: none;
+  font-size:9pt;
+}
+
+datalist {
+  display: none;
+}
+
+option {
+  padding: 3px;
+}
+
+option:hover {
+  background-color: #11E8EA;
+}
+
+
+
+/* to hide datalist arrow in webkit */
+
+input::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+@media screen and (min-width:320px) and (max-width:768px){
+
+
+.no{
+	display: none;
+}
+.nav1{
+  display:none;
+}
+.search1{
+  display:none;
+}
+
+}
+
+
+@media screen and (min-width:769px) and (max-width:1880px){
+
+
+
+.nav2{
+  display:none;
+}
+.search2{
+  display:none;
+}
+
+}
+
+.ul {
+		  list-style: none;
+		  padding: 0px;
+		 margin:0px;
+		  
+		}
+		
+		.ul .li {
+		 
+		
+		  list-style: none;
+      color:black;
+      padding: 0px;
+		 margin:0px;
+      
+      
+		}
+		
+		a{
+      
+     color:black;font-size:14px;font-family:'Times New Roman', Times, serif;
+		}
+
+
+
+.li:hover{
+	  border-left: 3px solid #507ec0;
+	  background-color: whitesmoke;
+      color : #507ec0;
+      padding: 0px;
+		 margin:0px;
+    
+		 
+}
+
+
+
+
+
+</style>
+    
+  </head>
+  <body style="color: black">
+     
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.1.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCjIHa7zh9t5gIzZX5OeE6c97PFvoJNdEo",
+    authDomain: "delo-services.firebaseapp.com",
+    databaseURL: "https://delo-services.firebaseio.com",
+    projectId: "delo-services",
+    storageBucket: "",
+    messagingSenderId: "322726553767",
+    appId: "1:322726553767:web:c7bb4f12464556fff75382",
+    measurementId: "G-H35N94J096"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+  
+   <!-- Google Tag Manager (noscript) -->
+   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHL4WHL"
+   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+   <!-- End Google Tag Manager (noscript) -->
+
+   <!-- <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="#">About</a>		
+    <a href="#">Services</a>		
+    <a href="#">Clients</a>		
+    <a href="#">Contact</a>			
+  </div>
+  
+  <div id="main">
+      <span style="font-size:30px;cursor:pointer" onclick="openNav()">☰ </span>
+  </div> -->
+
+
+    <!-- Header Area wrapper Starts -->
+    <header id="header-wrap"   style="background-color: white;">
+          
+
+      <nav class="navbar navbar-expand-lg bg-inverse   navbar-light nav1" style="background-color: white;">
+        <div class="container">
+          <div class="theme-header clearfix">
+           <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+               
+                <a href="/" class="navbar-brand"><img src="https://www.deloservices.com/images/delomainlogo.png" alt="deloservices" > </a>
+              
+              </div>
+              <div class=" navbar-collapse">
+                <ul class="navbar-nav mr-auto w-100 justify-content-end">
+                  <li class="nav-item dropdown"  style="margin-top: 15px;color:black" >
+                    <a class="nav-link " href="/" aria-expanded="false">
+                      Home
+                    </a>
+                   
+                  </li>
+               
+                 
+                
+                 
+                  <% if(login == true){ %>
+                  <li class="nav-item dropdown"  style="margin-top: 15px;" >
+                    <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="lnr lnr-user"></i> My Account
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="/booking"><i class="lnr lnr-cart"></i> My Booking</a></li>
+                      <li><a class="dropdown-item" href="/login/logout"><i class="lnr lnr-file-add"></i>Logout</a></li>
+                    </ul>
+                  </li>
+                  <% } else { %>
+
+                    <li class="nav-item dropdown"  style="margin-top: 15px;">
+                      <a class="nav-link" href="/login"  aria-expanded="false">
+                       Login / Sign Up
+                      </a>
+                     
+                    </li>
+
+                    <% } %>    
+
+
+
+
+
+                    <li class="nav-item dropdown"  style="margin-top: 15px;color:black" >
+                      <a class="nav-link " href="/team_login" aria-expanded="false">
+                        Become A Team Member
+                      </a>
+                     
+                    </li>
+
+
+                  <li class="postadd" style="margin-top: 35px;">
+                    <a class="btn btn-primary btn-post" href="/">Advertise</a>
+                  </li>
+
+                  <li class="postadd" style="margin-top: 35px;margin-left:10px ">
+                    <a class="btn btn-primary btn-post" href="/free-listing"  aria-expanded="false">
+                      Free Listing
+                     </a>
+                  </li>
+
+
+
+
+                </ul>
+                
+              </div>
+            </div>
+          </div>
+  <div class="mobile-menu" data-logo="https://www.deloservices.com/images/delomainlogo.png"></div>
+       
+</nav>
+
+
+
+
+ <!-- Navbar Start -->
+ <nav class="navbar navbar-expand-lg bg-inverse   navbar-light nav2" style="background-color: white;">
+    <div class="container">
+      <div class="theme-header clearfix">
+       <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-toggle="collapse" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              <span class="lni-menu"></span>
+              <span class="lni-menu"></span>
+              <span class="lni-menu"></span>
+            </button>
+            <a href="/" class="navbar-brand"><img src="https://www.deloservices.com/images/delomainlogo.png" alt="deloservices" > </a>
+            
+          </div>
+          <div class="collapse navbar-collapse ul" id="main-navbar">
+            <ul class="navbar-nav mr-auto w-100 justify-content-end">
+              <li class="nav-item dropdown"  style="margin-top: 15px;color:black" >
+                <a class="nav-link " href="/" aria-expanded="false" style="border-bottom: 1px solid #ddd;
+                list-style: none;
+                color:black;">
+                  Home
+                </a>
+               
+              </li>
+           
+             
+            
+             
+              <% if(login == true){ %>
+              <li class="nav-item dropdown"  style="margin-top: 15px;" >
+                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="lnr lnr-user"></i> My Account
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/booking"><i class="lnr lnr-cart"></i> My Booking</a></li>
+                  <li><a class="dropdown-item" href="/login/logout"><i class="lnr lnr-file-add"></i>Logout</a></li>
+                </ul>
+              </li>
+              <% } else { %>
+
+                <li class="nav-item dropdown"  style="margin-top: 15px;">
+                  <a class="nav-link" href="/login"  aria-expanded="false" style="border-bottom: 1px solid #ddd;
+                  list-style: none;
+                  color:black;">
+                   Login / Sign Up
+                  </a>
+                 
+                </li>
+
+                <% } %>    
+
+
+
+                 
+                <% for(i=0;i<result[2].length;i++){ %>
+                <li class="nav-item dropdown li"  style="margin-top: 15px;color:black" >
+                 
+                    <a class="nav-link " href="/" aria-expanded="false" style="border-bottom: 1px solid #ddd;
+                    list-style: none;
+                    color:black;">
+                     
+                   <%=result[2][i].name%>
+                    </a>
+                   
+                  </li>
+                  <% } %>
+               
+
+                  <li class="nav-item dropdown"  style="margin-top: 15px;color:black" >
+                      <a class="nav-link " href="/team_login" aria-expanded="false">
+                        Become A Team Member
+                      </a>
+                     
+                    </li>
+
+
+                  <li class="postadd" style="margin-top: 35px;">
+                    <a class="btn btn-primary btn-post" href="/">Advertise</a>
+                  </li>
+
+              <li class="postadd" style="margin-top: 35px;margin-left:10px ">
+                <a class="btn btn-primary btn-post" href="https://play.google.com/store/apps/details?id=com.deloservices.deloservices"  aria-expanded="false">
+                  Free Listing
+                 </a>
+              </li>
+
+              
+            </ul>
+
+          </div>
+        </div>
+      </div>
+     
+<div class="mobile-menu" data-logo="https://www.deloservices.com/images/delomainlogo.png">
+  <button type="button"class="btn btn-primary" style="position:relative;left:50%;top:50%">Post an Ad</button>
+</div>
+
+    </nav>
+
+
+        <!-- Navbar End -->
+      <!-- Navbar End -->
+
+      <!-- Hero Area Start -->
+      
+      <div id="hero-area">
+
+
+          <section>
+              <div class="fullBackground"></div>
+            </section>
+          <div class="container search2">
+              
+              <div class="row justify-content-center">
+    
+    <div class="col-md-12 col-lg-9 col-xs-12 text-center" style=" height:1px;">
+      <div class="contents">
+        <div class="search-bar">
+          <div class="search-inner1" >
+              <form class=search-form action="/searching" method=post>
+              
+
+
+              <div class="form-group inputwithicon">
+                <div class="select">
+        <input type="text" class="form-control" placeholder="Delhi NCR" readonly>
+                </div>
+                <i class="lni-target" style="color: #1F5AB0;"></i>
+              </div>
+              <div class="form-group inputwithicon">
+                <div class="select">
+                  
+<input list=text_editors  name="seo_name" class="form-control" placeholder = "Search For Anything" >
+
+<datalist id="text_editors">
+<!-- <select multiple size=8 >
+<% for(i=0;i<result[0].length;i++){ %>
+    <option value="<%=result[0][i].name%>"><%=result[0][i].name%></option>
+  <% } %>
+
+</select> -->
+</datalist>
+                </div>
+                <i class="lni-search"></i>
+                <i class="lni-search" style="color: #1F5AB0;"></i>
+              </div>
+              <button class="btn btn-common" type="submit"> Search Now</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+          <div class="container search1">
+              
+                          <div class="row justify-content-center">
+                
+                <div class="col-md-12 col-lg-9 col-xs-12 text-center">
+                  <div class="contents">
+                    <div class="search-bar">
+                      <div class="search-inner">
+                        <form class="search-form">
+                          <div class="form-group">
+                            <input type="text" name="customword" class="form-control" placeholder="Search for anything">
+                          </div>
+                          <div class="form-group inputwithicon">
+                            <div class="select">
+                              <select>
+                                <option value="none">Locations</option>
+                                <option value="none">New York</option>
+                                <option value="none">California</option>
+                                <option value="none">Washington</option>
+                                <option value="none">Birmingham</option>
+                                <option value="none">Chicago</option>
+                                <option value="none">Phoenix</option>
+                              </select>
+                            </div>
+                            <i class="lni-target"></i>
+                          </div>
+                          <div class="form-group inputwithicon">
+                            <div class="select">
+                              <select>
+                                <option value="none">Select Catagory</option>
+                                <option value="none">Jobs</option>
+                                <option value="none">Electronics</option>
+                                <option value="none">Mobile</option>
+                                <option value="none">Training</option>
+                                <option value="none">Pets</option>
+                                <option value="none">Real Estate</option>
+                                <option value="none">Services</option>
+                                <option value="none">Training</option>
+                                <option value="none">Vehicles</option>
+                              </select>
+                            </div>
+                            <i class="lni-menu"></i>
+                          </div>
+                          <button class="btn btn-common" type="button"><i class="lni-search"></i> Search Now</button>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+           
+      
+      </div>
+      <!-- Hero Area End -->
+
+
+
+
+
+
+
+
+    </header>
+   
+
+
+    
+    
+ <!-- Main container Start -->  
+ <div class="main-container section-padding">
+  <div class="container">
+  
+  
+    <div class="row">
+      <div class="col-lg-3 col-md-12 col-xs-12 page-sidebar no ">
+         <aside> 
+          <!-- Searcg Widget -->
+          
+          <!-- Categories Widget -->
+           <div class="widget categories">
+            <h4 class="widget-title" style="color: #1F5AB0;font-weight: bold"> Dial Delo Services</h4>
+            <ul class="categories-list ul">
+            
+              <!-- <li class="li">
+                <a href="#" style="color:black;font-size:14px;font-family:'Times New Roman', Times, serif">
+                <img src="listing_image/chill.png" style="width:40px;">
+                  Beauty At Home 
+                </a>
+              </li>
+              <li class="li">
+                <a href="#" style="color:black;font-size:14px;font-family:'Times New Roman', Times, serif">
+                <img src="listing_image/head.png" style="width:40px;">
+                  Salon At Home 
+                </a>
+              </li>
+             
+
+              <% for(i=3;i<30;i++){%>
+                <li class="li">
+                  <a href="#" style="color:black;font-size:14px;font-family:'Times New Roman', Times, serif">
+                  <img src="https://www.deloservices.com/images/<%=result[0][i].logo%>" style="width:40px;">
+                    <%=result[0][i].name%> 
+                  </a>
+                </li>
+               
+                <% } %> -->
+               
+              
+            
+            <% for(i=0;i<result[2].length;i++){%>
+
+<% if(i%2==0){%>
+
+  <li class="li" style="background-color:#E8F0FE">
+      <a href="#" style="color:black;font-size:14px;font-family:'Times New Roman', Times, serif">
+        <img src="/dial_icon/<%=result[2][i].logo%>" style="width:30px;height:30px;">
+        <%=result[2][i].name%> 
+      </a>
+    </li>
+
+  <%}else{%>
+
+              <li class="li">
+                <a href="#" style="color:black;font-size:14px;font-family:'Times New Roman', Times, serif">
+                  <img src="/dial_icon/<%=result[2][i].logo%>" style="width:30px;height:30px">
+                  <%=result[2][i].name%> 
+                </a>
+              </li>
+             
+              <% } %>
+
+
+              <% } %>
+             
+            </ul>
+          </div>
+         
+
+         
+
+        </aside> 
+
+
+       
+
+
+
+      </div>
+      <div class="col-lg-9 col-md-12 col-xs-12 page-content">
+      
+
+          <!-- Header Area wrapper End -->
+
+    <!-- Categories item Start -->
+    <section id="categories" class="section-padding" style="background-color:whitesmoke">
+      <div class="container " >
+        <div class="row">
+
+
+          <div class="col-12 text-center">
+            <div class="heading">
+              <h2 class="section-title">Book Delo Services</h2>
+
+            
+            
+            </div>
+          </div>
+
+          <% for(i=0;i<3;i++){ %>
+           <div class="col-lg-3 col-sm-6 col-md-4 col-xs-4">
+            <a href="/delhi-ncr-<%=result[0][i].seo_name%>" id="<%=result[0][i].id%>">
+              <div class="category-icon-item lis-bg1">
+                <div class="icon-box">
+                    <div class="icon">
+                  <img src="https://www.deloservices.com/images/<%=result[0][i].logo%>" style="width:45px;" alt="<%=result[0][i].name%>" title = "<%=result[0][i].name%>" />
+                  </div>
+                   <p class="categories-listing" style="font-size:15px;"><%=result[0][i].name%></p> 
+                </div>
+              </div>
+            </a>
+          </div>
+        <% } %>
+
+
+
+
+
+        <div class="col-lg-3 col-sm-6 col-md-4 col-xs-4">
+            <a href="/delhi-ncr-<%=result[0][23].seo_name%>" id="<%=result[0][23].id%>">
+              <div class="category-icon-item lis-bg1">
+                <div class="icon-box">
+                    <div class="icon">
+                  <img src="https://www.deloservices.com/images/<%=result[0][23].logo%>" style="width:45px;" alt="<%=result[0][23].name%>" title = "<%=result[0][23].name%>"  />
+                  </div>
+                   <p class="categories-listing" style="font-size:15px;"><%=result[0][23].name%></p> 
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 col-md-4 col-xs-4">
+              <a href="/delhi-ncr-<%=result[0][3].seo_name%>" id="<%=result[0][i].id%>">
+                <div class="category-icon-item lis-bg1">
+                  <div class="icon-box">
+                      <div class="icon">
+                    <img src="https://www.deloservices.com/images/<%=result[0][3].logo%>" style="width:45px;" alt="<%=result[0][3].name%>" title = "<%=result[0][3].name%>" />
+                    </div>
+                     <p class="categories-listing" style="font-size:15px;"><%=result[0][3].name%></p> 
+                  </div>
+                </div>
+              </a>
+            </div>
+
+           
+            
+
+
+          <% for(i=5;i<7;i++){ %>
+              <div class="col-lg-3 col-sm-6 col-md-4 col-xs-4">
+               <a href="/delhi-ncr-<%=result[0][i].seo_name%>" id="<%=result[0][i].id%>">
+                 <div class="category-icon-item lis-bg1">
+                   <div class="icon-box">
+                       <div class="icon">
+                     <img src="https://www.deloservices.com/images/<%=result[0][i].logo%>" style="width:45px;" alt="<%=result[0][i].name%>" title = "<%=result[0][i].name%>" />
+                     </div>
+                      <p class="categories-listing" style="font-size:15px;"><%=result[0][i].name%></p> 
+                   </div>
+                 </div>
+               </a>
+             </div>
+           <% } %>
+   
+
+           
+        <div class="col-lg-3 col-sm-6 col-md-4 col-xs-4">
+            <a href="/delhi-ncr-<%=result[0][23].seo_name%>" id="<%=result[0][23].id%>">
+              <div class="category-icon-item lis-bg1">
+                <div class="icon-box">
+                    <div class="icon">
+                  <img src="https://www.deloservices.com/images/<%=result[0][11].logo%>" style="width:45px;" alt="<%=result[0][23].name%>" title = "<%=result[0][23].name%>"  />
+                  </div>
+                   <p class="categories-listing" style="font-size:15px;"><%=result[0][11].name%></p> 
+                </div>
+              </div>
+            </a>
+          </div>
+
+
+
+           <!-- <div class="col-lg-3 col-sm-6 col-md-4 col-xs-4">
+              <a href="/delhi-ncr-<%=result[0][24].seo_name%>" id="<%=result[0][24].id%>">
+                <div class="category-icon-item lis-bg1">
+                  <div class="icon-box">
+                      <div class="icon">
+                    <img src="https://www.deloservices.com/images/<%=result[0][24].logo%>" style="width:60px;" alt="<%=result[0][24].name%>" title = "<%=result[0][24].name%>" />
+                    </div>
+                     <p class="categories-listing" style="font-size:15px;"><%=result[0][24].name%></p> 
+                  </div>
+                </div>
+              </a>
+            </div> -->
+
+
+
+         
+        </div>
+      </div>
+    </section>
+
+
+    
+    <!-- Categories item End -->
+
+    <!-- Featured Section Start -->
+<br>
+   
+  
+   <section class="featured section-padding">
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="section-title" >Offers</h2>
+         
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3" style="margin-top:20px"  data-aos="zoom-out">
+
+
+                <a href="/delhi-ncr-beauty-at-home" ><img src="/images/March2020.png" alt="beauty-service" style="height:140px;border-radius:15px" />
+  
+            </div>
+          <br><br><br>
+
+
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3" style="margin-top:20px"  data-aos="zoom-out">
+
+              <a href="/delhi-ncr-massage-for-women" > <img src="/images/massage.jpg" alt="carpentry"  style="height:140px;border-radius:15px"/> </a>
+                     
+          </div>
+        <br><br><br>
+
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3" style="margin-top:20px"  data-aos="zoom-out">
+
+
+            <a href="/delhi-ncr-salon-at-home" > <img src="images/Superoffer.jpg" alt="painting"  style="height:140px;border-radius:15px" /> </a>
+                 
+        </div>
+      <br><br><br>
+
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3" style="margin-top:20px"  data-aos="zoom-out">
+
+
+          <a href="/delhi-ncr-wedding-and-events" ><img src="/images/Wedding.jpg" alt="electrical"  style="height:140px;border-radius:15px"/> </a>
+            
+      </div>
+    <br><br><br>
+
+<br>
+         
+         
+         
+         
+         
+          <div class="col-12" style="margin-top:20px;">
+            <h5 style="font-weight:100px;font-weight: bold">Beauty & Spa Services</h5>
+     
+           </div>
+
+
+
+    
+
+
+
+          <% for(i=0;i<3;i++){ %>
+          <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3" style="margin-top:20px"  data-aos="zoom-out">
+
+
+              <a style="text-decoration: none"  href="/delhi-ncr-<%=result[0][i].seo_name%>">
+  <img src="https://www.deloservices.com/images/<%=result[0][i].image%>"  alt="<%=result[0][i].name%>" title = "<%=result[0][i].name%>" style="height:140px;border-radius:10px;padding:6px"> 
+             
+                  <h3 style="font-size:15px;margin-top:5px"><%=result[0][i].name%></h3>
+                </a> 
+               
+
+          </div>
+        <br><br><br>
+         <% } %>
+
+
+     
+         <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3" style="margin-top:20px"  data-aos="zoom-out">
+
+
+          <a style="text-decoration: none"  href="/delhi-ncr-<%=result[0][23].seo_name%>">
+<img src="https://www.deloservices.com/images/<%=result[0][23].image%>"  alt="<%=result[0][23].name%>" title = "<%=result[0][23].name%>" style="height:140px;border-radius:10px;padding:6px"> 
+         
+              <h3 style="font-size:15px;margin-top:5px"><%=result[0][23].name%></h3>
+            </a> 
+           
+
+      </div>
+    <br><br><br>
+
+
+         </div>
+      </div>
+<br><br>
+
+
+
+<div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h5 style="font-weight:100px;font-weight: bold">Home Services</h5>
+  
+       </div>
+  
+       
+  
+  
+   <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3" style="margin-top:20px"  data-aos="zoom-out">
+
+
+      <a style="text-decoration: none"  href="/delhi-ncr-<%=result[0][14].seo_name%>">
+<img src="https://www.deloservices.com/images/<%=result[0][14].image%>" title = "<%=result[0][14].name%>" alt="<%=result[0][14].name%>" style="height:140px;border-radius:10px;padding:6px"> 
+     
+          <h3 style="font-size:15px;margin-top:5px"><%=result[0][14].name%></h3>
+        </a> 
+       
+
+  </div>
+<br><br><br>
+
+
+<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3" style="margin-top:20px"  data-aos="zoom-out">
+
+
+  <a style="text-decoration: none"  href="/delhi-ncr-<%=result[0][25].seo_name%>">
+<img src="https://www.deloservices.com/images/<%=result[0][25].image%>" title = "<%=result[0][25].name%>"  alt="<%=result[0][25].name%>" style="height:140px;border-radius:10px;padding:6px"> 
+ 
+      <h3 style="font-size:15px;margin-top:5px"><%=result[0][25].name%></h3>
+    </a> 
+   
+
+</div>
+<br><br><br>
+
+    
+    
+
+<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3" style="margin-top:20px"  data-aos="zoom-out">
+
+
+    <a style="text-decoration: none"  href="/delhi-ncr-<%=result[0][6].seo_name%>">
+<img src="https://www.deloservices.com/images/<%=result[0][6].image%>" title = "<%=result[0][6].name%>" alt="<%=result[0][6].name%>" style="height:140px;border-radius:10px;padding:6px"> 
+   
+        <h3 style="font-size:15px;margin-top:5px"><%=result[0][6].name%></h3>
+      </a> 
+     
+
+</div>
+<br><br><br>
+
+
+
+<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3" style="margin-top:20px"  data-aos="zoom-out">
+
+
+    <a style="text-decoration: none"  href="/delhi-ncr-<%=result[0][7].seo_name%>">
+<img src="https://www.deloservices.com/images/<%=result[0][7].image%>" title = "<%=result[0][7].name%>"  alt="<%=result[0][7].name%>" style="height:140px;border-radius:10px;padding:6px"> 
+   
+        <h3 style="font-size:15px;margin-top:5px"><%=result[0][7].name%></h3>
+      </a> 
+     
+
+</div>
+<br><br><br>
+
+
+<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3" style="margin-top:20px"  data-aos="zoom-out">
+
+
+  <a style="text-decoration: none"  href="/delhi-ncr-<%=result[0][5].seo_name%>">
+<img src="https://www.deloservices.com/images/<%=result[0][5].image%>" title = "<%=result[0][5].name%>"  alt="<%=result[0][5].name%>" style="height:140px;border-radius:10px;padding:6px"> 
+ 
+      <h3 style="font-size:15px;margin-top:5px"><%=result[0][5].name%></h3>
+    </a> 
+   
+
+</div>
+<br><br><br>
+
+
+
+<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3" style="margin-top:20px"  data-aos="zoom-out">
+
+
+<a style="text-decoration: none"  href="/delhi-ncr-<%=result[0][11].seo_name%>">
+<img src="https://www.deloservices.com/images/<%=result[0][11].image%>" title = "<%=result[0][11].name%>"  alt="<%=result[0][11].name%>" style="height:140px;border-radius:10px;padding:6px"> 
+
+  <h3 style="font-size:15px;margin-top:5px"><%=result[0][11].name%></h3>
+</a> 
+
+
+</div>
+<br><br><br>
+
+  
+
+
+<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3" style="margin-top:20px"  data-aos="zoom-out">
+
+
+  <a style="text-decoration: none"  href="/delhi-ncr-<%=result[0][28].seo_name%>">
+<img src="https://www.deloservices.com/images/<%=result[0][28].image%>" title = "<%=result[0][i].name%>" alt="<%=result[0][28].name%>" style="height:140px;border-radius:10px;padding:6px"> 
+ 
+      <h3 style="font-size:15px;margin-top:5px"><%=result[0][28].name%></h3>
+    </a> 
+   
+
+</div>
+<br><br><br>
+
+
+<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3" style="margin-top:20px"  data-aos="zoom-out">
+
+
+  <a style="text-decoration: none"  href="/delhi-ncr-<%=result[0][3].seo_name%>">
+<img src="https://www.deloservices.com/images/<%=result[0][3].image%>" title = "<%=result[0][3].name%>"  alt="<%=result[0][3].name%>" style="height:140px;border-radius:10px;padding:6px"> 
+ 
+      <h3 style="font-size:15px;margin-top:5px"><%=result[0][3].name%></h3>
+    </a> 
+   
+
+</div>
+<br><br><br>
+
+  
+     </div>
+  </div>
+  
+  
+  
+
+
+
+
+
+
+<br>
+<br>
+   
+    <br><br>
+
+
+     
+      
+
+
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h5 style="font-weight:100px;font-weight: bold">Health & Wellness</h5>
+     
+           </div>
+
+           <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3" style="margin-top:20px"  data-aos="zoom-out">
+
+
+            <a style="text-decoration: none"  href="/delhi-ncr-<%=result[0][12].seo_name%>">
+<img src="https://www.deloservices.com/images/<%=result[0][12].image%>" title = "<%=result[0][12].name%>" alt="<%=result[0][12].name%>" style="height:140px;border-radius:10px;padding:6px"> 
+           
+                <h3 style="font-size:15px;margin-top:5px"><%=result[0][12].name%></h3>
+              </a> 
+             
+
+        </div>
+      <br><br><br>
+   
+
+
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3" style="margin-top:20px"  data-aos="zoom-out">
+
+
+        <a style="text-decoration: none"  href="/delhi-ncr-<%=result[0][20].seo_name%>">
+<img src="https://www.deloservices.com/images/<%=result[0][20].image%>" title = "<%=result[0][20].name%>"  alt="<%=result[0][20].name%>" style="height:140px;border-radius:10px;padding:6px"> 
+       
+            <h3 style="font-size:15px;margin-top:5px"><%=result[0][20].name%></h3>
+          </a> 
+         
+
+    </div>
+  <br><br><br>
+
+
+
+  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3" style="margin-top:20px"  data-aos="zoom-out">
+
+
+    <a style="text-decoration: none"  href="/delhi-ncr-<%=result[0][21].seo_name%>">
+<img src="https://www.deloservices.com/images/<%=result[0][21].image%>" title = "<%=result[0][21].name%>"  alt="<%=result[0][21].name%>" style="height:140px;border-radius:10px;padding:6px"> 
+   
+        <h3 style="font-size:15px;margin-top:5px"><%=result[0][21].name%></h3>
+      </a> 
+     
+
+</div>
+<br><br><br>
+
+
+<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3" style="margin-top:20px"  data-aos="zoom-out">
+
+
+<a style="text-decoration: none"  href="/delhi-ncr-<%=result[0][19].seo_name%>">
+<img src="https://www.deloservices.com/images/<%=result[0][19].image%>"  alt="<%=result[0][19].name%>" title = "<%=result[0][19].name%>" style="height:140px;border-radius:10px;padding:6px"> 
+
+    <h3 style="font-size:15px;margin-top:5px"><%=result[0][19].name%></h3>
+  </a> 
+ 
+
+</div>
+<br><br><br>
+   
+
+
+
+     
+  
+
+
+         </div>
+      </div>
+
+
+
+
+
+
+
+
+  
+<br><br>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h5 style="font-weight:100px;font-weight: bold">Home Appliances</h5>
+
+     </div>
+
+
+
+     <% for(i=24;i<25;i++){%>
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3" style="margin-top:20px"  data-aos="zoom-out">
+      
+      
+          <a style="text-decoration: none"  href="/delhi-ncr-<%=result[0][i].seo_name%>">
+      <img src="https://www.deloservices.com/images/<%=result[0][i].image%>" title = "<%=result[0][i].name%>" alt="<%=result[0][8].name%>" style="height:140px;border-radius:10px;padding:6px"> 
+         
+              <h3 style="font-size:15px;margin-top:5px"><%=result[0][i].name%></h3>
+            </a> 
+           
+      
+      </div>
+      <br><br><br>
+      
+      <% } %>
+
+     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3" style="margin-top:20px"  data-aos="zoom-out">
+
+
+      <a style="text-decoration: none"  href="/delhi-ncr-<%=result[0][8].seo_name%>">
+<img src="https://www.deloservices.com/images/<%=result[0][8].image%>" title = "<%=result[0][8].name%>" alt="<%=result[0][8].name%>" style="height:140px;border-radius:10px;padding:6px"> 
+     
+          <h3 style="font-size:15px;margin-top:5px"><%=result[0][8].name%></h3>
+        </a> 
+       
+
+  </div>
+<br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3" style="margin-top:20px"  data-aos="zoom-out">
+
+
+<a style="text-decoration: none"  href="/delhi-ncr-<%=result[0][22].seo_name%>">
+<img src="https://www.deloservices.com/images/<%=result[0][22].image%>" title = "<%=result[0][22].name%>"  alt="<%=result[0][22].name%>" style="height:140px;border-radius:10px;padding:6px"> 
+
+  <h3 style="font-size:15px;margin-top:5px"><%=result[0][22].name%></h3>
+</a> 
+
+
+</div>
+<br><br><br>
+
+
+   </div>
+</div>
+
+
+
+
+<br><br>
+
+<!-- <div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h5 style="font-weight:100px;font-weight: bold">GST Services</h5>
+
+     </div>
+
+     
+
+
+
+
+
+<% for(i=29;i<32;i++){%>
+<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3" style="margin-top:20px"  data-aos="zoom-out">
+
+
+    <a style="text-decoration: none"  href="/delhi-ncr-<%=result[0][i].seo_name%>">
+<img src="https://www.deloservices.com/images/<%=result[0][i].image%>" title = "<%=result[0][i].name%>" alt="<%=result[0][8].name%>" style="height:140px;border-radius:10px;padding:6px"> 
+   
+        <h3 style="font-size:15px;margin-top:5px"><%=result[0][i].name%></h3>
+      </a> 
+     
+
+</div>
+<br><br><br>
+
+<% } %>
+
+
+
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3" style="margin-top:20px"  data-aos="zoom-out">
+
+
+          <a style="text-decoration: none"  href="/delhi-ncr-<%=result[0][13].seo_name%>">
+<img src="https://www.deloservices.com/images/<%=result[0][13].image%>" title = "<%=result[0][13].name%>"  alt="<%=result[0][13].name%>" style="height:140px;border-radius:10px;padding:6px"> 
+         
+              <h3 style="font-size:15px;margin-top:5px"><%=result[0][13].name%></h3>
+            </a> 
+           
+
+      </div>
+    <br><br><br>
+
+      
+
+   </div>
+</div>
+
+
+
+
+
+
+<br><br> -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h5 style="font-weight:100px;font-weight: bold">Other Services</h5>
+
+     </div>
+
+     
+
+
+
+
+
+<% for(i=26;i<28;i++){%>
+<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3" style="margin-top:20px"  data-aos="zoom-out">
+
+
+    <a style="text-decoration: none"  href="/delhi-ncr-<%=result[0][i].seo_name%>">
+<img src="https://www.deloservices.com/images/<%=result[0][i].image%>" title = "<%=result[0][i].name%>"  alt="<%=result[0][8].name%>" style="height:140px;border-radius:10px;padding:6px"> 
+   
+        <h3 style="font-size:15px;margin-top:5px"><%=result[0][i].name%></h3>
+      </a> 
+     
+
+</div>
+<br><br><br>
+
+<% } %>
+
+<div class="col-xs-12 col-sm-12 col-md-6 col-lg-3" style="margin-top:20px"  data-aos="zoom-out">
+
+
+    <a style="text-decoration: none"  href="/delhi-ncr-<%=result[0][15].seo_name%>">
+<img src="https://www.deloservices.com/images/<%=result[0][15].image%>" title = "<%=result[0][15].name%>"  alt="<%=result[0][15].name%>" style="height:140px;border-radius:10px;padding:6px"> 
+   
+        <h3 style="font-size:15px;margin-top:5px"><%=result[0][15].name%></h3>
+      </a> 
+     
+
+</div>
+<br><br><br>
+
+
+  
+  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3" style="margin-top:20px"  data-aos="zoom-out">
+
+
+      <a style="text-decoration: none"  href="/delhi-ncr-<%=result[0][18].seo_name%>">
+      <img src="https://www.deloservices.com/images/<%=result[0][18].image%>" title = "<%=result[0][18].name%>"  alt="<%=result[0][18].name%>" style="height:140px;border-radius:10px;padding:6px"> 
+      
+      <h3 style="font-size:15px;margin-top:5px"><%=result[0][18].name%></h3>
+      </a> 
+      
+      
+      </div>
+      <br><br><br>
+      
+
+   </div>
+</div>
+
+
+<br><br>
+
+
+
+
+
+
+
+    </section>
+
+
+  
+
+
+
+ 
+
+    <!-- Featured Section End -->
+
+
+  
+      
+        
+      </div>
+
+
+
+    </div>
+  </div>
+</div>
+<!-- 
+<section class="featured section-padding" data-aos="zoom-out">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <div class="heading">
+          <h2 class="section-title" >Recommended Services</h2>
+          
+        </div>
+      </div>
+
+      <% for(i=15;i<17;i++){ %>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3" style="margin-top:20px"  data-aos="zoom-out">
+
+
+          <a style="text-decoration: none"  href="/delhi-ncr-<%=result[0][i].seo_name%>">
+<img src="https://www.deloservices.com/images/<%=result[0][i].image%>" title = "<%=result[0][i].name%>" alt="<%=result[0][i].name%>" style="height:140px;border-radius:10px;padding:6px"> 
+         
+              <h3 style="font-size:15px;margin-top:5px"><%=result[0][i].name%></h3>
+            </a> 
+           
+
+      </div>
+    <br><br><br>
+     
+      <% } %>
+
+
+      <% for(i=33;i<result[0].length;i++){ %>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-3" style="margin-top:20px"  data-aos="zoom-out">
+
+
+          <a style="text-decoration: none"  href="/delhi-ncr-<%=result[0][i].seo_name%>">
+<img src="https://www.deloservices.com/images/<%=result[0][i].image%>" title = "<%=result[0][i].name%>"  alt="<%=result[0][i].name%>" style="height:140px;border-radius:10px;padding:6px"> 
+         
+              <h3 style="font-size:15px;margin-top:5px"><%=result[0][i].name%></h3>
+            </a> 
+           
+
+      </div>
+    <br><br><br>
+     
+      <% } %>
+    
+
+
+ 
+
+
+     
+    </div>
+  </div>
+</section> -->
+
+<section class="subscribes section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="subscribes-inner">
+          <div class="icon">
+            <i class="lni-pointer" style="color:black"></i>
+          </div>
+          <div class="sub-text">
+              <h3 style="color:black">Download Delo Services App</h3>
+           <p style="color:black">Enter your mobile number to get Rs. 1800 Cashback</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+
+        
+          <form action="#" method=post>
+          <div class="subscribe">
+
+           
+
+            <input class="form-control" id="number" placeholder="Enter your Mobile Number" required="" type="number">
+            <button class="btn btn-common getlink" type="button">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!-- Works Section Start -->
+<section class="works section-padding">
+<div class="container">
+  <div class="row">
+    <div class="col-12 text-center">
+      <div class="heading">
+        <h2 class="section-title" >How It Works?</h2>
+     
+     
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-4 col-xs-12">
+      <div class="works-item">
+        <div class="icon-box">
+          <i class="lni-users"></i>
+        </div>
+        <p style="color: #1F5AB0;">Create an Account</p>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-4 col-xs-12">
+      <div class="works-item">
+        <div class="icon-box">
+          <i class="lni-bookmark-alt"></i>
+        </div>
+        <p style="color: #1F5AB0;">Book Your Service</p>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-4 col-xs-12">
+      <div class="works-item">
+        <div class="icon-box">
+          <i class="lni-thumbs-up"></i>
+        </div>
+        <p style="color: #1F5AB0;">Deal Done</p>
+      </div>
+    </div>
+    <hr class="works-line">
+  </div>
+</div>
+</section>
+<!-- Works Section End -->
+
+<!-- Services Section Start -->
+<section class="services section-padding" style="background-color:#E8F0FE">
+<div class="container" style="background-color:#E8F0FE">
+  <div class="row">
+    <div class="col-12 text-center">
+      <div class="heading">
+        <h2 class="section-title" >Key Features</h2>
+        </div>
+    </div>
+    <!-- Services item -->
+    <div class="col-md-6 col-lg-6 col-xs-12">
+      <div class="services-item wow fadeInRight" data-wow-delay="0.2s">
+        <div class="icon">
+          <i class="lni-leaf"></i>
+        </div>
+        <div class="services-content">
+          <h3><a href="#">Verified & Certified Professional</a></h3>
+          <p>All our service providers are screened, background verified and rated by customers like you.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Services item -->
+   
+    <!-- Services item -->
+    <div class="col-md-6 col-lg-6 col-xs-12">
+      <div class="services-item wow fadeInRight" data-wow-delay="0.6s">
+        <div class="icon">
+          <i class="lni-color-pallet"></i>
+        </div>
+        <div class="services-content">
+          <h3><a href="#">Re-work Assurance</a></h3>
+          <p>Delo Services offers top quality services.If you're not satisfied contact us. We'll get a rework done to your satisfaction at no extra charge.</p>
+        </div>
+      </div>
+    </div>
+    
+    
+  
+  </div>
+</div>
+</section>
+<!-- Services Section End -->
+
+
+<!-- blog Section End -->
+
+<!-- Subscribe Section Start -->
+<section class="subscribes section-padding">
+<div class="container">
+  <div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+      <div class="subscribes-inner">
+        <div class="icon">
+          <i class="lni-pointer"></i>
+        </div>
+        <div class="sub-text">
+          <h3>Subscribe to Newsletter</h3>
+         
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <form action="/login/subscribe" method=post >
+        <div class="subscribe">
+          <input class="form-control" name=email placeholder="Enter your Email" required="" type="email">
+          <button class="btn btn-common" type="submit">Subscribe</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+</section>
+  
+<!-- Main container End -->  
+    
+    <!-- Subscribe Section End -->
+  
+    <!-- Footer Section Start -->
+    
+    <script>
+        $('.fullBackground').fullClip({
+          images: ['images/hero-area.jpg', 'images/banner1.jpg', 'images/hero-area.jpg','images/slider-bg1.jpg','images/slider-bg2.jpg'],
+          transitionTime: 2000,
+          wait: 5000
+        });
+        </script>
+    <% include ./indexfooter.ejs %>
+
+
+
+
+    <script>
+ $('.category').click(function(){
+    const id = $(this).attr('id');
+    $.post('/category/getid',{id},data=>{
+      window.location.href = '/category/bysubcategory'
+    })
+    })
+
+  </script>
+  
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  
+  
+    <script>
+
+      $('.call').click(function(){
+        alert('a')
+        const from = '9131705082'
+        const to ='8319339945'
+       $.post('/booking/a',{from,to},data=>{
+         alert('a')
+       })
+      })
+      </script>
+
+
+
+
+<script type='application/ld+json'> 
+  {
+    "@context": "http://www.schema.org",
+    "@type": "LocalBusiness",
+    "name": "DeloServices",
+    "url": "https://www.deloservices.com/",
+    "logo": "https://www.deloservices.com/images/delofabicon.png",
+    "image": "https://www.deloservices.com/images/delofabicon.png",
+    "description": "Delo Services is your one stop destination for all your home needs from our trusted & certified professionals.",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": " D-64 F/F No. 1 Abul Fazal Enclave, Part - 1 Jamia Nagar, New Delhi, South Delhi - 110025 ",
+      "addressLocality": "New Delhi",
+      "addressRegion": "New Delhi",
+      "postalCode": "110025",
+      "addressCountry": "India"
+    },
+   "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+918088879880",
+      "contactType": "Customer Support"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "28.5560405",
+      "longitude": "77.2965644"
+    },
+  "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+        "Sunday"
+      ],
+      "opens": "00:00",
+      "closes": "23:59"
+    },
+    "hasMap": "https://www.google.com/maps/dir//deloservices/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x390d1d1ad6fabda7:0x15c4f22ca3c977d?sa=X&ved=2ahUKEwjtvPb3roDnAhVA73MBHf1hBQgQ9RcwDXoECB0QDA",
+    
+   "sameAs": [
+      "https://www.facebook.com/Deloservices/",
+      "https://twitter.com/DeloPvt",
+      "https://www.instagram.com/delo_services_pvt_ltd/",
+      "https://www.youtube.com/channel/UCzrvM1_meaSOsf-6dfGHvEw",
+      "https://www.linkedin.com/company/delo-services-pvt-ltd",
+      "https://www.deloservices.com"
+    ]
+  }
+   </script>
+  
+  
+  
+
+
+<script type="text/javascript">
+  (function() {
+  window.__insp = window.__insp || [];
+  __insp.push(['wid', 1301399890]);
+  var ldinsp = function(){
+  if(typeof window.__inspld != "undefined") return; window.__inspld = 1; var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js?wid=1301399890&r=' + Math.floor(new Date().getTime()/3600000); var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); };
+  setTimeout(ldinsp, 0);
+  })();
+  </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.8.2.js"></script>
+     
+<script type='text/javascript'>
+$(function(){
+var overlay = $('<div id="overlay"></div>');
+overlay.show();
+overlay.appendTo(document.body);
+$('.popup').show();
+$('.close').click(function(){
+$('.popup').hide();
+overlay.appendTo(document.body).remove();
+return false;
+});
+
+
+ 
+
+$('.x').click(function(){
+$('.popup').hide();
+overlay.appendTo(document.body).remove();
+return false;
+});
+});
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.5/slick.min.js"></script>
+<script>
+
+$('.responsive').slick({
+  dots: true,
+	prevArrow: $('.prev'),
+	nextArrow: $('.next'),
+  infinite: false,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+</script>
+
+
+
+<script>
+
+$('.getlink').click(function(){
+  
+if( $('#number').val() == null || $('#number').val() == "null" || $('#number').val() == "" || $('#number').val() == [] ){
+  alert("Enter Mobile Number...")
+}
+else if( $('#number').val().length<10 || $('#number').val().length>10 ){
+  alert( 'Enter Correct Mobile Number...')
+}
+else{
+  const number = $('#number').val()
+  $.post('/blogs/dowanload_app',{number},data=>{
+    alert('Send Successfully...')
+  })
+}
+
+})
+
+
+</script>
+
+
+<script>
+
+
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	(function(){
+		  jQuery('#theCarousel').carousel();
+
+			}());
+
+			(function(){
+			  jQuery('.carousel-showmanymoveone .item').each(function(){
+			    var itemToClone = jQuery(this);
+
+			    for (var i=1;i<3;i++) {
+			      itemToClone = itemToClone.next();
+
+			      // wrap around if at end of item collection
+			      if (!itemToClone.length) {
+			        itemToClone = jQuery(this).siblings(':first');
+			      }
+
+			      // grab item, clone, add marker class, add to collection
+			      itemToClone.children(':first-child').clone()
+			        .addClass("cloneditem-"+(i))
+			        .appendTo(jQuery(this));
+			    }
+			  });
+		}());
+		
+(function() {
+	jQuery('.carousel-showmanymoveone').carousel({
+    	interval: false
+	}); 
+}());
+
+
+
+
+</script>
+
+
+
+
+
+
+
+

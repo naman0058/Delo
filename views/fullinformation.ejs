@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <script>
+          !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
+          analytics.load("LioF9AH4FA5S2Ioit4CkQHeQgaRy6227");
+          analytics.page();
+          }}();
+        </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="author" content="GrayGrids Team">
+    <title>Delo Services - Booking</title>    
+
+
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+
+
+
+
+   
+
+
+    <link src="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.3/jquery.timepicker.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css" integrity="sha256-DVV5cU9pxHH2Rofop3XD3b3rbfrOSIy2nU61DEbYy1Q=" crossorigin="anonymous" />
+
+
+
+
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="images/x-icon" href="https://deloservices.com/images/delofabicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/booking/css/bootstrap.min.css" type="text/css">  
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="/booking/fonts/all.min.css" type="text/css">
+    <!-- Line Icons CSS -->
+    <link rel="stylesheet" href="/booking/fonts/line-icons/line-icons.css" type="text/css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="/booking/extras/animate.css" type="text/css">
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="/booking/extras/owl.carousel.css" type="text/css">
+    <!-- Slicknav js -->
+    <link rel="stylesheet" href="/booking/css/slicknav.min.css" type="text/css">
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="/booking/css/main.css" type="text/css">
+    <!-- Responsive CSS Styles -->
+    <link rel="stylesheet" href="/booking/css/responsive.css" type="text/css">
+
+    
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link src="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.3/jquery.timepicker.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css" integrity="sha256-DVV5cU9pxHH2Rofop3XD3b3rbfrOSIy2nU61DEbYy1Q=" crossorigin="anonymous" />
+
+
+  </head>
+
+
+<style>
+
+body{
+  color:black
+}
+</style>
+
+  <body> 
+    <!-- Header Section Start -->
+    <div class="header">
+     	<!-- Navbar Start -->
+       <nav class="navbar navbar-expand-lg bg-inverse fixed-top scrolling-navbar">
+          <div class="container">
+            <div class="theme-header clearfix">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-toggle="collapse" aria-controls="main-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                  <span class="lni-menu"></span>
+                  <span class="lni-menu"></span>
+                  <span class="lni-menu"></span>
+                </button>
+                <a href="/" class="navbar-brand"><img src="/assets/img/Delo Logo.png" alt="delologo"   style="width:100%; height: 100%;"  > </a>
+              </div>
+              <div class="collapse navbar-collapse" id="main-navbar">
+                <ul class="navbar-nav mr-auto w-100 justify-content-end">
+                 
+                  <li class="nav-item">
+                    <a class="nav-link" href="/">
+                     Home 
+                    </a>
+                  </li>
+                 
+                  <li class="nav-item dropdown"  style="margin-top: 0px;" >
+                      <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       My Account
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/booking"> My Booking</a></li>
+                        <li><a class="dropdown-item" href="/login/logout">Logout</a></li>
+                      </ul>
+                    </li>
+                
+
+
+                    <li class="nav-item dropdown"  style="margin-top: 15px;">
+                      <a class="nav-link" href="/delo-work"  aria-expanded="false">
+                       For business
+                      </a>
+                     
+                    </li>
+
+                  <li class="postadd">
+                    <a class="btn btn-primary btn-post" style="background-color:#0069D9;width: 190px; " href="/team_login">Become A Team Partner </a>
+                  </li>
+
+                  <li class="postadd" style="margin-left:10px;">
+                    <a class="btn btn-primary btn-post" style="background-color:#0069D9;width: 190px; " href="tel:8088879880"  aria-expanded="false">
+                      Call  : +918088879880
+                     </a>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+         
+        </nav>
+
+      <!-- Navbar End -->
+    </div>
+    <!-- Header Section End -->
+
+    <!-- Page Header Start -->
+    <div class="page-header" style="background: url(/booking/img/banner2.jpg);">
+      <div class="container-fluid">
+        <div class="row">         
+          <div class="col-md-4">
+            <a href="/booking"><h1 class="page-title" style="font-size: 15px; font-color:white"><i class="fas fa-arrow-left" style="margin-right: 10px;"></i>All bookings</h1></a>
+          </div>
+          <div class="col-md-4">
+            <h1 class="page-title"><%=result[0].booking_id%></h1>
+          </div>
+         
+        </div>
+      </div>
+    </div>
+    <!-- Page Header End --> 
+
+    <!-- Start Content -->
+    <div id="content">
+      <div class="container">
+        <div class="row">
+            <!-- Product Info Start -->
+            <div class="col-lg-8 col-md-12 col-xs-12">
+             
+
+              <div class="box">
+                <h2 class="title-2"><strong><i class="fas fa-check-circle"></i> booking Accepted</strong></h2>
+                  <div class="row">
+                 <div class="ads-details-info col-md-8">
+                        <% if(result[0].service_agent == null || result[0].service_agent =="null" || result[0].service_agent == "" || result[0].service_agent == [] ){ %>
+
+                    <p class="mb15" style="font-size: 15px;">  Your <%=result[0].booking_id%>  will be assigned 1 hour before shedule time.</p>
+                   <% } else { %>
+                    <p class="mb15" style="font-size: 15px;width:100px"><img class="rounded-circle" src="/images/<%=result[0].service_agent_image%>"> <h3><%=result[0].service_agent_details%> </h3></p>
+                    <% } %>
+
+                    <ul class="list-circle">
+                     
+                      <hr>
+                      <li><i class="fas fa-check-circle"></i> Arrival time of your professional</li>
+                      <li><%=result[0].date%> - <%=result[0].time%></li>
+                     <hr>
+                     <li><i class="fas fa-check-circle"></i> Share this code with professional only to start the job</li>
+                     <li><button type="button" class="btn btn-primary"><%=result[0].working_otp%></button></li>
+                  </div>
+                  
+                  <div class="col-md-4">
+                   
+
+                    <div class="ads-action mt-2">
+                      <ul class="list-border">
+                            <% if(result[0].service_agent == null || result[0].service_agent =="null" || result[0].service_agent == "" || result[0].service_agent == [] ){ %>
+                               
+                                 <% } else { %>
+                        <li>
+                                <div class="start call" usernumber="<%=result[0].usernumber%>" service_agent="<%=result[0].service_agent%>"><strong>Agent Call</strong><img src="https://img.icons8.com/dotty/60/000000/call-male.png"></div>
+                        </li>
+                            <% } %>
+                       
+                         
+                        
+                      </ul>
+                      
+                    </div>
+                    
+                  </div>
+                  
+                </div>
+                
+              </div>
+            
+            </div>
+            
+               <!-- Start Content -->
+   
+            <!-- Product Info Start -->
+            <div class="col-lg-4 col-md-12 col-xs-12">
+             
+           
+
+              <div class="box" id="payment">
+                <h2 class="title-2" style="text-align: center"><strong>Payment Details</strong></h2>
+                  
+                <br>
+
+
+                <div class="inner-box">
+                    <h2 class="title-2"> PAYMENT SUMMARY </h2>
+                    <p style="font-size: 20px;"> Amount to be paid :- Rs.<%=result[0].price%></p>
+                    <p style="font-size: 15px;">Included of all taxes</p>
+                   <br>
+                   
+
+
+                  </div>
+
+                <div class="inner-box">
+                        <h2 class="title-2"> Cancel Request ? </h2>
+                        <p style="font-size: 20px;"> Are You sure you want to cancel your booking?</p>
+                       <br>
+                       
+
+
+            <button class='pay-btn btn btn-common  myBtn' data-toggle="modal" data-target="#myModal" type="button">Cancel</button>
+
+
+
+
+                    
+                            <button class='pay-btn btn btn-common reschedule'   type="button" id="<%= result[0].id %>" >Reschedule</button>
+
+                      </div>
+              </div>
+             
+              
+
+
+<!--cancellation policy start-->
+
+
+ <!-- The Modal -->
+ <div class="modal fade" id="myModal">
+    <div class="modal-dialog ">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+     <h5>Cancel Request</h5>
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+       
+
+            <form role="form">
+                <div class="form-group">
+                   <ul>
+                     <li><input type="radio" name="a" id="reason1" value="Placed the request by mistake">Placed the request by mistake</li>
+                     <li><input type="radio" name="a" id="reason2" value="Hired someone else outside Delo Servoces">Hired someone else outside Delo Servoces</li>
+                     <li><input type="radio" name="a" id="reason3" value="Want the service at some other time">Want the service at some other time</li>
+                     <li><input type="radio" name="a" id="reason4" value="Prices are high">Prices are high</li>
+                     <li><input type="radio" name="a" id="reason5" value="Others">Others</li>
+                   </ul>
+                  </div>
+   
+              
+            </form>
+
+
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+            <% if(result[0].service_agent == null || result[0].service_agent =="null" || result[0].service_agent == "" || result[0].service_agent == [] ){ %>
+              <button type="button" class="btn btn-common cancel  " id="<%= result[0].id %>" name="<%=result[0].name%>"
+              email="<%=result[0].email%>" usernumber="<%=result[0].usernumber%>" address="<%=result[0].address%>"
+              booking_id="<%=result[0].booking_id%>" payment_mode = "<%=result[0].payment_mode%>" date="<%=result[0].date%>"
+              time="<%= result[0].time %>" booking_date="<%=result[0].booking_date%>" price="<%=result[0].price%>" cancel_time = "<%=result[0].booking_time%>"> Cancel</button>
+              
+              <% } else { %>
+              <button type="button" class="btn btn-common  finally_cancel " id="<%= result[0].id %>" name="<%=result[0].name%>"
+                email="<%=result[0].email%>" usernumber="<%=result[0].usernumber%>" address="<%=result[0].address%>"
+                booking_id="<%=result[0].booking_id%>" payment_mode = "<%=result[0].payment_mode%>" date="<%=result[0].date%>"
+                time="<%= result[0].time %>" booking_date="<%=result[0].booking_date%>" price="<%=result[0].price%>" service_agent="<%=result[0].service_agent%>" cancel_time = "<%=result[0].booking_time%>">Cancel</button>
+              <% } %> 
+
+        </div>
+        
+      </div>
+    </div>
+  </div>
+
+<!--cancellation policy end-->
+
+
+
+
+<!--for date & time start functionality-->
+<div class="box" id="datesummary">
+    <h2 class="title-2"><strong>Reschedule Request</strong></h2>
+      <div class="row">
+      <div class="ads-details-info col-md-12">
+          <div class="form-group">
+              <label>Date<sup>*</sup></label>
+             
+              <input type="text"  name="date" id="date" class="form-control date " readonly required>
+            </div>
+            <div class="form-group">
+                <label>Time<sup>*</sup></label>
+                <input class="form-control col-lg-12 timepicker time1"  name="time" placeholder="time" style="color:black"  readonly/>
+                <input class="form-control second_timepicker time2"  name="time" placeholder="time"  readonly/>  
+              </div>
+            
+                 
+                
+               
+      </div>
+
+     
+    </div>
+    <br>      <button type="button" class="btn btn-success float-right finallyreschudle" id="<%= result[0].id %>">Reschedule</button>
+   <br>
+  </div>
+<!--for date & time end functionality-->
+
+
+            </div>
+        
+ 
+
+
+
+      <!-- End Content -->
+
+   
+    <!-- Main JS  -->
+    <script type="text/javascript" src="/booking/js/jquery-min.js"></script>      
+    <script type="text/javascript" src="/booking/js/popper.min.js"></script>    
+    <script type="text/javascript" src="/booking/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/booking/js/jquery.parallax.js"></script>
+    <script type="text/javascript" src="/booking/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="/booking/js/jquery.slicknav.js"></script>
+    <script type="text/javascript" src="/booking/js/wow.js"></script>
+    <script type="text/javascript" src="/booking/js/jquery.counterup.min.js"></script>
+    <script type="text/javascript" src="/booking/js/waypoints.min.js"></script>
+    <script type="text/javascript" src="/booking/js/form-validator.min.js"></script>
+    <script type="text/javascript" src="/booking/js/contact-form-script.js"></script>    
+    <script type="text/javascript" src="/booking/js/main.js"></script>
+    <script src="/javascripts/cancel_booking.js"></script>
+    <script>
+
+            $('.call').click(function(){
+                const from = $(this).attr('usernumber');
+                const to = $(this).attr('service_agent');
+                $.post('/booking/a',{from,to},data=>{
+                     
+                   })
+            })
+        
+           
+        
+            </script>
+
+
+
+
+<!--reschedule start-->
+
+<script>
+
+$('#datesummary').hide()
+$('.reschedule').click(function(){
+  $('#payment').hide()
+  $('#datesummary').show()
+ 
+})
+
+
+
+$('.finallyreschudle').click(function(){
+
+  if($('.time1').val()==null || $('.time1').val()==[] || $('.time1').val()=="" || $('.time1.val').val()=="null")
+time = $('.time2').val()
+else
+time = $('.time1').val()
+
+  const id = $(this).attr('id')
+  if( $('#date').val() == []  || $('#date').val() == null || $('#date').val() == "null" || $('#date').val() == "" )
+  alert('Choose Reschedule Date')
+  else if(time == "" || time =="null" || time ==[] || time==null) 
+  alert('Enter Booking Time')
+else{
+ 
+  const date = $('#date').val()
+  const service_agent = null
+  $.post('/booking/reschedule',{date,time,id,service_agent},data=>{
+    window.location.href = "/booking";
+  })
+}
+
+})
+
+</script>
+
+<!--reschedule end-->
+
+        
+<!--date & time start-->
+
+<script src="/assets/js/jquery-min.js"></script>
+<script src="/assets/js/popper.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/jquery.counterup.min.js"></script>
+<script src="/assets/js/waypoints.min.js"></script>
+<script src="/assets/js/wow.js"></script>
+<script src="/assets/js/owl.carousel.min.js"></script>
+<script src="/assets/js/nivo-lightbox.js"></script>
+<script src="/assets/js/jquery.slicknav.js"></script>
+<script src="/assets/js/main.js"></script>
+<script src="/assets/js/form-validator.min.js"></script>
+<script src="/assets/js/contact-form-script.min.js"></script>
+<script src="/assets/js/summernote.js"></script>
+  
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.3/jquery.timepicker.min.js"></script>
+
+
+
+
+<script>
+  $( function() {
+  $( "#date" ).datepicker({ minDate: -0, maxDate: "+5D",dateFormat: 'yy-mm-dd' });
+  } );
+  </script>
+
+<script>
+$(document).ready(function(){
+
+    var dt = new Date();
+var time = dt.getHours()+2 + ":" + dt.getMinutes();
+var today = new Date();
+var dd = today.getDate();
+
+var mm = today.getMonth()+1; 
+var yyyy = today.getFullYear();
+if(dd<10) 
+{
+    dd='0'+dd;
+} 
+
+if(mm<10) 
+{
+    mm='0'+mm;
+} 
+today = yyyy+'-'+mm+'-'+dd;
+$('.second_timepicker').hide()
+$('#date').change(function(){
+
+var choose_date = $('#date').val()
+
+  if(choose_date == today){
+  
+   $('.second_timepicker').hide()
+    $('.timepicker').show()
+         $('input.timepicker').timepicker({
+        timeFormat: 'hh:mm:p',
+        // year, month, day and seconds are not important
+        minTime: time,
+        maxTime: new Date(0, 0, 0, 19, 0, 0),
+        backgroundColor : 'red',
+        // time entries start being generated at 6AM but the plugin 
+        // shows only those within the [minTime, maxTime] interval
+        startHour: 2,
+        // the value of the first item in the dropdown, when the input
+        // field is empty. This overrides the startHour and startMinute 
+        // options
+        startTime:time,
+        // items in the dropdown are separated by at interval minutes
+        interval: 30,
+        dynamic:true
+    });
+}
+else{
+    $('.second_timepicker').show()
+    $('.timepicker').hide()
+    $('.second_timepicker').timepicker({
+        timeFormat: 'hh:mm:p',
+        // year, month, day and seconds are not important
+        minTime:new Date(0, 0, 0, 8, 0, 0),
+        maxTime: new Date(0, 0, 0, 19, 0, 0),
+        // time entries start being generated at 6AM but the plugin 
+        // shows only those within the [minTime, maxTime] interval
+        startHour: 6,
+        // the value of the first item in the dropdown, when the input
+        // field is empty. This overrides the startHour and startMinute 
+        // options
+        startTime:new Date(0, 0, 0, 8, 00, 0),
+        // items in the dropdown are separated by at interval minutes
+        interval: 30,
+        dynamic:true
+    });
+}
+});
+
+})
+
+</script>
+
+<!--date & time end-->
+
+
+
+
+
+  </body>
+</html>

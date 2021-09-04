@@ -1,0 +1,22 @@
+<input type="number" id = "rate" placeholder="rate">
+<input type="number" id = "per" placeholder="discount">
+<button type="button" id="cal">Calculate</button>
+<div id="result"></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$('#cal').click(function(){
+ 
+
+const rate = $('#rate').val()*10
+const per = $('#per').val() 
+
+ let dis = (100-per)/10 
+ let ans = rate/dis
+ 
+ let p = `<span>${ans}</span>
+ 
+ `
+ $('#result').html(p)
+});
+</script>

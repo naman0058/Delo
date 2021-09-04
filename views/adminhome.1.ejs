@@ -1,0 +1,143 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
+        analytics.load("LioF9AH4FA5S2Ioit4CkQHeQgaRy6227");
+        analytics.page();
+        }}();
+      </script>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <style>
+    /* width */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px grey; 
+      border-radius: 6px;
+    }
+     
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background:#1F5AB0; 
+      border-radius: 6px;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #1F5AB0; 
+    }
+    </style>
+  <!--STYLE END SCROLL BAR-->
+</head>
+<body>
+
+<div class="container">
+  <h5>Team Approval Details</h5>
+  <p></p>            
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Customer Name</th>
+        <th>Customer Number</th>
+        <th>Customer Email</th>
+        <th>Customer Address</th>
+        <th>Date & Time</th>
+        <th>Services</th>
+        <th>Price</th>
+        <th>Payment Mode</th>
+        <th>Assign</th>
+
+    </tr>
+    </thead>
+    <tbody>
+        <% for(i=0;i<result[0].length;i++){ %>
+      <tr>
+        <td><%=result[0][i].name %></td>
+        <td><%=result[0][i].usernumber%></td>
+        <td><%=result[0][i].email%></td>
+        <td><%=result[0][i].address%></td>
+        <td><%=result[0][i].date%> at <%=result[0][i].time%></td>
+        <td><%=result[0][i].servicesname%></td>
+        <td><%=result[0][i].price%></td>
+        <td><%=result[0][i].payment_mode%></td>
+                          
+       
+      <!--  <td><button type="button" class="btn btn-success assign" id="<%=result[0][i].id%>" booking_id="<%=result[0][i].booking_id%>">Assign</button></td>-->
+      </tr>
+     <% } %>
+    </tbody>
+  </table>
+</div>
+
+
+
+
+
+
+<div class="container">
+  <h2></h2>
+  <p></p>            
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Number</th>
+        <th>Email</th>
+        <th>Local Address</th>
+        <th>Permanent Address</th>
+        <th>Services</th>
+        <th>Gender</th>
+        <th>Date of Birth</th>
+        <th>Age</th>
+        <th>Whatsapp Account</th>
+        <th>Image</th>
+        <th>Approve</th>
+        <th>Decline</th>
+
+
+    </tr>
+    </thead>
+    <tbody>
+        <% for(i=0;i<result[1].length;i++){ %>
+      <tr>
+        <td><%=result[1][i].name %></td>
+        <td><%=result[1][i].number%></td>
+        <td><%=result[1][i].email%></td>
+        <td><%=result[1][i].local_address%>,<%=result[1][i].district%> at <%=result[1][i].state%>, <%=result[1][i].pincode%></td>
+        <td><%=result[1][i].permanent_address%>,<%=result[1][i].tehsil%> at <%=result[1][i].state1%>, <%=result[1][i].pincode1%> </td>
+      <% if(result[1][0].servicesid1 == "null") { %>   <td><%=result[1][i].servicesid%> </td>
+     <% } else { %>  <td><%=result[1][i].servicesid%>,<%=result[1][i].servicesid1 %></td> <% } %>
+        <td><%=result[1][i].gender%></td>
+        <td><%=result[1][i].dob%></td>
+        <td><%=result[1][i].age%></td>
+        <td><%=result[1][i].whatsapp_ac%></td>
+        <td><img src="/images/<%=result[1][i].image%>" style="width: 50px;height:50px;" > </td>
+        <td><button type="button" class="btn btn-success approve">Approve</button></td>
+        <td><button type="button" class="btn btn-danger decline">Decline</button></td>                 
+     
+      </tr>
+     <% } %>
+    </tbody>
+  </table>
+</div>
+
+</body>
+
+<script src="/javascripts/jquery.js"></script>
+<script>
+
+
+</script>
+
+</html>

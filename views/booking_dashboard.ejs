@@ -1,0 +1,270 @@
+<% include ./booking_dashboard_header.ejs %>
+        <!--**********************************
+            Content body start
+        ***********************************-->
+        <div class="content-body">
+
+            <div class="container-fluid mt-3">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="card gradient-1">
+                            <div class="card-body">
+                                <h3 class="card-title text-white">Total Booking</h3>
+                                <div class="d-inline-block">
+                                    <h2 class="text-white"><%= result[2][0].total_booking %></h2>
+                                
+                                </div>
+                                <span class="float-right display-5 opacity-5"><i class="fa fa-shopping-cart"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="card gradient-2">
+                            <div class="card-body">
+                                <h3 class="card-title text-white">Cancel Booking</h3>
+                                <div class="d-inline-block">
+                                    <h2 class="text-white"><%= result[1][0].cancel_booking %></h2>
+                                
+                                </div>
+                                <span class="float-right display-5 opacity-5"><i class="fa fa-money"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="card gradient-3">
+                            <div class="card-body">
+                                <h3 class="card-title text-white">Completed Booking</h3>
+                                <div class="d-inline-block">
+                                    <h2 class="text-white"><%= result[3][0].completed_booking %></h2>
+                                
+                                </div>
+                                <span class="float-right display-5 opacity-5"><i class="fa fa-heart"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="card gradient-4">
+                            <div class="card-body">
+                                <h3 class="card-title text-white">Total Users</h3>
+                                <div class="d-inline-block">
+                                    <h2 class="text-white"><%= result[0][0].total_users %></h2>
+                                
+                                </div>
+                                <span class="float-right display-5 opacity-5"><i class="fa fa-users"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body pb-0 d-flex justify-content-between">
+                                        <div>
+                                            <h4 class="mb-1">Total Earnings</h4>
+                                          
+                                            <h3 class="m-0">Rs <%= result[4][0].total_income %></h3>
+                                        </div>
+                                       
+                                    </div>
+                                    <div class="chart-wrapper">
+                                        <canvas id="chart_widget_2"></canvas>
+                                    </div>
+                                    <div class="card-body">
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                
+              
+
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="active-member">
+                                    <div class="table-responsive">
+                                        <table class="table table-xs mb-0">
+                                            <h3>Latest Running Booking</h3>
+                                            <thead>
+                                                <tr>
+                                                    <th>Customers</th>
+                                                    <th>Services</th>
+                                                    <th>Address</th>
+                                                    <th>Services Date</th>
+                                                    <th>Services Time</th>
+                                                    <th>Status</th>
+                                                    <th>Payment Method</th>
+                                                    <th>Number</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <% for(i=0;i<result[8].length;i++) { %>
+                                                <tr>
+                                                    <td><a href="/booking_dashboard/single_booking_data?id=<%=result[8][i].id%>"><%=result[8][i].name%></a></td>
+                                                    <td><%=result[8][i].booking_id%></td>
+                                                    <td>
+                                                        <span><%=result[8][i].address%></span>
+                                                    </td>
+                                                    <td><%=result[8][i].date%></td>
+                                                    <td><%=result[8][i].time%></td>
+                                                    <% if(result[8][i].service_agent == null || result[8][i].service_agent == "" || result[8][i].service_agent == [] || result[8][i].service_agent == "null" ){ %>
+                                                        <td><span style="font-size:20px">&#10060;</span></td>
+                                                           <% } else { %>
+                                                    <td><span style="font-size:20px">&#x2705;</span></td>
+                                                        
+                                                  <%  }  %>
+                                                   
+                                                  <% if(result[8][i].payment_mode == 'online'){ %> 
+                                                     <td><span class="label gradient-2 rounded">Online</span></td>
+                                                  <% } else { %>
+                                                    <td><span class="label gradient-4 rounded">Cash</span></td>
+                                                <%  } %>
+                                                        
+                                                    <td><%=result[8][i].usernumber%></td>
+                                                     
+                                                   
+                                                    
+                                                   
+                                                </tr>
+
+
+                                                <% } %>
+
+                                              
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xl-3 col-lg-6 col-sm-6 col-xxl-6">
+
+                        <div class="card">
+                            <div class="chart-wrapper mb-4">
+                                <div class="px-4 pt-4 d-flex justify-content-between">
+                                    <div>
+                                        <h4>Booking Activities</h4>
+                                      
+                                    </div>
+                                  
+                                </div>
+                                <div>
+                                        <canvas id="chart_widget_3"></canvas>
+                                </div>
+                            </div>
+                            <div class="card-body border-top pt-4">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                       
+                                        <div>
+                                            <h5>Customer Feedback</h5>
+                                            <h3><%= result[7][0].booking_customer %></h3>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                            <div class="card card-widget">
+                                <div class="card-body">
+                                    <h5 class="text-muted">Booking Overview </h5>
+                                    <h2 class="mt-4"><%= result[2][0].total_booking %></h2>
+                                    <span>Total Revenue</span>
+                                    <div class="mt-4">
+                                        <h4><%= result[5][0].online_booking %></h4>
+                                        <h6>Online Booking </h6>
+                                        <div class="progress mb-3" style="height: 7px">
+                                            <div class="progress-bar bg-primary" style="width: 30%;" role="progressbar"><span class="sr-only"><%= result[5][0].online_booking %>% Order</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mt-4">
+                                        <h4><%= result[6][0].offline_booking %></h4>
+                                        <h6 class="m-t-10 text-muted">Offline Booking </h6>
+                                        <div class="progress mb-3" style="height: 7px">
+                                            <div class="progress-bar bg-success" style="width: 50%;" role="progressbar"><span class="sr-only"><%= result[6][0].offline_booking %>% Order</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                   
+                </div>
+
+                
+
+              
+                    
+            </div>
+            <!-- #/ container -->
+        </div>
+        <!--**********************************
+            Content body end
+        ***********************************-->
+        
+        
+        <!--**********************************
+            Footer start
+        ***********************************-->
+        <div class="footer">
+            <div class="copyright">
+                <p>Copyright &copy;2019 Delo Services Pvt. Ltd</p>
+            </div>
+        </div>
+        <!--**********************************
+            Footer end
+        ***********************************-->
+    </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <script src="plugins/common/common.min.js"></script>
+    <script src="js/custom.min.js"></script>
+    <script src="js/settings.js"></script>
+    <script src="js/gleek.js"></script>
+    <script src="js/styleSwitcher.js"></script>
+
+    <!-- Chartjs -->
+    <script src="./plugins/chart.js/Chart.bundle.min.js"></script>
+    <!-- Circle progress -->
+    <script src="./plugins/circle-progress/circle-progress.min.js"></script>
+    <!-- Datamap -->
+
+   
+    <!-- Pignose Calender -->
+    <script src="./plugins/moment/moment.min.js"></script>
+    <script src="./plugins/pg-calendar/js/pignose.calendar.min.js"></script>
+    <!-- ChartistJS -->
+    <script src="./plugins/chartist/js/chartist.min.js"></script>
+    <script src="./plugins/chartist-plugin-tooltips/js/chartist-plugin-tooltip.min.js"></script>
+
+
+
+    <script src="./js/dashboard/dashboard-1.js"></script>
+
+</body>
+
+</html>

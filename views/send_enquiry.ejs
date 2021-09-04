@@ -1,0 +1,153 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+</head>
+<style>
+    body{
+        margin-left: auto;
+	margin-left:250px ;
+    margin-top: 60px;
+	
+    }
+    .bodyy {
+        border: 3px outset grey;
+        height: 550px;
+        width: 900px;
+        padding: 2rem;
+    }
+</style>
+
+<body>
+    <div class=" bodyy">
+
+        <form action="/list-your-product/send_mail" method="post" enctype="multipart/form-data">
+        <small>Please include product name, order quantity, special request if any in your enquiry</small>
+        <textarea rows="2" name="description" cols="2" class="form-control"></textarea>
+        <div>
+            <div class="row form-inline" style="padding: 5px;">
+                <div class="" style="padding: 5px;">
+                    <div class="col-lg-12" >
+                        <input type="checkbox" class="form-control" id="price" name="price" value="price"><span>
+                            Price</span>
+                        <input type="checkbox" class="form-control" id="product" name="product_specification" value="product"><span> Product
+                            Specification</span>
+
+                        <input type="checkbox" class="form-control" id="compony" name="company_profile" value="compony"><span> Compony
+                            Profile</span>
+
+
+                <input type="hidden" name="partner_number" value="<%=result%>">
+
+                    </div>
+
+
+
+
+                    <div class="col-lg-3"></div>
+
+                    <div class="col-lg-3"></div>
+
+                    <div class="col-lg-3"></div>
+
+
+
+
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-6">
+                    <input type="text" id="quantity" name="quantity" class="form-control" placeholder="Enter Quantity"
+                        style="border-radius : 5px;">
+                </div>
+                <div class="col-lg-6">
+                    <select class="form-control" name="type" style="border-radius : 5px;">
+                        <option value="none" disabled selected hidden>Select:</option>
+
+
+
+                        <option value="pieces">Pieces</option>
+                        <option value="bags">Bags</option>
+                        <option value="boxes">Boxes</option>
+                        <option value="foot">Foot</option>
+                        <option value="meter">Meter</option>
+                        <option value="pairs">Pairs</option>
+                        <option value="reams">Reams</option>
+                        <option value="feet">Square Feet</option>
+                        <option value="square">Square Meter</option>
+                        <option value="yard">Yard</option>
+                        <option value="tons">Tons</option>
+                        <option value="others">Others</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-12">
+                    <select class="form-control" name="country" style="border-radius : 5px;">
+                        <option value="none" disabled selected hidden>Country/State:</option>
+                        <option value="australia">Australia</option>
+                        <option value="us">US</option>
+                        <option value="india">India</option>
+                        <option value="pakistan">Pakistan</option>
+
+
+                    </select>
+                </div>
+            </div>
+
+            <br>
+            <div class="row">
+                <div class="col-lg-6">
+                    <input type="text" id="name" name="name" class="form-control" style="border-radius : 5px;"
+                        placeholder="Enter Name">
+                </div>
+                <div class="col-lg-6">
+                    <input type="text" id="compony_name" name="company_name" class="form-control"
+                        style="border-radius : 5px;" placeholder="Enter Compony Name">
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-6">
+                    <input type="email" id="email" name="email" class="form-control" style="border-radius : 5px;"
+                        placeholder="Enter Your Email">
+                </div>
+                <div class="col-lg-6">
+                    <input type="tel" id="number" name="number" class="form-control" style="border-radius : 5px;"
+                        placeholder="Enter Number">
+                </div>
+            </div>
+
+            <br>
+            <div class="row">
+                <div class="col-lg-12" style="height: 50px;">
+                    <input type="file" name="image" class="" style="border-radius : 5px;" style="margin-top: -5px;">
+                </div>
+                <div class="  justify-content-center">
+                    <button type="submit" class="btn btn-primary btn-block text-center"style="margin-left:250px;" >Send Enquiry </button>
+
+                </div>
+                <div>
+
+                </div>
+            </div>
+        </div>
+    </form>
+    </div>
+</body>
+
+</html>
+
+<br>

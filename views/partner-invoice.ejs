@@ -1,0 +1,251 @@
+<% include ./booking_dashboard_header.ejs %>
+
+  
+        <!--**********************************
+            Content body start
+        ***********************************-->
+        <div class="content-body">
+
+            <div class="row page-titles mx-0">
+                <div class="col p-md-0">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="javascript:void(0)">Dashboard</a></li>
+                        <li class="breadcrumb-item active"><a href="javascript:void(0)">Home</a></li>
+                    </ol>
+                </div>
+            </div>
+            <!-- row -->
+
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 col-xl-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="media align-items-center mb-4">
+
+
+                                        <% if(result[0].service_agent == null || result[0].service_agent == "" || result[0].service_agent == [] || result[0].service_agent == "null" ){ %>
+                                <img class="mr-3" src="images/avatar/11.png" width="80" height="80" alt="">
+                                      <%  } else { %>
+                                <img class="mr-3" src="/images/<%=result[0].teamimage%>" style="border-radius:50%;"  width="80" height="80" alt="">
+                                        <% } %>
+
+                               
+                                    <div class="media-body">
+                                            <% if(result[0].service_agent == null || result[0].service_agent == "" || result[0].service_agent == [] || result[0].service_agent == "null" ){ %>
+                                                <h3 class="mb-0">N/A</h3>
+                                          <%  } else { %>
+                                        <h3 class="mb-0"><%=result[0].teamname%></h3>
+                                         
+                                        <% } %>
+
+                                        <h5 class="mb-0 float-right"><%=result[0].payment_mode%></h5>
+                                        <% if(result[0].service_agent == null || result[0].service_agent == "" || result[0].service_agent == [] || result[0].service_agent == "null" ){ %>
+                                            <h3 class="mb-0">N/A</h3>
+                                      <%  } else { %>
+                                        <p class="text-muted mb-0"><%=result[0].service_agent%></p>
+                                     
+                                    <% } %>
+                                       
+                                       
+                                    </div>
+                                </div>
+                                
+                                <div class="row mb-5">
+                                    <div class="col">
+                                        <div class="card card-profile text-center">
+                                            <span class="mb-1 text-primary"><i class="icon-people"></i></span>
+                                            <h3 class="mb-0">User Name</h3>
+                                            <p class="text-muted px-4"><%=result[0].name%></p>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="card card-profile text-center">
+                                            <span class="mb-1 text-warning"><i class="icon-user-follow"></i></span>
+                                            <h3 class="mb-0">Service Name</h3>
+                                            <p class="text-muted"><%=result[0].booking_id%></p>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                            <div class="card card-profile text-center">
+                                                <span class="mb-1 text-primary"><i class="icon-people"></i></span>
+                                                <h3 class="mb-0">Category & Subcategory</h3>
+                                                <p class="text-muted px-4"><%=result[0].categoryname%>,<%=result[0].subcategoryname%></p>
+                                              
+                                            </div>
+                                        </div>
+
+                                        
+                                  
+                                </div>
+
+
+                                <div class="row mb-5">
+                                        <div class="col">
+                                            <div class="card card-profile text-center">
+                                                <span class="mb-1 text-primary"><i class="icon-people"></i></span>
+                                                <h3 class="mb-0">Address & Pincode  </h3>
+                                                <p class="text-muted px-4"><%=result[0].address%>,<%=result[0].pincode%></p>
+                                         
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="card card-profile text-center">
+                                                <span class="mb-1 text-warning"><i class="icon-user-follow"></i></span>
+                                                <h3 class="mb-0">Service Date & Service Time</h3>
+                                                <p class="text-muted px-4"><%=result[0].date%> at <%=result[0].time%></p>
+                                         
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                                <div class="card card-profile text-center">
+                                                    <span class="mb-1 text-primary"><i class="icon-people"></i></span>
+                                                    <h3 class="mb-0">Booking Date & Booking Time</h3>
+                                                    <p class="text-muted px-4"><%=result[0].booking_date%> at <%=result[0].booking_time%> </p>
+                                           
+                                                </div>
+                                            </div>
+    
+                                            
+  
+
+
+                                        <div class="col-12 text-center">
+                                            <button class="btn btn-danger px-5">Rs <%=result[0].price%></button>
+                                        </div>
+                                    </div>
+
+                                   <div class="col-12 text-center">
+                                            <a href="/booking_dashboard/invoice?bookingid=<%=result[0].id%>"><button class="btn btn-danger px-5">View Invoice</button></a>
+                                        </div>
+
+
+
+                                                                  
+                            </div>
+                             <div class="col-12 text-center">
+                                            <a><button class="btn btn-danger px-5 cancel" price="<%=result[0].price%>"  service_agent = "<%=result[0].service_agent%>" name="<%=result[0].name%>" email="<%=result[0].email%>" usernumber = "<%=result[0].usernumber%>" address="<%=result[0].address%>" booking_id="<%=result[0].booking_id%>" payment_mode="<%=result[0].payment_mode%>" date="<%=result[0].date%>" time="<%=result[0].time%>" booking_date = "<%=result[0].booking_date%>" booking_time="<%=result[0].booking_time%>" deduct_credit="<%=result[0].credit_deduct%>" id="<%=result[0].id%>"  >Cancel Booking</button></a>
+                                        </div>
+
+
+
+<br>
+
+
+
+<div class="col-12 text-center">
+                                            <a><button class="btn btn-danger px-5 assign"  id="<%=result[0].id%>"  >Assign to another partner</button></a>
+                                        </div>
+
+
+
+
+                        </div>  
+                    </div>
+                    
+
+                    </div>
+                </div>
+            </div>
+            <!-- #/ container -->
+        </div>
+        <!--**********************************
+            Content body end
+        ***********************************-->
+        
+        
+        <!--**********************************
+            Footer start
+        ***********************************-->
+        <div class="footer">
+            <div class="copyright">
+                    <p>Copyright &copy;2019 Delo Services Pvt. Ltd</p>
+            </div>
+        </div>
+        <!--**********************************
+            Footer end
+        ***********************************-->
+    </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <script src="plugins/common/common.min.js"></script>
+    <script src="js/custom.min.js"></script>
+    <script src="js/settings.js"></script>
+    <script src="js/gleek.js"></script>
+    <script src="js/styleSwitcher.js"></script>
+
+
+
+<script>
+
+$('.cancel').click(function(){
+
+const id = $(this).attr('id')
+
+const name = $(this).attr('name')
+
+const address = $(this).attr('address')
+
+const email = $(this).attr('email')
+
+const usernumber = $(this).attr('usernumber')
+
+const booking_id = $(this).attr('booking_id')
+
+const payment_mode = $(this).attr('payment_mode')
+
+const date = $(this).attr('date')
+
+const time = $(this).attr('time')
+
+const booking_date = $(this).attr('booking_date')
+
+
+const price = $(this).attr('price')
+
+const booking_time = $(this).attr('booking_time')
+
+const deduct_credit = $(this).attr('deduct_credit')
+
+const reason = 'manually'
+
+const key = 'AIzaSyAwYbDIQtdgvidFZxjU5bkWLC1wOxzcfCk'
+
+
+$.post('/api/delete1',{id,name,email,address,usernumber,booking_id,payment_mode,date,time,booking_date,price,booking_time,deduct_credit,reason},data=>{
+window.location.href='/booking_dashboard'
+})
+
+})
+
+
+
+
+</script>
+
+
+
+
+
+<script>
+
+$('.assign').click(function(){
+
+    const id = $(this).attr('id')
+    const service_agent = null;
+    $.post('/api/reschedule_our_end',{id,service_agent},data=>{
+    alert('success')
+    })
+})
+
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+import React, { useEffect } from 'react';
+import { View, Text } from 'react-native';
+import * as Contacts from 'expo-contacts';
+import * as Permissions from 'expo-permissions';
+
+
+export default function App() {
+  
+
+
+loadcontact = async() =>{
+  const permission = await Expo.Permissions.askAsync(
+    Expo.Permissions.CONTACTS
+  )
+
+if(permission.status !=='granted'){
+  return
+}
+console.log('hi',data)
+const {data} = await Contacts.getContactsAsync({
+  fields : [Contacts.Fields.PhoneNumbers,
+  Contacts.Fields.Emails]
+})
+
+}
+
+  componentDidMount(){
+    this.loadcontact()
+  }
+
+  return (
+    <View
+      style={{
+        flex: 1,
+        backgroundColor: '#fff',
+        alignItems: 'center',
+        justifyContent: 'center',
+      }}>
+      <Text>Contacts Module Example</Text>
+    </View>
+  );
+}
