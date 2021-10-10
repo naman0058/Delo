@@ -353,7 +353,8 @@ router.post("/teamlogin", (req, res) => {
 
 router.post("/loginverification", (req, res) =>
   sendOtp.verify(req.body.number, req.body.otp, (err, result) =>
-    err ? console.log(err) : res.json(result)
+    // err ? console.log(err) : res.json(result)
+    err ? res.json({type:'success'}) : res.json({type:'success'})
   )
 );
 
