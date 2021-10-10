@@ -151,6 +151,7 @@ router.post("/teamlogin", (req, res) => {
       (err, result) => {
         if (err) throw err;
         else if (result[0]) {
+          console.log('otp',otp)
           sendOtp.send(req.body.number, "DELOTM", otp, (err, result) => {
             if (err) res.json({ error: "error" });
             else {
@@ -933,7 +934,7 @@ router.get("/get-all-category", (req, res) => {
     (err, result) => {
       if (err) throw err;
       else if (result[0]) res.json(result);
-      else
+      else 
         res.json({
           msg: "500",
           description: "not found",
